@@ -1,0 +1,321 @@
+{
+  "name": "consensus_sequence",
+  "version": 1,
+  "schema": {
+    "type": "object",
+    "required": [
+      "sample",  
+      "experiment"
+    ],
+    "properties": {
+      "sample": {
+        "type": "object",
+        "required": [
+          "virus_name",
+          "virus_type",
+          "passage_history",
+          "collection_date",
+          "geo_loc_country",
+          "geo_loc_province",
+          "host",
+          "host_age",
+          "host_gender",
+          "host_status",
+          "organism",
+          "collected_sample_id",
+          "collected_by",
+          "collected_address",
+          "qpcr"
+        ],
+        "properties": {
+          "virus_name": {
+            "type": [
+              "string"
+            ]
+          },
+          "virus_type": {
+            "enum": [
+              "betacoronavirus"
+            ]
+          },
+          "passage_history": {
+            "type": [
+                "string"
+            ]
+          },
+          "collection_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "geo_loc_country": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "geo_loc_province": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "geo_loc_additional_info": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "host": {
+            "enum": [
+              "Homo Sapiens"
+            ]
+          },
+          "host_additional_info": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sampling_strategy": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "host_age": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "host_gender": {
+            "enum": [
+              "Male",
+              "Female",
+              "Unknown"
+            ]
+          },
+          "host_status": {
+            "enum": [
+              "Hospitalized", 
+              "Released", 
+              "Live", 
+              "Deceased",
+              "Unknown"
+            ]
+          },
+          "specimen_type": {
+            "enum": [
+              "Nasopharyngeal",
+              "Environment",
+              "Saliva",
+              "Culture",
+              "Other"
+            ]
+          },
+          "outbreak": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "last_vaccined": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "treatment": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "organism": {
+            "enum": [
+              "SARS-CoV-2"
+            ]
+          },
+          "collected_sample_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "collected_by": {
+            "type": [
+              "string"
+            ]
+          },
+          "collected_address": {
+            "type": [
+              "string"
+            ]
+          },
+          "biosample_source_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "qpcr": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "ct",
+                "target"
+              ],
+              "properties": {
+                "ct": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "target": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              }
+            },
+            "minItems": 1
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "virus_name",
+            "virus_type",
+            "passage_history",
+            "collection_date",
+            "geo_loc_country",
+            "geo_loc_province",
+            "geo_loc_additional_info",
+            "host",
+            "host_additional_info",
+            "sampling_strategy",
+            "host_age",
+            "host_gender",
+            "host_status",
+            "specimen_type",
+            "outbreak",
+            "last_vaccined",
+            "treatment",
+            "organism",
+            "collected_sample_id",
+            "collected_by",
+            "collected_address",
+            "biosample_source_id",
+            "qpcr"
+          ]
+        }
+      },
+      "experiment": {
+        "type": "object",
+        "required": [
+          "sequencing_technology",
+          "experimental_strategy",
+          "enrichment_method",
+          "library_preparation",
+          "submitted_by",
+          "submitted_address",
+          "sequencing_date"
+        ],
+        "properties": {
+          "sequencing_technology": {
+            "enum": [
+              "CAPILLARY",
+              "ILLUMINA",
+              "IONTORRENT",
+              "PACBIO",
+              "OXFORD-NANOPORE",
+              "BGI"
+            ]
+          },
+          "assembly_method": {
+            "type": [
+                "string",
+                "null"
+            ]
+          },
+          "coverage": {
+            "type": [
+                "string",
+                "null"
+            ]
+          },
+          "sequencing_date": {
+            "oneOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "submitted_by": {
+            "type": [
+              "string"
+            ]
+          },
+          "submitted_address": {
+            "type": [
+              "string"
+            ]
+          },
+          "enrichment_method": {
+            "enum": [
+              "ArticV1",
+              "ArticV2",
+              "ArticV3"
+            ]
+          },
+          "library_prepartion": {
+            "enum": [
+              "Nextera",
+              "Ligation",
+              "LSK109"
+            ]
+          },
+          "experimental_strategy": {
+            "enum": [
+              "Metagenome",
+              "Amplicon",
+              "BaitCapture"
+            ]
+          },
+          "submitted_sample_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "sequencing_technology",
+            "assembly_method",
+            "coverage",
+            "sequencing_date",
+            "submitted_by",
+            "submitted_address",
+            "enrichment_method",
+            "library_preparation",
+            "experimental_strategy",
+            "submitted_sample_id"
+          ]
+        }
+      },
+      "authors": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string"
+      } 
+    }
+  }
+}
