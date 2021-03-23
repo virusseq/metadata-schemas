@@ -1,0 +1,70 @@
+{
+    "studyId": "COVID-PR",
+    "analysisType": {
+      "name": "consensus_sequence"
+    },
+    "samples": [
+      {
+        "submitterSampleId": "CoV-2-001-SA",
+        "sampleType": "Total DNA",
+        "matchedNormalSubmitterSampleId": null,
+        "specimen": {
+          "submitterSpecimenId": "CoV-2-001-SP",
+          "tumourNormalDesignation": "Normal",
+          "specimenTissueSource": "Other",
+          "specimenType": "Normal"
+        },
+        "donor": {
+          "gender": "Female",
+          "submitterDonorId": "CoV-2-001"
+        }
+      }
+    ],
+    "files": [
+      {
+        "fileName": "sample1.fasta",
+        "fileSize": 14911,
+        "fileType": "FASTA",
+        "fileMd5sum": "178f97f7b1ca8bfc28fd5586bdd56799",
+        "fileAccess": "open",
+        "dataType": "Submitted Reads"
+      }
+    ],
+    "sample": {
+        "sample_collected_id": "CoV-2-001-SA",
+        "sample_collected_by": "DASH-1",
+        "sequence_submitted_by": "DASH-2",
+        "sample_collection_date": "2020-12-14",
+        "geo_loc_country": "CANADA",
+        "geo_loc_province": "ON",
+        "organism": "SARS-CoV-2",
+        "isolate": "hCoV-19/Canada/ON-PHL2445/2020",  
+        "purpose_of_sampling": "Diagnostic testing",
+        "purpose_of_sampling_details": "The sample was collected to investigate the prevalence of variants associated with mink-to-human transmission in Canada.",
+        "anatomical_material": "Blood",
+        "anatomical_part": "Nasopharyngeal",
+        "body_product": "Feces",
+        "environmental_material": "Face Mask",
+        "environmental_site": "Building floor",
+        "collection_device": "Swab",
+        "collection_method": "Bronchoalveolar Lavage (BAL)",
+        "nml_submitted_speciment_type": "Swab"
+    },
+    "host":{
+      "host_scientific_name": "Homo sapiens",
+      "host_disease": "COVID-19",
+      "host_age": 67,
+      "host_age_bin": "60-69",
+      "host_age_unit": "years",
+      "host_gender": "Female"
+    },
+    "sequencing": {
+      "sequencing_instrument": "Nanopore MinION",
+      "purpose_of_sequencing": "Surveillance",
+      "purpose_of_sequencing_details": "The sample was sequenced to investigate the differences in lineages circulating in Canada during the spring and fall waves of the pandemic."
+    },
+    "bioinformatics_qc_metrics": {
+      "consensus_sequence_software_name": "iVar",
+      "consensus_sequence_software_version": "1.2"  
+    }
+}
