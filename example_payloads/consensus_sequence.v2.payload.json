@@ -58,7 +58,7 @@
       "host_age_unit": "years",
       "host_gender": "Female"
     },
-    "sequencing": {
+    "experiment": {
       "sequencing_instrument": "Nanopore MinION",
       "purpose_of_sequencing": "Surveillance",
       "purpose_of_sequencing_details": "The sample was sequenced to investigate the differences in lineages circulating in Canada during the spring and fall waves of the pandemic."

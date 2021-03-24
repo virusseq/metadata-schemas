@@ -6,7 +6,7 @@
     "required": [
       "sample",  
       "host",
-      "sequencing",
+      "experiment",
       "bioinformatics_qc_metrics"
     ],
     "properties": {
@@ -226,7 +226,7 @@
           ]
         }
       },
-      "sequencing": {
+      "experiment": {
         "type": "object",
         "required": [
           "sequencing_instrument",
