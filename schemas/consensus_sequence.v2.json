@@ -199,7 +199,7 @@
               "Unknown"
             ]
           },
-          "host_unit": {
+          "host_age_unit": {
             "enum": [
               "years",
               "months"
