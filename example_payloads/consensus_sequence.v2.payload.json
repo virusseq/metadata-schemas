@@ -2,69 +2,72 @@
   "analysisType": {
     "name": "consensus_sequence"
   },
-  "studyId": "COVID-PR",
+  "studyId": "LSPQ-QC",
   "samples": [
     {
-      "submitterSampleId": "Qc-L00215817",
+      "submitterSampleId": "Qc-L00210314",
       "matchedNormalSubmitterSampleId": null,
       "sampleType": "Total RNA",
       "specimen": {
-        "submitterSpecimenId": "Qc-L00215817",
+        "submitterSpecimenId": "Qc-L00210314",
         "tumourNormalDesignation": "Normal",
         "specimenTissueSource": "Other",
         "specimenType": "Normal"
       },
       "donor": {
-        "submitterDonorId": "Qc-L00215817",
-        "gender": "Male"
+        "submitterDonorId": "Qc-L00210314",
+        "gender": "Female"
       }
     }
   ],
   "files": [
     {
-      "fileName": "L00215817.v0.fasta",
+      "fileName": "L00210314.v0.fasta",
       "fileType": "FASTA",
       "fileSize": 30499,
-      "fileMd5sum": "bec3644f989037e5a49ee017e8101366",
+      "fileMd5sum": "13d7bc6ec894589facb91a4e8d3361ab",
       "fileAccess": "open",
-      "dataType": "Submitted Reads"
+      "dataType": "Consensus Sequence"
     }
   ],
-  "sample": {
-    "sample_collected_id": "Qc-L00215817",
-    "sample_collected_by": null,
-    "sequence_submitted_by": "LSPQ",
-    "sample_collection_date": "2020-03-12",
+  "sample_collection": {
+    "sample_collected_by": "Not Provided",
+    "sequence_submitted_by": "Laboratoire de sant\u00e9 publique du Qu\u00e9bec (LSPQ)",
+    "sample_collection_date": "2020-02-25",
+    "sample_collection_date_precision": "day",
     "geo_loc_country": "Canada",
     "geo_loc_province": "Quebec",
-    "organism": "SARS-CoV-2",
-    "isolate": "Canada/Qc-L00215817/2020",
+    "organism": "Severe acute respiratory syndrome coronavirus 2",
+    "isolate": "Canada/Qc-L00210314/2020",
     "purpose_of_sampling": "Diagnostic testing",
-    "purpose_of_sampling_details": null,
-    "anatomical_material": null,
-    "anatomical_part": null,
-    "body_product": null,
-    "environmental_material": null,
-    "environmental_site": null,
-    "collection_device": null,
-    "collection_method": null,
-    "nml_submitted_speciment_type": null
+    "purpose_of_sampling_details": "Not Provided",
+    "anatomical_material": "Not Provided",
+    "anatomical_part": "Not Provided",
+    "body_product": "Not Provided",
+    "environmental_material": "Not Provided",
+    "environmental_site": "Not Provided",
+    "collection_device": "Not Provided",
+    "collection_method": "Not Provided",
+    "nml_submitted_specimen_type": "Not Applicable"
   },
   "host": {
     "host_scientific_name": "Homo sapiens",
     "host_disease": "COVID-19",
-    "host_age": 21,
-    "host_age_bin": "[19, 29)",
-    "host_age_unit": "years",
-    "host_gender": "Male"
+    "host_age": 41,
+    "host_age_bin": "40 - 49",
+    "host_age_unit": "year",
+    "host_gender": "Female"
   },
   "experiment": {
-    "sequencing_instrument": "ONT_ARTIC",
-    "purpose_of_sequencing": "Surveillance",
-    "purpose_of_sequencing_details": null
+    "sequencing_instrument": "Oxford Nanopore",
+    "sequencing_date": "2020-09-14",
+    "purpose_of_sequencing": "Baseline surveillance (random sampling)",
+    "purpose_of_sequencing_details": "Not Provided"
   },
-  "bioinformatics_qc_metrics": {
-    "consensus_sequence_software_name": "bcftools",
-    "consensus_sequence_software_version": null
+  "sequence_analysis": {
+    "software_names": [
+      "bcftools"
+    ],
+    "bioinformatics_protocol": null
   }
 }
