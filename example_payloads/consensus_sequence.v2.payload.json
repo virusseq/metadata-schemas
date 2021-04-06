@@ -65,9 +65,8 @@
     "purpose_of_sequencing_details": "Not Provided"
   },
   "sequence_analysis": {
-    "software_names": [
-      "bcftools"
-    ],
+    "consensus_sequence_software_name": "bcftools",
+    "consensus_sequence_software_version": 1.0,
     "bioinformatics_protocol": null
   }
 }

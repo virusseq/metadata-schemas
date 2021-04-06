@@ -133,6 +133,12 @@
               "Restricted Access"
             ]
           },
+          "geo_loc_city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "organism": {
             "enum": [
               "Severe acute respiratory syndrome coronavirus 2",
@@ -405,6 +411,7 @@
             "sample_collection_date_precision",
             "geo_loc_country",
             "geo_loc_province",
+            "geo_loc_city",
             "organism",
             "isolate",  
             "purpose_of_sampling",
@@ -450,7 +457,8 @@
             "anyOf": [
               {
                 "type": "integer",
-                "minimum": 0
+                "minimum": 0,
+                "maximum": 130
               },
               {
                 "enum": [
@@ -597,6 +605,12 @@
               }
             ]
           },
+          "library_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "purpose_of_sequencing": {
             "enum": [
               "Baseline surveillance (random sampling)",
@@ -637,25 +651,53 @@
                 ]
               }
             ]
+          },
+          "sequencing_protocol_name": {
+            "type": [
+              "string",
+              "null"
+            ]
           }
         },
         "propertyNames": {
           "enum": [
             "sequencing_instrument",
             "sequencing_date",
+            "library_id",
             "purpose_of_sequencing",
-            "purpose_of_sequencing_details"
+            "purpose_of_sequencing_details",
+            "sequencing_protocol_name"
           ]
         }
       },
       "sequence_analysis": {
         "type": "object",
+        "required": [
+          "consensus_sequence_software_name",
+          "consensus_sequence_software_version"
+        ],
         "properties": {
-          "software_names": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }     
+          "consensus_sequence_software_name": {
+            "type": [
+              "string"
+            ]       
+          },
+          "consensus_sequence_software_version": {
+            "type": [
+              "number"
+            ]
+          },
+          "raw_sequence_data_processing_method": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dehosting_method": {
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "metrics": {
             "type": "object",
@@ -683,14 +725,14 @@
                     "number",
                     "null"
                 ]
-              },
-              "reference_genome_accession": {
-                "type": [
-                    "string",
-                    "null"
-                ]
               }
-          }              
+            }              
+          },
+          "reference_genome_accession": {
+            "type": [
+                "string",
+                "null"
+            ]
           },
           "bioinformatics_protocol": {
             "type": [
@@ -701,8 +743,12 @@
         },
         "propertyNames": {
           "enum": [
-            "software_names",
+            "consensus_sequence_software_name",
+            "consensus_sequence_software_version",
+            "raw_sequence_data_processing_method",
+            "dehosting_method",
             "metrics",
+            "reference_genome_accession",
             "bioinformatics_protocol"
           ]
         }
