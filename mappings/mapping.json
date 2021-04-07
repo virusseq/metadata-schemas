@@ -1,0 +1,52 @@
+{"name": "specimen collector sample ID", "valueType": "string", "analysisPath": "samples.0.donor.submitterDonorId"}
+{"name": "specimen collector sample ID", "valueType": "string", "analysisPath": "samples.0.submitterSampleId"}
+{"name": "specimen collector sample ID", "valueType": "string", "analysisPath": "samples.0.specimen.submitterSpecimenId"}
+{"name": "sample collected by", "valueType": "string", "analysisPath": "sample_collection.sample_collected_by"}
+{"name": "sequence submitted by", "valueType": "string", "analysisPath": "sample_collection.sequence_submitted_by"}
+{"name": "sample collection date", "valueType": "string", "analysisPath": "sample_collection.sample_collection_date"}
+{"name": "sample collection date precision", "valueType": "string", "analysisPath": "sample_collection.sample_collection_date_precision"}
+{"name": "geo_loc_name (country)", "valueType": "string", "analysisPath": "sample_collection.geo_loc_country"}
+{"name": "geo_loc_name (state/province/territory)", "valueType": "string", "analysisPath": "sample_collection.geo_loc_province"}
+{"name": "geo_loc_name (city)", "valueType": "string", "analysisPath": "sample_collection.geo_loc_city"}
+{"name": "organism", "valueType": "string", "analysisPath": "sample_collection.organism"}
+{"name": "isolate", "valueType": "string", "analysisPath": "sample_collection.isolate"}
+{"name": "purpose of sampling", "valueType": "string", "analysisPath": "sample_collection.purpose_of_sampling"}
+{"name": "purpose of sampling details", "valueType": "string", "analysisPath": "sample_collection.purpose_of_sampling_details"}
+{"name": "NML submitted specimen type", "valueType": "string", "analysisPath": "sample_collection.nml_submitted_specimen_type"}
+{"name": "anatomical material", "valueType": "string", "analysisPath": "sample_collection.anatomical_material"}
+{"name": "anatomical part", "valueType": "string", "analysisPath": "sample_collection.anatomical_part"}
+{"name": "body product", "valueType": "string", "analysisPath": "sample_collection.body_product"}
+{"name": "environmental material", "valueType": "string", "analysisPath": "sample_collection.environmental_material"}
+{"name": "environmental site", "valueType": "string", "analysisPath": "sample_collection.environmental_site"}
+{"name": "collection device", "valueType": "string", "analysisPath": "sample_collection.collection_device"}
+{"name": "collection method", "valueType": "string", "analysisPath": "sample_collection.collection_method"}
+{"name": "host (scientific name)", "valueType": "string", "analysisPath": "host.host_scientific_name"}
+{"name": "host disease", "valueType": "string", "analysisPath": "host.host_disease"}
+{"name": "host age", "valueType": "number", "analysisPath": "host.host_age"}
+{"name": "host age unit", "valueType": "string", "analysisPath": "host.host_age_unit"}
+{"name": "host age bin", "valueType": "string", "analysisPath": "host.host_age_bin"}
+{"name": "host gender", "valueType": "string", "analysisPath": "host.host_gender"}
+{"name": "host gender", "valueType": "string", "analysisPath": "samples.0.donor.gender"}
+{"name": "purpose of sequencing", "valueType": "string", "analysisPath": "experiment.purpose_of_sequencing"}
+{"name": "purpose of sequencing details", "valueType": "string", "analysisPath": "experiment.purpose_of_sequencing_details"}
+{"name": "sequencing date", "valueType": "string", "analysisPath": "experiment.sequencing_date"}
+{"name": "library ID", "valueType": "string", "analysisPath": "experiment.library_id"}
+{"name": "sequencing instrument", "valueType": "string", "analysisPath": "experiment.sequencing_instrument"}
+{"name": "sequencing protocol name", "valueType": "string", "analysisPath": "experiment.sequencing_protocol_name"}
+{"name": "raw sequence data processing method", "valueType": "string", "analysisPath": "sequence_analysis.raw_sequence_data_processing_method"}
+{"name": "dehosting method", "valueType": "string", "analysisPath": "sequence_analysis.dehosting_method"}
+{"name": "consensus sequence filename", "valueType": "string", "analysisPath": ""}
+{"name": "consensus sequence software name", "valueType": "string", "analysisPath": "sequence_analysis.consensus_sequence_software_name"}
+{"name": "consensus sequence software version", "valueType": "number", "analysisPath": "sequence_analysis.consensus_sequence_software_version"}
+{"name": "breadth of coverage value", "valueType": "string", "analysisPath": "sequence_analysis.metrics.breadth_of_coverage"}
+{"name": "depth of coverage value", "valueType": "string", "analysisPath": "sequence_analysis.metrics.depth_of_coverage"}
+{"name": "consensus genome length", "valueType": "number", "analysisPath": "sequence_analysis.metrics.consensus_genome_length"}
+{"name": "Ns per 100 kbp", "valueType": "number", "analysisPath": "sequence_analysis.metrics.Ns_per_100kbp"}
+{"name": "reference genome accession", "valueType": "string", "analysisPath": "sequence_analysis.reference_genome_accession"}
+{"name": "bioinformatics protocol", "valueType": "string", "analysisPath": "sequence_analysis.bioinformatics_protocol"}
+{"name": "lineage/clade name", "valueType": "string", "analysisPath": "lineage_analysis.lineage_name"}
+{"name": "lineage/clade analysis software name", "valueType": "string", "analysisPath": "lineage_analysis.lineage_analysis_software_name"}
+{"name": "lineage/clade analysis software version", "valueType": "string", "analysisPath": "lineage_analysis.lineage_analysis_software_version"}
+{"name": "variant designation", "valueType": "string", "analysisPath": "lineage_analysis.variant_designation"}
+{"name": "variant evidence", "valueType": "string", "analysisPath": "lineage_analysis.variant_evidence"}
+{"name": "variant evidence details", "valueType": "string", "analysisPath": "lineage_analysis.variant_evidence_details"}
