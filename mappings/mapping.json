@@ -35,7 +35,6 @@
 {"name": "sequencing protocol name", "valueType": "string", "analysisPath": "experiment.sequencing_protocol_name"}
 {"name": "raw sequence data processing method", "valueType": "string", "analysisPath": "sequence_analysis.raw_sequence_data_processing_method"}
 {"name": "dehosting method", "valueType": "string", "analysisPath": "sequence_analysis.dehosting_method"}
-{"name": "consensus sequence filename", "valueType": "string", "analysisPath": ""}
 {"name": "consensus sequence software name", "valueType": "string", "analysisPath": "sequence_analysis.consensus_sequence_software_name"}
 {"name": "consensus sequence software version", "valueType": "number", "analysisPath": "sequence_analysis.consensus_sequence_software_version"}
 {"name": "breadth of coverage value", "valueType": "string", "analysisPath": "sequence_analysis.metrics.breadth_of_coverage"}
