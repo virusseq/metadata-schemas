@@ -456,7 +456,7 @@
           "host_age": {
             "anyOf": [
               {
-                "type": "integer",
+                "type": "number",
                 "minimum": 0,
                 "maximum": 130
               },
@@ -585,7 +585,12 @@
               "DNBSEQ-T7",
               "DNBSEQ-G400",
               "DNBSEQ-G400 FAST",
-              "DNBSEQ-G50"
+              "DNBSEQ-G50",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
             ]
           },
           "sequencing_date": {
@@ -679,12 +684,14 @@
         "properties": {
           "consensus_sequence_software_name": {
             "type": [
-              "string"
+              "string",
+              "null"
             ]       
           },
           "consensus_sequence_software_version": {
             "type": [
-              "number"
+              "number",
+              "null"
             ]
           },
           "raw_sequence_data_processing_method": {
