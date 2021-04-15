@@ -1,0 +1,72 @@
+{
+  "analysisType": {
+    "name": "consensus_sequence"
+  },
+  "studyId": "LSPQ-QC",
+  "samples": [
+    {
+      "submitterSampleId": "Qc-L00210314",
+      "matchedNormalSubmitterSampleId": null,
+      "sampleType": "Total RNA",
+      "specimen": {
+        "submitterSpecimenId": "Qc-L00210314",
+        "tumourNormalDesignation": "Normal",
+        "specimenTissueSource": "Other",
+        "specimenType": "Normal"
+      },
+      "donor": {
+        "submitterDonorId": "Qc-L00210314",
+        "gender": "Female"
+      }
+    }
+  ],
+  "files": [
+    {
+      "fileName": "L00210314.v0.fasta",
+      "fileType": "FASTA",
+      "fileSize": 30499,
+      "fileMd5sum": "13d7bc6ec894589facb91a4e8d3361ab",
+      "fileAccess": "open",
+      "dataType": "Consensus Sequence"
+    }
+  ],
+  "sample_collection": {
+    "sample_collected_by": "Not Provided",
+    "sequence_submitted_by": "Laboratoire de sant\u00e9 publique du Qu\u00e9bec (LSPQ)",
+    "sample_collection_date": "2020-02-25",
+    "sample_collection_date_precision": "day",
+    "geo_loc_country": "Canada",
+    "geo_loc_province": "Quebec",
+    "organism": "Severe acute respiratory syndrome coronavirus 2",
+    "isolate": "Canada/Qc-L00210314/2020",
+    "purpose_of_sampling": "Diagnostic testing",
+    "purpose_of_sampling_details": "Not Provided",
+    "anatomical_material": "Not Provided",
+    "anatomical_part": "Not Provided",
+    "body_product": "Not Provided",
+    "environmental_material": "Not Provided",
+    "environmental_site": "Not Provided",
+    "collection_device": "Not Provided",
+    "collection_method": "Not Provided",
+    "nml_submitted_specimen_type": "Not Applicable"
+  },
+  "host": {
+    "host_scientific_name": "Homo sapiens",
+    "host_disease": "COVID-19",
+    "host_age": 41,
+    "host_age_bin": "40 - 49",
+    "host_age_unit": "year",
+    "host_gender": "Female"
+  },
+  "experiment": {
+    "sequencing_instrument": "Oxford Nanopore",
+    "sequencing_date": "2020-09-14",
+    "purpose_of_sequencing": "Baseline surveillance (random sampling)",
+    "purpose_of_sequencing_details": "Not Provided"
+  },
+  "sequence_analysis": {
+    "consensus_sequence_software_name": "bcftools",
+    "consensus_sequence_software_version": 1.0,
+    "bioinformatics_protocol": null
+  }
+}
