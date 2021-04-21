@@ -1,3 +1,4 @@
+{"name": "study_id", "valueType": "string", "analysisPath": "studyId"}
 {"name": "specimen collector sample ID", "valueType": "string", "analysisPath": "samples.0.donor.submitterDonorId"}
 {"name": "specimen collector sample ID", "valueType": "string", "analysisPath": "samples.0.submitterSampleId"}
 {"name": "specimen collector sample ID", "valueType": "string", "analysisPath": "samples.0.specimen.submitterSpecimenId"}
