@@ -1,0 +1,453 @@
+[
+  {
+    "field": "study_id",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__published_at",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },  
+  {
+    "field": "donors__specimens__submitter_specimen_id",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },  
+  {
+    "field": "analysis__sample__sample_collected_by",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__sequence_submitted_by",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__sample_collection_date",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__sample_collection_date_precision",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__geo_loc_country",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__geo_loc_province",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },  
+  {
+    "field": "analysis__sample__geo_loc_city",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },   
+  {
+    "field": "analysis__sample__organism",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__isolate",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__purpose_of_sampling",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__purpose_of_sampling_details",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },  
+  {
+    "field": "analysis__sample__nml_submitted_specimen_type",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },  
+  {
+    "field": "analysis__sample__anatomical_material",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__anatomical_part",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__body_product",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__environmental_material",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__environmental_site",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__collection_device",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample__collection_method",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__host__host_scientific_name",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__host__host_disease",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__host__host_age",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__host__host_age_bin",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__host__host_age_unit",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__host__host_gender",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__experiment__purpose_of_sequencing",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__experiment__purpose_of_sequencing_details",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__experiment__sequencing_date",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },  
+  {
+    "field": "analysis__experiment__library_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },  
+  {
+    "field": "analysis__experiment__sequencing_instrument",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__experiment__sequencing_protocol_name",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__experiment__raw_sequencing_data_processing",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__experiment__dehosting_method",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__bioinformatics_qc_metrics__consensus_sequence_software_name",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__bioinformatics_qc_metrics__consensus_sequence_software_version",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },    
+  {
+    "field": "analysis__bioinformatics_qc_metrics__breadth_of_coverage",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__bioinformatics_qc_metrics__depth_of_coverage",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },    
+  {
+    "field": "analysis__first_published_at",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__updated_at",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__analysis_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__analysis_state",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__analysis_type",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__analysis_version",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "data_type",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__donor_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__gender",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__specimens__samples__matched_normal_submitter_sample_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__specimens__samples__sample_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__specimens__samples__sample_type",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__specimens__samples__submitter_sample_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__specimens__specimen_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__specimens__specimen_tissue_source",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__specimens__specimen_type",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+
+  {
+    "field": "donors__specimens__tumour_normal_designation",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "donors__submitter_donor_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file__index_file__file_type",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file__index_file__md5sum",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file__index_file__name",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file__index_file__object_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file__index_file__size",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file__md5sum",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file__name",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file__size",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file_access",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file_autocomplete",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "file_type",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "object_id",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "repositories__code",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "repositories__country",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "repositories__name",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "repositories__organization",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "repositories__url",
+    "active": false,
+    "show": false,
+    "__typename": "AggState"
+  }
+]
