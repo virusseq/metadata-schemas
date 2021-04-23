@@ -1,5 +1,5 @@
 {
-  "type": "file9",
+  "type": "file",
   "keyField": "id",
   "defaultSorted": [
     {
@@ -9,6 +9,402 @@
     }
   ],
   "columns": [
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.lineage_analysis.lineage_analysis_software_name",
+      "accessor": "analysis.lineage_analysis.lineage_analysis_software_name",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.lineage_analysis.lineage_analysis_software_version",
+      "accessor": "analysis.lineage_analysis.lineage_analysis_software_version",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.lineage_analysis.lineage_name",
+      "accessor": "analysis.lineage_analysis.lineage_name",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.lineage_analysis.variant_designation",
+      "accessor": "analysis.lineage_analysis.variant_designation",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.lineage_analysis.variant_evidence",
+      "accessor": "analysis.lineage_analysis.variant_evidence",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.anatomical_material",
+      "accessor": "analysis.sample_collection.anatomical_material",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.anatomical_part",
+      "accessor": "analysis.sample_collection.anatomical_part",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.body_product",
+      "accessor": "analysis.sample_collection.body_product",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.collection_device",
+      "accessor": "analysis.sample_collection.collection_device",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.collection_method",
+      "accessor": "analysis.sample_collection.collection_method",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.environmental_material",
+      "accessor": "analysis.sample_collection.environmental_material",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.environmental_site",
+      "accessor": "analysis.sample_collection.environmental_site",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.geo_loc_city",
+      "accessor": "analysis.sample_collection.geo_loc_city",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.geo_loc_country",
+      "accessor": "analysis.sample_collection.geo_loc_country",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.geo_loc_province",
+      "accessor": "analysis.sample_collection.geo_loc_province",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.isolate",
+      "accessor": "analysis.sample_collection.isolate",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.nml_submitted_specimen_type",
+      "accessor": "analysis.sample_collection.nml_submitted_specimen_type",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.organism",
+      "accessor": "analysis.sample_collection.organism",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.purpose_of_sampling",
+      "accessor": "analysis.sample_collection.purpose_of_sampling",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.purpose_of_sampling_details",
+      "accessor": "analysis.sample_collection.purpose_of_sampling_details",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.sample_collected_by",
+      "accessor": "analysis.sample_collection.sample_collected_by",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "date",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.sample_collection_date",
+      "accessor": "analysis.sample_collection.sample_collection_date",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.sample_collection_date_precision",
+      "accessor": "analysis.sample_collection.sample_collection_date_precision",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sample_collection.sequence_submitted_by",
+      "accessor": "analysis.sample_collection.sequence_submitted_by",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.consensus_sequence_software_name",
+      "accessor": "analysis.sequence_analysis.consensus_sequence_software_name",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "number",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.consensus_sequence_software_version",
+      "accessor": "analysis.sequence_analysis.consensus_sequence_software_version",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.dehosting_method",
+      "accessor": "analysis.sequence_analysis.dehosting_method",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "number",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.metrics.Ns_per_100kbp",
+      "accessor": "analysis.sequence_analysis.metrics.Ns_per_100kbp",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.metrics.breadth_of_coverage",
+      "accessor": "analysis.sequence_analysis.metrics.breadth_of_coverage",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "number",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.metrics.consensus_genome_length",
+      "accessor": "analysis.sequence_analysis.metrics.consensus_genome_length",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.metrics.depth_of_coverage",
+      "accessor": "analysis.sequence_analysis.metrics.depth_of_coverage",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.raw_sequence_data_processing_method",
+      "accessor": "analysis.sequence_analysis.raw_sequence_data_processing_method",
+      "__typename": "Column"
+    },
+    {
+      "show": false,
+      "type": "string",
+      "sortable": true,
+      "canChangeShow": true,
+      "query": null,
+      "jsonPath": null,
+      "id": null,
+      "field": "analysis.sequence_analysis.reference_genome_accession",
+      "accessor": "analysis.sequence_analysis.reference_genome_accession",
+      "__typename": "Column"
+    },
     {
       "show": true,
       "type": "string",
@@ -22,10 +418,10 @@
       "__typename": "Column"
     },
     {
-      "show": true,
+      "show": false,
       "type": "date",
       "sortable": true,
-      "canChangeShow": true,
+      "canChangeShow": false,
       "query": null,
       "jsonPath": null,
       "id": null,
@@ -44,235 +440,7 @@
       "field": "donors.specimens.submitter_specimen_id",
       "accessor": null,
       "__typename": "Column"
-    },    
-    {
-      "show": true,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.sample_collected_by",
-      "accessor": "analysis.sample.sample_collected_by",
-      "__typename": "Column"
     },
-    {
-      "show": true,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.sequence_submitted_by",
-      "accessor": "analysis.sample.sequence_submitted_by",
-      "__typename": "Column"
-    },
-    {
-      "show": true,
-      "type": "date",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.sample_collection_date",
-      "accessor": "analysis.sample.sample_collection_date",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.sample_collection_date_precision",
-      "accessor": "analysis.sample.sample_collection_date_precision",
-      "__typename": "Column"
-    }, 
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.geo_loc_country",
-      "accessor": "analysis.sample.geo_loc_country",
-      "__typename": "Column"
-    },
-    {
-      "show": true,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.geo_loc_province",
-      "accessor": "analysis.sample.geo_loc_province",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.geo_loc_city",
-      "accessor": "analysis.sample.geo_loc_city",
-      "__typename": "Column"
-    },    
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.organism",
-      "accessor": "analysis.sample.organism",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.isolate",
-      "accessor": "analysis.sample.isolate",
-      "__typename": "Column"
-    },
-    {
-      "show": true,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.purpose_of_sampling",
-      "accessor": "analysis.sample.purpose_of_sampling",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.purpose_of_sampling_details",
-      "accessor": "analysis.sample.purpose_of_sampling_details",
-      "__typename": "Column"
-    },
-    {
-      "show": true,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.nml_submitted_specimen_type",
-      "accessor": "analysis.sample.nml_submitted_specimen_type",
-      "__typename": "Column"
-    },    
-    {
-      "show": true,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.anatomical_material",
-      "accessor": "analysis.sample.anatomical_material",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.anatomical_part",
-      "accessor": "analysis.sample.anatomical_part",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.body_product",
-      "accessor": "analysis.sample.body_product",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.environmental_material",
-      "accessor": "analysis.sample.environmental_material",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.environmental_site",
-      "accessor": "analysis.sample.environmental_site",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.collection_device",
-      "accessor": "analysis.sample.collection_device",
-      "__typename": "Column"
-    },
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.sample.collection_method",
-      "accessor": "analysis.sample.collection_method",
-      "__typename": "Column"
-    },    
     {
       "show": false,
       "type": "string",
@@ -370,18 +538,18 @@
       "__typename": "Column"
     },
     {
-      "show": true,
+      "show": false,
       "type": "date",
       "sortable": true,
-      "canChangeShow": true,
+      "canChangeShow": false,
       "query": null,
       "jsonPath": null,
       "id": null,
       "field": "analysis.experiment.sequencing_date",
       "accessor": "analysis.experiment.sequencing_date",
       "__typename": "Column"
-    },   
-   {
+    },
+    {
       "show": false,
       "type": "string",
       "sortable": true,
@@ -392,7 +560,7 @@
       "field": "analysis.experiment.library_id",
       "accessor": "analysis.experiment.library_id",
       "__typename": "Column"
-    },       
+    },
     {
       "show": true,
       "type": "string",
@@ -404,97 +572,7 @@
       "field": "analysis.experiment.sequencing_instrument",
       "accessor": "analysis.experiment.sequencing_instrument",
       "__typename": "Column"
-    },    
-    {
-      "show": true,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.experiment.sequencing_protocol_name",
-      "accessor": "analysis.experiment.sequencing_protocol_name",
-      "__typename": "Column"
-    },    
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.experiment.raw_sequencing_data_processing",
-      "accessor": "analysis.experiment.raw_sequencing_data_processing",
-      "__typename": "Column"
-    },    
-    {
-      "show": false,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.experiment.dehosting_method",
-      "accessor": "analysis.experiment.dehosting_method",
-      "__typename": "Column"
-    },  
-    {
-      "show": true,
-      "type": "string",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.bioinformatics_qc_metrics.consensus_sequence_software_name",
-      "accessor": "analysis.bioinformatics_qc_metrics.consensus_sequence_software_name",
-      "__typename": "Column"
     },
-    {
-      "show": false,
-      "type": "number",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.bioinformatics_qc_metrics.consensus_sequence_software_version",
-      "accessor": "analysis.bioinformatics_qc_metrics.consensus_sequence_software_version",
-      "__typename": "Column"
-    },    
-    {
-      "show": false,
-      "type": "number",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.bioinformatics_qc_metrics.breadth_of_coverage",
-      "accessor": "analysis.bioinformatics_qc_metrics.breadth_of_coverage",
-      "__typename": "Column"
-    },
-    {
-      "show": true,
-      "type": "number",
-      "sortable": true,
-      "canChangeShow": true,
-      "query": null,
-      "jsonPath": null,
-      "id": null,
-      "field": "analysis.bioinformatics_qc_metrics.depth_of_coverage",
-      "accessor": "analysis.bioinformatics_qc_metrics.depth_of_coverage",
-      "__typename": "Column"
-    },    
-    
- 
-    
-    
-    
-    
     {
       "show": false,
       "type": "date",
@@ -507,7 +585,6 @@
       "accessor": "analysis.first_published_at",
       "__typename": "Column"
     },
-
     {
       "show": false,
       "type": "date",
@@ -532,7 +609,6 @@
       "accessor": "object_id",
       "__typename": "Column"
     },
-
     {
       "show": false,
       "type": "string",
@@ -653,11 +729,6 @@
       "accessor": "analysis.analysis_version",
       "__typename": "Column"
     },
-
-
-
-
-
     {
       "show": false,
       "type": "list",
