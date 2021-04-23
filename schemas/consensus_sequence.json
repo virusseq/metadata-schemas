@@ -84,13 +84,7 @@
                 "format": "date"
               },
               {
-                "enum": [
-                  "Not Applicable",
-                  "Missing",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ]
+                "type": "null"
               }
             ]
           },
@@ -440,7 +434,27 @@
         "properties": {
           "host_scientific_name": {
             "enum": [
-              "Homo sapiens"
+              "Homo sapiens",
+              "Bos taurus",
+              "Canis lupus familiaris",
+              "Chiroptera",
+              "Columbidae",
+              "Felis catus",
+              "Gallus gallus",
+              "Manis",
+              "Manis javanica",
+              "Neovison vison",
+              "Panthera leo",
+              "Panthera tigris",
+              "Rhinolophidae",
+              "Rhinolophus affinis",
+              "Sus scrofa domesticus",
+              "Viverridae",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"              
             ]
           },
           "host_disease": {
@@ -594,13 +608,7 @@
                 "format": "date"
               },
               {
-                "enum": [
-                  "Not Applicable",
-                  "Missing",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ]
+                "type": "null" 
               }
             ]
           },
