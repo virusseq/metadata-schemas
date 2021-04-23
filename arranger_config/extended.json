@@ -1,6 +1,6 @@
 [
   {
-    "gqlId": "file9::file9::extended::study_id",
+    "gqlId": "cancogen_april27::file::extended::study_id",
     "field": "study_id",
     "type": "keyword",
     "displayName": "Study ID",
@@ -14,7 +14,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.published_at",
+    "gqlId": "cancogen_april27::file::extended::analysis.published_at",
     "field": "analysis.published_at",
     "type": "date",
     "displayName": "Submission Date",
@@ -26,9 +26,9 @@
     "displayValues": {},
     "rangeStep": 1,
     "__typename": "ExtendedFieldMapping"
-  },  
+  },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.submitter_specimen_id",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.submitter_specimen_id",
     "field": "donors.specimens.submitter_specimen_id",
     "type": "keyword",
     "displayName": "Specimen Collector Sample ID",
@@ -42,273 +42,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.sample.sample_collected_by",
-    "field": "analysis.sample.sample_collected_by",
-    "type": "keyword",
-    "displayName": "Sample Collected By",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.sequence_submitted_by",
-    "field": "analysis.sample.sequence_submitted_by",
-    "type": "keyword",
-    "displayName": "Sample Submitted By",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.sample_collection_date",
-    "field": "analysis.sample.sample_collection_date",
-    "type": "date",
-    "displayName": "Sample Collection Date",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },  
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.sample_collection_date_precision",
-    "field": "analysis.sample.sample_collection_date_precision",
-    "type": "keyword",
-    "displayName": "Sample Collection Date Precision",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.geo_loc_country",
-    "field": "analysis.sample.geo_loc_country",
-    "type": "keyword",
-    "displayName": "Country",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.geo_loc_province",
-    "field": "analysis.sample.geo_loc_province",
-    "type": "keyword",
-    "displayName": "Province",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.geo_loc_city",
-    "field": "analysis.sample.geo_loc_city",
-    "type": "keyword",
-    "displayName": "City",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },  
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.organism",
-    "field": "analysis.sample.organism",
-    "type": "keyword",
-    "displayName": "Organisim",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.isolate",
-    "field": "analysis.sample.isolate",
-    "type": "keyword",
-    "displayName": "Isolate",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.purpose_of_sampling",
-    "field": "analysis.sample.purpose_of_sampling",
-    "type": "keyword",
-    "displayName": "Purpose of Sampling",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.purpose_of_sampling_details",
-    "field": "analysis.sample.purpose_of_sampling_details",
-    "type": "keyword",
-    "displayName": "Purpose of Sampling Details",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.nml_submitted_specimen_type",
-    "field": "analysis.sample.nml_submitted_specimen_type",
-    "type": "keyword",
-    "displayName": "NML Submitted Specimen Type",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.anatomical_material",
-    "field": "analysis.sample.anatomical_material",
-    "type": "keyword",
-    "displayName": "Anatomical Material",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.anatomical_part",
-    "field": "analysis.sample.anatomical_part",
-    "type": "keyword",
-    "displayName": "Anatomical Part",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.body_product",
-    "field": "analysis.sample.body_product",
-    "type": "keyword",
-    "displayName": "Body Product",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.environmental_material",
-    "field": "analysis.sample.environmental_material",
-    "type": "keyword",
-    "displayName": "Environmental Material",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.environmental_site",
-    "field": "analysis.sample.environmental_site",
-    "type": "keyword",
-    "displayName": "Environmental Site",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.collection_device",
-    "field": "analysis.sample.collection_device",
-    "type": "keyword",
-    "displayName": "Collection Device",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.sample.collection_method",
-    "field": "analysis.sample.collection_method",
-    "type": "keyword",
-    "displayName": "Collection Method",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.host.host_scientific_name",
+    "gqlId": "cancogen_april27::file::extended::analysis.host.host_scientific_name",
     "field": "analysis.host.host_scientific_name",
     "type": "keyword",
     "displayName": "Host Scientific Name",
@@ -322,7 +56,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.host.host_disease",
+    "gqlId": "cancogen_april27::file::extended::analysis.host.host_disease",
     "field": "analysis.host.host_disease",
     "type": "keyword",
     "displayName": "Host Disease",
@@ -336,7 +70,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.host.host_age",
+    "gqlId": "cancogen_april27::file::extended::analysis.host.host_age",
     "field": "analysis.host.host_age",
     "type": "keyword",
     "displayName": "Host Age",
@@ -350,7 +84,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.host.host_age_bin",
+    "gqlId": "cancogen_april27::file::extended::analysis.host.host_age_bin",
     "field": "analysis.host.host_age_bin",
     "type": "keyword",
     "displayName": "Host Age Bin",
@@ -364,7 +98,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.host.host_age_unit",
+    "gqlId": "cancogen_april27::file::extended::analysis.host.host_age_unit",
     "field": "analysis.host.host_age_unit",
     "type": "keyword",
     "displayName": "Host Age Unit",
@@ -378,7 +112,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.host.host_gender",
+    "gqlId": "cancogen_april27::file::extended::analysis.host.host_gender",
     "field": "analysis.host.host_gender",
     "type": "keyword",
     "displayName": "Host Gender",
@@ -390,9 +124,9 @@
     "displayValues": {},
     "rangeStep": 1,
     "__typename": "ExtendedFieldMapping"
-  },  
+  },
   {
-    "gqlId": "file9::file9::extended::analysis.experiment.purpose_of_sequencing",
+    "gqlId": "cancogen_april27::file::extended::analysis.experiment.purpose_of_sequencing",
     "field": "analysis.experiment.purpose_of_sequencing",
     "type": "keyword",
     "displayName": "Purpose of Sequencing",
@@ -406,7 +140,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.experiment.purpose_of_sequencing_details",
+    "gqlId": "cancogen_april27::file::extended::analysis.experiment.purpose_of_sequencing_details",
     "field": "analysis.experiment.purpose_of_sequencing_details",
     "type": "keyword",
     "displayName": "Purpose of Sequencing Details",
@@ -420,7 +154,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.experiment.sequencing_date",
+    "gqlId": "cancogen_april27::file::extended::analysis.experiment.sequencing_date",
     "field": "analysis.experiment.sequencing_date",
     "type": "date",
     "displayName": "Sequencing Date",
@@ -432,9 +166,9 @@
     "displayValues": {},
     "rangeStep": 1,
     "__typename": "ExtendedFieldMapping"
-  },  
+  },
   {
-    "gqlId": "file9::file9::extended::analysis.experiment.library_id",
+    "gqlId": "cancogen_april27::file::extended::analysis.experiment.library_id",
     "field": "analysis.experiment.library_id",
     "type": "keyword",
     "displayName": "Library ID",
@@ -446,9 +180,9 @@
     "displayValues": {},
     "rangeStep": 1,
     "__typename": "ExtendedFieldMapping"
-  },    
+  },
   {
-    "gqlId": "file9::file9::extended::analysis.experiment.sequencing_instrument",
+    "gqlId": "cancogen_april27::file::extended::analysis.experiment.sequencing_instrument",
     "field": "analysis.experiment.sequencing_instrument",
     "type": "keyword",
     "displayName": "Sequencing Instrument",
@@ -462,105 +196,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.experiment.sequencing_protocol_name",
-    "field": "analysis.experiment.sequencing_protocol_name",
-    "type": "keyword",
-    "displayName": "Sequencing Protocol Name",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.experiment.raw_sequence_data_processing",
-    "field": "analysis.experiment.raw_sequence_data_processing",
-    "type": "keyword",
-    "displayName": "Raw Sequencing Data Processing",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },  
-  {
-    "gqlId": "file9::file9::extended::analysis.experiment.dehosting_method",
-    "field": "analysis.experiment.dehosting_method",
-    "type": "keyword",
-    "displayName": "Dehosting Method",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },  
-  {
-    "gqlId": "file9::file9::extended::analysis.bioinformatics_qc_metrics.consensus_sequence_software_name",
-    "field": "analysis.bioinformatics_qc_metrics.consensus_sequence_software_name",
-    "type": "keyword",
-    "displayName": "Consensus Sequence Software Name",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.bioinformatics_qc_metrics.consensus_sequence_software_version",
-    "field": "analysis.bioinformatics_qc_metrics.consensus_sequence_software_version",
-    "type": "keyword",
-    "displayName": "Consensus Sequence Software Version",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },  
-  {
-    "gqlId": "file9::file9::extended::analysis.bioinformatics_qc_metrics.breadth_of_coverage",
-    "field": "analysis.bioinformatics_qc_metrics.breadth_of_coverage",
-    "type": "keyword",
-    "displayName": "Breadth of Coverage",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },    
-  {
-    "gqlId": "file9::file9::extended::analysis.bioinformatics_qc_metrics.depth_of_coverage",
-    "field": "analysis.bioinformatics_qc_metrics.depth_of_coverage",
-    "type": "keyword",
-    "displayName": "Depth of Coverage",
-    "active": true,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },    
-  {
-    "gqlId": "file9::file9::extended::analysis",
+    "gqlId": "cancogen_april27::file::extended::analysis",
     "field": "analysis",
     "type": "object",
     "displayName": "Analysis",
@@ -574,7 +210,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.analysis_id",
+    "gqlId": "cancogen_april27::file::extended::analysis.analysis_id",
     "field": "analysis.analysis_id",
     "type": "keyword",
     "displayName": "AnalysisId",
@@ -588,7 +224,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.analysis_state",
+    "gqlId": "cancogen_april27::file::extended::analysis.analysis_state",
     "field": "analysis.analysis_state",
     "type": "keyword",
     "displayName": "Analysis State",
@@ -602,7 +238,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.analysis_type",
+    "gqlId": "cancogen_april27::file::extended::analysis.analysis_type",
     "field": "analysis.analysis_type",
     "type": "keyword",
     "displayName": "Analysis Type",
@@ -616,7 +252,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.analysis_version",
+    "gqlId": "cancogen_april27::file::extended::analysis.analysis_version",
     "field": "analysis.analysis_version",
     "type": "integer",
     "displayName": "Analysis Version",
@@ -630,7 +266,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.experiment",
+    "gqlId": "cancogen_april27::file::extended::analysis.experiment",
     "field": "analysis.experiment",
     "type": "object",
     "displayName": "Analysis Experiment",
@@ -644,7 +280,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::data_type",
+    "gqlId": "cancogen_april27::file::extended::data_type",
     "field": "data_type",
     "type": "keyword",
     "displayName": "Data Type",
@@ -658,7 +294,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors",
+    "gqlId": "cancogen_april27::file::extended::donors",
     "field": "donors",
     "type": "nested",
     "displayName": "Donors",
@@ -672,7 +308,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.donor_id",
+    "gqlId": "cancogen_april27::file::extended::donors.donor_id",
     "field": "donors.donor_id",
     "type": "keyword",
     "displayName": "DonorId",
@@ -686,7 +322,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.gender",
+    "gqlId": "cancogen_april27::file::extended::donors.gender",
     "field": "donors.gender",
     "type": "keyword",
     "displayName": "Gender",
@@ -700,7 +336,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens",
     "field": "donors.specimens",
     "type": "nested",
     "displayName": "Donors Specimens",
@@ -714,7 +350,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.samples",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.samples",
     "field": "donors.specimens.samples",
     "type": "nested",
     "displayName": "Donors Specimens Samples",
@@ -728,7 +364,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.samples.matched_normal_submitter_sample_id",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.samples.matched_normal_submitter_sample_id",
     "field": "donors.specimens.samples.matched_normal_submitter_sample_id",
     "type": "keyword",
     "displayName": "Matched Normal Submitter Sample Id",
@@ -742,7 +378,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.samples.sample_id",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.samples.sample_id",
     "field": "donors.specimens.samples.sample_id",
     "type": "keyword",
     "displayName": "SampleId",
@@ -756,7 +392,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.samples.sample_type",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.samples.sample_type",
     "field": "donors.specimens.samples.sample_type",
     "type": "keyword",
     "displayName": "Sample Type",
@@ -770,7 +406,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.samples.submitter_sample_id",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.samples.submitter_sample_id",
     "field": "donors.specimens.samples.submitter_sample_id",
     "type": "keyword",
     "displayName": "Submitter Sample Id",
@@ -784,7 +420,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.specimen_id",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.specimen_id",
     "field": "donors.specimens.specimen_id",
     "type": "keyword",
     "displayName": "SpecimenId",
@@ -798,7 +434,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.specimen_tissue_source",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.specimen_tissue_source",
     "field": "donors.specimens.specimen_tissue_source",
     "type": "keyword",
     "displayName": "Specimen Tissue Source",
@@ -812,7 +448,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.specimen_type",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.specimen_type",
     "field": "donors.specimens.specimen_type",
     "type": "keyword",
     "displayName": "Specimen Type",
@@ -826,7 +462,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.specimens.tumour_normal_designation",
+    "gqlId": "cancogen_april27::file::extended::donors.specimens.tumour_normal_designation",
     "field": "donors.specimens.tumour_normal_designation",
     "type": "keyword",
     "displayName": "Tumour Normal Designation",
@@ -840,7 +476,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::donors.submitter_donor_id",
+    "gqlId": "cancogen_april27::file::extended::donors.submitter_donor_id",
     "field": "donors.submitter_donor_id",
     "type": "keyword",
     "displayName": "Submitter Donor Id",
@@ -854,7 +490,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file",
+    "gqlId": "cancogen_april27::file::extended::file",
     "field": "file",
     "type": "object",
     "displayName": "File",
@@ -868,7 +504,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.index_file",
+    "gqlId": "cancogen_april27::file::extended::file.index_file",
     "field": "file.index_file",
     "type": "object",
     "displayName": "File Index File",
@@ -882,7 +518,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.index_file.file_type",
+    "gqlId": "cancogen_april27::file::extended::file.index_file.file_type",
     "field": "file.index_file.file_type",
     "type": "keyword",
     "displayName": "Index File Type",
@@ -896,7 +532,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.index_file.md5sum",
+    "gqlId": "cancogen_april27::file::extended::file.index_file.md5sum",
     "field": "file.index_file.md5sum",
     "type": "keyword",
     "displayName": "Index File Md5sum",
@@ -910,7 +546,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.index_file.name",
+    "gqlId": "cancogen_april27::file::extended::file.index_file.name",
     "field": "file.index_file.name",
     "type": "keyword",
     "displayName": "Index File Name",
@@ -924,7 +560,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.index_file.object_id",
+    "gqlId": "cancogen_april27::file::extended::file.index_file.object_id",
     "field": "file.index_file.object_id",
     "type": "keyword",
     "displayName": "Index File Object Id",
@@ -938,7 +574,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.index_file.size",
+    "gqlId": "cancogen_april27::file::extended::file.index_file.size",
     "field": "file.index_file.size",
     "type": "long",
     "displayName": "Index File Size",
@@ -952,7 +588,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.md5sum",
+    "gqlId": "cancogen_april27::file::extended::file.md5sum",
     "field": "file.md5sum",
     "type": "keyword",
     "displayName": "File Md5sum",
@@ -966,7 +602,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.name",
+    "gqlId": "cancogen_april27::file::extended::file.name",
     "field": "file.name",
     "type": "keyword",
     "displayName": "File Name",
@@ -980,7 +616,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file.size",
+    "gqlId": "cancogen_april27::file::extended::file.size",
     "field": "file.size",
     "type": "long",
     "displayName": "File Size",
@@ -994,7 +630,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file_access",
+    "gqlId": "cancogen_april27::file::extended::file_access",
     "field": "file_access",
     "type": "keyword",
     "displayName": "File Access",
@@ -1008,7 +644,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file_autocomplete",
+    "gqlId": "cancogen_april27::file::extended::file_autocomplete",
     "field": "file_autocomplete",
     "type": "keyword",
     "displayName": "File Autocomplete",
@@ -1022,7 +658,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::file_type",
+    "gqlId": "cancogen_april27::file::extended::file_type",
     "field": "file_type",
     "type": "keyword",
     "displayName": "File Type",
@@ -1036,7 +672,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::object_id",
+    "gqlId": "cancogen_april27::file::extended::object_id",
     "field": "object_id",
     "type": "keyword",
     "displayName": "Object Id",
@@ -1050,7 +686,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::repositories",
+    "gqlId": "cancogen_april27::file::extended::repositories",
     "field": "repositories",
     "type": "nested",
     "displayName": "Repositories",
@@ -1064,7 +700,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::repositories.code",
+    "gqlId": "cancogen_april27::file::extended::repositories.code",
     "field": "repositories.code",
     "type": "keyword",
     "displayName": "Repositories Code",
@@ -1078,7 +714,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::repositories.country",
+    "gqlId": "cancogen_april27::file::extended::repositories.country",
     "field": "repositories.country",
     "type": "keyword",
     "displayName": "Repositories Country",
@@ -1092,7 +728,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::repositories.name",
+    "gqlId": "cancogen_april27::file::extended::repositories.name",
     "field": "repositories.name",
     "type": "keyword",
     "displayName": "Repositories Name",
@@ -1106,7 +742,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::repositories.organization",
+    "gqlId": "cancogen_april27::file::extended::repositories.organization",
     "field": "repositories.organization",
     "type": "keyword",
     "displayName": "Repositories Organization",
@@ -1120,7 +756,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::repositories.url",
+    "gqlId": "cancogen_april27::file::extended::repositories.url",
     "field": "repositories.url",
     "type": "keyword",
     "displayName": "Repositories Url",
@@ -1134,22 +770,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.bioinformatics_qc_metrics",
-    "field": "analysis.bioinformatics_qc_metrics",
-    "type": "object",
-    "displayName": "Analysis Bioinformatics Qc Metrics",
-    "active": false,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-
-  {
-    "gqlId": "file9::file9::extended::analysis.first_published_at",
+    "gqlId": "cancogen_april27::file::extended::analysis.first_published_at",
     "field": "analysis.first_published_at",
     "type": "date",
     "displayName": "Analysis First Published At",
@@ -1163,7 +784,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.host",
+    "gqlId": "cancogen_april27::file::extended::analysis.host",
     "field": "analysis.host",
     "type": "object",
     "displayName": "Analysis Host",
@@ -1177,21 +798,7 @@
     "__typename": "ExtendedFieldMapping"
   },
   {
-    "gqlId": "file9::file9::extended::analysis.sample",
-    "field": "analysis.sample",
-    "type": "object",
-    "displayName": "Analysis Sample",
-    "active": false,
-    "isArray": false,
-    "primaryKey": false,
-    "quickSearchEnabled": false,
-    "unit": null,
-    "displayValues": {},
-    "rangeStep": 1,
-    "__typename": "ExtendedFieldMapping"
-  },
-  {
-    "gqlId": "file9::file9::extended::analysis.updated_at",
+    "gqlId": "cancogen_april27::file::extended::analysis.updated_at",
     "field": "analysis.updated_at",
     "type": "date",
     "displayName": "Analysis Updated At",
@@ -1203,7 +810,523 @@
     "displayValues": {},
     "rangeStep": 1,
     "__typename": "ExtendedFieldMapping"
-  }  
-  
-
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.lineage_analysis",
+    "field": "analysis.lineage_analysis",
+    "type": "object",
+    "displayName": "Analysis Lineage Analysis",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.lineage_analysis.lineage_analysis_software_name",
+    "field": "analysis.lineage_analysis.lineage_analysis_software_name",
+    "type": "keyword",
+    "displayName": "Analysis Lineage Analysis Lineage Analysis Software Name",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.lineage_analysis.lineage_analysis_software_version",
+    "field": "analysis.lineage_analysis.lineage_analysis_software_version",
+    "type": "keyword",
+    "displayName": "Analysis Lineage Analysis Lineage Analysis Software Version",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.lineage_analysis.lineage_name",
+    "field": "analysis.lineage_analysis.lineage_name",
+    "type": "keyword",
+    "displayName": "Analysis Lineage Analysis Lineage Name",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.lineage_analysis.variant_designation",
+    "field": "analysis.lineage_analysis.variant_designation",
+    "type": "keyword",
+    "displayName": "Analysis Lineage Analysis Variant Designation",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.lineage_analysis.variant_evidence",
+    "field": "analysis.lineage_analysis.variant_evidence",
+    "type": "id",
+    "displayName": "Analysis Lineage Analysis Variant Evidence",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection",
+    "field": "analysis.sample_collection",
+    "type": "object",
+    "displayName": "Analysis Sample Collection",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.anatomical_material",
+    "field": "analysis.sample_collection.anatomical_material",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Anatomical Material",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.anatomical_part",
+    "field": "analysis.sample_collection.anatomical_part",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Anatomical Part",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.body_product",
+    "field": "analysis.sample_collection.body_product",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Body Product",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.collection_device",
+    "field": "analysis.sample_collection.collection_device",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Collection Device",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.collection_method",
+    "field": "analysis.sample_collection.collection_method",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Collection Method",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.environmental_material",
+    "field": "analysis.sample_collection.environmental_material",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Environmental Material",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.environmental_site",
+    "field": "analysis.sample_collection.environmental_site",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Environmental Site",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.geo_loc_city",
+    "field": "analysis.sample_collection.geo_loc_city",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Geo Loc City",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.geo_loc_country",
+    "field": "analysis.sample_collection.geo_loc_country",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Geo Loc Country",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.geo_loc_province",
+    "field": "analysis.sample_collection.geo_loc_province",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Geo Loc Province",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.isolate",
+    "field": "analysis.sample_collection.isolate",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Isolate",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.nml_submitted_specimen_type",
+    "field": "analysis.sample_collection.nml_submitted_specimen_type",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Nml Submitted Specimen Type",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.organism",
+    "field": "analysis.sample_collection.organism",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Organism",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.purpose_of_sampling",
+    "field": "analysis.sample_collection.purpose_of_sampling",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Purpose Of Sampling",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.purpose_of_sampling_details",
+    "field": "analysis.sample_collection.purpose_of_sampling_details",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Purpose Of Sampling Details",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.sample_collected_by",
+    "field": "analysis.sample_collection.sample_collected_by",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Sample Collected By",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.sample_collection_date",
+    "field": "analysis.sample_collection.sample_collection_date",
+    "type": "date",
+    "displayName": "Analysis Sample Collection Sample Collection Date",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.sample_collection_date_precision",
+    "field": "analysis.sample_collection.sample_collection_date_precision",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Sample Collection Date Precision",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sample_collection.sequence_submitted_by",
+    "field": "analysis.sample_collection.sequence_submitted_by",
+    "type": "keyword",
+    "displayName": "Analysis Sample Collection Sequence Submitted By",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis",
+    "field": "analysis.sequence_analysis",
+    "type": "object",
+    "displayName": "Analysis Sequence Analysis",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.consensus_sequence_software_name",
+    "field": "analysis.sequence_analysis.consensus_sequence_software_name",
+    "type": "keyword",
+    "displayName": "Analysis Sequence Analysis Consensus Sequence Software Name",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.consensus_sequence_software_version",
+    "field": "analysis.sequence_analysis.consensus_sequence_software_version",
+    "type": "float",
+    "displayName": "Analysis Sequence Analysis Consensus Sequence Software Version",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 0.01,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.dehosting_method",
+    "field": "analysis.sequence_analysis.dehosting_method",
+    "type": "keyword",
+    "displayName": "Analysis Sequence Analysis Dehosting Method",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.metrics",
+    "field": "analysis.sequence_analysis.metrics",
+    "type": "object",
+    "displayName": "Analysis Sequence Analysis Metrics",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.metrics.Ns_per_100kbp",
+    "field": "analysis.sequence_analysis.metrics.Ns_per_100kbp",
+    "type": "long",
+    "displayName": "Analysis Sequence Analysis Metrics Ns Per 100 Kbp",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.metrics.breadth_of_coverage",
+    "field": "analysis.sequence_analysis.metrics.breadth_of_coverage",
+    "type": "keyword",
+    "displayName": "Analysis Sequence Analysis Metrics Breadth Of Coverage",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.metrics.consensus_genome_length",
+    "field": "analysis.sequence_analysis.metrics.consensus_genome_length",
+    "type": "long",
+    "displayName": "Analysis Sequence Analysis Metrics Consensus Genome Length",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.metrics.depth_of_coverage",
+    "field": "analysis.sequence_analysis.metrics.depth_of_coverage",
+    "type": "keyword",
+    "displayName": "Analysis Sequence Analysis Metrics Depth Of Coverage",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.raw_sequence_data_processing_method",
+    "field": "analysis.sequence_analysis.raw_sequence_data_processing_method",
+    "type": "keyword",
+    "displayName": "Analysis Sequence Analysis Raw Sequence Data Processing Method",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  },
+  {
+    "gqlId": "cancogen_april27::file::extended::analysis.sequence_analysis.reference_genome_accession",
+    "field": "analysis.sequence_analysis.reference_genome_accession",
+    "type": "keyword",
+    "displayName": "Analysis Sequence Analysis Reference Genome Accession",
+    "active": false,
+    "isArray": false,
+    "primaryKey": false,
+    "quickSearchEnabled": false,
+    "unit": null,
+    "displayValues": {},
+    "rangeStep": 1,
+    "__typename": "ExtendedFieldMapping"
+  }
 ]
