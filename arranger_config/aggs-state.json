@@ -30,127 +30,7 @@
     "__typename": "AggState"
   },
   {
-    "field": "analysis__sample_collection__anatomical_material",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__anatomical_part",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__body_product",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__collection_device",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__collection_method",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__environmental_material",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__environmental_site",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__geo_loc_city",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__geo_loc_country",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__geo_loc_province",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__isolate",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__nml_submitted_specimen_type",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__organism",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__purpose_of_sampling",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
     "field": "analysis__sample_collection__purpose_of_sampling_details",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__sample_collected_by",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__sample_collection_date",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__sample_collection_date_precision",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sample_collection__sequence_submitted_by",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sequence_analysis__consensus_sequence_software_name",
-    "active": true,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "analysis__sequence_analysis__consensus_sequence_software_version",
     "active": true,
     "show": false,
     "__typename": "AggState"
@@ -216,15 +96,123 @@
     "__typename": "AggState"
   },
   {
-    "field": "analysis__host__host_scientific_name",
+    "field": "analysis__sample_collection__sample_collected_by",
     "active": true,
     "show": true,
     "__typename": "AggState"
   },
   {
-    "field": "analysis__host__host_disease",
+    "field": "analysis__sample_collection__sequence_submitted_by",
     "active": true,
     "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__sample_collection_date",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__sample_collection_date_precision",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__geo_loc_country",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__geo_loc_province",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__geo_loc_city",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__organism",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__isolate",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__purpose_of_sampling",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__anatomical_material",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__anatomical_part",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__body_product",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__environmental_material",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__environmental_site",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__collection_device",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__collection_method",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sample_collection__nml_submitted_specimen_type",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__host__host_scientific_name",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__host__host_disease",
+    "active": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
@@ -242,7 +230,7 @@
   {
     "field": "analysis__host__host_age_unit",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
@@ -264,7 +252,25 @@
     "__typename": "AggState"
   },
   {
+    "field": "analysis__experiment__sequencing_instrument",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
     "field": "analysis__experiment__sequencing_date",
+    "active": true,
+    "show": false,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sequence_analysis__consensus_sequence_software_name",
+    "active": true,
+    "show": true,
+    "__typename": "AggState"
+  },
+  {
+    "field": "analysis__sequence_analysis__consensus_sequence_software_version",
     "active": true,
     "show": false,
     "__typename": "AggState"
@@ -276,9 +282,9 @@
     "__typename": "AggState"
   },
   {
-    "field": "analysis__experiment__sequencing_instrument",
-    "active": true,
-    "show": true,
+    "field": "repositories__country",
+    "active": false,
+    "show": false,
     "__typename": "AggState"
   },
   {
@@ -463,12 +469,6 @@
   },
   {
     "field": "repositories__code",
-    "active": false,
-    "show": false,
-    "__typename": "AggState"
-  },
-  {
-    "field": "repositories__country",
     "active": false,
     "show": false,
     "__typename": "AggState"
