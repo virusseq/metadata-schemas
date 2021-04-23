@@ -37,6 +37,7 @@
     "sample_collection_date_precision": "day",
     "geo_loc_country": "Canada",
     "geo_loc_province": "Quebec",
+    "geo_loc_city": "Montreal",
     "organism": "Severe acute respiratory syndrome coronavirus 2",
     "isolate": "Canada/Qc-L00210314/2020",
     "purpose_of_sampling": "Diagnostic testing",
@@ -62,11 +63,30 @@
     "sequencing_instrument": "Oxford Nanopore",
     "sequencing_date": "2020-09-14",
     "purpose_of_sequencing": "Baseline surveillance (random sampling)",
-    "purpose_of_sequencing_details": "Not Provided"
+    "purpose_of_sequencing_details": "Not Provided",
+    "library_id": "XYZ_123345",
+    "sequencing_protocol_name": null
   },
   "sequence_analysis": {
     "consensus_sequence_software_name": "bcftools",
     "consensus_sequence_software_version": 1.0,
+    "raw_sequence_data_processing_method": "Porechop 0.2.3",
+    "dehosting_method": "Nanostripper",
+    "metrics": {
+        "breadth_of_coverage": "95%",
+        "depth_of_coverage": "400x",
+        "consensus_genome_length": 38677,
+        "Ns_per_100kbp": 330
+    },
+    "reference_genome_accession": "NC_045512.2",
     "bioinformatics_protocol": null
+  },
+  "lineage_analysis": {
+    "lineage_name": "B.1.1.7",
+    "lineage_analysis_software_name": "Pangolin",
+    "lineage_analysis_software_version": "2.1.10",
+    "variant_designation": "Variant of Concern (VOC)",
+    "variant_evidence": "Sequencing",
+    "variant_evidence_details": null       
   }
 }
