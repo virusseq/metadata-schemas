@@ -84,13 +84,7 @@
                 "format": "date"
               },
               {
-                "enum": [
-                  "Not Applicable",
-                  "Missing",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ]
+                "type": "null"
               }
             ]
           },
@@ -614,13 +608,7 @@
                 "format": "date"
               },
               {
-                "enum": [
-                  "Not Applicable",
-                  "Missing",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ]
+                "type": "null" 
               }
             ]
           },
