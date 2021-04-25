@@ -134,7 +134,7 @@
   {
     "field": "analysis__sample_collection__geo_loc_city",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
@@ -158,43 +158,43 @@
   {
     "field": "analysis__sample_collection__anatomical_material",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
     "field": "analysis__sample_collection__anatomical_part",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
     "field": "analysis__sample_collection__body_product",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
     "field": "analysis__sample_collection__environmental_material",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
     "field": "analysis__sample_collection__environmental_site",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
     "field": "analysis__sample_collection__collection_device",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
     "field": "analysis__sample_collection__collection_method",
     "active": true,
-    "show": true,
+    "show": false,
     "__typename": "AggState"
   },
   {
