@@ -15,7 +15,7 @@
             "sample_collected_by",
             "sequence_submitted_by",
             "sample_collection_date",
-            "sample_collection_date_precision",
+            "sample_collection_date_null_reason",
             "geo_loc_country",
             "geo_loc_province",
             "organism",
@@ -28,30 +28,48 @@
             "environmental_material",
             "environmental_site",
             "collection_device",
-            "collection_method",
-            "nml_submitted_specimen_type"
+            "collection_method"
         ],
         "properties": {
           "sample_collected_by": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "enum": [
-                  "Not Applicable",
-                  "Missing",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ]
-              }
+            "enum": [
+              "National Microbiology Laboratory (NML)",
+              "BCCDC Public Health Laboratory",
+              "Alberta Precision Labs (APL)",
+              "Alberta ProvLab North (APLN)",
+              "Alberta ProvLab South (APLS)",
+              "Public Health Ontario (PHO)",
+              "Laboratoire de santé publique du Québec (LSPQ)",
+              "Lake of the Woods District Hospital - Ontario",
+              "Saskatchewan - Roy Romanow Provincial Laboratory (RRPL)",
+              "Manitoba Cadham Provincial Laboratory",
+              "Nova Scotia Health Authority",
+              "New Brunswick - Vitalité Health Network",
+              "Newfoundland and Labrador - Eastern Health",
+              "Nunuvut",
+              "Prince Edward Island - Health PEI",
+              "Ontario Institute for Cancer Research (OICR)",
+              "McMaster University",
+              "William Osler Health System",
+              "Sunnybrook Health Sciences Centre",
+              "Eastern Ontario Regional Laboratory Association",
+              "St. John's Rehab at Sunnybrook Hospital",
+              "Mount Sinai Hospital",
+              "Hamilton Health Sciences",
+              "Unity Health Toronto",
+              "Queen’s University / Kingston Health Sciences Centre",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
             ]
           },
           "sequence_submitted_by": {
             "enum": [
               "National Microbiology Laboratory (NML)",
               "BCCDC Public Health Laboratory",
+              "Alberta Precision Labs (APL)",
               "Alberta ProvLab North (APLN)",
               "Alberta ProvLab South (APLS)",
               "Public Health Ontario (PHO)",
@@ -93,6 +111,16 @@
               "year",
               "month",
               "day"
+            ]
+          },
+          "sample_collection_date_null_reason": {
+            "enum": [
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access",
+              null
             ]
           },
           "geo_loc_country": {
@@ -146,19 +174,9 @@
             ]
           },
           "isolate": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "enum": [
-                  "Not Applicable",
-                  "Missing",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ]
-              }
+            "type": [
+              "string",
+              "null"
             ]
           },
           "purpose_of_sampling": {
@@ -175,19 +193,9 @@
             ]
           },
           "purpose_of_sampling_details": {
-            "anyOf": [
-              {
-                "type": "string"
-              },
-              {
-                "enum": [
-                  "Not Applicable",
-                  "Missing",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ]
-              }
+            "type": [
+              "string",
+              "null"
             ]
           },
           "anatomical_material": {
@@ -375,6 +383,7 @@
               "Necropsy",
               "Phlebotomy",
               "Rinsing",
+              "Saline gargle (mouth rinse and gargle)",
               "Scraping",
               "Swabbing",
               "Finger Prick",
@@ -397,12 +406,40 @@
             ]
           }
         },
+        "if": {
+          "properties": {
+            "sample_collection_date": {
+              "const": null
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "sample_collection_date_null_reason": {
+              "enum": [
+                "Not Applicable",
+                "Missing",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
+            }
+          }
+        },
+        "else": {
+          "properties": {
+            "sample_collection_date_null_reason": {
+              "const": null 
+            }
+          }
+        },
         "propertyNames": {
           "enum": [
             "sample_collected_by",
             "sequence_submitted_by",
             "sample_collection_date",
             "sample_collection_date_precision",
+            "sample_collection_date_null_reason",
             "geo_loc_country",
             "geo_loc_province",
             "geo_loc_city",
@@ -427,6 +464,7 @@
             "host_scientific_name",
             "host_disease",
             "host_age",
+            "host_age_null_reason",
             "host_age_bin",
             "host_age_unit",
             "host_gender"
@@ -479,6 +517,16 @@
               }
             ]
           },
+          "host_age_null_reason": {
+            "enum": [
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access",
+              null
+            ]
+          },
           "host_age_bin": {
             "enum": [
               "0 - 9",
@@ -527,11 +575,39 @@
             ]
           }
         },
+        "if": {
+          "properties": {
+            "host_age": {
+              "const": null
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "host_age_null_reason": {
+              "enum": [
+                "Not Applicable",
+                "Missing",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
+            }
+          }
+        },
+        "else": {
+          "properties": {
+            "host_age_null_reason": {
+              "const": null 
+            }
+          }
+        },
         "propertyNames": {
           "enum": [
             "host_scientific_name",
             "host_disease",
             "host_age",
+            "host_age_null_reason",
             "host_age_bin",
             "host_age_unit",
             "host_gender"
@@ -541,83 +617,12 @@
       "experiment": {
         "type": "object",
         "required": [
-          "sequencing_instrument",
-          "sequencing_date",
           "purpose_of_sequencing",
-          "purpose_of_sequencing_details"
+          "purpose_of_sequencing_details",
+          "sequencing_instrument",
+          "sequencing_protocol"
         ],
         "properties": {
-          "sequencing_instrument": {
-            "enum": [
-              "Illumina",
-              "Illumina Genome Analyzer",
-              "Illumina Genome Analyzer II",
-              "Illumina Genome Analyzer IIx",
-              "Illumina HiScanSQ",
-              "Illumina HiSeq",
-              "Illumina HiSeq X",
-              "Illumina HiSeq X Five",
-              "Illumina HiSeq X Ten",
-              "Illumina HiSeq 1000",
-              "Illumina HiSeq 1500",
-              "Illumina HiSeq 2000",
-              "Illumina HiSeq 2500",
-              "Illumina HiSeq 3000",
-              "Illumina HiSeq 4000",
-              "Illumina iSeq",
-              "Illumina iSeq 100",
-              "Illumina NovaSeq",
-              "Illumina NovaSeq 6000",
-              "Illumina MiniSeq",
-              "Illumina MiSeq",
-              "Illumina NextSeq",
-              "Illumina NextSeq 500",
-              "Illumina NextSeq 550",
-              "Pacific Biosciences",
-              "PacBio RS",
-              "PacBio RS II",
-              "PacBio Sequel",
-              "PacBio Sequel II",
-              "Ion Torrent",
-              "Ion Torrent PGM",
-              "Ion Torrent Proton",
-              "Ion Torrent S5 XL",
-              "Ion Torrent S5",
-              "Oxford Nanopore",
-              "GridION",
-              "MinION",
-              "PromethION",
-              "BGI Genomics",
-              "BGISEQ-500",
-              "MGI",
-              "DNBSEQ-T7",
-              "DNBSEQ-G400",
-              "DNBSEQ-G400 FAST",
-              "DNBSEQ-G50",
-              "Not Applicable",
-              "Missing",
-              "Not Collected",
-              "Not Provided",
-              "Restricted Access"
-            ]
-          },
-          "sequencing_date": {
-            "anyOf": [
-              {
-                "type": "string",
-                "format": "date"
-              },
-              {
-                "type": "null" 
-              }
-            ]
-          },
-          "library_id": {
-            "type": [
-              "string",
-              "null"
-            ]
-          },
           "purpose_of_sequencing": {
             "enum": [
               "Baseline surveillance (random sampling)",
@@ -644,22 +649,84 @@
             ]
           },
           "purpose_of_sequencing_details": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sequencing_instrument": {
+            "enum": [
+              "Illumina",
+              "Illumina Genome Analyzer",
+              "Illumina Genome Analyzer II",
+              "Illumina Genome Analyzer IIx",
+              "Illumina HiScanSQ",
+              "Illumina HiSeq",
+              "Illumina HiSeq X",
+              "Illumina HiSeq X Five",
+              "Illumina HiSeq X Ten",
+              "Illumina HiSeq 1000",
+              "Illumina HiSeq 1500",
+              "Illumina HiSeq 2000",
+              "Illumina HiSeq 2500",
+              "Illumina HiSeq 3000",
+              "Illumina HiSeq 4000",
+              "Illumina iSeq",
+              "Illumina iSeq 100",
+              "Illumina NovaSeq",
+              "Illumina NovaSeq 6000",
+              "Illumina MiniSeq",
+              "Illumina MiSeq",
+              "Illumina NextSeq",
+              "Illumina NextSeq 500",
+              "Illumina NextSeq 550",
+              "Illumina NextSeq 2000",
+              "Pacific Biosciences",
+              "PacBio RS",
+              "PacBio RS II",
+              "PacBio Sequel",
+              "PacBio Sequel II",
+              "Ion Torrent",
+              "Ion Torrent PGM",
+              "Ion Torrent Proton",
+              "Ion Torrent S5 XL",
+              "Ion Torrent S5",
+              "Oxford Nanopore",
+              "Oxford Nanopore GridION",
+              "Oxford Nanopore MinION",
+              "Oxford Nanopore PromethION",
+              "BGI Genomics",
+              "BGI Genomics BGISEQ-500",
+              "MGI",
+              "MGI DNBSEQ-T7",
+              "MGI DNBSEQ-G400",
+              "MGI DNBSEQ-G400 FAST",
+              "MGI DNBSEQ-G50",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "sequencing_protocol": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sequencing_date": {
             "anyOf": [
               {
-                "type": "string"
+                "type": "string",
+                "format": "date"
               },
               {
-                "enum": [
-                  "Not Applicable",
-                  "Missing",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ]
+                "type": "null" 
               }
             ]
           },
-          "sequencing_protocol_name": {
+          "library_id": {
             "type": [
               "string",
               "null"
@@ -673,7 +740,7 @@
             "library_id",
             "purpose_of_sequencing",
             "purpose_of_sequencing_details",
-            "sequencing_protocol_name"
+            "sequencing_protocol"
           ]
         }
       },
@@ -681,7 +748,9 @@
         "type": "object",
         "required": [
           "consensus_sequence_software_name",
-          "consensus_sequence_software_version"
+          "consensus_sequence_software_version",
+          "raw_sequence_data_processing_method",
+          "dehosting_method"
         ],
         "properties": {
           "consensus_sequence_software_name": {
@@ -759,6 +828,65 @@
             "metrics",
             "reference_genome_accession",
             "bioinformatics_protocol"
+          ]
+        }
+      },
+      "pathogen_diagnostic_testing": {
+        "type": "object",
+        "properties": {
+          "gene_name_1": {
+            "enum": [
+              "E gene (orf4)",
+              "M gene (orf5)",
+              "N gene (orf9)",
+              "Spike gene (orf2)",
+              "orf1ab (rep)",
+              "orf1a (pp1a)",
+              "nsp11",
+              "nsp1 ",
+              "nsp2 ",
+              "nsp3 ",
+              "nsp4 ",
+              "nsp5 ",
+              "nsp6 ",
+              "nsp7 ",
+              "nsp8 ",
+              "nsp9 ",
+              "nsp10 ",
+              "RdRp gene (nsp12)",
+              "hel gene (nsp13)",
+              "exoN gene (nsp14)",
+              "nsp15",
+              "nsp16",
+              "orf3a",
+              "orf3b",
+              "orf6 (ns6)",
+              "orf7a",
+              "orf7b (ns7b)",
+              "orf8 (ns8)",
+              "orf9b",
+              "orf9c",
+              "orf10",
+              "orf14",
+              "SARS-COV-2 5' UTR",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"  
+            ]
+          },
+          "diagnostic_pcr_protocol_1": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "gene_name_1",
+            "diagnostic_pcr_protocol_1"
           ]
         }
       },

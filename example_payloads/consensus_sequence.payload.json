@@ -34,6 +34,7 @@
     "sample_collected_by": "Not Provided",
     "sequence_submitted_by": "Laboratoire de sant\u00e9 publique du Qu\u00e9bec (LSPQ)",
     "sample_collection_date": "2020-02-25",
+    "sample_collection_date_null_reason": null,
     "sample_collection_date_precision": "day",
     "geo_loc_country": "Canada",
     "geo_loc_province": "Quebec",
@@ -55,6 +56,7 @@
     "host_scientific_name": "Homo sapiens",
     "host_disease": "COVID-19",
     "host_age": 41,
+    "host_age_null_reason": null,
     "host_age_bin": "40 - 49",
     "host_age_unit": "year",
     "host_gender": "Female"
@@ -65,7 +67,7 @@
     "purpose_of_sequencing": "Baseline surveillance (random sampling)",
     "purpose_of_sequencing_details": "Not Provided",
     "library_id": "XYZ_123345",
-    "sequencing_protocol_name": null
+    "sequencing_protocol": null
   },
   "sequence_analysis": {
     "consensus_sequence_software_name": "bcftools",
@@ -80,6 +82,10 @@
     },
     "reference_genome_accession": "NC_045512.2",
     "bioinformatics_protocol": null
+  },
+  "pathogen_diagnostic_testing": {
+    "gene_name_1": "E gene (orf4)",
+    "diagnostic_pcr_protocol_1": "EGenePCRTest 2"
   },
   "lineage_analysis": {
     "lineage_name": "B.1.1.7",
