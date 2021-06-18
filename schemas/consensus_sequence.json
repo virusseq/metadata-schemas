@@ -6,7 +6,8 @@
       "sample_collection",  
       "host",
       "experiment",
-      "sequence_analysis"
+      "sequence_analysis",
+      "pathogen_diagnostic_testing"
     ],
     "properties": {
       "sample_collection": {
@@ -833,6 +834,10 @@
       },
       "pathogen_diagnostic_testing": {
         "type": "object",
+        "required": [
+          "gene_name_1",
+          "diagnostic_pcr_protocol_1"
+        ],
         "properties": {
           "gene_name_1": {
             "enum": [
