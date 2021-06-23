@@ -20,7 +20,8 @@
             "geo_loc_country",
             "geo_loc_province",
             "organism",
-            "isolate",  
+            "isolate",
+            "fasta_header_name",  
             "purpose_of_sampling",
             "purpose_of_sampling_details",
             "anatomical_material",
@@ -178,6 +179,11 @@
             "type": [
               "string",
               "null"
+            ]
+          },
+          "fasta_header_name": {
+            "type": [
+              "string"
             ]
           },
           "purpose_of_sampling": {
@@ -445,7 +451,8 @@
             "geo_loc_province",
             "geo_loc_city",
             "organism",
-            "isolate",  
+            "isolate",
+            "fasta_header_name",  
             "purpose_of_sampling",
             "purpose_of_sampling_details",
             "anatomical_material",
@@ -835,11 +842,11 @@
       "pathogen_diagnostic_testing": {
         "type": "object",
         "required": [
-          "gene_name_1",
-          "diagnostic_pcr_protocol_1"
+          "gene_name",
+          "diagnostic_pcr_ct_value"
         ],
         "properties": {
-          "gene_name_1": {
+          "gene_name": {
             "enum": [
               "E gene (orf4)",
               "M gene (orf5)",
@@ -881,17 +888,17 @@
               "Restricted Access"  
             ]
           },
-          "diagnostic_pcr_protocol_1": {
+          "diagnostic_pcr_ct_value": {
             "type": [
-              "string",
+              "number",
               "null"
             ]
           }
         },
         "propertyNames": {
           "enum": [
-            "gene_name_1",
-            "diagnostic_pcr_protocol_1"
+            "gene_name",
+            "diagnostic_pcr_ct_value"
           ]
         }
       },

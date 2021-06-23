@@ -35,12 +35,11 @@
     "sequence_submitted_by": "Laboratoire de santé publique du Québec (LSPQ)",
     "sample_collection_date": "2020-02-25",
     "sample_collection_date_null_reason": null,
-    "sample_collection_date_precision": "day",
     "geo_loc_country": "Canada",
     "geo_loc_province": "Quebec",
-    "geo_loc_city": "Montreal",
     "organism": "Severe acute respiratory syndrome coronavirus 2",
     "isolate": "Canada/Qc-L00210314/2020",
+    "fasta_header_name": "Canada/Qc-L00210314/2020",
     "purpose_of_sampling": "Diagnostic testing",
     "purpose_of_sampling_details": "Not Provided",
     "anatomical_material": "Not Provided",
@@ -49,8 +48,7 @@
     "environmental_material": "Not Provided",
     "environmental_site": "Not Provided",
     "collection_device": "Not Provided",
-    "collection_method": "Not Provided",
-    "nml_submitted_specimen_type": "Not Applicable"
+    "collection_method": "Not Provided"
   },
   "host": {
     "host_scientific_name": "Homo sapiens",
@@ -63,10 +61,8 @@
   },
   "experiment": {
     "sequencing_instrument": "Oxford Nanopore",
-    "sequencing_date": "2020-09-14",
     "purpose_of_sequencing": "Baseline surveillance (random sampling)",
     "purpose_of_sequencing_details": "Not Provided",
-    "library_id": "XYZ_123345",
     "sequencing_protocol": null
   },
   "sequence_analysis": {
@@ -76,23 +72,13 @@
     "dehosting_method": "Nanostripper",
     "metrics": {
         "breadth_of_coverage": "95%",
-        "depth_of_coverage": "400x",
-        "consensus_genome_length": 38677,
-        "Ns_per_100kbp": 330
+        "depth_of_coverage": "400x"
     },
     "reference_genome_accession": "NC_045512.2",
     "bioinformatics_protocol": null
   },
   "pathogen_diagnostic_testing": {
-    "gene_name_1": "E gene (orf4)",
-    "diagnostic_pcr_protocol_1": "EGenePCRTest 2"
-  },
-  "lineage_analysis": {
-    "lineage_name": "B.1.1.7",
-    "lineage_analysis_software_name": "Pangolin",
-    "lineage_analysis_software_version": "2.1.10",
-    "variant_designation": "Variant of Concern (VOC)",
-    "variant_evidence": "Sequencing",
-    "variant_evidence_details": null       
+    "gene_name": "E gene (orf4)",
+    "diagnostic_pcr_ct_value": 21
   }
 }
