@@ -70,7 +70,7 @@
   },
   "sequence_analysis": {
     "consensus_sequence_software_name": "bcftools",
-    "consensus_sequence_software_version": 1.0,
+    "consensus_sequence_software_version": "1.0",
     "raw_sequence_data_processing_method": "Porechop 0.2.3",
     "dehosting_method": "Nanostripper",
     "metrics": {

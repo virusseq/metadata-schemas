@@ -3,7 +3,6 @@
   "schema": {
     "type": "object",
     "required": [
-      "database_identifiers",
       "sample_collection",  
       "host",
       "experiment",
@@ -13,9 +12,6 @@
     "properties": {
       "database_identifiers": {
         "type": "object",
-        "required": [
-          "gisaid_accession"
-        ],
         "properties": {
           "gisaid_accession": {
             "type": [
@@ -899,7 +895,8 @@
         "type": "object",
         "required": [
           "gene_name",
-          "diagnostic_pcr_ct_value"
+          "diagnostic_pcr_ct_value", 
+          "diagnostic_pcr_ct_value_null_reason"
         ],
         "properties": {
           "gene_name": {
@@ -988,7 +985,7 @@
         },
         "else": {
           "properties": {
-            "host_age_null_reason": {
+            "diagnostic_pcr_ct_value_null_reason": {
               "const": null 
             }
           }
@@ -996,7 +993,8 @@
         "propertyNames": {
           "enum": [
             "gene_name",
-            "diagnostic_pcr_ct_value"
+            "diagnostic_pcr_ct_value",
+            "diagnostic_pcr_ct_value_null_reason"
           ]
         }
       },
