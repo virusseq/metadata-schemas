@@ -3,6 +3,7 @@
   "schema": {
     "type": "object",
     "required": [
+      "database_identifiers",
       "sample_collection",  
       "host",
       "experiment",
@@ -10,6 +11,25 @@
       "pathogen_diagnostic_testing"
     ],
     "properties": {
+      "database_identifiers": {
+        "type": "object",
+        "required": [
+          "gisaid_accession"
+        ],
+        "properties": {
+          "gisaid_accession": {
+            "type": [
+              "string",
+              "null"
+            ]            
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "gisaid_accession"
+          ]
+        }
+      },
       "sample_collection": {
         "type": "object",
         "required": [
@@ -40,6 +60,8 @@
               "Alberta Precision Labs (APL)",
               "Alberta ProvLab North (APLN)",
               "Alberta ProvLab South (APLS)",
+              "Dynacare (Manitoba)",
+              "The Hospital for Sick Children (SickKids)",
               "Public Health Ontario (PHO)",
               "Laboratoire de santé publique du Québec (LSPQ)",
               "Lake of the Woods District Hospital - Ontario",
@@ -90,6 +112,8 @@
               "Thunder Bay Regional Health Sciences Centre",
               "Canadore College",
               "Queen's University / Kingston Health Sciences Centre",
+              "Dynacare (Manitoba)",
+              "The Hospital for Sick Children (SickKids)",
               "Not Applicable",
               "Missing",
               "Not Collected",
@@ -769,7 +793,7 @@
           },
           "consensus_sequence_software_version": {
             "type": [
-              "number",
+              "string",
               "null"
             ]
           },
@@ -789,15 +813,47 @@
             "type": "object",
             "properties": {
               "breadth_of_coverage": {
-                "type": [
-                    "string",
-                    "null"
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^\\d{1,2}(\\.\\d+)?%$",
+                    "minLength": 2,
+                    "description": "The percentage of the reference genome covered by the sequenced data, to a prescribed depth.",
+                    "examples": [
+                      "95%"
+                    ]
+                  },
+                  {
+                    "enum": [
+                      "Not Applicable",
+                      "Missing",
+                      "Not Collected",
+                      "Not Provided",
+                      "Restricted Access"                      
+                    ]
+                  }
                 ]
               },
               "depth_of_coverage": {
-                "type": [
-                    "string",
-                    "null"
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^\\d+(\\.\\d+)?[xX]$",
+                    "minLength": 2,
+                    "description": "The average number of reads representing a given nucleotide in the reconstructed sequence.Provide value as a fold of coverage.",
+                    "examples": [
+                      "400X"
+                    ]
+                  },
+                  {
+                    "enum": [
+                      "Not Applicable",
+                      "Missing",
+                      "Not Collected",
+                      "Not Provided",
+                      "Restricted Access"                     
+                    ]
+                  }
                 ]
               },
               "consensus_genome_length": {
@@ -889,10 +945,52 @@
             ]
           },
           "diagnostic_pcr_ct_value": {
-            "type": [
-              "number",
-              "null"
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
             ]
+          },
+          "diagnostic_pcr_ct_value_null_reason": {
+            "enum": [
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access",
+              null
+            ]
+          }
+        },
+        "if": {
+          "properties": {
+            "diagnostic_pcr_ct_value": {
+              "const": null
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "diagnostic_pcr_ct_value_null_reason": {
+              "enum": [
+                "Not Applicable",
+                "Missing",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
+            }
+          }
+        },
+        "else": {
+          "properties": {
+            "host_age_null_reason": {
+              "const": null 
+            }
           }
         },
         "propertyNames": {

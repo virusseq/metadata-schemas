@@ -30,6 +30,9 @@
       "dataType": "Consensus Sequence"
     }
   ],
+  "database_identifiers": {
+    "gisaid_accession": "EPI_ISL_436489"
+  },
   "sample_collection": {
     "sample_collected_by": "Not Provided",
     "sequence_submitted_by": "Laboratoire de santé publique du Québec (LSPQ)",
@@ -79,6 +82,7 @@
   },
   "pathogen_diagnostic_testing": {
     "gene_name": "E gene (orf4)",
-    "diagnostic_pcr_ct_value": 21
+    "diagnostic_pcr_ct_value": 21,
+    "diagnostic_pcr_ct_value_null_reason": null
   }
 }
