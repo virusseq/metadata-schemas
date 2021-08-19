@@ -203,7 +203,7 @@
           },
           "fasta_header_name": {
             "type": "string",
-            "pattern": "^hCoV-19/Canada/[a-zA-Z0-9\\-_\\.:/]{1,99}/20[1-2][0-9]$"
+            "pattern": "^hCoV-19/(?i)(canada)/[a-zA-Z0-9\\-_\\.:/]{1,99}/20[1-2][0-9]$"
           },
           "purpose_of_sampling": {
             "enum": [
