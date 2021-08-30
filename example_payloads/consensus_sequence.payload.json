@@ -42,7 +42,7 @@
     "geo_loc_province": "Quebec",
     "organism": "Severe acute respiratory syndrome coronavirus 2",
     "isolate": "Canada/Qc-L00210314/2020",
-    "fasta_header_name": "Canada/Qc-L00210314/2020",
+    "fasta_header_name": "hCoV-19/Canada/Qc-L00210314/2020",
     "purpose_of_sampling": "Diagnostic testing",
     "purpose_of_sampling_details": "Not Provided",
     "anatomical_material": "Not Provided",
