@@ -811,7 +811,7 @@
                 "anyOf": [
                   {
                     "type": "string",
-                    "pattern": "^\\d{1,2}(\\.\\d+)?%$",
+                    "pattern": "^(100|\\d{1,2}(\\.\\d+)?)%$",
                     "minLength": 2,
                     "description": "The percentage of the reference genome covered by the sequenced data, to a prescribed depth.",
                     "examples": [
