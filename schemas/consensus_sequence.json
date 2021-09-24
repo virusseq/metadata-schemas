@@ -537,7 +537,7 @@
               {
                 "type": "number",
                 "minimum": 0,
-                "maximum": 130
+                "maximum": 89
               },
               {
                 "type": "null"
@@ -565,8 +565,7 @@
               "60 - 69",
               "70 - 79",
               "80 - 89",
-              "90 - 99",
-              "100+",
+              "90+",
               "Not Applicable",
               "Missing",
               "Not Collected",
@@ -602,33 +601,56 @@
             ]
           }
         },
-        "if": {
-          "properties": {
-            "host_age": {
-              "const": null
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "host_age": {
+                  "const": null
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age_null_reason": {
+                  "enum": [
+                    "Not Applicable",
+                    "Missing",
+                    "Not Collected",
+                    "Not Provided",
+                    "Restricted Access"
+                  ]
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "host_age_null_reason": {
+                  "const": null 
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "90+" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "const": null
+                },
+                "host_age_null_reason": {
+                  "const": "Restricted Access"
+                }
+              }
             }
           }
-        },
-        "then": {
-          "properties": {
-            "host_age_null_reason": {
-              "enum": [
-                "Not Applicable",
-                "Missing",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access"
-              ]
-            }
-          }
-        },
-        "else": {
-          "properties": {
-            "host_age_null_reason": {
-              "const": null 
-            }
-          }
-        },
+        ],
         "propertyNames": {
           "enum": [
             "host_scientific_name",
