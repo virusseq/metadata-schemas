@@ -627,6 +627,244 @@
               "properties": {
                 "host_age_null_reason": {
                   "const": null 
+                },
+                "host_age_bin": {
+                  "enum": [
+                    "0 - 9",
+                    "10 - 19",
+                    "20 - 29",
+                    "30 - 39",
+                    "40 - 49",
+                    "50 - 59",
+                    "60 - 69",
+                    "70 - 79",
+                    "80 - 89"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "0 - 9" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 9
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "10 - 19" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 10,
+                      "maximum": 19
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "20 - 29" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 20,
+                      "maximum": 29
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "30 - 39" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 30,
+                      "maximum": 39
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "40 - 49" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 40,
+                      "maximum": 49
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "50 - 59" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 50,
+                      "maximum": 59
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "60 - 69" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 60,
+                      "maximum": 69
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "70 - 79" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 70,
+                      "maximum": 79
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "80 - 89" 
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 80,
+                      "maximum": 89
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
                 }
               }
             }
