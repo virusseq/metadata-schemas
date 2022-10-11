@@ -1301,6 +1301,24 @@
               "null"
             ]
           },
+          "lineage_analysis_software_data_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scorpio_call": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scorpio_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
           "variant_designation": {
             "enum": [
               "Variant of Concern (VOC)",
