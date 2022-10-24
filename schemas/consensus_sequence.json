@@ -1355,6 +1355,9 @@
             "lineage_name",
             "lineage_analysis_software_name",
             "lineage_analysis_software_version",
+            "lineage_analysis_software_data_version",
+            "scorpio_call",
+            "scorpio_version",
             "variant_designation",
             "variant_evidence",
             "variant_evidence_details"
