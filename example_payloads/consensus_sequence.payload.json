@@ -46,7 +46,7 @@
     "purpose_of_sampling": "Diagnostic testing",
     "purpose_of_sampling_details": "Not Provided",
     "anatomical_material": "Not Provided",
-    "anatomical_part": "Not Provided",
+    "anatomical_part": ["Not Provided"],
     "body_product": "Not Provided",
     "environmental_material": "Not Provided",
     "environmental_site": "Not Provided",
@@ -64,7 +64,7 @@
   },
   "experiment": {
     "sequencing_instrument": "Oxford Nanopore",
-    "purpose_of_sequencing": "Baseline surveillance (random sampling)",
+    "purpose_of_sequencing": ["Baseline surveillance (random sampling)"],
     "purpose_of_sequencing_details": "Not Provided",
     "sequencing_protocol": null
   },
@@ -74,8 +74,8 @@
     "raw_sequence_data_processing_method": "Porechop 0.2.3",
     "dehosting_method": "Nanostripper",
     "metrics": {
-        "breadth_of_coverage": "95%",
-        "depth_of_coverage": "400x"
+        "breadth_of_coverage": null,
+        "depth_of_coverage": null
     },
     "reference_genome_accession": "NC_045512.2",
     "bioinformatics_protocol": null
