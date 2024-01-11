@@ -273,6 +273,7 @@
                 "Nasal Cavity",
                 "Nasopharynx (NP)",
                 "Oropharynx (OP)",
+                "Pharynx (throat)",
                 "Pleural cavity",
                 "Pleural sac",
                 "Rectum",
@@ -284,8 +285,7 @@
                 "Missing",
                 "Not Collected",
                 "Not Provided",
-                "Restricted Access",
-                "Pharynx (throat)"
+                "Restricted Access"
               ]
             }
           },
