@@ -929,6 +929,7 @@
               "type":"string",
               "enum": [
                 "Baseline surveillance (random sampling)",
+                "Chronic (prolonged) infection surveillance",
                 "Cluster/Outbreak investigation",
                 "Domestic travel surveillance",
                 "International travel surveillance",
