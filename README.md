@@ -1,2 +1,3 @@
 # metadata-schemas
-Repo to host Virus-seq metadata schemas defined using JSON Schema
+
+Repo to host VirusSeq metadata schemas defined using JSON Schema
