@@ -509,7 +509,7 @@
       },
       "name": "Ns per 100 kbp",
       "restrictions": [],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The Sequence Read Archive (SRA) identifier linking raw read data, methodological metadata and quality control metrics submitted to the INSDC.",
@@ -664,7 +664,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "An alternative isolate_ID assigned to the isolate by another organization.",
@@ -772,7 +772,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The specifications of the primers (primer sequences, binding positions, fragment size generated etc) used to generate the amplicons to be sequenced.",
@@ -929,7 +929,7 @@
       },
       "name": "breadth of coverage value",
       "restrictions": [],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method used to measure carbonaceous biochemical oxygen demand (CBOD).",
@@ -1058,7 +1058,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method used to measure chemical oxygen demand (COD).",
@@ -1187,7 +1187,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The instrument or container used to collect the sample e.g. grab sampler.",
@@ -1405,7 +1405,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The length of the genome defined by the most common nucleotides at each position.",
@@ -1596,7 +1596,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method by which a diagnostic result was received.",
@@ -1723,7 +1723,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The value of the result from a diagnostic test.",
@@ -1877,7 +1877,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The description of the endogenous controls included when extracting a sample.",
@@ -2182,7 +2182,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method used to measure fecal coliforms.",
@@ -2311,7 +2311,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "A gene, virus, bacteria, or substance used to measure the sanitary quality of water in regards to fecal contamination.",
@@ -2492,7 +2492,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The name of the gene used in the diagnostic RT-PCR test.",
@@ -2513,7 +2513,151 @@
         }
       },
       "name": "gene name",
-      "restrictions": [],
+      "restrictions": [
+        {
+          "if": {
+            "conditions": [
+              {
+                "fields": [
+                  "organism"
+                ],
+                "match": {
+                  "values": "Influenza A virus"
+                }
+              }
+            ]
+          },
+          "then": {
+            "required": true,
+            "codeList": "#/list/influenza_a_virus_gene_list"
+          }
+        },
+        {
+          "if": {
+            "conditions": [
+              {
+                "fields": [
+                  "organism"
+                ],
+                "match": {
+                  "values": "Influenza B virus"
+                }
+              }
+            ]
+          },
+          "then": {
+            "required": true,
+            "codeList": "#/list/influenza_b_virus_gene_list"
+          }
+        },
+        {
+          "if": {
+            "conditions": [
+              {
+                "fields": [
+                  "organism"
+                ],
+                "match": {
+                  "values": "Influenza C virus"
+                }
+              }
+            ]
+          },
+          "then": {
+            "required": true,
+            "codeList": "#/list/influenza_c_virus_gene_list"
+          }
+        },
+        {
+          "if": {
+            "conditions": [
+              {
+                "fields": [
+                  "organism"
+                ],
+                "match": {
+                  "values": "Influenza D virus"
+                }
+              }
+            ]
+          },
+          "then": {
+            "required": true,
+            "codeList": "#/list/influenza_d_virus_gene_list"
+          }
+        },
+        {
+          "if": {
+            "conditions": [
+              {
+                "fields": [
+                  "organism"
+                ],
+                "match": {
+                  "values": "Monkeypox virus"
+                }
+              }
+            ]
+          },
+          "then": {
+            "required": true,
+            "codeList": "#/list/monkeypox_virus_gene_list"
+          }
+        },
+        {
+          "if": {
+            "conditions": [
+              {
+                "fields": [
+                  "organism"
+                ],
+                "match": {
+                  "values": "Pepper mild mottle virus"
+                }
+              }
+            ]
+          },
+          "then": {
+            "required": true,
+            "codeList": "#/list/pepper_mild_mottle_virus_gene_list"
+          }
+        },
+        {
+          "if": {
+            "conditions": [
+              {
+                "fields": [
+                  "organism"
+                ],
+                "match": {
+                  "values": "Respiratory syncytial virus"
+                }
+              }
+            ]
+          },
+          "then": {
+            "required": true
+          }
+        },
+        {
+          "if": {
+            "conditions": [
+              {
+                "fields": [
+                  "organism"
+                ],
+                "match": {
+                  "values": "Severe acute respiratory syndrome coronavirus 2"
+                }
+              }
+            ]
+          },
+          "then": {
+            "required": true,
+            "codeList": "#/list/severe_acute_respiratory_syndrome_coronavirus_2_gene_list"
+          }
+        }
+      ],
       "valueType": "string"
     },
     {
@@ -2606,7 +2750,11 @@
         }
       },
       "name": "geo loc latitude",
-      "restrictions": [],
+      "restrictions": [
+        {
+          "codeList": "#/regex/latitude"
+        }
+      ],
       "valueType": "string"
     },
     {
@@ -2628,7 +2776,11 @@
         }
       },
       "name": "geo loc longitude",
-      "restrictions": [],
+      "restrictions": [
+        {
+          "regex": "#/regex/longitude"
+        }
+      ],
       "valueType": "string"
     },
     {
@@ -2876,7 +3028,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The user-defined identifier for the isolate, as provided by the laboratory that originally isolated the isolate.",
@@ -2971,7 +3123,11 @@
         }
       },
       "name": "isolated by contact email",
-      "restrictions": [],
+      "restrictions": [
+        {
+          "regex": "#/regex/email"
+        }
+      ],
       "valueType": "string"
     },
     {
@@ -3649,7 +3805,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The process used to measure pH value.",
@@ -3731,7 +3887,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The percentage of the assembly that consists of ambiguous bases (Ns).",
@@ -3753,7 +3909,7 @@
       },
       "name": "percent Ns across total genome length",
       "restrictions": [],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The percent of the total number of reads identified as contamination (not belonging to the target organism) in a sequence dataset.",
@@ -3775,7 +3931,7 @@
       },
       "name": "percent read contamination",
       "restrictions": [],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The phagetype of the organism.",
@@ -3976,7 +4132,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The activities or variables upstream of sample collection that may affect the sample.",
@@ -4647,7 +4803,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The name of the organization with which the sample collector is affiliated.",
@@ -4988,7 +5144,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The descriptive time of day during which the sample was collected.",
@@ -5177,7 +5333,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The medium in which a sample is stored.",
@@ -5388,7 +5544,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The numerical value of a measurement of temperature of a sample upon receipt.",
@@ -5429,7 +5585,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The units of the volume measurement of the sample collected.",
@@ -5514,7 +5670,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The user-defined identifier assigned to a specific event during which one or more samples are taken, from one or more sites.",
@@ -6442,7 +6598,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method used to measure total dissolved solids (TDS).",
@@ -6571,7 +6727,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method used to measure total nitrogen (TN).",
@@ -6700,7 +6856,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method used to measure total phosphorus (TP).",
@@ -6829,7 +6985,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method used to measure total solids (TS).",
@@ -6958,7 +7114,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method used to measure total suspended solids (TSS).",
@@ -7087,7 +7243,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The process used to measure turbidity.",
@@ -7218,7 +7374,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "A gene, virus, bacteria, or substance used to measure the sanitary quality of water in regards to urinary contamination.",
@@ -7393,7 +7549,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The type or classification of a wastewater system e.g. sanitary sewer, combined sewer",
@@ -7505,7 +7661,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The method by which a water catchment 's human population size was measured or estimated",
@@ -7588,7 +7744,7 @@
           }
         }
       ],
-      "valueType": "integer"
+      "valueType": "number"
     },
     {
       "description": "The human population range of the water catchment that contributes effluent to a wastewater site.",

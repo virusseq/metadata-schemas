@@ -1,6 +1,6 @@
 {
   "name": "waste water",
-  "version": "0.8",
+  "version": "0.9",
   "references": {
     "script": {
       "common": {
@@ -74,34 +74,34 @@
         "milligram per liter (mg/L)"
       ],
       "collection_device": [
-        "Missing",
-        "Not Applicable",
-        "Not Collected",
-        "Not Provided",
-        "Restricted Access",
-        "Grab sampler",
-        "Composite sampler",
-        "Core sampling device",
-        "Vacuum sludge sampling device",
-        "Cone-shaped sampling device",
-        "Horizontal grab sampling device",
-        "Vertical grab sampling device",
-        "Passive (trap) sampler",
-        "Moore swab",
         "Automatic composite sampler",
         "Automatic flow-proportional sampler",
-        "Automatic sequential (time-proportional) sampler"
-      ],
-      "collection_method": [
-        "Grab sampling",
-        "Composite sampling",
-        "Passive composite sampling",
-        "Automatic composite sampling",
-        "Manual composite sampling",
-        "Not Applicable",
+        "Automatic sequential (time-proportional) sampler",
+        "Composite sampler",
+        "Cone-shaped sampling device",
+        "Core sampling device",
+        "Grab sampler",
+        "Horizontal grab sampling device",
         "Missing",
+        "Moore swab",
+        "Not Applicable",
         "Not Collected",
         "Not Provided",
+        "Passive (trap) sampler",
+        "Restricted Access",
+        "Vacuum sludge sampling device",
+        "Vertical grab sampling device"
+      ],
+      "collection_method": [
+        "Automatic composite sampling",
+        "Composite sampling",
+        "Grab sampling",
+        "Manual composite sampling",
+        "Missing",
+        "Not Applicable",
+        "Not Collected",
+        "Not Provided",
+        "Passive composite sampling",
         "Restricted Access"
       ],
       "conductivity_measurement_unit": [
@@ -130,9 +130,9 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "quantitative real time polymerase chain reaction (qPCR)",
         "bacteria culture test",
-        "digital real time polymerase chain reaction (dPCR)"
+        "digital real time polymerase chain reaction (dPCR)",
+        "quantitative real time polymerase chain reaction (qPCR)"
       ],
       "diagnostic_measurement_unit": [
         "Missing",
@@ -140,10 +140,10 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "cycle threshold (Ct) / quantification cycle (Cq)",
-        "colony forming units per milliliter (CFU/mL)",
         "colony forming units per 100 milliliter (CFU/100 mL)",
         "colony forming units per grams total solids (CFU/gTS)",
+        "colony forming units per milliliter (CFU/mL)",
+        "cycle threshold (Ct) / quantification cycle (Cq)",
         "gene copies per liter (GC/L)",
         "most probable number per 100 milliliter (MPN/100 mL)",
         "most probable number per milliliter (MPN/mL)"
@@ -164,92 +164,92 @@
         "Not Provided",
         "Restricted Access",
         "kilogram per cubic meter (kg/m^3)",
-        "part per million (ppm)",
-        "milligram per liter (mg/L)"
+        "milligram per liter (mg/L)",
+        "part per million (ppm)"
       ],
       "environmental_material": [
-        "Waste water",
-        "Surface water",
-        "Sludge",
-        "Primary sludge",
-        "Secondary sludge",
-        "Treated wastewater",
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access",
-        "Wastewater sediment",
-        "Wastewater effluent",
+        "Primary sludge",
         "Primary wastewater effluent",
-        "Secondary wastewater effluent"
+        "Restricted Access",
+        "Secondary sludge",
+        "Secondary wastewater effluent",
+        "Sludge",
+        "Surface water",
+        "Treated wastewater",
+        "Waste water",
+        "Wastewater effluent",
+        "Wastewater sediment"
       ],
       "environmental_material_properties": [
-        "Slurry",
+        "Contamination",
         "Fast-flowing",
         "Fecal-contaminated",
+        "Liquid",
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
+        "Pumpable",
         "Restricted Access",
         "Semi-solid",
-        "Solid",
-        "Liquid",
-        "Contamination",
-        "Pumpable",
         "Slow-flowing",
+        "Slurry",
+        "Solid",
         "Spadeable",
         "Stagnant",
         "Treated",
         "Untreated"
       ],
       "environmental_site": [
-        "Correctional facility",
-        "Healthcare facility",
-        "Hospital",
-        "Clinic",
-        "Educational facility",
-        "Daycare facility",
-        "School",
-        "College or university",
-        "Residential building",
-        "Homeless shelter",
-        "Long-term care facility",
-        "Transport hub",
-        "Airport",
-        "Farm",
-        "Refugee camp",
-        "Industrial plant",
-        "Meat processing plant",
-        "Pharmaceutical manufacturing plant",
-        "Body of water",
-        "Surface water",
-        "Lake",
-        "Stream",
-        "River",
-        "Ocean",
-        "Sea",
-        "Canal",
-        "Reservoir",
-        "Ground water",
-        "Well",
-        "Spring",
-        "Transportation vehicle",
-        "Boat",
         "Airplane",
-        "Wastewater treatment plant",
-        "Not Applicable",
+        "Airport",
+        "Boat",
+        "Body of water",
+        "Canal",
+        "Clinic",
+        "College or university",
+        "Correctional facility",
+        "Daycare facility",
+        "Educational facility",
+        "Farm",
+        "Ground water",
+        "Healthcare facility",
+        "Homeless shelter",
+        "Hospital",
+        "Industrial plant",
+        "Lake",
+        "Long-term care facility",
+        "Meat processing plant",
         "Missing",
+        "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access"
+        "Ocean",
+        "Pharmaceutical manufacturing plant",
+        "Refugee camp",
+        "Reservoir",
+        "Residential building",
+        "Restricted Access",
+        "River",
+        "School",
+        "Sea",
+        "Spring",
+        "Stream",
+        "Surface water",
+        "Transport hub",
+        "Transportation vehicle",
+        "Wastewater treatment plant",
+        "Well"
       ],
       "experimental_specimen_role_type": [
-        "Positive experimental control",
+        "Biological replicate",
         "Negative experimental control",
-        "Technical replicate",
-        "Biological replicate"
+        "Positive experimental control",
+        "Technical replicate"
       ],
       "fecal_coliform_count_unit": [
         "Missing",
@@ -257,24 +257,24 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "colony forming units per milliliter (CFU/mL)",
         "colony forming units per 100 milliliter (CFU/100 mL)",
         "colony forming units per grams total solids (CFU/gTS)",
+        "colony forming units per milliliter (CFU/mL)",
         "most probable number per 100 milliliter (MPN/100 mL)",
         "most probable number per milliliter (MPN/mL)"
       ],
       "fecal_contamination_indicator": [
         "Bacteroides HF183",
-        "stercobilin",
+        "Lachnospiraceae Lachno3",
+        "Male-specific (F+) coliphages",
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
+        "PMMoV / pepper mild mottle virus",
         "Restricted Access",
-        "Lachnospiraceae Lachno3",
-        "Male-specific (F+) coliphages",
         "crAssphage",
-        "PMMoV / pepper mild mottle virus"
+        "stercobilin"
       ],
       "fecal_contamination_unit": [
         "Missing",
@@ -498,8 +498,8 @@
         "Saint Helena",
         "Saint Kitts and Nevis",
         "Saint Lucia",
-        "Saint Pierre and Miquelon",
         "Saint Martin",
+        "Saint Pierre and Miquelon",
         "Saint Vincent and the Grenadines",
         "Samoa",
         "San Marino",
@@ -545,11 +545,11 @@
         "Turkmenistan",
         "Turks and Caicos Islands",
         "Tuvalu",
-        "United States of America",
         "Uganda",
         "Ukraine",
         "United Arab Emirates",
         "United Kingdom",
+        "United States of America",
         "Uruguay",
         "Uzbekistan",
         "Vanuatu",
@@ -564,20 +564,246 @@
         "Zambia",
         "Zimbabwe"
       ],
+      "influenza_a_virus_gene_list": [
+        "HA",
+        "M1",
+        "M2",
+        "NA",
+        "NEP",
+        "NP",
+        "NS1",
+        "PA",
+        "PA-X",
+        "PB1",
+        "PB1-F2",
+        "PB2"
+      ],
+      "influenza_b_virus_gene_list": [
+        "HA",
+        "M1",
+        "NA",
+        "NB",
+        "NEP",
+        "NP",
+        "NS1",
+        "PA",
+        "PB1",
+        "PB2"
+      ],
+      "influenza_c_virus_gene_list": [
+        "CM2",
+        "HEF",
+        "M1",
+        "NP",
+        "NS1",
+        "NS2",
+        "P3",
+        "PB1",
+        "PB2"
+      ],
+      "influenza_d_virus_gene_list": [
+        "HEF",
+        "NP",
+        "NS1",
+        "NS2",
+        "P3",
+        "P42",
+        "PB1",
+        "PB2"
+      ],
       "instantaneous_flow_rate_measurement_unit": [
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "liter per minute (L/min)",
-        "liter per second (L/s)",
-        "liter per day (L/day)",
-        "cubic meter per second (m^3/s)",
-        "liter per hour (L/h)",
         "cubic meter per hour (m^3/h)",
         "cubic meter per minute (m^3/min)",
+        "cubic meter per second (m^3/s)",
+        "liter per day (L/day)",
+        "liter per hour (L/h)",
+        "liter per minute (L/min)",
+        "liter per second (L/s)",
         "million gallons per day (MGD)"
+      ],
+      "monkeypox_virus_gene_list": [
+        "OPG001",
+        "OPG002",
+        "OPG003",
+        "OPG005",
+        "OPG015",
+        "OPG016",
+        "OPG019",
+        "OPG021",
+        "OPG022",
+        "OPG023",
+        "OPG024",
+        "OPG025",
+        "OPG027",
+        "OPG029",
+        "OPG030",
+        "OPG031",
+        "OPG032",
+        "OPG034",
+        "OPG035",
+        "OPG036",
+        "OPG037",
+        "OPG038",
+        "OPG039",
+        "OPG040",
+        "OPG042",
+        "OPG043",
+        "OPG044",
+        "OPG045",
+        "OPG046",
+        "OPG047",
+        "OPG048",
+        "OPG049",
+        "OPG050",
+        "OPG051",
+        "OPG052",
+        "OPG053",
+        "OPG054",
+        "OPG055",
+        "OPG056",
+        "OPG057",
+        "OPG058",
+        "OPG059",
+        "OPG060",
+        "OPG061",
+        "OPG062",
+        "OPG063",
+        "OPG064",
+        "OPG065",
+        "OPG066",
+        "OPG068",
+        "OPG069",
+        "OPG070",
+        "OPG071",
+        "OPG072",
+        "OPG073",
+        "OPG074",
+        "OPG075",
+        "OPG076",
+        "OPG077",
+        "OPG078",
+        "OPG079",
+        "OPG080",
+        "OPG081",
+        "OPG082",
+        "OPG083",
+        "OPG084",
+        "OPG085",
+        "OPG086",
+        "OPG087",
+        "OPG088",
+        "OPG089",
+        "OPG090",
+        "OPG091",
+        "OPG092",
+        "OPG093",
+        "OPG094",
+        "OPG095",
+        "OPG096",
+        "OPG097",
+        "OPG098",
+        "OPG099",
+        "OPG100",
+        "OPG101",
+        "OPG102",
+        "OPG103",
+        "OPG104",
+        "OPG105",
+        "OPG106",
+        "OPG107",
+        "OPG108",
+        "OPG109",
+        "OPG110",
+        "OPG111",
+        "OPG112",
+        "OPG113",
+        "OPG114",
+        "OPG115",
+        "OPG116",
+        "OPG117",
+        "OPG118",
+        "OPG119",
+        "OPG120",
+        "OPG121",
+        "OPG122",
+        "OPG123",
+        "OPG124",
+        "OPG125",
+        "OPG126",
+        "OPG127",
+        "OPG128",
+        "OPG129",
+        "OPG130",
+        "OPG131",
+        "OPG132",
+        "OPG133",
+        "OPG134",
+        "OPG135",
+        "OPG136",
+        "OPG137",
+        "OPG138",
+        "OPG139",
+        "OPG140",
+        "OPG141",
+        "OPG142",
+        "OPG143",
+        "OPG144",
+        "OPG145",
+        "OPG146",
+        "OPG147",
+        "OPG148",
+        "OPG149",
+        "OPG150",
+        "OPG151",
+        "OPG153",
+        "OPG154",
+        "OPG155",
+        "OPG156",
+        "OPG157",
+        "OPG158",
+        "OPG159",
+        "OPG160",
+        "OPG161",
+        "OPG162",
+        "OPG163",
+        "OPG164",
+        "OPG165",
+        "OPG166",
+        "OPG167",
+        "OPG170",
+        "OPG171",
+        "OPG172",
+        "OPG173",
+        "OPG174",
+        "OPG175",
+        "OPG176",
+        "OPG178",
+        "OPG180",
+        "OPG181",
+        "OPG185",
+        "OPG187",
+        "OPG188",
+        "OPG189",
+        "OPG190",
+        "OPG191",
+        "OPG192",
+        "OPG193",
+        "OPG195",
+        "OPG197",
+        "OPG198",
+        "OPG199",
+        "OPG200",
+        "OPG201",
+        "OPG204",
+        "OPG205",
+        "OPG208",
+        "OPG209",
+        "OPG210"
       ],
       "null": [
         "Missing",
@@ -587,12 +813,19 @@
         "Restricted Access"
       ],
       "organism": [
-        "Severe acute respiratory syndrome coronavirus 2",
-        "Not Applicable",
+        "Influenza A virus",
+        "Influenza B virus",
+        "Influenza C virus",
+        "Influenza D virus",
         "Missing",
+        "Monkeypox virus",
+        "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access"
+        "Pepper mild mottle virus",
+        "Respiratory syncytial virus",
+        "Restricted Access",
+        "Severe acute respiratory syndrome coronavirus 2"
       ],
       "oxygen_reduction_potential_ORP_measurement_unit": [
         "Missing",
@@ -602,14 +835,20 @@
         "Restricted Access",
         "milliVolt (mV)"
       ],
+      "pepper_mild_mottle_virus_gene_list": [
+        "CP",
+        "PMMoVgp1",
+        "PMMoVgp2",
+        "PMMoVgp3"
+      ],
       "populated_area_type": [
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "suburban",
         "rural",
+        "suburban",
         "urban"
       ],
       "precipitation_measurement_unit": [
@@ -618,16 +857,16 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "meter (m)",
-        "millimeter (mm)",
+        "foot (ft)",
         "inch (in)",
-        "foot (ft)"
+        "meter (m)",
+        "millimeter (mm)"
       ],
       "presampling_activity": [
-        "Animal husbandry",
         "Agricultural activity",
+        "Animal husbandry",
+        "Healthcare activity",
         "Industrial activity",
-        "Wastewater treatment",
         "Missing",
         "Not Applicable",
         "Not Collected",
@@ -638,53 +877,53 @@
         "Wastewater microbial pre-treatment",
         "Wastewater primary sedimentation",
         "Wastewater secondary sedimentation",
-        "Healthcare activity"
+        "Wastewater treatment"
       ],
       "presampling_weather_conditions": [
-        "Snow",
-        "Fog",
-        "Storm",
-        "Rain",
         "Cloudy/Overcast",
-        "Partially cloudy",
         "Drizzle",
-        "Sunny/Clear",
+        "Fog",
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access"
+        "Partially cloudy",
+        "Rain",
+        "Restricted Access",
+        "Snow",
+        "Storm",
+        "Sunny/Clear"
       ],
       "purpose_of_sampling": [
-        "Wastewater treatment efficiency assessment",
+        "Environmental survey (profiling)",
+        "Missing",
+        "Not Applicable",
+        "Not Collected",
+        "Not Provided",
+        "Protocol testing",
+        "Research",
+        "Restricted Access",
         "Wastewater chemical surveillance",
         "Wastewater drug surveillance",
         "Wastewater pathogen surveillance",
-        "Research",
-        "Environmental survey (profiling)",
-        "Protocol testing",
-        "Not Applicable",
-        "Missing",
-        "Not Collected",
-        "Not Provided",
-        "Restricted Access"
+        "Wastewater treatment efficiency assessment"
       ],
       "purpose_of_sequencing": [
         "Baseline surveillance (random sampling)",
-        "Targeted surveillance (non-random sampling)",
-        "Priority surveillance project",
-        "Longitudinal surveillance (repeat sampling)",
-        "Travel-associated surveillance",
         "Domestic travel surveillance",
         "International travel surveillance",
-        "Research",
-        "Viral passage experiment",
-        "Protocol testing experiment",
-        "Not Applicable",
+        "Longitudinal surveillance (repeat sampling)",
         "Missing",
+        "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access"
+        "Priority surveillance project",
+        "Protocol testing experiment",
+        "Research",
+        "Restricted Access",
+        "Targeted surveillance (non-random sampling)",
+        "Travel-associated surveillance",
+        "Viral passage experiment"
       ],
       "quality_control_determination": [
         "Missing",
@@ -692,12 +931,12 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "no quality control issues identified",
-        "sequence passed quality control",
-        "sequence failed quality control",
         "minor quality control issues identified",
+        "no quality control issues identified",
+        "quality control not performed",
+        "sequence failed quality control",
         "sequence flagged for potential quality control issues",
-        "quality control not performed"
+        "sequence passed quality control"
       ],
       "quality_control_issues": [
         "Missing",
@@ -705,14 +944,14 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "low quality sequence",
-        "sequence contaminated",
         "low average genome coverage",
+        "low coverage of characteristic mutations",
         "low percent genome captured",
+        "low quality sequence",
+        "low signal to noise ratio",
         "read lengths shorter than expected",
         "sequence amplification artifacts",
-        "low signal to noise ratio",
-        "low coverage of characteristic mutations"
+        "sequence contaminated"
       ],
       "salinity_measurement_unit": [
         "Missing",
@@ -720,48 +959,48 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "gram per liter (g/L)",
         "gram per kilogram (g/kg)",
+        "gram per liter (g/L)",
         "practical salinity unit (PSU)",
         "weight for weight (% w/w)"
       ],
       "sample_collection_time_duration_unit": [
+        "Day",
+        "Hour",
+        "Minute",
         "Missing",
+        "Month",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
         "Restricted Access",
         "Second",
-        "Minute",
-        "Hour",
-        "Day",
         "Week",
-        "Month",
         "Year"
       ],
       "sample_collection_time_of_day": [
+        "Afternoon",
+        "Evening",
         "Missing",
+        "Morning",
+        "Night",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access",
-        "Morning",
-        "Afternoon",
-        "Evening",
-        "Night"
+        "Restricted Access"
       ],
       "sample_storage_duration_unit": [
+        "Day",
+        "Hour",
+        "Minute",
         "Missing",
+        "Month",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
         "Restricted Access",
         "Second",
-        "Minute",
-        "Hour",
-        "Day",
         "Week",
-        "Month",
         "Year"
       ],
       "sample_temperature_unit_at_collection": [
@@ -788,102 +1027,49 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "milliliter (mL)",
         "liter (L)",
-        "microliter (uL)"
+        "microliter (uL)",
+        "milliliter (mL)"
       ],
       "sampling_weather_conditions": [
-        "Snow",
-        "Fog",
-        "Storm",
-        "Rain",
         "Cloudy/Overcast",
-        "Partially cloudy",
         "Drizzle",
-        "Sunny/Clear",
+        "Fog",
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access"
+        "Partially cloudy",
+        "Rain",
+        "Restricted Access",
+        "Snow",
+        "Storm",
+        "Sunny/Clear"
       ],
       "scale_of_sampling": [
+        "Building-level surveillance",
         "Community-level surveillance",
         "Institution-level surveillance",
-        "Building-level surveillance",
-        "Not Applicable",
         "Missing",
+        "Not Applicable",
         "Not Collected",
         "Not Provided",
         "Restricted Access"
       ],
       "sequencing_assay_type": [
-        "amplicon sequencing assay",
         "16S ribosomal gene sequencing assay",
+        "amplicon sequencing assay",
         "whole genome sequencing assay",
         "whole metagenome sequencing assay",
         "whole virome sequencing assay"
       ],
       "sequencing_instrument": [
-        "Missing",
-        "Not Applicable",
-        "Not Collected",
-        "Not Provided",
-        "Restricted Access",
-        "SOLiD 4hq System",
-        "SOLiD 5500",
-        "SOLiD 5500xl Genetic Analyzer",
-        "SOLiD PI System",
-        "SOLiD System 2.0",
-        "SOLiD System 3.0",
-        "454 Genome Sequencer FLX Titanium",
         "454 Genome Sequencer",
-        "Illumina NextSeq 1000",
-        "Oxford Nanopore Flongle",
-        "Illumina",
-        "Illumina Genome Analyzer",
-        "Illumina HiScanSQ",
-        "Illumina HiSeq",
-        "Illumina HiSeq X",
-        "Illumina HiSeq X Five ",
-        "Illumina HiSeq X Ten",
-        "Illumina HiSeq 1500",
-        "Illumina iSeq  ",
-        "Illumina iSeq 100",
-        "Illumina NovaSeq  ",
-        "Illumina NovaSeq 6000",
-        "Illumina MiniSeq",
-        "Illumina NextSeq",
-        "Illumina NextSeq 550",
-        "Illumina NextSeq 2000",
-        "PacBio",
-        "PacBio RS ",
-        "PacBio Sequel",
-        "PacBio Sequel II",
-        "Ion Torrent",
-        "Ion Torrent PGM",
-        "Ion Torrent Proton",
-        "Ion Torrent S5 XL",
-        "Ion Torrent S5",
-        "Oxford Nanopore",
-        "Oxford Nanopore GridION",
-        "Oxford Nanopore MinION",
-        "Oxford Nanopore PromethION",
-        "BGISEQ",
-        "BGISEQ-500",
-        "MGI sequencing instrument",
-        "DNBSEQ-T7",
-        "MGI DNBSEQ-T7",
-        "DNBSEQ-G400",
-        "MGI DNBSEQ-G400",
-        "DNBSEQ-G400 FAST",
-        "MGI DNBSEQ-G400RS FAST",
-        "DNBSEQ-G50",
-        "MGI DNBSEQ-G50",
-        "MGISEQ-2000RS ",
-        "MGI DNBSEQ-G99",
-        "MGI DNBSEQ-E25",
-        "Applied Biosystems sequencing instrument model",
+        "454 Genome Sequencer 20",
+        "454 Genome Sequencer FLX",
+        "454 Genome Sequencer FLX Titanium",
+        "454 Genome Sequencer FLX+",
+        "454 Genome Sequencer Junior",
         "AB 310 Genetic Analyzer",
         "AB 3130 Genetic Analyzer",
         "AB 3130xL Genetic Analyzer",
@@ -891,62 +1077,128 @@
         "AB 3500xL Genetic Analyzer",
         "AB 3730 Genetic Analyzer",
         "AB 3730xL Genetic Analyzer",
-        "454 Genome Sequencer FLX+",
-        "454 Genome Sequencer Junior",
-        "SOLiD 5500x-Wl Genetic Analyzer",
-        "454 Genome Sequencer 20",
-        "SOLiD System",
-        "454 Genome Sequencer FLX",
-        "Illumina Genome Analyzer II",
+        "Applied Biosystems sequencing instrument model",
+        "BGISEQ",
+        "BGISEQ-500",
+        "DNBSEQ-G400",
+        "DNBSEQ-G400 FAST",
+        "DNBSEQ-G50",
+        "DNBSEQ-T7",
         "HeliScope Single Molecule Sequencer",
+        "Illumina",
+        "Illumina Genome Analyzer",
+        "Illumina Genome Analyzer II",
         "Illumina Genome Analyzer IIx",
+        "Illumina HiScanSQ",
+        "Illumina HiSeq",
+        "Illumina HiSeq 1000",
+        "Illumina HiSeq 1500",
         "Illumina HiSeq 2000   ",
         "Illumina HiSeq 2500",
-        "Illumina MiSeq",
-        "SOLiD 3 Plus System",
-        "PacBio RS II",
-        "Illumina NextSeq 500",
-        "Illumina HiSeq 1000",
-        "SOLiD 4 System",
         "Illumina HiSeq 3000",
-        "Illumina HiSeq 4000"
+        "Illumina HiSeq 4000",
+        "Illumina HiSeq X",
+        "Illumina HiSeq X Five ",
+        "Illumina HiSeq X Ten",
+        "Illumina MiSeq",
+        "Illumina MiniSeq",
+        "Illumina NextSeq",
+        "Illumina NextSeq 1000",
+        "Illumina NextSeq 2000",
+        "Illumina NextSeq 500",
+        "Illumina NextSeq 550",
+        "Illumina NovaSeq  ",
+        "Illumina NovaSeq 6000",
+        "Illumina iSeq  ",
+        "Illumina iSeq 100",
+        "Ion Torrent",
+        "Ion Torrent PGM",
+        "Ion Torrent Proton",
+        "Ion Torrent S5",
+        "Ion Torrent S5 XL",
+        "MGI DNBSEQ-E25",
+        "MGI DNBSEQ-G400",
+        "MGI DNBSEQ-G400RS FAST",
+        "MGI DNBSEQ-G50",
+        "MGI DNBSEQ-G99",
+        "MGI DNBSEQ-T7",
+        "MGI sequencing instrument",
+        "MGISEQ-2000RS ",
+        "Missing",
+        "Not Applicable",
+        "Not Collected",
+        "Not Provided",
+        "Oxford Nanopore",
+        "Oxford Nanopore Flongle",
+        "Oxford Nanopore GridION",
+        "Oxford Nanopore MinION",
+        "Oxford Nanopore PromethION",
+        "PacBio",
+        "PacBio RS ",
+        "PacBio RS II",
+        "PacBio Sequel",
+        "PacBio Sequel II",
+        "Restricted Access",
+        "SOLiD 3 Plus System",
+        "SOLiD 4 System",
+        "SOLiD 4hq System",
+        "SOLiD 5500",
+        "SOLiD 5500x-Wl Genetic Analyzer",
+        "SOLiD 5500xl Genetic Analyzer",
+        "SOLiD PI System",
+        "SOLiD System",
+        "SOLiD System 2.0",
+        "SOLiD System 3.0"
       ],
       "sequencing_platform": [
         "Applied Biosystems",
+        "BGI Genomics",
+        "Complete Genomics",
+        "Helicos",
+        "Illumina",
+        "Ion Torrent",
+        "MGI",
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access",
-        "Illumina",
-        "Complete Genomics",
-        "Roche LS454",
         "Pacific Biosciences",
-        "Helicos",
-        "Ion Torrent",
+        "Restricted Access",
+        "Roche LS454",
         "SOLiD sequencing",
-        "BGI Genomics",
-        "MGI",
         "to mint Oxford Nanopore Technologies"
       ],
+      "severe_acute_respiratory_syndrome_coronavirus_2_gene_list": [
+        "E",
+        "M",
+        "N",
+        "ORF10",
+        "ORF1ab",
+        "ORF3a",
+        "ORF6",
+        "ORF7a",
+        "ORF7b",
+        "ORF8",
+        "S"
+      ],
       "specimen_processing": [
-        "Technical replicate",
         "Biological replicate",
+        "Centrifugation",
+        "Concentration",
+        "Filtration",
+        "Flocculation",
+        "Gravity separation",
+        "Growth in enrichment broth",
+        "Magnetic nanobead binding",
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Restricted Access",
-        "Magnetic nanobead binding",
-        "Gravity separation",
-        "Growth in enrichment broth",
         "Pasteurization",
-        "Flocculation",
-        "Filtration",
-        "Centrifugation",
-        "Specimens pooled",
         "Precipitation",
-        "Concentration"
+        "Restricted Access",
+        "Specimens pooled",
+        "Technical replicate"
       ],
       "total_daily_flow_rate_measurement_unit": [
         "Missing",
@@ -954,13 +1206,13 @@
         "Not Collected",
         "Not Provided",
         "Restricted Access",
-        "liter per minute (L/min)",
-        "liter per second (L/s)",
-        "liter per day (L/day)",
-        "cubic meter per second (m^3/s)",
-        "liter per hour (L/h)",
         "cubic meter per hour (m^3/h)",
         "cubic meter per minute (m^3/min)",
+        "cubic meter per second (m^3/s)",
+        "liter per day (L/day)",
+        "liter per hour (L/h)",
+        "liter per minute (L/min)",
+        "liter per second (L/s)",
         "million gallons per day (MGD)"
       ],
       "total_dissolved_solids_TDS_measurement_unit": [
@@ -1022,33 +1274,33 @@
         "nephelometric turbidity unit (NTU)"
       ],
       "urinary_contamination_indicator": [
-        "urobilin",
-        "Missing",
-        "Not Applicable",
-        "Not Collected",
-        "Not Provided",
-        "Restricted Access"
-      ],
-      "urinary_contamination_unit": [
-        "nanograms per liter (ng/L)",
-        "Missing",
-        "Not Applicable",
-        "Not Collected",
-        "Not Provided",
-        "Restricted Access"
-      ],
-      "wastewater_system_type": [
-        "Cesspit",
-        "Combined sewer system",
-        "Latrine",
-        "Composting toilet",
-        "Drainage channel",
         "Missing",
         "Not Applicable",
         "Not Collected",
         "Not Provided",
         "Restricted Access",
+        "urobilin"
+      ],
+      "urinary_contamination_unit": [
+        "Missing",
+        "Not Applicable",
+        "Not Collected",
+        "Not Provided",
+        "Restricted Access",
+        "nanograms per liter (ng/L)"
+      ],
+      "wastewater_system_type": [
+        "Cesspit",
+        "Combined sewer system",
+        "Composting toilet",
+        "Drainage channel",
+        "Latrine",
+        "Missing",
         "Non-sewered sanitation system",
+        "Not Applicable",
+        "Not Collected",
+        "Not Provided",
+        "Restricted Access",
         "Sanitary sewer system",
         "Septic tank",
         "Sewered sanitation system",
@@ -1105,7 +1357,9 @@
       "date": "^(\\d{4}-\\d{2}-\\d{2})$",
       "date_time": "^(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2})$",
       "email": "^\\S+@\\S+\\.\\S+$",
-      "time": "^(\\d{2}:\\d{2} [A-Z]{3,5})$"
+      "time": "^(\\d{2}:\\d{2} [A-Z]{3,5})$",
+      "longitude": "^-?\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)? [EW]+$",
+      "latitude": "^-?\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)? [NS]+$"
     },
     "notes": {}
   },
@@ -1621,7 +1875,7 @@
           },
           "name": "Ns per 100 kbp",
           "restrictions": [],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The Sequence Read Archive (SRA) identifier linking raw read data, methodological metadata and quality control metrics submitted to the INSDC.",
@@ -1776,7 +2030,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "An alternative isolate_ID assigned to the isolate by another organization.",
@@ -1884,7 +2138,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The specifications of the primers (primer sequences, binding positions, fragment size generated etc) used to generate the amplicons to be sequenced.",
@@ -2041,7 +2295,7 @@
           },
           "name": "breadth of coverage value",
           "restrictions": [],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method used to measure carbonaceous biochemical oxygen demand (CBOD).",
@@ -2170,7 +2424,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method used to measure chemical oxygen demand (COD).",
@@ -2299,7 +2553,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The instrument or container used to collect the sample e.g. grab sampler.",
@@ -2517,7 +2771,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The length of the genome defined by the most common nucleotides at each position.",
@@ -2708,7 +2962,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method by which a diagnostic result was received.",
@@ -2835,7 +3089,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The value of the result from a diagnostic test.",
@@ -2989,7 +3243,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The description of the endogenous controls included when extracting a sample.",
@@ -3294,7 +3548,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method used to measure fecal coliforms.",
@@ -3423,7 +3677,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "A gene, virus, bacteria, or substance used to measure the sanitary quality of water in regards to fecal contamination.",
@@ -3604,7 +3858,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The name of the gene used in the diagnostic RT-PCR test.",
@@ -3625,7 +3879,151 @@
             }
           },
           "name": "gene name",
-          "restrictions": [],
+          "restrictions": [
+            {
+              "if": {
+                "conditions": [
+                  {
+                    "fields": [
+                      "organism"
+                    ],
+                    "match": {
+                      "values": "Influenza A virus"
+                    }
+                  }
+                ]
+              },
+              "then": {
+                "required": true,
+                "codeList": "#/list/influenza_a_virus_gene_list"
+              }
+            },
+            {
+              "if": {
+                "conditions": [
+                  {
+                    "fields": [
+                      "organism"
+                    ],
+                    "match": {
+                      "values": "Influenza B virus"
+                    }
+                  }
+                ]
+              },
+              "then": {
+                "required": true,
+                "codeList": "#/list/influenza_b_virus_gene_list"
+              }
+            },
+            {
+              "if": {
+                "conditions": [
+                  {
+                    "fields": [
+                      "organism"
+                    ],
+                    "match": {
+                      "values": "Influenza C virus"
+                    }
+                  }
+                ]
+              },
+              "then": {
+                "required": true,
+                "codeList": "#/list/influenza_c_virus_gene_list"
+              }
+            },
+            {
+              "if": {
+                "conditions": [
+                  {
+                    "fields": [
+                      "organism"
+                    ],
+                    "match": {
+                      "values": "Influenza D virus"
+                    }
+                  }
+                ]
+              },
+              "then": {
+                "required": true,
+                "codeList": "#/list/influenza_d_virus_gene_list"
+              }
+            },
+            {
+              "if": {
+                "conditions": [
+                  {
+                    "fields": [
+                      "organism"
+                    ],
+                    "match": {
+                      "values": "Monkeypox virus"
+                    }
+                  }
+                ]
+              },
+              "then": {
+                "required": true,
+                "codeList": "#/list/monkeypox_virus_gene_list"
+              }
+            },
+            {
+              "if": {
+                "conditions": [
+                  {
+                    "fields": [
+                      "organism"
+                    ],
+                    "match": {
+                      "values": "Pepper mild mottle virus"
+                    }
+                  }
+                ]
+              },
+              "then": {
+                "required": true,
+                "codeList": "#/list/pepper_mild_mottle_virus_gene_list"
+              }
+            },
+            {
+              "if": {
+                "conditions": [
+                  {
+                    "fields": [
+                      "organism"
+                    ],
+                    "match": {
+                      "values": "Respiratory syncytial virus"
+                    }
+                  }
+                ]
+              },
+              "then": {
+                "required": true
+              }
+            },
+            {
+              "if": {
+                "conditions": [
+                  {
+                    "fields": [
+                      "organism"
+                    ],
+                    "match": {
+                      "values": "Severe acute respiratory syndrome coronavirus 2"
+                    }
+                  }
+                ]
+              },
+              "then": {
+                "required": true,
+                "codeList": "#/list/severe_acute_respiratory_syndrome_coronavirus_2_gene_list"
+              }
+            }
+          ],
           "valueType": "string"
         },
         {
@@ -3718,7 +4116,11 @@
             }
           },
           "name": "geo loc latitude",
-          "restrictions": [],
+          "restrictions": [
+            {
+              "codeList": "#/regex/latitude"
+            }
+          ],
           "valueType": "string"
         },
         {
@@ -3740,7 +4142,11 @@
             }
           },
           "name": "geo loc longitude",
-          "restrictions": [],
+          "restrictions": [
+            {
+              "regex": "#/regex/longitude"
+            }
+          ],
           "valueType": "string"
         },
         {
@@ -3988,7 +4394,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The user-defined identifier for the isolate, as provided by the laboratory that originally isolated the isolate.",
@@ -4083,7 +4489,11 @@
             }
           },
           "name": "isolated by contact email",
-          "restrictions": [],
+          "restrictions": [
+            {
+              "regex": "#/regex/email"
+            }
+          ],
           "valueType": "string"
         },
         {
@@ -4761,7 +5171,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The process used to measure pH value.",
@@ -4843,7 +5253,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The percentage of the assembly that consists of ambiguous bases (Ns).",
@@ -4865,7 +5275,7 @@
           },
           "name": "percent Ns across total genome length",
           "restrictions": [],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The percent of the total number of reads identified as contamination (not belonging to the target organism) in a sequence dataset.",
@@ -4887,7 +5297,7 @@
           },
           "name": "percent read contamination",
           "restrictions": [],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The phagetype of the organism.",
@@ -5088,7 +5498,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The activities or variables upstream of sample collection that may affect the sample.",
@@ -5759,7 +6169,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The name of the organization with which the sample collector is affiliated.",
@@ -6100,7 +6510,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The descriptive time of day during which the sample was collected.",
@@ -6289,7 +6699,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The medium in which a sample is stored.",
@@ -6500,7 +6910,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The numerical value of a measurement of temperature of a sample upon receipt.",
@@ -6541,7 +6951,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The units of the volume measurement of the sample collected.",
@@ -6626,7 +7036,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The user-defined identifier assigned to a specific event during which one or more samples are taken, from one or more sites.",
@@ -7554,7 +7964,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method used to measure total dissolved solids (TDS).",
@@ -7683,7 +8093,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method used to measure total nitrogen (TN).",
@@ -7812,7 +8222,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method used to measure total phosphorus (TP).",
@@ -7941,7 +8351,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method used to measure total solids (TS).",
@@ -8070,7 +8480,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method used to measure total suspended solids (TSS).",
@@ -8199,7 +8609,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The process used to measure turbidity.",
@@ -8330,7 +8740,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "A gene, virus, bacteria, or substance used to measure the sanitary quality of water in regards to urinary contamination.",
@@ -8505,7 +8915,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The type or classification of a wastewater system e.g. sanitary sewer, combined sewer",
@@ -8617,7 +9027,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The method by which a water catchment 's human population size was measured or estimated",
@@ -8700,7 +9110,7 @@
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "number"
         },
         {
           "description": "The human population range of the water catchment that contributes effluent to a wastewater site.",
