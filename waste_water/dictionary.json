@@ -4118,7 +4118,7 @@
           "name": "geo loc latitude",
           "restrictions": [
             {
-              "codeList": "#/regex/latitude"
+              "regex": "#/regex/latitude"
             }
           ],
           "valueType": "string"

@@ -4600,7 +4600,7 @@
           "name": "geo loc latitude",
           "restrictions": [
             {
-              "codeList": "^-?\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)? [NS]+$"
+              "regex": "^-?\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)? [NS]+$"
             }
           ],
           "valueType": "string"
