@@ -811,7 +811,6 @@
     "Not Applicable",
     "Not Collected",
     "Not Provided",
-    "Pepper mild mottle virus",
     "Respiratory syncytial virus",
     "Restricted Access",
     "Severe acute respiratory syndrome coronavirus 2"
@@ -823,12 +822,6 @@
     "Not Provided",
     "Restricted Access",
     "milliVolt (mV)"
-  ],
-  "pepper_mild_mottle_virus_gene_list": [
-    "CP",
-    "PMMoVgp1",
-    "PMMoVgp2",
-    "PMMoVgp3"
   ],
   "populated_area_type": [
     "Missing",

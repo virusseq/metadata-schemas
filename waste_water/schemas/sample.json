@@ -2612,24 +2612,6 @@
                   "organism"
                 ],
                 "match": {
-                  "values": "Pepper mild mottle virus"
-                }
-              }
-            ]
-          },
-          "then": {
-            "required": true,
-            "codeList": "#/list/pepper_mild_mottle_virus_gene_list"
-          }
-        },
-        {
-          "if": {
-            "conditions": [
-              {
-                "fields": [
-                  "organism"
-                ],
-                "match": {
                   "values": "Respiratory syncytial virus"
                 }
               }

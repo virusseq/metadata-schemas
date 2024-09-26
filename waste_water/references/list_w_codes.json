@@ -1059,7 +1059,6 @@
     "NCBITaxon:11552 Influenza C virus",
     "NCBITaxon:1511084 Influenza D virus",
     "NCBITaxon:10244 Monkeypox virus",
-    "NCBITaxon:12239 Pepper mild mottle virus",
     "NCBITaxon:12814 Respiratory syncytial virus",
     "NCBITaxon:2697049 Severe acute respiratory syndrome coronavirus 2",
     "GENEPIO:0001619 Not Applicable",
@@ -1075,12 +1074,6 @@
     "GENEPIO:0001668 Not Provided",
     "GENEPIO:0001810 Restricted Access",
     "UO:0000247 milliVolt (mV)"
-  ],
-  "pepper_mild_mottle_virus_gene_list": [
-    "GeneID:1724829 PMMoVgp2",
-    "GeneID:1724828 PMMoVgp3",
-    "GeneID:1724827 PMMoVgp1",
-    "GeneID:940236 CP"
   ],
   "populated_area_type": [
     "GENEPIO:0001618 Missing",

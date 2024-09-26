@@ -1,6 +1,6 @@
 {
   "name": "waste water",
-  "version": "0.9",
+  "version": "0.91",
   "references": {
     "script": {
       "common": {
@@ -822,7 +822,6 @@
         "Not Applicable",
         "Not Collected",
         "Not Provided",
-        "Pepper mild mottle virus",
         "Respiratory syncytial virus",
         "Restricted Access",
         "Severe acute respiratory syndrome coronavirus 2"
@@ -834,12 +833,6 @@
         "Not Provided",
         "Restricted Access",
         "milliVolt (mV)"
-      ],
-      "pepper_mild_mottle_virus_gene_list": [
-        "CP",
-        "PMMoVgp1",
-        "PMMoVgp2",
-        "PMMoVgp3"
       ],
       "populated_area_type": [
         "Missing",
@@ -1358,8 +1351,8 @@
       "date_time": "^(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2})$",
       "email": "^\\S+@\\S+\\.\\S+$",
       "time": "^(\\d{2}:\\d{2} [A-Z]{3,5})$",
-      "longitude": "^-?\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)? [EW]+$",
-      "latitude": "^-?\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)? [NS]+$"
+      "longitude": "^\\d+(\\.\\d+)? [EW]+$",
+      "latitude": "^\\d+(\\.\\d+)? [NS]+$"
     },
     "notes": {}
   },
@@ -4440,29 +4433,6 @@
                       "organism"
                     ],
                     "match": {
-                      "values": "Pepper mild mottle virus"
-                    }
-                  }
-                ]
-              },
-              "then": {
-                "required": true,
-                "codeList": [
-                  "CP",
-                  "PMMoVgp1",
-                  "PMMoVgp2",
-                  "PMMoVgp3"
-                ]
-              }
-            },
-            {
-              "if": {
-                "conditions": [
-                  {
-                    "fields": [
-                      "organism"
-                    ],
-                    "match": {
                       "values": "Respiratory syncytial virus"
                     }
                   }
@@ -4600,7 +4570,7 @@
           "name": "geo loc latitude",
           "restrictions": [
             {
-              "regex": "^-?\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)? [NS]+$"
+              "regex": "^\\d+(\\.\\d+)? [NS]+$"
             }
           ],
           "valueType": "string"
@@ -4626,7 +4596,7 @@
           "name": "geo loc longitude",
           "restrictions": [
             {
-              "regex": "^-?\\d+(\\.\\d+)?$|^\\d+(\\.\\d+)? [EW]+$"
+              "regex": "^\\d+(\\.\\d+)? [EW]+$"
             }
           ],
           "valueType": "string"
@@ -5544,7 +5514,6 @@
                 "Not Applicable",
                 "Not Collected",
                 "Not Provided",
-                "Pepper mild mottle virus",
                 "Respiratory syncytial virus",
                 "Restricted Access",
                 "Severe acute respiratory syndrome coronavirus 2"
