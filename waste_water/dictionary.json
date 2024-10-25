@@ -1,6 +1,6 @@
 {
-  "name": "waste water",
-  "version": "0.91",
+  "name": "waste_water",
+  "version": "0.92",
   "references": {
     "script": {
       "common": {
@@ -3881,7 +3881,7 @@
                       "organism"
                     ],
                     "match": {
-                      "values": "Influenza A virus"
+                      "value": "Influenza A virus"
                     }
                   }
                 ]
@@ -3899,7 +3899,7 @@
                       "organism"
                     ],
                     "match": {
-                      "values": "Influenza B virus"
+                      "value": "Influenza B virus"
                     }
                   }
                 ]
@@ -3917,7 +3917,7 @@
                       "organism"
                     ],
                     "match": {
-                      "values": "Influenza C virus"
+                      "value": "Influenza C virus"
                     }
                   }
                 ]
@@ -3935,7 +3935,7 @@
                       "organism"
                     ],
                     "match": {
-                      "values": "Influenza D virus"
+                      "value": "Influenza D virus"
                     }
                   }
                 ]
@@ -3953,7 +3953,7 @@
                       "organism"
                     ],
                     "match": {
-                      "values": "Monkeypox virus"
+                      "value": "Monkeypox virus"
                     }
                   }
                 ]
@@ -3971,7 +3971,7 @@
                       "organism"
                     ],
                     "match": {
-                      "values": "Respiratory syncytial virus"
+                      "value": "Respiratory syncytial virus"
                     }
                   }
                 ]
@@ -3988,7 +3988,7 @@
                       "organism"
                     ],
                     "match": {
-                      "values": "Severe acute respiratory syndrome coronavirus 2"
+                      "value": "Severe acute respiratory syndrome coronavirus 2"
                     }
                   }
                 ]
