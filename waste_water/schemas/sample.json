@@ -791,7 +791,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["amplicon size"],
+                "fields": ["amplicon_size"],
                 "match": {
                   "exists": true
                 }
