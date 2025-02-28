@@ -1560,7 +1560,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["depth of coverage threshold"],
+                "fields": ["depth_of_coverage_threshold"],
                 "match": {
                   "exists": true
                 }
