@@ -709,7 +709,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["ambient temperature measurement value"],
+                "fields": ["ambient_temperature_measurement_value"],
                 "match": {
                   "exists": true
                 }
