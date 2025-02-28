@@ -5265,7 +5265,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["sample storage method"],
+                "fields": ["sample_storage_method"],
                 "match": {
                   "exists": true
                 }
