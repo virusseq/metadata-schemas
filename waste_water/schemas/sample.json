@@ -5388,7 +5388,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["sample temperature value (when received)"],
+                "fields": ["sample_temperature_value_when_received"],
                 "match": {
                   "exists": true
                 }
