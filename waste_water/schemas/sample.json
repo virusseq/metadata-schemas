@@ -3765,7 +3765,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["pH measurement value"],
+                "fields": ["ph_measurement_value"],
                 "match": {
                   "exists": true
                 }
