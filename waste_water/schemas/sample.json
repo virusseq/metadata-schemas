@@ -5001,7 +5001,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["sample collection time duration value"],
+                "fields": ["sample_collection_time_duration_value"],
                 "match": {
                   "exists": true
                 }
