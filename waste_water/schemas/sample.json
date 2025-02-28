@@ -187,7 +187,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["BioProject accession"],
+                "fields": ["bioproject_accession"],
                 "match": {
                   "exists": true
                 }
