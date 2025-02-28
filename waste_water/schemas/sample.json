@@ -4846,7 +4846,7 @@
           "if": {
             "conditions": [
               {
-                "fields": ["sample collection date null reason"],
+                "fields": ["sample_collection_date_null_reason"],
                 "match": {
                   "exists": true
                 }
