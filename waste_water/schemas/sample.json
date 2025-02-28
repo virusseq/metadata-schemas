@@ -7681,7 +7681,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["watershed shapefile filename"],
+                "fields": ["watershed_shapefile_filename"],
                 "match": {
                   "exists": true
                 }
