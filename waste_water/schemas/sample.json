@@ -5304,7 +5304,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["sample storage medium"],
+                "fields": ["sample_storage_medium"],
                 "match": {
                   "exists": true
                 }
