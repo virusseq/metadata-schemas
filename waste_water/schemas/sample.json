@@ -2738,7 +2738,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo_loc_name_city_",
+      "name": "geo_loc_name_city",
       "restrictions": [],
       "valueType": "string"
     },
