@@ -4273,7 +4273,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["purpose of sequencing details"],
+                "fields": ["purpose_of_sequencing_details"],
                 "match": {
                   "exists": true
                 }
