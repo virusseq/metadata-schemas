@@ -5779,7 +5779,7 @@
           "if": {
             "conditions": [
               {
-                "fields": ["sequence submitted by"],
+                "fields": ["sequence_submitted_by"],
                 "match": {
                   "exists": true
                 }
