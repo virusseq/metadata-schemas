@@ -5748,7 +5748,7 @@
           "if": {
             "conditions": [
               {
-                "fields": ["sequence submitted by null reason"],
+                "fields": ["sequence_submitted_by_null_reason"],
                 "match": {
                   "exists": true
                 }
