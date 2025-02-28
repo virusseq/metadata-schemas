@@ -5846,7 +5846,7 @@
           "if": {
             "conditions": [
               {
-                "fields": ["sequenced by null reason"],
+                "fields": ["sequenced_by_null_reason"],
                 "match": {
                   "exists": true
                 }
