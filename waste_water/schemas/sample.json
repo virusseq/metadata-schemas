@@ -451,7 +451,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "genbank_accession_versioned_",
+      "name": "genbank_accession_versioned",
       "restrictions": [
         {
           "regex": "#/regex/GenBank_accession_versioned"
