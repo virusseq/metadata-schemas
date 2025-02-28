@@ -5187,7 +5187,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["sample storage duration value"],
+                "fields": ["sample_storage_duration_value"],
                 "match": {
                   "exists": true
                 }
