@@ -3444,7 +3444,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["nucleic acid extraction method"],
+                "fields": ["nucleic_acid_extraction_method"],
                 "match": {
                   "exists": true
                 }
