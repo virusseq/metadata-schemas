@@ -2830,7 +2830,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo_loc_name_state_province_territory_",
+      "name": "geo_loc_name_state_province_territory",
       "restrictions": [
         {
           "required": true
