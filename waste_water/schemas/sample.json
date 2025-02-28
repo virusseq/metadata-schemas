@@ -3804,7 +3804,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["pH measurement method"],
+                "fields": ["ph_measurement_method"],
                 "match": {
                   "exists": true
                 }
