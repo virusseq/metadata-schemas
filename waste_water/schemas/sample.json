@@ -2808,7 +2808,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo_loc_name_site_",
+      "name": "geo_loc_name_site",
       "restrictions": [],
       "valueType": "string"
     },
