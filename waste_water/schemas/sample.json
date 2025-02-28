@@ -7720,7 +7720,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["watershed shapefile availability"],
+                "fields": ["watershed_shapefile_availability"],
                 "match": {
                   "exists": true
                 }
