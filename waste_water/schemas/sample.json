@@ -351,7 +351,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["GISAID virus name"],
+                "fields": ["gisaid_virus_name"],
                 "match": {
                   "exists": true
                 }
