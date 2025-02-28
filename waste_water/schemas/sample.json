@@ -20,7 +20,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "AMR analysis report filename",
+      "name": "amr_analysis_report_filename",
       "restrictions": [],
       "valueType": "string"
     },
@@ -43,7 +43,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "AMR analysis software name",
+      "name": "amr_analysis_software_name",
       "restrictions": [],
       "valueType": "string"
     },
@@ -66,7 +66,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "AMR analysis software version",
+      "name": "amr_analysis_software_version",
       "restrictions": [],
       "valueType": "string"
     },
@@ -89,7 +89,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "AMR reference database name",
+      "name": "amr_reference_database_name",
       "restrictions": [],
       "valueType": "string"
     },
@@ -112,7 +112,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "AMR reference database version",
+      "name": "amr_reference_database_version",
       "restrictions": [],
       "valueType": "string"
     },
@@ -134,7 +134,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "BioProject accession",
+      "name": "bioproject_accession",
       "restrictions": [
         {
           "regex": "#/regex/BioProject_accession"
@@ -144,9 +144,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "BioSample accession"
-                ],
+                "fields": ["BioSample accession"],
                 "match": {
                   "exists": true
                 }
@@ -179,7 +177,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "BioSample accession",
+      "name": "biosample_accession",
       "restrictions": [
         {
           "regex": "#/regex/BioSample_accession"
@@ -189,9 +187,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "BioProject accession"
-                ],
+                "fields": ["BioProject accession"],
                 "match": {
                   "exists": true
                 }
@@ -223,7 +219,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "DNA fragment length",
+      "name": "dna_fragment_length",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -245,7 +241,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "DRA accession",
+      "name": "dra_accession",
       "restrictions": [
         {
           "regex": "#/regex/DRA_accession"
@@ -271,7 +267,7 @@
         },
         "version_tracking": {}
       },
-      "name": "DataHarmonizer provenance",
+      "name": "dataharmonizer_provenance",
       "restrictions": [],
       "valueType": "string"
     },
@@ -293,7 +289,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "ENA accession",
+      "name": "ena_accession",
       "restrictions": [
         {
           "regex": "#/regex/ENA_accession"
@@ -319,7 +315,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "Enterobase accession",
+      "name": "enterobase_accession",
       "restrictions": [
         {
           "regex": "#/regex/Enterobase_accession"
@@ -345,7 +341,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "GISAID accession",
+      "name": "gisaid_accession",
       "restrictions": [
         {
           "regex": "#/regex/GISAID_accession"
@@ -355,9 +351,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "GISAID virus name"
-                ],
+                "fields": ["GISAID virus name"],
                 "match": {
                   "exists": true
                 }
@@ -389,7 +383,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "GISAID virus name",
+      "name": "gisaid_virus_name",
       "restrictions": [
         {
           "regex": "#/regex/GISAID_virus_name"
@@ -399,9 +393,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "GISAID accession"
-                ],
+                "fields": ["GISAID accession"],
                 "match": {
                   "exists": true
                 }
@@ -433,7 +425,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "GSA accession",
+      "name": "gsa_accession",
       "restrictions": [
         {
           "regex": "#/regex/GSA_accession"
@@ -459,7 +451,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "GenBank accession (versioned)",
+      "name": "genbank_accession_versioned_",
       "restrictions": [
         {
           "regex": "#/regex/GenBank_accession_versioned"
@@ -485,7 +477,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "N50",
+      "name": "n50",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -507,7 +499,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "Ns per 100 kbp",
+      "name": "ns_per_100_kbp",
       "restrictions": [],
       "valueType": "number"
     },
@@ -529,7 +521,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "SRA accession",
+      "name": "sra_accession",
       "restrictions": [
         {
           "regex": "#/regex/SRA_accession"
@@ -555,7 +547,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "alkalinity measurement method",
+      "name": "alkalinity_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -597,7 +589,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "alkalinity measurement unit",
+      "name": "alkalinity_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/alkalinity_measurement_unit"
@@ -642,7 +634,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "alkalinity measurement value",
+      "name": "alkalinity_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -685,7 +677,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "alternative isolate ID",
+      "name": "alternative_isolate_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -707,7 +699,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "ambient temperature measurement unit",
+      "name": "ambient_temperature_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/ambient_temperature_measurement_unit"
@@ -717,9 +709,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "ambient temperature measurement value"
-                ],
+                "fields": ["ambient temperature measurement value"],
                 "match": {
                   "exists": true
                 }
@@ -751,16 +741,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "ambient temperature measurement value",
+      "name": "ambient_temperature_measurement_value",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "ambient temperature measurement unit"
-                ],
+                "fields": ["ambient temperature measurement unit"],
                 "match": {
                   "exists": true
                 }
@@ -793,7 +781,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "amplicon pcr primer scheme",
+      "name": "amplicon_pcr_primer_scheme",
       "restrictions": [
         {
           "codeList": "#/list/amplicon_pcr_primer_scheme"
@@ -803,9 +791,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "amplicon size"
-                ],
+                "fields": ["amplicon size"],
                 "match": {
                   "exists": true
                 }
@@ -837,16 +823,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "amplicon size",
+      "name": "amplicon_size",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "amplicon pcr primer scheme"
-                ],
+                "fields": ["amplicon pcr primer scheme"],
                 "match": {
                   "exists": true
                 }
@@ -905,7 +889,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "bioinformatics protocol",
+      "name": "bioinformatics_protocol",
       "restrictions": [],
       "valueType": "string"
     },
@@ -927,7 +911,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "breadth of coverage value",
+      "name": "breadth_of_coverage_value",
       "restrictions": [],
       "valueType": "number"
     },
@@ -949,7 +933,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "carbonaceous biochemical oxygen demand (CBOD) measurement method",
+      "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -991,7 +975,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "carbonaceous biochemical oxygen demand (CBOD) measurement unit",
+      "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/carbonaceous_biochemical_oxygen_demand_CBOD_measurement_unit"
@@ -1036,7 +1020,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "carbonaceous biochemical oxygen demand (CBOD) measurement value",
+      "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -1078,7 +1062,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "chemical oxygen demand (COD) measurement method",
+      "name": "chemical_oxygen_demand_cod_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -1120,7 +1104,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "chemical oxygen demand (COD) measurement unit",
+      "name": "chemical_oxygen_demand_cod_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/chemical_oxygen_demand_COD_measurement_unit"
@@ -1165,7 +1149,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "chemical oxygen demand (COD) measurement value",
+      "name": "chemical_oxygen_demand_cod_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -1207,7 +1191,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "collection device",
+      "name": "collection_device",
       "restrictions": [
         {
           "codeList": "#/list/collection_device"
@@ -1217,9 +1201,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "collection method"
-                ],
+                "fields": ["collection method"],
                 "match": {
                   "exists": true
                 }
@@ -1252,7 +1234,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "collection method",
+      "name": "collection_method",
       "restrictions": [
         {
           "codeList": "#/list/collection_method"
@@ -1262,9 +1244,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "collection device"
-                ],
+                "fields": ["collection device"],
                 "match": {
                   "exists": true
                 }
@@ -1296,7 +1276,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "conductivity measurement method",
+      "name": "conductivity_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -1338,7 +1318,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "conductivity measurement unit",
+      "name": "conductivity_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/conductivity_measurement_unit"
@@ -1383,7 +1363,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "conductivity measurement value",
+      "name": "conductivity_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -1425,7 +1405,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "consensus genome length",
+      "name": "consensus_genome_length",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -1446,7 +1426,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "consensus sequence software name",
+      "name": "consensus_sequence_software_name",
       "restrictions": [],
       "valueType": "string"
     },
@@ -1467,7 +1447,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "consensus sequence software version",
+      "name": "consensus_sequence_software_version",
       "restrictions": [],
       "valueType": "string"
     },
@@ -1489,7 +1469,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "deduplication method",
+      "name": "deduplication_method",
       "restrictions": [],
       "valueType": "string"
     },
@@ -1512,7 +1492,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "dehosting method",
+      "name": "dehosting_method",
       "restrictions": [],
       "valueType": "string"
     },
@@ -1534,16 +1514,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "depth of coverage threshold",
+      "name": "depth_of_coverage_threshold",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "depth of coverage value"
-                ],
+                "fields": ["depth of coverage value"],
                 "match": {
                   "exists": true
                 }
@@ -1575,16 +1553,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "depth of coverage value",
+      "name": "depth_of_coverage_value",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "depth of coverage threshold"
-                ],
+                "fields": ["depth of coverage threshold"],
                 "match": {
                   "exists": true
                 }
@@ -1616,7 +1592,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "diagnostic measurement method",
+      "name": "diagnostic_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -1657,7 +1633,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "diagnostic measurement unit",
+      "name": "diagnostic_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/diagnostic_measurement_unit"
@@ -1701,7 +1677,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "diagnostic measurement value",
+      "name": "diagnostic_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -1742,7 +1718,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "diagnostic target presence",
+      "name": "diagnostic_target_presence",
       "restrictions": [
         {
           "codeList": "#/list/diagnostic_target_presence"
@@ -1768,7 +1744,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "dissolved oxygen measurement method",
+      "name": "dissolved_oxygen_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -1810,7 +1786,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "dissolved oxygen measurement unit",
+      "name": "dissolved_oxygen_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/dissolved_oxygen_measurement_unit"
@@ -1855,7 +1831,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "dissolved oxygen measurement value",
+      "name": "dissolved_oxygen_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -1897,7 +1873,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "endogenous control details",
+      "name": "endogenous_control_details",
       "restrictions": [],
       "valueType": "string"
     },
@@ -1920,7 +1896,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "environmental material",
+      "name": "environmental_material",
       "restrictions": [
         {
           "codeList": "#/list/environmental_material"
@@ -1966,7 +1942,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "environmental material properties",
+      "name": "environmental_material_properties",
       "restrictions": [
         {
           "codeList": "#/list/environmental_material_properties"
@@ -1976,10 +1952,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "environmental material",
-                  "environmental site"
-                ],
+                "fields": ["environmental material", "environmental site"],
                 "match": {
                   "exists": true
                 }
@@ -2012,7 +1985,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "environmental site",
+      "name": "environmental_site",
       "restrictions": [
         {
           "codeList": "#/list/environmental_site"
@@ -2057,7 +2030,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "experimental control details",
+      "name": "experimental_control_details",
       "restrictions": [],
       "valueType": "string"
     },
@@ -2074,7 +2047,7 @@
         },
         "version_tracking": {}
       },
-      "name": "experimental protocol field",
+      "name": "experimental_protocol_field",
       "restrictions": [],
       "valueType": "string"
     },
@@ -2096,7 +2069,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "experimental specimen role type",
+      "name": "experimental_specimen_role_type",
       "restrictions": [
         {
           "codeList": "#/list/experimental_specimen_role_type"
@@ -2121,16 +2094,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "extraction recovery efficiency measurement method",
+      "name": "extraction_recovery_efficiency_measurement_method",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "extraction recovery efficiency measurement value"
-                ],
+                "fields": ["extraction recovery efficiency measurement value"],
                 "match": {
                   "exists": true
                 }
@@ -2161,16 +2132,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "extraction recovery efficiency measurement value",
+      "name": "extraction_recovery_efficiency_measurement_value",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "extraction recovery efficiency measurement method"
-                ],
+                "fields": ["extraction recovery efficiency measurement method"],
                 "match": {
                   "exists": true
                 }
@@ -2202,7 +2171,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "fecal coliform count method",
+      "name": "fecal_coliform_count_method",
       "restrictions": [
         {
           "if": {
@@ -2244,7 +2213,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "fecal coliform count unit",
+      "name": "fecal_coliform_count_unit",
       "restrictions": [
         {
           "codeList": "#/list/fecal_coliform_count_unit"
@@ -2289,7 +2258,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "fecal coliform count value",
+      "name": "fecal_coliform_count_value",
       "restrictions": [
         {
           "if": {
@@ -2332,7 +2301,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "fecal contamination indicator",
+      "name": "fecal_contamination_indicator",
       "restrictions": [
         {
           "codeList": "#/list/fecal_contamination_indicator"
@@ -2378,7 +2347,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "fecal contamination method",
+      "name": "fecal_contamination_method",
       "restrictions": [
         {
           "if": {
@@ -2422,7 +2391,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "fecal contamination unit",
+      "name": "fecal_contamination_unit",
       "restrictions": [
         {
           "codeList": "#/list/fecal_contamination_unit"
@@ -2469,7 +2438,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "fecal contamination value",
+      "name": "fecal_contamination_value",
       "restrictions": [
         {
           "if": {
@@ -2512,15 +2481,13 @@
           "label": "1.0.0"
         }
       },
-      "name": "gene name",
+      "name": "gene_name",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "organism"
-                ],
+                "fields": ["organism"],
                 "match": {
                   "value": "Influenza A virus"
                 }
@@ -2536,9 +2503,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "organism"
-                ],
+                "fields": ["organism"],
                 "match": {
                   "value": "Influenza B virus"
                 }
@@ -2554,9 +2519,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "organism"
-                ],
+                "fields": ["organism"],
                 "match": {
                   "value": "Influenza C virus"
                 }
@@ -2572,9 +2535,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "organism"
-                ],
+                "fields": ["organism"],
                 "match": {
                   "value": "Influenza D virus"
                 }
@@ -2590,9 +2551,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "organism"
-                ],
+                "fields": ["organism"],
                 "match": {
                   "value": "Monkeypox virus"
                 }
@@ -2608,9 +2567,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "organism"
-                ],
+                "fields": ["organism"],
                 "match": {
                   "value": "Respiratory syncytial virus"
                 }
@@ -2625,9 +2582,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "organism"
-                ],
+                "fields": ["organism"],
                 "match": {
                   "value": "Severe acute respiratory syndrome coronavirus 2"
                 }
@@ -2660,7 +2615,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "genome completeness",
+      "name": "genome_completeness",
       "restrictions": [],
       "valueType": "string"
     },
@@ -2683,7 +2638,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "genomic target enrichment method",
+      "name": "genomic_target_enrichment_method",
       "restrictions": [
         {
           "codeList": "#/list/genomic_target_enrichment_method"
@@ -2709,7 +2664,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "genomic target enrichment method details",
+      "name": "genomic_target_enrichment_method_details",
       "restrictions": [],
       "valueType": "string"
     },
@@ -2731,7 +2686,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo loc latitude",
+      "name": "geo_loc_latitude",
       "restrictions": [
         {
           "regex": "#/regex/latitude"
@@ -2757,7 +2712,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo loc longitude",
+      "name": "geo_loc_longitude",
       "restrictions": [
         {
           "regex": "#/regex/longitude"
@@ -2783,7 +2738,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo loc name (city)",
+      "name": "geo_loc_name_city_",
       "restrictions": [],
       "valueType": "string"
     },
@@ -2805,7 +2760,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo loc name (country)",
+      "name": "geo_loc_name_country_",
       "restrictions": [
         {
           "required": true
@@ -2831,7 +2786,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo loc name (county/region)",
+      "name": "geo_loc_name_county_region_",
       "restrictions": [],
       "valueType": "string"
     },
@@ -2853,7 +2808,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo loc name (site)",
+      "name": "geo_loc_name_site_",
       "restrictions": [],
       "valueType": "string"
     },
@@ -2875,7 +2830,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo loc name (state/province/territory)",
+      "name": "geo_loc_name_state_province_territory_",
       "restrictions": [
         {
           "required": true
@@ -2901,7 +2856,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "instantaneous flow rate measurement method",
+      "name": "instantaneous_flow_rate_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -2943,7 +2898,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "instantaneous flow rate measurement unit",
+      "name": "instantaneous_flow_rate_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/instantaneous_flow_rate_measurement_unit"
@@ -2988,7 +2943,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "instantaneous flow rate measurement value",
+      "name": "instantaneous_flow_rate_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -3030,7 +2985,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "isolate ID",
+      "name": "isolate_id",
       "restrictions": [
         {
           "required": true
@@ -3056,7 +3011,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "isolate received date",
+      "name": "isolate_received_date",
       "restrictions": [
         {
           "regex": "#/regex/date"
@@ -3082,7 +3037,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "isolated by",
+      "name": "isolated_by",
       "restrictions": [],
       "valueType": "string"
     },
@@ -3104,7 +3059,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "isolated by contact email",
+      "name": "isolated_by_contact_email",
       "restrictions": [
         {
           "regex": "#/regex/email"
@@ -3130,7 +3085,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "isolated by contact name",
+      "name": "isolated_by_contact_name",
       "restrictions": [],
       "valueType": "string"
     },
@@ -3152,7 +3107,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "isolated by laboratory name",
+      "name": "isolated_by_laboratory_name",
       "restrictions": [],
       "valueType": "string"
     },
@@ -3174,7 +3129,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "isolation date",
+      "name": "isolation_date",
       "restrictions": [
         {
           "regex": "#/regex/date"
@@ -3200,7 +3155,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "library ID",
+      "name": "library_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -3222,7 +3177,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "library preparation kit",
+      "name": "library_preparation_kit",
       "restrictions": [],
       "valueType": "string"
     },
@@ -3244,7 +3199,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "lineage/clade analysis report filename",
+      "name": "lineage_clade_analysis_report_filename",
       "restrictions": [
         {
           "if": {
@@ -3287,7 +3242,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "lineage/clade analysis software name",
+      "name": "lineage_clade_analysis_software_name",
       "restrictions": [
         {
           "if": {
@@ -3330,7 +3285,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "lineage/clade analysis software version",
+      "name": "lineage_clade_analysis_software_version",
       "restrictions": [
         {
           "if": {
@@ -3373,7 +3328,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "lineage/clade name",
+      "name": "lineage_clade_name",
       "restrictions": [
         {
           "if": {
@@ -3416,7 +3371,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "metagenome-assembled genome (MAG) ID",
+      "name": "metagenome_assembled_genome_mag_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -3439,7 +3394,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "microbiological method",
+      "name": "microbiological_method",
       "restrictions": [],
       "valueType": "string"
     },
@@ -3460,7 +3415,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "minimum post-trimming read length",
+      "name": "minimum_post_trimming_read_length",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -3482,16 +3437,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "nucleic acid extraction kit",
+      "name": "nucleic_acid_extraction_kit",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "nucleic acid extraction method"
-                ],
+                "fields": ["nucleic acid extraction method"],
                 "match": {
                   "exists": true
                 }
@@ -3522,16 +3475,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "nucleic acid extraction method",
+      "name": "nucleic_acid_extraction_method",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "nucleic acid extraction kit"
-                ],
+                "fields": ["nucleic acid extraction kit"],
                 "match": {
                   "exists": true
                 }
@@ -3563,7 +3514,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "number of base pairs sequenced",
+      "name": "number_of_base_pairs_sequenced",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -3585,7 +3536,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "number of contigs",
+      "name": "number_of_contigs",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -3607,7 +3558,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "number of total reads",
+      "name": "number_of_total_reads",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -3629,7 +3580,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "number of unique reads",
+      "name": "number_of_unique_reads",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -3678,7 +3629,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "oxygen reduction potential (ORP) measurement method",
+      "name": "oxygen_reduction_potential_orp_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -3720,7 +3671,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "oxygen reduction potential (ORP) measurement unit",
+      "name": "oxygen_reduction_potential_orp_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/oxygen_reduction_potential_ORP_measurement_unit"
@@ -3765,7 +3716,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "oxygen reduction potential (ORP) measurement value",
+      "name": "oxygen_reduction_potential_orp_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -3807,16 +3758,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "pH measurement method",
+      "name": "ph_measurement_method",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "pH measurement value"
-                ],
+                "fields": ["pH measurement value"],
                 "match": {
                   "exists": true
                 }
@@ -3848,16 +3797,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "pH measurement value",
+      "name": "ph_measurement_value",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "pH measurement method"
-                ],
+                "fields": ["pH measurement method"],
                 "match": {
                   "exists": true
                 }
@@ -3889,7 +3836,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "percent Ns across total genome length",
+      "name": "percent_ns_across_total_genome_length",
       "restrictions": [],
       "valueType": "number"
     },
@@ -3911,7 +3858,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "percent read contamination",
+      "name": "percent_read_contamination",
       "restrictions": [],
       "valueType": "number"
     },
@@ -3955,7 +3902,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "pooled sample ID",
+      "name": "pooled_sample_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -3977,7 +3924,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "populated area type",
+      "name": "populated_area_type",
       "restrictions": [
         {
           "codeList": "#/list/populated_area_type"
@@ -4003,7 +3950,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "precipitation measurement method",
+      "name": "precipitation_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -4046,7 +3993,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "precipitation measurement unit",
+      "name": "precipitation_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/precipitation_measurement_unit"
@@ -4092,7 +4039,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "precipitation measurement value",
+      "name": "precipitation_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -4134,7 +4081,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "presampling activity",
+      "name": "presampling_activity",
       "restrictions": [
         {
           "codeList": "#/list/presampling_activity"
@@ -4179,7 +4126,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "presampling activity details",
+      "name": "presampling_activity_details",
       "restrictions": [
         {
           "if": {
@@ -4221,7 +4168,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "presampling weather conditions",
+      "name": "presampling_weather_conditions",
       "restrictions": [
         {
           "codeList": "#/list/presampling_weather_conditions"
@@ -4266,7 +4213,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "progeny isolate ID",
+      "name": "progeny_isolate_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -4288,7 +4235,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "purpose of sampling",
+      "name": "purpose_of_sampling",
       "restrictions": [
         {
           "codeList": "#/list/purpose_of_sampling",
@@ -4315,7 +4262,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "purpose of sequencing",
+      "name": "purpose_of_sequencing",
       "restrictions": [
         {
           "codeList": "#/list/purpose_of_sequencing",
@@ -4326,9 +4273,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "purpose of sequencing details"
-                ],
+                "fields": ["purpose of sequencing details"],
                 "match": {
                   "exists": true
                 }
@@ -4360,16 +4305,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "purpose of sequencing details",
+      "name": "purpose_of_sequencing_details",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "purpose of sequencing"
-                ],
+                "fields": ["purpose of sequencing"],
                 "match": {
                   "exists": true
                 }
@@ -4401,7 +4344,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "quality control details",
+      "name": "quality_control_details",
       "restrictions": [],
       "valueType": "string"
     },
@@ -4423,7 +4366,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "quality control determination",
+      "name": "quality_control_determination",
       "restrictions": [
         {
           "codeList": "#/list/quality_control_determination"
@@ -4449,7 +4392,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "quality control issues",
+      "name": "quality_control_issues",
       "restrictions": [
         {
           "codeList": "#/list/quality_control_issues"
@@ -4475,16 +4418,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "quality control method name",
+      "name": "quality_control_method_name",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "quality control method version"
-                ],
+                "fields": ["quality control method version"],
                 "match": {
                   "exists": true
                 }
@@ -4516,16 +4457,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "quality control method version",
+      "name": "quality_control_method_version",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "quality control method name"
-                ],
+                "fields": ["quality control method name"],
                 "match": {
                   "exists": true
                 }
@@ -4558,7 +4497,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "raw sequence data processing method",
+      "name": "raw_sequence_data_processing_method",
       "restrictions": [],
       "valueType": "string"
     },
@@ -4580,7 +4519,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "read mapping criteria",
+      "name": "read_mapping_criteria",
       "restrictions": [],
       "valueType": "string"
     },
@@ -4602,7 +4541,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "read mapping software name",
+      "name": "read_mapping_software_name",
       "restrictions": [
         {
           "required": true
@@ -4628,7 +4567,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "read mapping software version",
+      "name": "read_mapping_software_version",
       "restrictions": [
         {
           "required": true
@@ -4654,7 +4593,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "reference genome accession",
+      "name": "reference_genome_accession",
       "restrictions": [],
       "valueType": "string"
     },
@@ -4676,7 +4615,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "salinity measurement method",
+      "name": "salinity_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -4718,7 +4657,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "salinity measurement unit",
+      "name": "salinity_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/salinity_measurement_unit"
@@ -4763,7 +4702,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "salinity measurement value",
+      "name": "salinity_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -4804,7 +4743,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collected by",
+      "name": "sample_collected_by",
       "restrictions": [
         {
           "else": {
@@ -4813,9 +4752,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "sample collected by null reason"
-                ],
+                "fields": ["sample collected by null reason"],
                 "match": {
                   "exists": true
                 }
@@ -4836,7 +4773,7 @@
         "examples": "Restricted Access",
         "notes": "A conditional check where if value is provided then sample collected by is not required"
       },
-      "name": "sample collected by null reason",
+      "name": "sample_collected_by_null_reason",
       "restrictions": [
         {
           "else": {
@@ -4846,9 +4783,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "sample collected by"
-                ],
+                "fields": ["sample collected by"],
                 "match": {
                   "exists": true
                 }
@@ -4880,7 +4815,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collection data steward name",
+      "name": "sample_collection_data_steward_name",
       "restrictions": [],
       "valueType": "string"
     },
@@ -4901,7 +4836,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collection date",
+      "name": "sample_collection_date",
       "restrictions": [
         {
           "else": {
@@ -4911,9 +4846,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "sample collection date null reason"
-                ],
+                "fields": ["sample collection date null reason"],
                 "match": {
                   "exists": true
                 }
@@ -4934,7 +4867,7 @@
         "examples": "Restricted Access",
         "notes": "A conditional check where if value is provided then sequenced by is not required"
       },
-      "name": "sample collection date null reason",
+      "name": "sample_collection_date_null_reason",
       "restrictions": [
         {
           "else": {
@@ -4944,9 +4877,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "sample collection date"
-                ],
+                "fields": ["sample collection date"],
                 "match": {
                   "exists": true
                 }
@@ -4979,7 +4910,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collection end date",
+      "name": "sample_collection_end_date",
       "restrictions": [
         {
           "regex": "#/regex/date"
@@ -5006,7 +4937,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collection end time",
+      "name": "sample_collection_end_time",
       "restrictions": [
         {
           "regex": "#/regex/time"
@@ -5033,7 +4964,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collection start time",
+      "name": "sample_collection_start_time",
       "restrictions": [
         {
           "regex": "#/regex/time"
@@ -5060,7 +4991,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collection time duration unit",
+      "name": "sample_collection_time_duration_unit",
       "restrictions": [
         {
           "codeList": "#/list/sample_collection_time_duration_unit"
@@ -5070,9 +5001,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample collection time duration value"
-                ],
+                "fields": ["sample collection time duration value"],
                 "match": {
                   "exists": true
                 }
@@ -5105,16 +5034,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collection time duration value",
+      "name": "sample_collection_time_duration_value",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample collection time duration unit"
-                ],
+                "fields": ["sample collection time duration unit"],
                 "match": {
                   "exists": true
                 }
@@ -5146,7 +5073,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collection time of day",
+      "name": "sample_collection_time_of_day",
       "restrictions": [
         {
           "codeList": "#/list/sample_collection_time_of_day"
@@ -5172,7 +5099,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample collector contact email",
+      "name": "sample_collector_contact_email",
       "restrictions": [
         {
           "regex": "#/regex/email"
@@ -5198,7 +5125,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample processing date",
+      "name": "sample_processing_date",
       "restrictions": [
         {
           "regex": "#/regex/date"
@@ -5224,7 +5151,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample received date",
+      "name": "sample_received_date",
       "restrictions": [
         {
           "regex": "#/regex/date"
@@ -5250,7 +5177,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample storage duration unit",
+      "name": "sample_storage_duration_unit",
       "restrictions": [
         {
           "codeList": "#/list/sample_storage_duration_unit"
@@ -5260,9 +5187,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample storage duration value"
-                ],
+                "fields": ["sample storage duration value"],
                 "match": {
                   "exists": true
                 }
@@ -5294,16 +5219,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample storage duration value",
+      "name": "sample_storage_duration_value",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample storage duration unit"
-                ],
+                "fields": ["sample storage duration unit"],
                 "match": {
                   "exists": true
                 }
@@ -5335,16 +5258,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample storage medium",
+      "name": "sample_storage_medium",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample storage method"
-                ],
+                "fields": ["sample storage method"],
                 "match": {
                   "exists": true
                 }
@@ -5376,16 +5297,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample storage method",
+      "name": "sample_storage_method",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample storage medium"
-                ],
+                "fields": ["sample storage medium"],
                 "match": {
                   "exists": true
                 }
@@ -5417,7 +5336,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample temperature unit (at collection)",
+      "name": "sample_temperature_unit_at_collection_",
       "restrictions": [
         {
           "codeList": "#/list/sample_temperature_unit_at_collection"
@@ -5427,9 +5346,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample temperature value (at collection)"
-                ],
+                "fields": ["sample temperature value (at collection)"],
                 "match": {
                   "exists": true
                 }
@@ -5461,7 +5378,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample temperature unit (when received)",
+      "name": "sample_temperature_unit_when_received_",
       "restrictions": [
         {
           "codeList": "#/list/sample_temperature_unit_when_received"
@@ -5471,9 +5388,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample temperature value (when received)"
-                ],
+                "fields": ["sample temperature value (when received)"],
                 "match": {
                   "exists": true
                 }
@@ -5505,16 +5420,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample temperature value (at collection)",
+      "name": "sample_temperature_value_at_collection_",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample temperature unit (at collection)"
-                ],
+                "fields": ["sample temperature unit (at collection)"],
                 "match": {
                   "exists": true
                 }
@@ -5546,16 +5459,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample temperature value (when received)",
+      "name": "sample_temperature_value_when_received_",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample temperature unit (when received)"
-                ],
+                "fields": ["sample temperature unit (when received)"],
                 "match": {
                   "exists": true
                 }
@@ -5587,7 +5498,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample volume measurement unit",
+      "name": "sample_volume_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/sample_volume_measurement_unit"
@@ -5597,9 +5508,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample volume measurement value"
-                ],
+                "fields": ["sample volume measurement value"],
                 "match": {
                   "exists": true
                 }
@@ -5631,16 +5540,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample volume measurement value",
+      "name": "sample_volume_measurement_value",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "sample volume measurement unit"
-                ],
+                "fields": ["sample volume measurement unit"],
                 "match": {
                   "exists": true
                 }
@@ -5673,7 +5580,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sampling event ID",
+      "name": "sampling_event_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -5696,7 +5603,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sampling site ID",
+      "name": "sampling_site_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -5718,7 +5625,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sampling weather conditions",
+      "name": "sampling_weather_conditions",
       "restrictions": [
         {
           "codeList": "#/list/sampling_weather_conditions"
@@ -5745,7 +5652,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "scale of sampling",
+      "name": "scale_of_sampling",
       "restrictions": [],
       "valueType": "string"
     },
@@ -5767,7 +5674,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequence assembly length",
+      "name": "sequence_assembly_length",
       "restrictions": [],
       "valueType": "integer"
     },
@@ -5789,7 +5696,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequence assembly software name",
+      "name": "sequence_assembly_software_name",
       "restrictions": [],
       "valueType": "string"
     },
@@ -5811,7 +5718,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequence assembly software version",
+      "name": "sequence_assembly_software_version",
       "restrictions": [],
       "valueType": "string"
     },
@@ -5832,7 +5739,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequence submitted by",
+      "name": "sequence_submitted_by",
       "restrictions": [
         {
           "else": {
@@ -5841,9 +5748,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "sequence submitted by null reason"
-                ],
+                "fields": ["sequence submitted by null reason"],
                 "match": {
                   "exists": true
                 }
@@ -5864,7 +5769,7 @@
         "examples": "Restricted Access",
         "notes": "A conditional check where if value is provided then sequence submitted by is not required"
       },
-      "name": "sequence submitted by null reason",
+      "name": "sequence_submitted_by_null_reason",
       "restrictions": [
         {
           "else": {
@@ -5874,9 +5779,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "sequence submitted by"
-                ],
+                "fields": ["sequence submitted by"],
                 "match": {
                   "exists": true
                 }
@@ -5909,7 +5812,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequence submitter contact email",
+      "name": "sequence_submitter_contact_email",
       "restrictions": [
         {
           "regex": "#/regex/email"
@@ -5934,7 +5837,7 @@
           "label": "3.0.0"
         }
       },
-      "name": "sequenced by",
+      "name": "sequenced_by",
       "restrictions": [
         {
           "else": {
@@ -5943,9 +5846,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "sequenced by null reason"
-                ],
+                "fields": ["sequenced by null reason"],
                 "match": {
                   "exists": true
                 }
@@ -5978,7 +5879,7 @@
           "label": "3.0.0"
         }
       },
-      "name": "sequenced by contact email",
+      "name": "sequenced_by_contact_email",
       "restrictions": [
         {
           "regex": "#/regex/email"
@@ -6004,7 +5905,7 @@
           "label": "3.0.0"
         }
       },
-      "name": "sequenced by contact name",
+      "name": "sequenced_by_contact_name",
       "restrictions": [
         {
           "required": true
@@ -6019,7 +5920,7 @@
         "examples": "Restricted Access",
         "notes": "A conditional check where if value is provided then sequenced by is not required"
       },
-      "name": "sequenced by null reason",
+      "name": "sequenced_by_null_reason",
       "restrictions": [
         {
           "else": {
@@ -6029,9 +5930,7 @@
           "if": {
             "conditions": [
               {
-                "fields": [
-                  "sequenced by"
-                ],
+                "fields": ["sequenced by"],
                 "match": {
                   "exists": true
                 }
@@ -6063,7 +5962,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequencing assay type",
+      "name": "sequencing_assay_type",
       "restrictions": [
         {
           "codeList": "#/list/sequencing_assay_type"
@@ -6089,7 +5988,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequencing date",
+      "name": "sequencing_date",
       "restrictions": [
         {
           "regex": "#/regex/date"
@@ -6115,7 +6014,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequencing instrument",
+      "name": "sequencing_instrument",
       "restrictions": [
         {
           "codeList": "#/list/sequencing_instrument",
@@ -6142,7 +6041,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequencing platform",
+      "name": "sequencing_platform",
       "restrictions": [
         {
           "codeList": "#/list/sequencing_platform"
@@ -6169,7 +6068,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sequencing protocol",
+      "name": "sequencing_protocol",
       "restrictions": [],
       "valueType": "string"
     },
@@ -6192,7 +6091,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "serotyping method",
+      "name": "serotyping_method",
       "restrictions": [],
       "valueType": "string"
     },
@@ -6236,7 +6135,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "specimen collector project ID",
+      "name": "specimen_collector_project_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -6259,7 +6158,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "specimen collector sample ID",
+      "name": "specimen_collector_sample_id",
       "restrictions": [
         {
           "required": true
@@ -6286,7 +6185,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "specimen collector subsample ID",
+      "name": "specimen_collector_subsample_id",
       "restrictions": [],
       "valueType": "string"
     },
@@ -6308,7 +6207,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "specimen processing",
+      "name": "specimen_processing",
       "restrictions": [
         {
           "codeList": "#/list/specimen_processing"
@@ -6333,7 +6232,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "specimen processing details",
+      "name": "specimen_processing_details",
       "restrictions": [],
       "valueType": "string"
     },
@@ -6377,7 +6276,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "taxonomic analysis date",
+      "name": "taxonomic_analysis_date",
       "restrictions": [
         {
           "regex": "#/regex/date"
@@ -6403,7 +6302,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "taxonomic analysis report filename",
+      "name": "taxonomic_analysis_report_filename",
       "restrictions": [],
       "valueType": "string"
     },
@@ -6426,7 +6325,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "taxonomic reference database name",
+      "name": "taxonomic_reference_database_name",
       "restrictions": [],
       "valueType": "string"
     },
@@ -6449,7 +6348,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "taxonomic reference database version",
+      "name": "taxonomic_reference_database_version",
       "restrictions": [],
       "valueType": "string"
     },
@@ -6471,7 +6370,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total daily flow rate measurement method",
+      "name": "total_daily_flow_rate_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -6513,7 +6412,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total daily flow rate measurement unit",
+      "name": "total_daily_flow_rate_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/total_daily_flow_rate_measurement_unit"
@@ -6558,7 +6457,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total daily flow rate measurement value",
+      "name": "total_daily_flow_rate_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -6600,7 +6499,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total dissolved solids (TDS) measurement method",
+      "name": "total_dissolved_solids_tds_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -6642,7 +6541,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total dissolved solids (TDS) measurement unit",
+      "name": "total_dissolved_solids_tds_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/total_dissolved_solids_TDS_measurement_unit"
@@ -6687,7 +6586,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total dissolved solids (TDS) measurement value",
+      "name": "total_dissolved_solids_tds_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -6729,7 +6628,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total nitrogen (TN) measurement method",
+      "name": "total_nitrogen_tn_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -6771,7 +6670,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total nitrogen (TN) measurement unit",
+      "name": "total_nitrogen_tn_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/total_nitrogen_TN_measurement_unit"
@@ -6816,7 +6715,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total nitrogen (TN) measurement value",
+      "name": "total_nitrogen_tn_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -6858,7 +6757,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total phosphorus (TP) measurement method",
+      "name": "total_phosphorus_tp_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -6900,7 +6799,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total phosphorus (TP) measurement unit",
+      "name": "total_phosphorus_tp_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/total_phosphorus_TP_measurement_unit"
@@ -6945,7 +6844,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total phosphorus (TP) measurement value",
+      "name": "total_phosphorus_tp_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -6987,7 +6886,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total solids (TS) measurement method",
+      "name": "total_solids_ts_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -7029,7 +6928,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total solids (TS) measurement unit",
+      "name": "total_solids_ts_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/total_solids_TS_measurement_unit"
@@ -7074,7 +6973,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total solids (TS) measurement value",
+      "name": "total_solids_ts_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -7116,7 +7015,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total suspended solids (TSS) measurement method",
+      "name": "total_suspended_solids_tss_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -7158,7 +7057,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total suspended solids (TSS) measurement unit",
+      "name": "total_suspended_solids_tss_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/total_suspended_solids_TSS_measurement_unit"
@@ -7203,7 +7102,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "total suspended solids (TSS) measurement value",
+      "name": "total_suspended_solids_tss_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -7245,7 +7144,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "turbidity measurement method",
+      "name": "turbidity_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -7288,7 +7187,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "turbidity measurement unit",
+      "name": "turbidity_measurement_unit",
       "restrictions": [
         {
           "codeList": "#/list/turbidity_measurement_unit"
@@ -7334,7 +7233,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "turbidity measurement value",
+      "name": "turbidity_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -7376,7 +7275,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "urinary contamination indicator",
+      "name": "urinary_contamination_indicator",
       "restrictions": [
         {
           "codeList": "#/list/urinary_contamination_indicator"
@@ -7421,7 +7320,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "urinary contamination method",
+      "name": "urinary_contamination_method",
       "restrictions": [
         {
           "if": {
@@ -7463,7 +7362,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "urinary contamination unit",
+      "name": "urinary_contamination_unit",
       "restrictions": [
         {
           "codeList": "#/list/urinary_contamination_unit"
@@ -7508,7 +7407,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "urinary contamination value",
+      "name": "urinary_contamination_value",
       "restrictions": [
         {
           "if": {
@@ -7552,7 +7451,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "wastewater system type",
+      "name": "wastewater_system_type",
       "restrictions": [
         {
           "codeList": "#/list/wastewater_system_type"
@@ -7578,7 +7477,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "water catchment area human population density unit",
+      "name": "water_catchment_area_human_population_density_unit",
       "restrictions": [
         {
           "codeList": "#/list/water_catchment_area_human_population_density_unit"
@@ -7622,7 +7521,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "water catchment area human population density value",
+      "name": "water_catchment_area_human_population_density_value",
       "restrictions": [
         {
           "if": {
@@ -7663,7 +7562,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "water catchment area human population measurement method",
+      "name": "water_catchment_area_human_population_measurement_method",
       "restrictions": [
         {
           "if": {
@@ -7705,7 +7604,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "water catchment area human population measurement value",
+      "name": "water_catchment_area_human_population_measurement_value",
       "restrictions": [
         {
           "if": {
@@ -7746,7 +7645,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "water catchment area human population range",
+      "name": "water_catchment_area_human_population_range",
       "restrictions": [
         {
           "codeList": "#/list/water_catchment_area_human_population_range"
@@ -7772,7 +7671,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "watershed shapefile availability",
+      "name": "watershed_shapefile_availability",
       "restrictions": [
         {
           "codeList": "#/list/watershed_shapefile_availability"
@@ -7782,9 +7681,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "watershed shapefile filename"
-                ],
+                "fields": ["watershed shapefile filename"],
                 "match": {
                   "exists": true
                 }
@@ -7816,16 +7713,14 @@
           "label": "1.0.0"
         }
       },
-      "name": "watershed shapefile filename",
+      "name": "watershed_shapefile_filename",
       "restrictions": [
         {
           "if": {
             "conditions": [
               {
                 "case": "any",
-                "fields": [
-                  "watershed shapefile availability"
-                ],
+                "fields": ["watershed shapefile availability"],
                 "match": {
                   "exists": true
                 }
