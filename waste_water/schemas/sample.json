@@ -2139,7 +2139,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["extraction recovery efficiency measurement method"],
+                "fields": ["extraction_recovery_efficiency_measurement_method"],
                 "match": {
                   "exists": true
                 }
