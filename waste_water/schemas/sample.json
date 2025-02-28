@@ -4783,7 +4783,7 @@
           "if": {
             "conditions": [
               {
-                "fields": ["sample collected by"],
+                "fields": ["sample_collected_by"],
                 "match": {
                   "exists": true
                 }
