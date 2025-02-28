@@ -5420,7 +5420,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample_temperature_value_at_collection_",
+      "name": "sample_temperature_value_at_collection",
       "restrictions": [
         {
           "if": {
