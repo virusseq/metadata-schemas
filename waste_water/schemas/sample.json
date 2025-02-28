@@ -144,7 +144,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["BioSample accession"],
+                "fields": ["biosample_accession"],
                 "match": {
                   "exists": true
                 }
