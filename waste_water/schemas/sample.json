@@ -4752,7 +4752,7 @@
           "if": {
             "conditions": [
               {
-                "fields": ["sample collected by null reason"],
+                "fields": ["sample_collected_by_null_reason"],
                 "match": {
                   "exists": true
                 }
