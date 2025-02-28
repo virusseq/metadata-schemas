@@ -1521,7 +1521,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["depth of coverage value"],
+                "fields": ["depth_of_coverage_value"],
                 "match": {
                   "exists": true
                 }
