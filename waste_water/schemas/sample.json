@@ -555,8 +555,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "alkalinity measurement value",
-                  "alkalinity measurement unit"
+                  "alkalinity_measurement_value",
+                  "alkalinity_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -600,8 +600,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "alkalinity measurement value",
-                  "alkalinity measurement method"
+                  "alkalinity_measurement_value",
+                  "alkalinity_measurement_method"
                 ],
                 "match": {
                   "exists": true
@@ -642,8 +642,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "alkalinity measurement method",
-                  "alkalinity measurement unit"
+                  "alkalinity_measurement_method",
+                  "alkalinity_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -748,7 +748,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["ambient temperature measurement unit"],
+                "fields": ["ambient_temperature_measurement_unit"],
                 "match": {
                   "exists": true
                 }
@@ -830,7 +830,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["amplicon pcr primer scheme"],
+                "fields": ["amplicon_pcr_primer_scheme"],
                 "match": {
                   "exists": true
                 }
@@ -941,8 +941,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "carbonaceous biochemical oxygen demand (CBOD) measurement unit",
-                  "carbonaceous biochemical oxygen demand (CBOD) measurement value"
+                  "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
+                  "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -978,7 +978,7 @@
       "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
       "restrictions": [
         {
-          "codeList": "#/list/carbonaceous_biochemical_oxygen_demand_CBOD_measurement_unit"
+          "codeList": "#/list/carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit"
         },
         {
           "if": {
@@ -986,8 +986,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "carbonaceous biochemical oxygen demand (CBOD) measurement method",
-                  "carbonaceous biochemical oxygen demand (CBOD) measurement value"
+                  "carbonaceous_biochemical_oxygen_demand_cbod_measurement_method",
+                  "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -1028,8 +1028,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "carbonaceous biochemical oxygen demand (CBOD) measurement unit",
-                  "carbonaceous biochemical oxygen demand (CBOD) measurement method"
+                  "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
+                  "carbonaceous_biochemical_oxygen_demand_cbod_measurement_method"
                 ],
                 "match": {
                   "exists": true
@@ -1070,8 +1070,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "chemical oxygen demand (COD) measurement unit",
-                  "chemical oxygen demand (COD) measurement value"
+                  "chemical_oxygen_demand_cod_measurement_unit",
+                  "chemical_oxygen_demand_cod_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -1115,8 +1115,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "chemical oxygen demand (COD) measurement method",
-                  "chemical oxygen demand (COD) measurement value"
+                  "chemical_oxygen_demand_cod_measurement_method",
+                  "chemical_oxygen_demand_cod_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -1157,8 +1157,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "chemical oxygen demand (COD) measurement unit",
-                  "chemical oxygen demand (COD) measurement method"
+                  "chemical_oxygen_demand_cod_measurement_unit",
+                  "chemical_oxygen_demand_cod_measurement_method"
                 ],
                 "match": {
                   "exists": true
@@ -1244,7 +1244,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["collection device"],
+                "fields": ["collection_device"],
                 "match": {
                   "exists": true
                 }
@@ -1284,8 +1284,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "conductivity measurement unit",
-                  "conductivity measurement value"
+                  "conductivity_measurement_unit",
+                  "conductivity_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -1329,8 +1329,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "conductivity measurement  method",
-                  "conductivity measurement value"
+                  "conductivity_measurement_method",
+                  "conductivity_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -1371,8 +1371,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "conductivity measurement method",
-                  "conductivity measurement unit"
+                  "conductivity_measurement_method",
+                  "conductivity_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -1600,8 +1600,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "diagnostic measurement unit",
-                  "diagnostic measurement value"
+                  "diagnostic_measurement_unit",
+                  "diagnostic_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -1644,8 +1644,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "diagnostic measurement value",
-                  "diagnostic measurement method"
+                  "diagnostic_measurement_value",
+                  "diagnostic_measurement_method"
                 ],
                 "match": {
                   "exists": true
@@ -1685,8 +1685,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "diagnostic measurement method",
-                  "diagnostic measurement unit"
+                  "diagnostic_measurement_method",
+                  "diagnostic_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -1752,8 +1752,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "dissolved oxygen measurement unit",
-                  "dissolved oxygen measurement value"
+                  "dissolved_oxygen_measurement_unit",
+                  "dissolved_oxygen_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -1797,8 +1797,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "dissolved oxygen measurement method",
-                  "dissolved oxygen measurement value"
+                  "dissolved_oxygen_measurement_method",
+                  "dissolved_oxygen_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -1839,8 +1839,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "dissolved oxygen measurement method",
-                  "dissolved oxygen measurement unit"
+                  "dissolved_oxygen_measurement_method",
+                  "dissolved_oxygen_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -1907,8 +1907,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "environmental material properties",
-                  "environmental site"
+                  "environmental_material_properties",
+                  "environmental_site"
                 ],
                 "match": {
                   "exists": true
@@ -1952,7 +1952,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["environmental material", "environmental site"],
+                "fields": ["environmental_material", "environmental_site"],
                 "match": {
                   "exists": true
                 }
@@ -1996,8 +1996,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "environmental material",
-                  "environmental material properties"
+                  "environmental_material",
+                  "environmental_material_properties"
                 ],
                 "match": {
                   "exists": true
@@ -2179,8 +2179,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "fecal coliform count unit",
-                  "fecal coliform count value"
+                  "fecal_coliform_count_unit",
+                  "fecal_coliform_count_value"
                 ],
                 "match": {
                   "exists": true
@@ -2224,8 +2224,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "fecal coliform count method",
-                  "fecal coliform count value"
+                  "fecal_coliform_count_method",
+                  "fecal_coliform_count_value"
                 ],
                 "match": {
                   "exists": true
@@ -2266,8 +2266,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "fecal coliform count method",
-                  "fecal coliform count unit"
+                  "fecal_coliform_count_method",
+                  "fecal_coliform_count_unit"
                 ],
                 "match": {
                   "exists": true
@@ -2312,9 +2312,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "fecal contamination method",
-                  "fecal contamination unit",
-                  "fecal contamination value"
+                  "fecal_contamination_method",
+                  "fecal_contamination_unit",
+                  "fecal_contamination_value"
                 ],
                 "match": {
                   "exists": true
@@ -2355,9 +2355,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "fecal contamination indicator",
-                  "fecal contamination unit",
-                  "fecal contamination value"
+                  "fecal_contamination_indicator",
+                  "fecal_contamination_unit",
+                  "fecal_contamination_value"
                 ],
                 "match": {
                   "exists": true
@@ -2402,9 +2402,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "fecal contamination method",
-                  "fecal contamination indicator",
-                  "fecal contamination value"
+                  "fecal_contamination_method",
+                  "fecal_contamination_indicator",
+                  "fecal_contamination_value"
                 ],
                 "match": {
                   "exists": true
@@ -2446,9 +2446,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "fecal contamination method",
-                  "fecal contamination unit",
-                  "fecal contamination indicator"
+                  "fecal_contamination_method",
+                  "fecal_contamination_unit",
+                  "fecal_contamination_indicator"
                 ],
                 "match": {
                   "exists": true
@@ -2864,8 +2864,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "instantaneous flow rate measurement unit",
-                  "instantaneous flow rate measurement value"
+                  "instantaneous_flow_rate_measurement_unit",
+                  "instantaneous_flow_rate_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -2909,8 +2909,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "instantaneous flow rate measurement value",
-                  "instantaneous flow rate measurement method"
+                  "instantaneous_flow_rate_measurement_value",
+                  "instantaneous_flow_rate_measurement_method"
                 ],
                 "match": {
                   "exists": true
@@ -2951,8 +2951,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "instantaneous flow rate measurement method",
-                  "instantaneous flow rate measurement unit"
+                  "instantaneous_flow_rate_measurement_method",
+                  "instantaneous_flow_rate_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -3207,9 +3207,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "lineage/clade analysis software name",
-                  "lineage/clade analysis software version",
-                  "lineage/clade name"
+                  "lineage_clade_analysis_software_name",
+                  "lineage_clade_analysis_software_version",
+                  "lineage_clade_name"
                 ],
                 "match": {
                   "exists": true
@@ -3250,9 +3250,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "lineage/clade analysis report filename",
-                  "lineage/clade analysis software version",
-                  "lineage/clade name"
+                  "lineage_clade_analysis_report_filename",
+                  "lineage_clade_analysis_software_version",
+                  "lineage_clade_name"
                 ],
                 "match": {
                   "exists": true
@@ -3293,9 +3293,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "lineage/clade analysis report filename",
-                  "lineage/clade analysis software name",
-                  "lineage/clade name"
+                  "lineage_clade_analysis_report_filename",
+                  "lineage_clade_analysis_software_name",
+                  "lineage_clade_name"
                 ],
                 "match": {
                   "exists": true
@@ -3336,9 +3336,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "lineage/clade analysis report filename",
-                  "lineage/clade analysis software name",
-                  "lineage/clade analysis software version"
+                  "lineage_clade_analysis_report_filename",
+                  "lineage_clade_analysis_software_name",
+                  "lineage_clade_analysis_software_version"
                 ],
                 "match": {
                   "exists": true
@@ -3637,8 +3637,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "oxygen reduction potential (ORP) measurement unit",
-                  "oxygen reduction potential (ORP) measurement value"
+                  "oxygen_reduction_potential_orp_measurement_unit",
+                  "oxygen_reduction_potential_orp_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -3682,8 +3682,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "oxygen reduction potential (ORP) measurement method",
-                  "oxygen reduction potential (ORP) measurement value"
+                  "oxygen_reduction_potential_orp_measurement_method",
+                  "oxygen_reduction_potential_orp_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -3724,8 +3724,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "oxygen reduction potential (ORP) measurement method",
-                  "oxygen reduction potential (ORP) measurement unit"
+                  "oxygen_reduction_potential_orp_measurement_method",
+                  "oxygen_reduction_potential_orp_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -3958,8 +3958,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "precipitation measurement unit",
-                  "precipitation measurement value"
+                  "precipitation_measurement_unit",
+                  "precipitation_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -4004,8 +4004,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "precipitation measurement method",
-                  "precipitation measurement value"
+                  "precipitation_measurement_method",
+                  "precipitation_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -4047,8 +4047,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "precipitation measurement method",
-                  "precipitation measurement unit"
+                  "precipitation_measurement_method",
+                  "precipitation_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -4092,8 +4092,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "presampling activity details",
-                  "presampling activity conditions"
+                  "presampling_activity_details",
+                  "presampling_activity_conditions"
                 ],
                 "match": {
                   "exists": true
@@ -4134,8 +4134,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "presampling activity",
-                  "presampling activity conditions"
+                  "presampling_activity",
+                  "presampling_activity_conditions"
                 ],
                 "match": {
                   "exists": true
@@ -4179,8 +4179,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "presampling activity details",
-                  "presampling activity"
+                  "presampling_activity_details",
+                  "presampling_activity"
                 ],
                 "match": {
                   "exists": true
@@ -4425,7 +4425,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["quality control method version"],
+                "fields": ["quality_control_method_version"],
                 "match": {
                   "exists": true
                 }
@@ -4464,7 +4464,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["quality control method name"],
+                "fields": ["quality_control_method_name"],
                 "match": {
                   "exists": true
                 }
@@ -4623,8 +4623,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "salinity measurement unit",
-                  "salinity measurement value"
+                  "salinity_measurement_unit",
+                  "salinity_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -4668,8 +4668,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "salinity measurement method",
-                  "salinity measurement value"
+                  "salinity_measurement_method",
+                  "salinity_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -4710,8 +4710,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "salinity measurement unit",
-                  "salinity measurement method"
+                  "salinity_measurement_unit",
+                  "salinity_measurement_method"
                 ],
                 "match": {
                   "exists": true
@@ -5930,7 +5930,7 @@
           "if": {
             "conditions": [
               {
-                "fields": ["sequenced by"],
+                "fields": ["sequenced_by"],
                 "match": {
                   "exists": true
                 }
@@ -6378,8 +6378,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total daily flow rate measurement unit",
-                  "total daily flow rate measurement value"
+                  "total_daily_flow_rate_measurement_unit",
+                  "total_daily_flow_rate_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6423,8 +6423,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total daily flow rate measurement method",
-                  "total daily flow rate measurement value"
+                  "total_daily_flow_rate_measurement_method",
+                  "total_daily_flow_rate_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6465,8 +6465,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total daily flow rate measurement method",
-                  "total daily flow rate measurement unit"
+                  "total_daily_flow_rate_measurement_method",
+                  "total_daily_flow_rate_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -6507,8 +6507,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total dissolved solids (TDS) measurement unit",
-                  "total dissolved solids (TDS) measurement value"
+                  "total_dissolved_solids_tds_measurement_unit",
+                  "total_dissolved_solids_tds_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6552,8 +6552,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total dissolved solids (TDS) measurement method",
-                  "total dissolved solids (TDS) measurement value"
+                  "total_dissolved_solids_tds_measurement_method",
+                  "total_dissolved_solids_tds_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6594,8 +6594,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total dissolved solids (TDS) measurement unit",
-                  "total dissolved solids (TDS) measurement method"
+                  "total_dissolved_solids_tds_measurement_unit",
+                  "total_dissolved_solids_tds_measurement_method"
                 ],
                 "match": {
                   "exists": true
@@ -6636,8 +6636,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total nitrogen (TN) measurement unit",
-                  "total nitrogen (TN) measurement value"
+                  "total_nitrogen_tn_measurement_unit",
+                  "total_nitrogen_tn_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6681,8 +6681,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total nitrogen (TN) measurement method",
-                  "total nitrogen (TN) measurement value"
+                  "total_nitrogen_tn_measurement_method",
+                  "total_nitrogen_tn_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6723,8 +6723,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total nitrogen (TN) measurement method",
-                  "total nitrogen (TN) measurement unit"
+                  "total_nitrogen_tn_measurement_method",
+                  "total_nitrogen_tn_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -6765,8 +6765,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total phosphorus (TP) measurement unit",
-                  "total phosphorus (TP) measurement value"
+                  "total_phosphorus_tp_measurement_unit",
+                  "total_phosphorus_tp_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6810,8 +6810,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total phosphorus (TP) measurement method",
-                  "total phosphorus (TP) measurement value"
+                  "total_phosphorus_tp_measurement_method",
+                  "total_phosphorus_tp_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6852,8 +6852,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total phosphorus (TP) measurement method",
-                  "total phosphorus (TP) measurement unit"
+                  "total_phosphorus_tp_measurement_method",
+                  "total_phosphorus_tp_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -6894,8 +6894,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total solids (TS) measurement unit",
-                  "total solids (TS) measurement value"
+                  "total_solids_ts_measurement_unit",
+                  "total_solids_ts_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6939,8 +6939,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total solids (TS) measurement method",
-                  "total solids (TS) measurement value"
+                  "total_solids_ts_measurement_method",
+                  "total_solids_ts_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -6981,8 +6981,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total solids (TS) measurement method",
-                  "total solids (TS) measurement unit"
+                  "total_solids_ts_measurement_method",
+                  "total_solids_ts_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -7023,8 +7023,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total suspended solids (TSS) measurement unit",
-                  "total suspended solids (TSS) measurement value"
+                  "total_suspended_solids_tss_measurement_unit",
+                  "total_suspended_solids_tss_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -7068,8 +7068,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total suspended solids (TSS) measurement method",
-                  "total suspended solids (TSS) measurement value"
+                  "total_suspended_solids_tss_measurement_method",
+                  "total_suspended_solids_tss_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -7110,8 +7110,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "total suspended solids (TSS) measurement method",
-                  "total suspended solids (TSS) measurement unit"
+                  "total_suspended_solids_tss_measurement_method",
+                  "total_suspended_solids_tss_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -7152,8 +7152,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "turbidity measurement unit",
-                  "turbidity measurement value"
+                  "turbidity_measurement_unit",
+                  "turbidity_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -7198,8 +7198,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "turbidity measurement method",
-                  "turbidity measurement value"
+                  "turbidity_measurement_method",
+                  "turbidity_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -7241,8 +7241,8 @@
               {
                 "case": "any",
                 "fields": [
-                  "turbidity measurement method",
-                  "turbidity measurement unit"
+                  "turbidity_measurement_method",
+                  "turbidity_measurement_unit"
                 ],
                 "match": {
                   "exists": true
@@ -7286,9 +7286,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "urinary contamination method",
-                  "urinary contamination unit",
-                  "urinary contamination value"
+                  "urinary_contamination_method",
+                  "urinary_contamination_unit",
+                  "urinary_contamination_value"
                 ],
                 "match": {
                   "exists": true
@@ -7328,9 +7328,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "urinary contamination indicator",
-                  "urinary contamination unit",
-                  "urinary contamination value"
+                  "urinary_contamination_indicator",
+                  "urinary_contamination_unit",
+                  "urinary_contamination_value"
                 ],
                 "match": {
                   "exists": true
@@ -7373,9 +7373,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "urinary contamination method",
-                  "urinary contamination indicator",
-                  "urinary contamination value"
+                  "urinary_contamination_method",
+                  "urinary_contamination_indicator",
+                  "urinary_contamination_value"
                 ],
                 "match": {
                   "exists": true
@@ -7415,9 +7415,9 @@
               {
                 "case": "any",
                 "fields": [
-                  "urinary contamination method",
-                  "urinary contamination unit",
-                  "urinary contamination indicator"
+                  "urinary_contamination_method",
+                  "urinary_contamination_unit",
+                  "urinary_contamination_indicator"
                 ],
                 "match": {
                   "exists": true
@@ -7488,7 +7488,7 @@
               {
                 "case": "any",
                 "fields": [
-                  "water catchment area human population density value"
+                  "water_catchment_area_human_population_density_value"
                 ],
                 "match": {
                   "exists": true
@@ -7529,7 +7529,7 @@
               {
                 "case": "any",
                 "fields": [
-                  "water catchment area human population density unit"
+                  "water_catchment_area_human_population_density_unit"
                 ],
                 "match": {
                   "exists": true
@@ -7570,7 +7570,7 @@
               {
                 "case": "any",
                 "fields": [
-                  "water catchment area human population measurement value"
+                  "water_catchment_area_human_population_measurement_value"
                 ],
                 "match": {
                   "exists": true
@@ -7612,7 +7612,7 @@
               {
                 "case": "any",
                 "fields": [
-                  "water catchment area human population measurement method"
+                  "water_catchment_area_human_population_measurement_method"
                 ],
                 "match": {
                   "exists": true
