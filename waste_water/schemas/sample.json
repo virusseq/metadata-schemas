@@ -5378,7 +5378,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "sample_temperature_unit_when_received_",
+      "name": "sample_temperature_unit_when_received",
       "restrictions": [
         {
           "codeList": "#/list/sample_temperature_unit_when_received"
