@@ -5427,7 +5427,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["sample temperature unit (at collection)"],
+                "fields": ["sample_temperature_unit_at_collection"],
                 "match": {
                   "exists": true
                 }
