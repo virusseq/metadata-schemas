@@ -393,7 +393,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["GISAID accession"],
+                "fields": ["gisaid_accession"],
                 "match": {
                   "exists": true
                 }
