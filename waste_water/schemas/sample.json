@@ -1201,7 +1201,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["collection method"],
+                "fields": ["collection_method"],
                 "match": {
                   "exists": true
                 }
