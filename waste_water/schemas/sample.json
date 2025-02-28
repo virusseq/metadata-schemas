@@ -3482,7 +3482,7 @@
             "conditions": [
               {
                 "case": "any",
-                "fields": ["nucleic acid extraction kit"],
+                "fields": ["nucleic_acid_extraction_kit"],
                 "match": {
                   "exists": true
                 }
