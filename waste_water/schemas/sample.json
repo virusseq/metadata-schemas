@@ -4877,7 +4877,7 @@
           "if": {
             "conditions": [
               {
-                "fields": ["sample collection date"],
+                "fields": ["sample_collection_date"],
                 "match": {
                   "exists": true
                 }
