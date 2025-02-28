@@ -2760,7 +2760,7 @@
           "label": "1.0.0"
         }
       },
-      "name": "geo_loc_name_country_",
+      "name": "geo_loc_name_country",
       "restrictions": [
         {
           "required": true
