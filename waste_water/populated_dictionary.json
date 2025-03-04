@@ -1,6 +1,6 @@
 {
   "name": "waste_water",
-  "version": "0.92",
+  "version": "0.93",
   "references": {
     "script": {
       "common": {
@@ -1379,7 +1379,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "AMR analysis report filename",
+          "name": "amr_analysis_report_filename",
           "restrictions": [],
           "valueType": "string"
         },
@@ -1402,7 +1402,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "AMR analysis software name",
+          "name": "amr_analysis_software_name",
           "restrictions": [],
           "valueType": "string"
         },
@@ -1425,7 +1425,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "AMR analysis software version",
+          "name": "amr_analysis_software_version",
           "restrictions": [],
           "valueType": "string"
         },
@@ -1448,7 +1448,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "AMR reference database name",
+          "name": "amr_reference_database_name",
           "restrictions": [],
           "valueType": "string"
         },
@@ -1471,7 +1471,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "AMR reference database version",
+          "name": "amr_reference_database_version",
           "restrictions": [],
           "valueType": "string"
         },
@@ -1493,7 +1493,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "BioProject accession",
+          "name": "bioproject_accession",
           "restrictions": [
             {
               "regex": "^PRJN[A-Z0-9]+$"
@@ -1504,7 +1504,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "BioSample accession"
+                      "biosample_accession"
                     ],
                     "match": {
                       "exists": true
@@ -1538,7 +1538,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "BioSample accession",
+          "name": "biosample_accession",
           "restrictions": [
             {
               "regex": "^SAMN\\d+$"
@@ -1549,7 +1549,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "BioProject accession"
+                      "bioproject_accession"
                     ],
                     "match": {
                       "exists": true
@@ -1582,7 +1582,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "DNA fragment length",
+          "name": "dna_fragment_length",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -1604,7 +1604,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "DRA accession",
+          "name": "dra_accession",
           "restrictions": [
             {
               "regex": "^DRA\\d+$"
@@ -1630,7 +1630,7 @@
             },
             "version_tracking": {}
           },
-          "name": "DataHarmonizer provenance",
+          "name": "dataharmonizer_provenance",
           "restrictions": [],
           "valueType": "string"
         },
@@ -1652,7 +1652,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "ENA accession",
+          "name": "ena_accession",
           "restrictions": [
             {
               "regex": "^SAMEA\\d+$"
@@ -1678,7 +1678,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "Enterobase accession",
+          "name": "enterobase_accession",
           "restrictions": [
             {
               "regex": "^[A-Z]+_[A-Z0-9]+_[A-Z]+$"
@@ -1704,7 +1704,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "GISAID accession",
+          "name": "gisaid_accession",
           "restrictions": [
             {
               "regex": "^EPI_[A-Z]+_\\d+$"
@@ -1715,7 +1715,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "GISAID virus name"
+                      "gisaid_virus_name"
                     ],
                     "match": {
                       "exists": true
@@ -1748,7 +1748,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "GISAID virus name",
+          "name": "gisaid_virus_name",
           "restrictions": [
             {
               "regex": "^(hCoV-19\\/.*\\/.*\\/\\d{4})$"
@@ -1759,7 +1759,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "GISAID accession"
+                      "gisaid_accession"
                     ],
                     "match": {
                       "exists": true
@@ -1792,7 +1792,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "GSA accession",
+          "name": "gsa_accession",
           "restrictions": [
             {
               "regex": "^CRA\\d+$"
@@ -1818,7 +1818,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "GenBank accession (versioned)",
+          "name": "genbank_accession_versioned",
           "restrictions": [
             {
               "regex": "^[A-Z0-9]+\\.\\d+$"
@@ -1844,7 +1844,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "N50",
+          "name": "n50",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -1866,7 +1866,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "Ns per 100 kbp",
+          "name": "ns_per_100_kbp",
           "restrictions": [],
           "valueType": "number"
         },
@@ -1888,7 +1888,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "SRA accession",
+          "name": "sra_accession",
           "restrictions": [
             {
               "regex": "^SR(R|S)\\d+$"
@@ -1914,7 +1914,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "alkalinity measurement method",
+          "name": "alkalinity_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -1922,8 +1922,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "alkalinity measurement value",
-                      "alkalinity measurement unit"
+                      "alkalinity_measurement_value",
+                      "alkalinity_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -1956,18 +1956,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "alkalinity measurement unit",
+          "name": "alkalinity_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "milliequivalent per liter (meq/L)",
-                "milligram per liter of calcium carbonate (mg/L CaCO3)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milliequivalent per liter (meq/L)","milligram per liter of calcium carbonate (mg/L CaCO3)"]
             },
             {
               "if": {
@@ -1975,8 +1967,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "alkalinity measurement value",
-                      "alkalinity measurement method"
+                      "alkalinity_measurement_value",
+                      "alkalinity_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -2009,7 +2001,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "alkalinity measurement value",
+          "name": "alkalinity_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -2017,8 +2009,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "alkalinity measurement method",
-                      "alkalinity measurement unit"
+                      "alkalinity_measurement_method",
+                      "alkalinity_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -2052,7 +2044,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "alternative isolate ID",
+          "name": "alternative_isolate_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -2074,18 +2066,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "ambient temperature measurement unit",
+          "name": "ambient_temperature_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "degree Celsius (C)",
-                "degree Fahrenheit (F)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","degree Celsius (C)","degree Fahrenheit (F)"]
             },
             {
               "if": {
@@ -2093,7 +2077,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "ambient temperature measurement value"
+                      "ambient_temperature_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -2126,7 +2110,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "ambient temperature measurement value",
+          "name": "ambient_temperature_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -2134,7 +2118,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "ambient temperature measurement unit"
+                      "ambient_temperature_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -2168,38 +2152,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "amplicon pcr primer scheme",
+          "name": "amplicon_pcr_primer_scheme",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "artic-v1",
-                "artic-v2",
-                "artic-v3",
-                "artic-v4",
-                "artic-v4.1",
-                "artic-v5.0.0_400",
-                "artic-v5.1.0_400",
-                "artic-v5.2.0_1200",
-                "artic-v5.2.0_400",
-                "artic-v5.3.2_400",
-                "eden-v1",
-                "midnight-bccdc-v1",
-                "midnight-bccdc-v2",
-                "midnight-bccdc-v3",
-                "midnight-bccdc-v4",
-                "midnight-ont-v3",
-                "midnight-v1",
-                "midnight-v2",
-                "varskip-vsl1a",
-                "varskip-vss1a",
-                "varskip-vss2a",
-                "varskip-vss2b"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","artic-v1","artic-v2","artic-v3","artic-v4","artic-v4.1","artic-v5.0.0_400","artic-v5.1.0_400","artic-v5.2.0_1200","artic-v5.2.0_400","artic-v5.3.2_400","eden-v1","midnight-bccdc-v1","midnight-bccdc-v2","midnight-bccdc-v3","midnight-bccdc-v4","midnight-ont-v3","midnight-v1","midnight-v2","varskip-vsl1a","varskip-vss1a","varskip-vss2a","varskip-vss2b"]
             },
             {
               "if": {
@@ -2207,7 +2163,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "amplicon size"
+                      "amplicon_size"
                     ],
                     "match": {
                       "exists": true
@@ -2240,7 +2196,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "amplicon size",
+          "name": "amplicon_size",
           "restrictions": [
             {
               "if": {
@@ -2248,7 +2204,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "amplicon pcr primer scheme"
+                      "amplicon_pcr_primer_scheme"
                     ],
                     "match": {
                       "exists": true
@@ -2308,7 +2264,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "bioinformatics protocol",
+          "name": "bioinformatics_protocol",
           "restrictions": [],
           "valueType": "string"
         },
@@ -2330,7 +2286,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "breadth of coverage value",
+          "name": "breadth_of_coverage_value",
           "restrictions": [],
           "valueType": "number"
         },
@@ -2352,7 +2308,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "carbonaceous biochemical oxygen demand (CBOD) measurement method",
+          "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -2360,8 +2316,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "carbonaceous biochemical oxygen demand (CBOD) measurement unit",
-                      "carbonaceous biochemical oxygen demand (CBOD) measurement value"
+                      "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
+                      "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -2394,17 +2350,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "carbonaceous biochemical oxygen demand (CBOD) measurement unit",
+          "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "milligram per liter (mg/L)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milligram per liter (mg/L)"]
             },
             {
               "if": {
@@ -2412,8 +2361,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "carbonaceous biochemical oxygen demand (CBOD) measurement method",
-                      "carbonaceous biochemical oxygen demand (CBOD) measurement value"
+                      "carbonaceous_biochemical_oxygen_demand_cbod_measurement_method",
+                      "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -2446,7 +2395,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "carbonaceous biochemical oxygen demand (CBOD) measurement value",
+          "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -2454,8 +2403,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "carbonaceous biochemical oxygen demand (CBOD) measurement unit",
-                      "carbonaceous biochemical oxygen demand (CBOD) measurement method"
+                      "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
+                      "carbonaceous_biochemical_oxygen_demand_cbod_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -2488,7 +2437,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "chemical oxygen demand (COD) measurement method",
+          "name": "chemical_oxygen_demand_cod_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -2496,8 +2445,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "chemical oxygen demand (COD) measurement unit",
-                      "chemical oxygen demand (COD) measurement value"
+                      "chemical_oxygen_demand_cod_measurement_unit",
+                      "chemical_oxygen_demand_cod_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -2530,17 +2479,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "chemical oxygen demand (COD) measurement unit",
+          "name": "chemical_oxygen_demand_cod_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "milligram per liter (mg/L)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milligram per liter (mg/L)"]
             },
             {
               "if": {
@@ -2548,8 +2490,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "chemical oxygen demand (COD) measurement method",
-                      "chemical oxygen demand (COD) measurement value"
+                      "chemical_oxygen_demand_cod_measurement_method",
+                      "chemical_oxygen_demand_cod_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -2582,7 +2524,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "chemical oxygen demand (COD) measurement value",
+          "name": "chemical_oxygen_demand_cod_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -2590,8 +2532,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "chemical oxygen demand (COD) measurement unit",
-                      "chemical oxygen demand (COD) measurement method"
+                      "chemical_oxygen_demand_cod_measurement_unit",
+                      "chemical_oxygen_demand_cod_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -2624,28 +2566,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "collection device",
+          "name": "collection_device",
           "restrictions": [
             {
-              "codeList": [
-                "Automatic composite sampler",
-                "Automatic flow-proportional sampler",
-                "Automatic sequential (time-proportional) sampler",
-                "Composite sampler",
-                "Cone-shaped sampling device",
-                "Core sampling device",
-                "Grab sampler",
-                "Horizontal grab sampling device",
-                "Missing",
-                "Moore swab",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Passive (trap) sampler",
-                "Restricted Access",
-                "Vacuum sludge sampling device",
-                "Vertical grab sampling device"
-              ]
+              "codeList": ["Automatic composite sampler","Automatic flow-proportional sampler","Automatic sequential (time-proportional) sampler","Composite sampler","Cone-shaped sampling device","Core sampling device","Grab sampler","Horizontal grab sampling device","Missing","Moore swab","Not Applicable","Not Collected","Not Provided","Passive (trap) sampler","Restricted Access","Vacuum sludge sampling device","Vertical grab sampling device"]
             },
             {
               "if": {
@@ -2653,7 +2577,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "collection method"
+                      "collection_method"
                     ],
                     "match": {
                       "exists": true
@@ -2687,21 +2611,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "collection method",
+          "name": "collection_method",
           "restrictions": [
             {
-              "codeList": [
-                "Automatic composite sampling",
-                "Composite sampling",
-                "Grab sampling",
-                "Manual composite sampling",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Passive composite sampling",
-                "Restricted Access"
-              ]
+              "codeList": ["Automatic composite sampling","Composite sampling","Grab sampling","Manual composite sampling","Missing","Not Applicable","Not Collected","Not Provided","Passive composite sampling","Restricted Access"]
             },
             {
               "if": {
@@ -2709,7 +2622,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "collection device"
+                      "collection_device"
                     ],
                     "match": {
                       "exists": true
@@ -2742,7 +2655,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "conductivity measurement method",
+          "name": "conductivity_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -2750,8 +2663,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "conductivity measurement unit",
-                      "conductivity measurement value"
+                      "conductivity_measurement_unit",
+                      "conductivity_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -2784,21 +2697,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "conductivity measurement unit",
+          "name": "conductivity_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "Siemen per meter (S/m)",
-                "microSiemen per centimeter (ŒºS/cm)",
-                "micromho per centimeter (Œºmho/cm)",
-                "milliSiemen per centimeter (mS/cm)",
-                "millimho per centimeter (mmho/cm)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","Siemen per meter (S/m)","microSiemen per centimeter (ŒºS/cm)","micromho per centimeter (Œºmho/cm)","milliSiemen per centimeter (mS/cm)","millimho per centimeter (mmho/cm)"]
             },
             {
               "if": {
@@ -2806,8 +2708,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "conductivity measurement  method",
-                      "conductivity measurement value"
+                      "conductivity_measurement_method",
+                      "conductivity_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -2840,7 +2742,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "conductivity measurement value",
+          "name": "conductivity_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -2848,8 +2750,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "conductivity measurement method",
-                      "conductivity measurement unit"
+                      "conductivity_measurement_method",
+                      "conductivity_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -2882,7 +2784,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "consensus genome length",
+          "name": "consensus_genome_length",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -2903,7 +2805,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "consensus sequence software name",
+          "name": "consensus_sequence_software_name",
           "restrictions": [],
           "valueType": "string"
         },
@@ -2924,7 +2826,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "consensus sequence software version",
+          "name": "consensus_sequence_software_version",
           "restrictions": [],
           "valueType": "string"
         },
@@ -2946,7 +2848,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "deduplication method",
+          "name": "deduplication_method",
           "restrictions": [],
           "valueType": "string"
         },
@@ -2969,7 +2871,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "dehosting method",
+          "name": "dehosting_method",
           "restrictions": [],
           "valueType": "string"
         },
@@ -2991,7 +2893,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "depth of coverage threshold",
+          "name": "depth_of_coverage_threshold",
           "restrictions": [
             {
               "if": {
@@ -2999,7 +2901,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "depth of coverage value"
+                      "depth_of_coverage_value"
                     ],
                     "match": {
                       "exists": true
@@ -3032,7 +2934,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "depth of coverage value",
+          "name": "depth_of_coverage_value",
           "restrictions": [
             {
               "if": {
@@ -3040,7 +2942,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "depth of coverage threshold"
+                      "depth_of_coverage_threshold"
                     ],
                     "match": {
                       "exists": true
@@ -3073,7 +2975,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "diagnostic measurement method",
+          "name": "diagnostic_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -3081,8 +2983,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "diagnostic measurement unit",
-                      "diagnostic measurement value"
+                      "diagnostic_measurement_unit",
+                      "diagnostic_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -3114,23 +3016,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "diagnostic measurement unit",
+          "name": "diagnostic_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "colony forming units per 100 milliliter (CFU/100 mL)",
-                "colony forming units per grams total solids (CFU/gTS)",
-                "colony forming units per milliliter (CFU/mL)",
-                "cycle threshold (Ct) / quantification cycle (Cq)",
-                "gene copies per liter (GC/L)",
-                "most probable number per 100 milliliter (MPN/100 mL)",
-                "most probable number per milliliter (MPN/mL)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","colony forming units per 100 milliliter (CFU/100 mL)","colony forming units per grams total solids (CFU/gTS)","colony forming units per milliliter (CFU/mL)","cycle threshold (Ct) / quantification cycle (Cq)","gene copies per liter (GC/L)","most probable number per 100 milliliter (MPN/100 mL)","most probable number per milliliter (MPN/mL)"]
             },
             {
               "if": {
@@ -3138,8 +3027,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "diagnostic measurement value",
-                      "diagnostic measurement method"
+                      "diagnostic_measurement_value",
+                      "diagnostic_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -3171,7 +3060,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "diagnostic measurement value",
+          "name": "diagnostic_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -3179,8 +3068,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "diagnostic measurement method",
-                      "diagnostic measurement unit"
+                      "diagnostic_measurement_method",
+                      "diagnostic_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -3212,18 +3101,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "diagnostic target presence",
+          "name": "diagnostic_target_presence",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "absent",
-                "present"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","absent","present"]
             }
           ],
           "valueType": "string"
@@ -3246,7 +3127,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "dissolved oxygen measurement method",
+          "name": "dissolved_oxygen_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -3254,8 +3135,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "dissolved oxygen measurement unit",
-                      "dissolved oxygen measurement value"
+                      "dissolved_oxygen_measurement_unit",
+                      "dissolved_oxygen_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -3288,19 +3169,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "dissolved oxygen measurement unit",
+          "name": "dissolved_oxygen_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "kilogram per cubic meter (kg/m^3)",
-                "milligram per liter (mg/L)",
-                "part per million (ppm)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","kilogram per cubic meter (kg/m^3)","milligram per liter (mg/L)","part per million (ppm)"]
             },
             {
               "if": {
@@ -3308,8 +3180,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "dissolved oxygen measurement method",
-                      "dissolved oxygen measurement value"
+                      "dissolved_oxygen_measurement_method",
+                      "dissolved_oxygen_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -3342,7 +3214,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "dissolved oxygen measurement value",
+          "name": "dissolved_oxygen_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -3350,8 +3222,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "dissolved oxygen measurement method",
-                      "dissolved oxygen measurement unit"
+                      "dissolved_oxygen_measurement_method",
+                      "dissolved_oxygen_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -3384,7 +3256,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "endogenous control details",
+          "name": "endogenous_control_details",
           "restrictions": [],
           "valueType": "string"
         },
@@ -3407,26 +3279,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "environmental material",
+          "name": "environmental_material",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Primary sludge",
-                "Primary wastewater effluent",
-                "Restricted Access",
-                "Secondary sludge",
-                "Secondary wastewater effluent",
-                "Sludge",
-                "Surface water",
-                "Treated wastewater",
-                "Waste water",
-                "Wastewater effluent",
-                "Wastewater sediment"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Primary sludge","Primary wastewater effluent","Restricted Access","Secondary sludge","Secondary wastewater effluent","Sludge","Surface water","Treated wastewater","Waste water","Wastewater effluent","Wastewater sediment"]
             },
             {
               "if": {
@@ -3434,8 +3290,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "environmental material properties",
-                      "environmental site"
+                      "environmental_material_properties",
+                      "environmental_site"
                     ],
                     "match": {
                       "exists": true
@@ -3469,29 +3325,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "environmental material properties",
+          "name": "environmental_material_properties",
           "restrictions": [
             {
-              "codeList": [
-                "Contamination",
-                "Fast-flowing",
-                "Fecal-contaminated",
-                "Liquid",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Pumpable",
-                "Restricted Access",
-                "Semi-solid",
-                "Slow-flowing",
-                "Slurry",
-                "Solid",
-                "Spadeable",
-                "Stagnant",
-                "Treated",
-                "Untreated"
-              ]
+              "codeList": ["Contamination","Fast-flowing","Fecal-contaminated","Liquid","Missing","Not Applicable","Not Collected","Not Provided","Pumpable","Restricted Access","Semi-solid","Slow-flowing","Slurry","Solid","Spadeable","Stagnant","Treated","Untreated"]
             },
             {
               "if": {
@@ -3499,8 +3336,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "environmental material",
-                      "environmental site"
+                      "environmental_material",
+                      "environmental_site"
                     ],
                     "match": {
                       "exists": true
@@ -3534,50 +3371,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "environmental site",
+          "name": "environmental_site",
           "restrictions": [
             {
-              "codeList": [
-                "Airplane",
-                "Airport",
-                "Boat",
-                "Body of water",
-                "Canal",
-                "Clinic",
-                "College or university",
-                "Correctional facility",
-                "Daycare facility",
-                "Educational facility",
-                "Farm",
-                "Ground water",
-                "Healthcare facility",
-                "Homeless shelter",
-                "Hospital",
-                "Industrial plant",
-                "Lake",
-                "Long-term care facility",
-                "Meat processing plant",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Ocean",
-                "Pharmaceutical manufacturing plant",
-                "Refugee camp",
-                "Reservoir",
-                "Residential building",
-                "Restricted Access",
-                "River",
-                "School",
-                "Sea",
-                "Spring",
-                "Stream",
-                "Surface water",
-                "Transport hub",
-                "Transportation vehicle",
-                "Wastewater treatment plant",
-                "Well"
-              ]
+              "codeList": ["Airplane","Airport","Boat","Body of water","Canal","Clinic","College or university","Correctional facility","Daycare facility","Educational facility","Farm","Ground water","Healthcare facility","Homeless shelter","Hospital","Industrial plant","Lake","Long-term care facility","Meat processing plant","Missing","Not Applicable","Not Collected","Not Provided","Ocean","Pharmaceutical manufacturing plant","Refugee camp","Reservoir","Residential building","Restricted Access","River","School","Sea","Spring","Stream","Surface water","Transport hub","Transportation vehicle","Wastewater treatment plant","Well"]
             },
             {
               "if": {
@@ -3585,8 +3382,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "environmental material",
-                      "environmental material properties"
+                      "environmental_material",
+                      "environmental_material_properties"
                     ],
                     "match": {
                       "exists": true
@@ -3619,7 +3416,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "experimental control details",
+          "name": "experimental_control_details",
           "restrictions": [],
           "valueType": "string"
         },
@@ -3636,7 +3433,7 @@
             },
             "version_tracking": {}
           },
-          "name": "experimental protocol field",
+          "name": "experimental_protocol_field",
           "restrictions": [],
           "valueType": "string"
         },
@@ -3658,15 +3455,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "experimental specimen role type",
+          "name": "experimental_specimen_role_type",
           "restrictions": [
             {
-              "codeList": [
-                "Biological replicate",
-                "Negative experimental control",
-                "Positive experimental control",
-                "Technical replicate"
-              ]
+              "codeList": ["Biological replicate","Negative experimental control","Positive experimental control","Technical replicate"]
             }
           ],
           "valueType": "string"
@@ -3688,7 +3480,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "extraction recovery efficiency measurement method",
+          "name": "extraction_recovery_efficiency_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -3696,7 +3488,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "extraction recovery efficiency measurement value"
+                      "extraction_recovery_efficiency_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -3728,7 +3520,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "extraction recovery efficiency measurement value",
+          "name": "extraction_recovery_efficiency_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -3736,7 +3528,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "extraction recovery efficiency measurement method"
+                      "extraction_recovery_efficiency_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -3769,7 +3561,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "fecal coliform count method",
+          "name": "fecal_coliform_count_method",
           "restrictions": [
             {
               "if": {
@@ -3777,8 +3569,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "fecal coliform count unit",
-                      "fecal coliform count value"
+                      "fecal_coliform_count_unit",
+                      "fecal_coliform_count_value"
                     ],
                     "match": {
                       "exists": true
@@ -3811,21 +3603,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "fecal coliform count unit",
+          "name": "fecal_coliform_count_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "colony forming units per 100 milliliter (CFU/100 mL)",
-                "colony forming units per grams total solids (CFU/gTS)",
-                "colony forming units per milliliter (CFU/mL)",
-                "most probable number per 100 milliliter (MPN/100 mL)",
-                "most probable number per milliliter (MPN/mL)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","colony forming units per 100 milliliter (CFU/100 mL)","colony forming units per grams total solids (CFU/gTS)","colony forming units per milliliter (CFU/mL)","most probable number per 100 milliliter (MPN/100 mL)","most probable number per milliliter (MPN/mL)"]
             },
             {
               "if": {
@@ -3833,8 +3614,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "fecal coliform count method",
-                      "fecal coliform count value"
+                      "fecal_coliform_count_method",
+                      "fecal_coliform_count_value"
                     ],
                     "match": {
                       "exists": true
@@ -3867,7 +3648,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "fecal coliform count value",
+          "name": "fecal_coliform_count_value",
           "restrictions": [
             {
               "if": {
@@ -3875,8 +3656,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "fecal coliform count method",
-                      "fecal coliform count unit"
+                      "fecal_coliform_count_method",
+                      "fecal_coliform_count_unit"
                     ],
                     "match": {
                       "exists": true
@@ -3910,22 +3691,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "fecal contamination indicator",
+          "name": "fecal_contamination_indicator",
           "restrictions": [
             {
-              "codeList": [
-                "Bacteroides HF183",
-                "Lachnospiraceae Lachno3",
-                "Male-specific (F+) coliphages",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "PMMoV / pepper mild mottle virus",
-                "Restricted Access",
-                "crAssphage",
-                "stercobilin"
-              ]
+              "codeList": ["Bacteroides HF183","Lachnospiraceae Lachno3","Male-specific (F+) coliphages","Missing","Not Applicable","Not Collected","Not Provided","PMMoV / pepper mild mottle virus","Restricted Access","crAssphage","stercobilin"]
             },
             {
               "if": {
@@ -3933,9 +3702,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "fecal contamination method",
-                      "fecal contamination unit",
-                      "fecal contamination value"
+                      "fecal_contamination_method",
+                      "fecal_contamination_unit",
+                      "fecal_contamination_value"
                     ],
                     "match": {
                       "exists": true
@@ -3968,7 +3737,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "fecal contamination method",
+          "name": "fecal_contamination_method",
           "restrictions": [
             {
               "if": {
@@ -3976,9 +3745,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "fecal contamination indicator",
-                      "fecal contamination unit",
-                      "fecal contamination value"
+                      "fecal_contamination_indicator",
+                      "fecal_contamination_unit",
+                      "fecal_contamination_value"
                     ],
                     "match": {
                       "exists": true
@@ -4012,20 +3781,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "fecal contamination unit",
+          "name": "fecal_contamination_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "cycle threshold (Ct) / quantification cycle (Cq)",
-                "gene copies per liter (GC/L)",
-                "log10 gene copies per 100 milliliter (log10 GC/100 mL)",
-                "log10 gene copies per nanogram total DNA"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","cycle threshold (Ct) / quantification cycle (Cq)","gene copies per liter (GC/L)","log10 gene copies per 100 milliliter (log10 GC/100 mL)","log10 gene copies per nanogram total DNA"]
             },
             {
               "if": {
@@ -4033,9 +3792,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "fecal contamination method",
-                      "fecal contamination indicator",
-                      "fecal contamination value"
+                      "fecal_contamination_method",
+                      "fecal_contamination_indicator",
+                      "fecal_contamination_value"
                     ],
                     "match": {
                       "exists": true
@@ -4069,7 +3828,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "fecal contamination value",
+          "name": "fecal_contamination_value",
           "restrictions": [
             {
               "if": {
@@ -4077,9 +3836,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "fecal contamination method",
-                      "fecal contamination unit",
-                      "fecal contamination indicator"
+                      "fecal_contamination_method",
+                      "fecal_contamination_unit",
+                      "fecal_contamination_indicator"
                     ],
                     "match": {
                       "exists": true
@@ -4112,7 +3871,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "gene name",
+          "name": "gene_name",
           "restrictions": [
             {
               "if": {
@@ -4129,20 +3888,7 @@
               },
               "then": {
                 "required": true,
-                "codeList": [
-                  "HA",
-                  "M1",
-                  "M2",
-                  "NA",
-                  "NEP",
-                  "NP",
-                  "NS1",
-                  "PA",
-                  "PA-X",
-                  "PB1",
-                  "PB1-F2",
-                  "PB2"
-                ]
+                "codeList": ["HA","M1","M2","NA","NEP","NP","NS1","PA","PA-X","PB1","PB1-F2","PB2"]
               }
             },
             {
@@ -4160,18 +3906,7 @@
               },
               "then": {
                 "required": true,
-                "codeList": [
-                  "HA",
-                  "M1",
-                  "NA",
-                  "NB",
-                  "NEP",
-                  "NP",
-                  "NS1",
-                  "PA",
-                  "PB1",
-                  "PB2"
-                ]
+                "codeList": ["HA","M1","NA","NB","NEP","NP","NS1","PA","PB1","PB2"]
               }
             },
             {
@@ -4189,17 +3924,7 @@
               },
               "then": {
                 "required": true,
-                "codeList": [
-                  "CM2",
-                  "HEF",
-                  "M1",
-                  "NP",
-                  "NS1",
-                  "NS2",
-                  "P3",
-                  "PB1",
-                  "PB2"
-                ]
+                "codeList": ["CM2","HEF","M1","NP","NS1","NS2","P3","PB1","PB2"]
               }
             },
             {
@@ -4217,16 +3942,7 @@
               },
               "then": {
                 "required": true,
-                "codeList": [
-                  "HEF",
-                  "NP",
-                  "NS1",
-                  "NS2",
-                  "P3",
-                  "P42",
-                  "PB1",
-                  "PB2"
-                ]
+                "codeList": ["HEF","NP","NS1","NS2","P3","P42","PB1","PB2"]
               }
             },
             {
@@ -4244,185 +3960,7 @@
               },
               "then": {
                 "required": true,
-                "codeList": [
-                  "OPG001",
-                  "OPG002",
-                  "OPG003",
-                  "OPG005",
-                  "OPG015",
-                  "OPG016",
-                  "OPG019",
-                  "OPG021",
-                  "OPG022",
-                  "OPG023",
-                  "OPG024",
-                  "OPG025",
-                  "OPG027",
-                  "OPG029",
-                  "OPG030",
-                  "OPG031",
-                  "OPG032",
-                  "OPG034",
-                  "OPG035",
-                  "OPG036",
-                  "OPG037",
-                  "OPG038",
-                  "OPG039",
-                  "OPG040",
-                  "OPG042",
-                  "OPG043",
-                  "OPG044",
-                  "OPG045",
-                  "OPG046",
-                  "OPG047",
-                  "OPG048",
-                  "OPG049",
-                  "OPG050",
-                  "OPG051",
-                  "OPG052",
-                  "OPG053",
-                  "OPG054",
-                  "OPG055",
-                  "OPG056",
-                  "OPG057",
-                  "OPG058",
-                  "OPG059",
-                  "OPG060",
-                  "OPG061",
-                  "OPG062",
-                  "OPG063",
-                  "OPG064",
-                  "OPG065",
-                  "OPG066",
-                  "OPG068",
-                  "OPG069",
-                  "OPG070",
-                  "OPG071",
-                  "OPG072",
-                  "OPG073",
-                  "OPG074",
-                  "OPG075",
-                  "OPG076",
-                  "OPG077",
-                  "OPG078",
-                  "OPG079",
-                  "OPG080",
-                  "OPG081",
-                  "OPG082",
-                  "OPG083",
-                  "OPG084",
-                  "OPG085",
-                  "OPG086",
-                  "OPG087",
-                  "OPG088",
-                  "OPG089",
-                  "OPG090",
-                  "OPG091",
-                  "OPG092",
-                  "OPG093",
-                  "OPG094",
-                  "OPG095",
-                  "OPG096",
-                  "OPG097",
-                  "OPG098",
-                  "OPG099",
-                  "OPG100",
-                  "OPG101",
-                  "OPG102",
-                  "OPG103",
-                  "OPG104",
-                  "OPG105",
-                  "OPG106",
-                  "OPG107",
-                  "OPG108",
-                  "OPG109",
-                  "OPG110",
-                  "OPG111",
-                  "OPG112",
-                  "OPG113",
-                  "OPG114",
-                  "OPG115",
-                  "OPG116",
-                  "OPG117",
-                  "OPG118",
-                  "OPG119",
-                  "OPG120",
-                  "OPG121",
-                  "OPG122",
-                  "OPG123",
-                  "OPG124",
-                  "OPG125",
-                  "OPG126",
-                  "OPG127",
-                  "OPG128",
-                  "OPG129",
-                  "OPG130",
-                  "OPG131",
-                  "OPG132",
-                  "OPG133",
-                  "OPG134",
-                  "OPG135",
-                  "OPG136",
-                  "OPG137",
-                  "OPG138",
-                  "OPG139",
-                  "OPG140",
-                  "OPG141",
-                  "OPG142",
-                  "OPG143",
-                  "OPG144",
-                  "OPG145",
-                  "OPG146",
-                  "OPG147",
-                  "OPG148",
-                  "OPG149",
-                  "OPG150",
-                  "OPG151",
-                  "OPG153",
-                  "OPG154",
-                  "OPG155",
-                  "OPG156",
-                  "OPG157",
-                  "OPG158",
-                  "OPG159",
-                  "OPG160",
-                  "OPG161",
-                  "OPG162",
-                  "OPG163",
-                  "OPG164",
-                  "OPG165",
-                  "OPG166",
-                  "OPG167",
-                  "OPG170",
-                  "OPG171",
-                  "OPG172",
-                  "OPG173",
-                  "OPG174",
-                  "OPG175",
-                  "OPG176",
-                  "OPG178",
-                  "OPG180",
-                  "OPG181",
-                  "OPG185",
-                  "OPG187",
-                  "OPG188",
-                  "OPG189",
-                  "OPG190",
-                  "OPG191",
-                  "OPG192",
-                  "OPG193",
-                  "OPG195",
-                  "OPG197",
-                  "OPG198",
-                  "OPG199",
-                  "OPG200",
-                  "OPG201",
-                  "OPG204",
-                  "OPG205",
-                  "OPG208",
-                  "OPG209",
-                  "OPG210"
-                ]
+                "codeList": ["OPG001","OPG002","OPG003","OPG005","OPG015","OPG016","OPG019","OPG021","OPG022","OPG023","OPG024","OPG025","OPG027","OPG029","OPG030","OPG031","OPG032","OPG034","OPG035","OPG036","OPG037","OPG038","OPG039","OPG040","OPG042","OPG043","OPG044","OPG045","OPG046","OPG047","OPG048","OPG049","OPG050","OPG051","OPG052","OPG053","OPG054","OPG055","OPG056","OPG057","OPG058","OPG059","OPG060","OPG061","OPG062","OPG063","OPG064","OPG065","OPG066","OPG068","OPG069","OPG070","OPG071","OPG072","OPG073","OPG074","OPG075","OPG076","OPG077","OPG078","OPG079","OPG080","OPG081","OPG082","OPG083","OPG084","OPG085","OPG086","OPG087","OPG088","OPG089","OPG090","OPG091","OPG092","OPG093","OPG094","OPG095","OPG096","OPG097","OPG098","OPG099","OPG100","OPG101","OPG102","OPG103","OPG104","OPG105","OPG106","OPG107","OPG108","OPG109","OPG110","OPG111","OPG112","OPG113","OPG114","OPG115","OPG116","OPG117","OPG118","OPG119","OPG120","OPG121","OPG122","OPG123","OPG124","OPG125","OPG126","OPG127","OPG128","OPG129","OPG130","OPG131","OPG132","OPG133","OPG134","OPG135","OPG136","OPG137","OPG138","OPG139","OPG140","OPG141","OPG142","OPG143","OPG144","OPG145","OPG146","OPG147","OPG148","OPG149","OPG150","OPG151","OPG153","OPG154","OPG155","OPG156","OPG157","OPG158","OPG159","OPG160","OPG161","OPG162","OPG163","OPG164","OPG165","OPG166","OPG167","OPG170","OPG171","OPG172","OPG173","OPG174","OPG175","OPG176","OPG178","OPG180","OPG181","OPG185","OPG187","OPG188","OPG189","OPG190","OPG191","OPG192","OPG193","OPG195","OPG197","OPG198","OPG199","OPG200","OPG201","OPG204","OPG205","OPG208","OPG209","OPG210"]
               }
             },
             {
@@ -4457,19 +3995,7 @@
               },
               "then": {
                 "required": true,
-                "codeList": [
-                  "E",
-                  "M",
-                  "N",
-                  "ORF10",
-                  "ORF1ab",
-                  "ORF3a",
-                  "ORF6",
-                  "ORF7a",
-                  "ORF7b",
-                  "ORF8",
-                  "S"
-                ]
+                "codeList": ["E","M","N","ORF10","ORF1ab","ORF3a","ORF6","ORF7a","ORF7b","ORF8","S"]
               }
             }
           ],
@@ -4493,7 +4019,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "genome completeness",
+          "name": "genome_completeness",
           "restrictions": [],
           "valueType": "string"
         },
@@ -4516,13 +4042,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "genomic target enrichment method",
+          "name": "genomic_target_enrichment_method",
           "restrictions": [
             {
-              "codeList": [
-                "hybrid selection method",
-                "rRNA depletion method"
-              ]
+              "codeList": ["hybrid selection method","rRNA depletion method"]
             }
           ],
           "valueType": "string"
@@ -4545,7 +4068,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "genomic target enrichment method details",
+          "name": "genomic_target_enrichment_method_details",
           "restrictions": [],
           "valueType": "string"
         },
@@ -4567,7 +4090,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "geo loc latitude",
+          "name": "geo_loc_latitude",
           "restrictions": [
             {
               "regex": "^\\d+(\\.\\d+)? [NS]+$"
@@ -4593,7 +4116,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "geo loc longitude",
+          "name": "geo_loc_longitude",
           "restrictions": [
             {
               "regex": "^\\d+(\\.\\d+)? [EW]+$"
@@ -4619,7 +4142,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "geo loc name (city)",
+          "name": "geo_loc_name_city",
           "restrictions": [],
           "valueType": "string"
         },
@@ -4641,7 +4164,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "geo loc name (country)",
+          "name": "geo_loc_name_country",
           "restrictions": [
             {
               "required": true
@@ -4667,7 +4190,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "geo loc name (county/region)",
+          "name": "geo_loc_name_county_region",
           "restrictions": [],
           "valueType": "string"
         },
@@ -4689,7 +4212,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "geo loc name (site)",
+          "name": "geo_loc_name_site",
           "restrictions": [],
           "valueType": "string"
         },
@@ -4711,7 +4234,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "geo loc name (state/province/territory)",
+          "name": "geo_loc_name_state_province_territory",
           "restrictions": [
             {
               "required": true
@@ -4737,7 +4260,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "instantaneous flow rate measurement method",
+          "name": "instantaneous_flow_rate_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -4745,8 +4268,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "instantaneous flow rate measurement unit",
-                      "instantaneous flow rate measurement value"
+                      "instantaneous_flow_rate_measurement_unit",
+                      "instantaneous_flow_rate_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -4779,24 +4302,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "instantaneous flow rate measurement unit",
+          "name": "instantaneous_flow_rate_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "cubic meter per hour (m^3/h)",
-                "cubic meter per minute (m^3/min)",
-                "cubic meter per second (m^3/s)",
-                "liter per day (L/day)",
-                "liter per hour (L/h)",
-                "liter per minute (L/min)",
-                "liter per second (L/s)",
-                "million gallons per day (MGD)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","cubic meter per hour (m^3/h)","cubic meter per minute (m^3/min)","cubic meter per second (m^3/s)","liter per day (L/day)","liter per hour (L/h)","liter per minute (L/min)","liter per second (L/s)","million gallons per day (MGD)"]
             },
             {
               "if": {
@@ -4804,8 +4313,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "instantaneous flow rate measurement value",
-                      "instantaneous flow rate measurement method"
+                      "instantaneous_flow_rate_measurement_value",
+                      "instantaneous_flow_rate_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -4838,7 +4347,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "instantaneous flow rate measurement value",
+          "name": "instantaneous_flow_rate_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -4846,8 +4355,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "instantaneous flow rate measurement method",
-                      "instantaneous flow rate measurement unit"
+                      "instantaneous_flow_rate_measurement_method",
+                      "instantaneous_flow_rate_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -4880,7 +4389,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "isolate ID",
+          "name": "isolate_id",
           "restrictions": [
             {
               "required": true
@@ -4906,7 +4415,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "isolate received date",
+          "name": "isolate_received_date",
           "restrictions": [
             {
               "regex": "^(\\d{4}-\\d{2}-\\d{2})$"
@@ -4932,7 +4441,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "isolated by",
+          "name": "isolated_by",
           "restrictions": [],
           "valueType": "string"
         },
@@ -4954,7 +4463,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "isolated by contact email",
+          "name": "isolated_by_contact_email",
           "restrictions": [
             {
               "regex": "^\\S+@\\S+\\.\\S+$"
@@ -4980,7 +4489,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "isolated by contact name",
+          "name": "isolated_by_contact_name",
           "restrictions": [],
           "valueType": "string"
         },
@@ -5002,7 +4511,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "isolated by laboratory name",
+          "name": "isolated_by_laboratory_name",
           "restrictions": [],
           "valueType": "string"
         },
@@ -5024,7 +4533,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "isolation date",
+          "name": "isolation_date",
           "restrictions": [
             {
               "regex": "^(\\d{4}-\\d{2}-\\d{2})$"
@@ -5050,7 +4559,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "library ID",
+          "name": "library_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -5072,7 +4581,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "library preparation kit",
+          "name": "library_preparation_kit",
           "restrictions": [],
           "valueType": "string"
         },
@@ -5094,7 +4603,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "lineage/clade analysis report filename",
+          "name": "lineage_clade_analysis_report_filename",
           "restrictions": [
             {
               "if": {
@@ -5102,9 +4611,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "lineage/clade analysis software name",
-                      "lineage/clade analysis software version",
-                      "lineage/clade name"
+                      "lineage_clade_analysis_software_name",
+                      "lineage_clade_analysis_software_version",
+                      "lineage_clade_name"
                     ],
                     "match": {
                       "exists": true
@@ -5137,7 +4646,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "lineage/clade analysis software name",
+          "name": "lineage_clade_analysis_software_name",
           "restrictions": [
             {
               "if": {
@@ -5145,9 +4654,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "lineage/clade analysis report filename",
-                      "lineage/clade analysis software version",
-                      "lineage/clade name"
+                      "lineage_clade_analysis_report_filename",
+                      "lineage_clade_analysis_software_version",
+                      "lineage_clade_name"
                     ],
                     "match": {
                       "exists": true
@@ -5180,7 +4689,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "lineage/clade analysis software version",
+          "name": "lineage_clade_analysis_software_version",
           "restrictions": [
             {
               "if": {
@@ -5188,9 +4697,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "lineage/clade analysis report filename",
-                      "lineage/clade analysis software name",
-                      "lineage/clade name"
+                      "lineage_clade_analysis_report_filename",
+                      "lineage_clade_analysis_software_name",
+                      "lineage_clade_name"
                     ],
                     "match": {
                       "exists": true
@@ -5223,7 +4732,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "lineage/clade name",
+          "name": "lineage_clade_name",
           "restrictions": [
             {
               "if": {
@@ -5231,9 +4740,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "lineage/clade analysis report filename",
-                      "lineage/clade analysis software name",
-                      "lineage/clade analysis software version"
+                      "lineage_clade_analysis_report_filename",
+                      "lineage_clade_analysis_software_name",
+                      "lineage_clade_analysis_software_version"
                     ],
                     "match": {
                       "exists": true
@@ -5266,7 +4775,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "metagenome-assembled genome (MAG) ID",
+          "name": "metagenome_assembled_genome_mag_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -5289,7 +4798,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "microbiological method",
+          "name": "microbiological_method",
           "restrictions": [],
           "valueType": "string"
         },
@@ -5310,7 +4819,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "minimum post-trimming read length",
+          "name": "minimum_post_trimming_read_length",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -5332,7 +4841,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "nucleic acid extraction kit",
+          "name": "nucleic_acid_extraction_kit",
           "restrictions": [
             {
               "if": {
@@ -5340,7 +4849,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "nucleic acid extraction method"
+                      "nucleic_acid_extraction_method"
                     ],
                     "match": {
                       "exists": true
@@ -5372,7 +4881,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "nucleic acid extraction method",
+          "name": "nucleic_acid_extraction_method",
           "restrictions": [
             {
               "if": {
@@ -5380,7 +4889,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "nucleic acid extraction kit"
+                      "nucleic_acid_extraction_kit"
                     ],
                     "match": {
                       "exists": true
@@ -5413,7 +4922,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "number of base pairs sequenced",
+          "name": "number_of_base_pairs_sequenced",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -5435,7 +4944,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "number of contigs",
+          "name": "number_of_contigs",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -5457,7 +4966,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "number of total reads",
+          "name": "number_of_total_reads",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -5479,7 +4988,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "number of unique reads",
+          "name": "number_of_unique_reads",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -5504,20 +5013,7 @@
           "name": "organism",
           "restrictions": [
             {
-              "codeList": [
-                "Influenza A virus",
-                "Influenza B virus",
-                "Influenza C virus",
-                "Influenza D virus",
-                "Missing",
-                "Monkeypox virus",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Respiratory syncytial virus",
-                "Restricted Access",
-                "Severe acute respiratory syndrome coronavirus 2"
-              ],
+              "codeList": ["Influenza A virus","Influenza B virus","Influenza C virus","Influenza D virus","Missing","Monkeypox virus","Not Applicable","Not Collected","Not Provided","Respiratory syncytial virus","Restricted Access","Severe acute respiratory syndrome coronavirus 2"],
               "required": true
             }
           ],
@@ -5541,7 +5037,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "oxygen reduction potential (ORP) measurement method",
+          "name": "oxygen_reduction_potential_orp_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -5549,8 +5045,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "oxygen reduction potential (ORP) measurement unit",
-                      "oxygen reduction potential (ORP) measurement value"
+                      "oxygen_reduction_potential_orp_measurement_unit",
+                      "oxygen_reduction_potential_orp_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -5583,17 +5079,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "oxygen reduction potential (ORP) measurement unit",
+          "name": "oxygen_reduction_potential_orp_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "milliVolt (mV)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milliVolt (mV)"]
             },
             {
               "if": {
@@ -5601,8 +5090,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "oxygen reduction potential (ORP) measurement method",
-                      "oxygen reduction potential (ORP) measurement value"
+                      "oxygen_reduction_potential_orp_measurement_method",
+                      "oxygen_reduction_potential_orp_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -5635,7 +5124,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "oxygen reduction potential (ORP) measurement value",
+          "name": "oxygen_reduction_potential_orp_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -5643,8 +5132,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "oxygen reduction potential (ORP) measurement method",
-                      "oxygen reduction potential (ORP) measurement unit"
+                      "oxygen_reduction_potential_orp_measurement_method",
+                      "oxygen_reduction_potential_orp_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -5677,7 +5166,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "pH measurement method",
+          "name": "ph_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -5685,7 +5174,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "pH measurement value"
+                      "ph_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -5718,7 +5207,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "pH measurement value",
+          "name": "ph_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -5726,7 +5215,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "pH measurement method"
+                      "ph_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -5759,7 +5248,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "percent Ns across total genome length",
+          "name": "percent_ns_across_total_genome_length",
           "restrictions": [],
           "valueType": "number"
         },
@@ -5781,7 +5270,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "percent read contamination",
+          "name": "percent_read_contamination",
           "restrictions": [],
           "valueType": "number"
         },
@@ -5825,7 +5314,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "pooled sample ID",
+          "name": "pooled_sample_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -5847,19 +5336,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "populated area type",
+          "name": "populated_area_type",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "rural",
-                "suburban",
-                "urban"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","rural","suburban","urban"]
             }
           ],
           "valueType": "string"
@@ -5882,7 +5362,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "precipitation measurement method",
+          "name": "precipitation_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -5890,8 +5370,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "precipitation measurement unit",
-                      "precipitation measurement value"
+                      "precipitation_measurement_unit",
+                      "precipitation_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -5925,20 +5405,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "precipitation measurement unit",
+          "name": "precipitation_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "foot (ft)",
-                "inch (in)",
-                "meter (m)",
-                "millimeter (mm)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","foot (ft)","inch (in)","meter (m)","millimeter (mm)"]
             },
             {
               "if": {
@@ -5946,8 +5416,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "precipitation measurement method",
-                      "precipitation measurement value"
+                      "precipitation_measurement_method",
+                      "precipitation_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -5981,7 +5451,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "precipitation measurement value",
+          "name": "precipitation_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -5989,8 +5459,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "precipitation measurement method",
-                      "precipitation measurement unit"
+                      "precipitation_measurement_method",
+                      "precipitation_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -6023,26 +5493,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "presampling activity",
+          "name": "presampling_activity",
           "restrictions": [
             {
-              "codeList": [
-                "Agricultural activity",
-                "Animal husbandry",
-                "Healthcare activity",
-                "Industrial activity",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "Wastewater filtration",
-                "Wastewater grit removal",
-                "Wastewater microbial pre-treatment",
-                "Wastewater primary sedimentation",
-                "Wastewater secondary sedimentation",
-                "Wastewater treatment"
-              ]
+              "codeList": ["Agricultural activity","Animal husbandry","Healthcare activity","Industrial activity","Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","Wastewater filtration","Wastewater grit removal","Wastewater microbial pre-treatment","Wastewater primary sedimentation","Wastewater secondary sedimentation","Wastewater treatment"]
             },
             {
               "if": {
@@ -6050,8 +5504,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "presampling activity details",
-                      "presampling activity conditions"
+                      "presampling_activity_details",
+                      "presampling_activity_conditions"
                     ],
                     "match": {
                       "exists": true
@@ -6084,7 +5538,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "presampling activity details",
+          "name": "presampling_activity_details",
           "restrictions": [
             {
               "if": {
@@ -6092,8 +5546,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "presampling activity",
-                      "presampling activity conditions"
+                      "presampling_activity",
+                      "presampling_activity_conditions"
                     ],
                     "match": {
                       "exists": true
@@ -6126,24 +5580,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "presampling weather conditions",
+          "name": "presampling_weather_conditions",
           "restrictions": [
             {
-              "codeList": [
-                "Cloudy/Overcast",
-                "Drizzle",
-                "Fog",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Partially cloudy",
-                "Rain",
-                "Restricted Access",
-                "Snow",
-                "Storm",
-                "Sunny/Clear"
-              ]
+              "codeList": ["Cloudy/Overcast","Drizzle","Fog","Missing","Not Applicable","Not Collected","Not Provided","Partially cloudy","Rain","Restricted Access","Snow","Storm","Sunny/Clear"]
             },
             {
               "if": {
@@ -6151,8 +5591,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "presampling activity details",
-                      "presampling activity"
+                      "presampling_activity_details",
+                      "presampling_activity"
                     ],
                     "match": {
                       "exists": true
@@ -6185,7 +5625,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "progeny isolate ID",
+          "name": "progeny_isolate_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -6207,23 +5647,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "purpose of sampling",
+          "name": "purpose_of_sampling",
           "restrictions": [
             {
-              "codeList": [
-                "Environmental survey (profiling)",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Protocol testing",
-                "Research",
-                "Restricted Access",
-                "Wastewater chemical surveillance",
-                "Wastewater drug surveillance",
-                "Wastewater pathogen surveillance",
-                "Wastewater treatment efficiency assessment"
-              ],
+              "codeList": ["Environmental survey (profiling)","Missing","Not Applicable","Not Collected","Not Provided","Protocol testing","Research","Restricted Access","Wastewater chemical surveillance","Wastewater drug surveillance","Wastewater pathogen surveillance","Wastewater treatment efficiency assessment"],
               "required": true
             }
           ],
@@ -6247,26 +5674,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "purpose of sequencing",
+          "name": "purpose_of_sequencing",
           "restrictions": [
             {
-              "codeList": [
-                "Baseline surveillance (random sampling)",
-                "Domestic travel surveillance",
-                "International travel surveillance",
-                "Longitudinal surveillance (repeat sampling)",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Priority surveillance project",
-                "Protocol testing experiment",
-                "Research",
-                "Restricted Access",
-                "Targeted surveillance (non-random sampling)",
-                "Travel-associated surveillance",
-                "Viral passage experiment"
-              ],
+              "codeList": ["Baseline surveillance (random sampling)","Domestic travel surveillance","International travel surveillance","Longitudinal surveillance (repeat sampling)","Missing","Not Applicable","Not Collected","Not Provided","Priority surveillance project","Protocol testing experiment","Research","Restricted Access","Targeted surveillance (non-random sampling)","Travel-associated surveillance","Viral passage experiment"],
               "required": true
             },
             {
@@ -6275,7 +5686,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "purpose of sequencing details"
+                      "purpose_of_sequencing_details"
                     ],
                     "match": {
                       "exists": true
@@ -6308,7 +5719,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "purpose of sequencing details",
+          "name": "purpose_of_sequencing_details",
           "restrictions": [
             {
               "if": {
@@ -6316,7 +5727,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "purpose of sequencing"
+                      "purpose_of_sequencing"
                     ],
                     "match": {
                       "exists": true
@@ -6349,7 +5760,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "quality control details",
+          "name": "quality_control_details",
           "restrictions": [],
           "valueType": "string"
         },
@@ -6371,22 +5782,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "quality control determination",
+          "name": "quality_control_determination",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "minor quality control issues identified",
-                "no quality control issues identified",
-                "quality control not performed",
-                "sequence failed quality control",
-                "sequence flagged for potential quality control issues",
-                "sequence passed quality control"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","minor quality control issues identified","no quality control issues identified","quality control not performed","sequence failed quality control","sequence flagged for potential quality control issues","sequence passed quality control"]
             }
           ],
           "valueType": "string"
@@ -6409,24 +5808,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "quality control issues",
+          "name": "quality_control_issues",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "low average genome coverage",
-                "low coverage of characteristic mutations",
-                "low percent genome captured",
-                "low quality sequence",
-                "low signal to noise ratio",
-                "read lengths shorter than expected",
-                "sequence amplification artifacts",
-                "sequence contaminated"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","low average genome coverage","low coverage of characteristic mutations","low percent genome captured","low quality sequence","low signal to noise ratio","read lengths shorter than expected","sequence amplification artifacts","sequence contaminated"]
             }
           ],
           "valueType": "string"
@@ -6449,7 +5834,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "quality control method name",
+          "name": "quality_control_method_name",
           "restrictions": [
             {
               "if": {
@@ -6457,7 +5842,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "quality control method version"
+                      "quality_control_method_version"
                     ],
                     "match": {
                       "exists": true
@@ -6490,7 +5875,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "quality control method version",
+          "name": "quality_control_method_version",
           "restrictions": [
             {
               "if": {
@@ -6498,7 +5883,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "quality control method name"
+                      "quality_control_method_name"
                     ],
                     "match": {
                       "exists": true
@@ -6532,7 +5917,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "raw sequence data processing method",
+          "name": "raw_sequence_data_processing_method",
           "restrictions": [],
           "valueType": "string"
         },
@@ -6554,7 +5939,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "read mapping criteria",
+          "name": "read_mapping_criteria",
           "restrictions": [],
           "valueType": "string"
         },
@@ -6576,7 +5961,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "read mapping software name",
+          "name": "read_mapping_software_name",
           "restrictions": [
             {
               "required": true
@@ -6602,7 +5987,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "read mapping software version",
+          "name": "read_mapping_software_version",
           "restrictions": [
             {
               "required": true
@@ -6628,7 +6013,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "reference genome accession",
+          "name": "reference_genome_accession",
           "restrictions": [],
           "valueType": "string"
         },
@@ -6650,7 +6035,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "salinity measurement method",
+          "name": "salinity_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -6658,8 +6043,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "salinity measurement unit",
-                      "salinity measurement value"
+                      "salinity_measurement_unit",
+                      "salinity_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -6692,20 +6077,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "salinity measurement unit",
+          "name": "salinity_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "gram per kilogram (g/kg)",
-                "gram per liter (g/L)",
-                "practical salinity unit (PSU)",
-                "weight for weight (% w/w)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per kilogram (g/kg)","gram per liter (g/L)","practical salinity unit (PSU)","weight for weight (% w/w)"]
             },
             {
               "if": {
@@ -6713,8 +6088,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "salinity measurement method",
-                      "salinity measurement value"
+                      "salinity_measurement_method",
+                      "salinity_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -6747,7 +6122,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "salinity measurement value",
+          "name": "salinity_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -6755,8 +6130,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "salinity measurement unit",
-                      "salinity measurement method"
+                      "salinity_measurement_unit",
+                      "salinity_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -6788,7 +6163,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collected by",
+          "name": "sample_collected_by",
           "restrictions": [
             {
               "else": {
@@ -6798,7 +6173,7 @@
                 "conditions": [
                   {
                     "fields": [
-                      "sample collected by null reason"
+                      "sample_collected_by_null_reason"
                     ],
                     "match": {
                       "exists": true
@@ -6820,24 +6195,18 @@
             "examples": "Restricted Access",
             "notes": "A conditional check where if value is provided then sample collected by is not required"
           },
-          "name": "sample collected by null reason",
+          "name": "sample_collected_by_null_reason",
           "restrictions": [
             {
               "else": {
-                "codeList": [
-                  "Missing",
-                  "Not Applicable",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ],
+                "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"],
                 "required": true
               },
               "if": {
                 "conditions": [
                   {
                     "fields": [
-                      "sample collected by"
+                      "sample_collected_by"
                     ],
                     "match": {
                       "exists": true
@@ -6870,7 +6239,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collection data steward name",
+          "name": "sample_collection_data_steward_name",
           "restrictions": [],
           "valueType": "string"
         },
@@ -6891,7 +6260,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collection date",
+          "name": "sample_collection_date",
           "restrictions": [
             {
               "else": {
@@ -6902,7 +6271,7 @@
                 "conditions": [
                   {
                     "fields": [
-                      "sample collection date null reason"
+                      "sample_collection_date_null_reason"
                     ],
                     "match": {
                       "exists": true
@@ -6924,24 +6293,18 @@
             "examples": "Restricted Access",
             "notes": "A conditional check where if value is provided then sequenced by is not required"
           },
-          "name": "sample collection date null reason",
+          "name": "sample_collection_date_null_reason",
           "restrictions": [
             {
               "else": {
-                "codeList": [
-                  "Missing",
-                  "Not Applicable",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ],
+                "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"],
                 "required": true
               },
               "if": {
                 "conditions": [
                   {
                     "fields": [
-                      "sample collection date"
+                      "sample_collection_date"
                     ],
                     "match": {
                       "exists": true
@@ -6975,7 +6338,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collection end date",
+          "name": "sample_collection_end_date",
           "restrictions": [
             {
               "regex": "^(\\d{4}-\\d{2}-\\d{2})$"
@@ -7002,7 +6365,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collection end time",
+          "name": "sample_collection_end_time",
           "restrictions": [
             {
               "regex": "^(\\d{2}:\\d{2} [A-Z]{3,5})$"
@@ -7029,7 +6392,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collection start time",
+          "name": "sample_collection_start_time",
           "restrictions": [
             {
               "regex": "^(\\d{2}:\\d{2} [A-Z]{3,5})$"
@@ -7056,23 +6419,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collection time duration unit",
+          "name": "sample_collection_time_duration_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Day",
-                "Hour",
-                "Minute",
-                "Missing",
-                "Month",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "Second",
-                "Week",
-                "Year"
-              ]
+              "codeList": ["Day","Hour","Minute","Missing","Month","Not Applicable","Not Collected","Not Provided","Restricted Access","Second","Week","Year"]
             },
             {
               "if": {
@@ -7080,7 +6430,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample collection time duration value"
+                      "sample_collection_time_duration_value"
                     ],
                     "match": {
                       "exists": true
@@ -7114,7 +6464,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collection time duration value",
+          "name": "sample_collection_time_duration_value",
           "restrictions": [
             {
               "if": {
@@ -7122,7 +6472,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample collection time duration unit"
+                      "sample_collection_time_duration_unit"
                     ],
                     "match": {
                       "exists": true
@@ -7155,20 +6505,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collection time of day",
+          "name": "sample_collection_time_of_day",
           "restrictions": [
             {
-              "codeList": [
-                "Afternoon",
-                "Evening",
-                "Missing",
-                "Morning",
-                "Night",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access"
-              ]
+              "codeList": ["Afternoon","Evening","Missing","Morning","Night","Not Applicable","Not Collected","Not Provided","Restricted Access"]
             }
           ],
           "valueType": "string"
@@ -7191,7 +6531,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample collector contact email",
+          "name": "sample_collector_contact_email",
           "restrictions": [
             {
               "regex": "^\\S+@\\S+\\.\\S+$"
@@ -7217,7 +6557,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample processing date",
+          "name": "sample_processing_date",
           "restrictions": [
             {
               "regex": "^(\\d{4}-\\d{2}-\\d{2})$"
@@ -7243,7 +6583,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample received date",
+          "name": "sample_received_date",
           "restrictions": [
             {
               "regex": "^(\\d{4}-\\d{2}-\\d{2})$"
@@ -7269,23 +6609,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample storage duration unit",
+          "name": "sample_storage_duration_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Day",
-                "Hour",
-                "Minute",
-                "Missing",
-                "Month",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "Second",
-                "Week",
-                "Year"
-              ]
+              "codeList": ["Day","Hour","Minute","Missing","Month","Not Applicable","Not Collected","Not Provided","Restricted Access","Second","Week","Year"]
             },
             {
               "if": {
@@ -7293,7 +6620,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample storage duration value"
+                      "sample_storage_duration_value"
                     ],
                     "match": {
                       "exists": true
@@ -7326,7 +6653,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample storage duration value",
+          "name": "sample_storage_duration_value",
           "restrictions": [
             {
               "if": {
@@ -7334,7 +6661,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample storage duration unit"
+                      "sample_storage_duration_unit"
                     ],
                     "match": {
                       "exists": true
@@ -7367,7 +6694,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample storage medium",
+          "name": "sample_storage_medium",
           "restrictions": [
             {
               "if": {
@@ -7375,7 +6702,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample storage method"
+                      "sample_storage_method"
                     ],
                     "match": {
                       "exists": true
@@ -7408,7 +6735,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample storage method",
+          "name": "sample_storage_method",
           "restrictions": [
             {
               "if": {
@@ -7416,7 +6743,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample storage medium"
+                      "sample_storage_medium"
                     ],
                     "match": {
                       "exists": true
@@ -7449,18 +6776,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample temperature unit (at collection)",
+          "name": "sample_temperature_unit_at_collection",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "degree Celsius (C)",
-                "degree Fahrenheit (F)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","degree Celsius (C)","degree Fahrenheit (F)"]
             },
             {
               "if": {
@@ -7468,7 +6787,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample temperature value (at collection)"
+                      "sample_temperature_value_at_collection"
                     ],
                     "match": {
                       "exists": true
@@ -7501,18 +6820,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample temperature unit (when received)",
+          "name": "sample_temperature_unit_when_received",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "degree Celsius (C)",
-                "degree Fahrenheit (F)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","degree Celsius (C)","degree Fahrenheit (F)"]
             },
             {
               "if": {
@@ -7520,7 +6831,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample temperature value (when received)"
+                      "sample_temperature_value_when_received"
                     ],
                     "match": {
                       "exists": true
@@ -7553,7 +6864,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample temperature value (at collection)",
+          "name": "sample_temperature_value_at_collection",
           "restrictions": [
             {
               "if": {
@@ -7561,7 +6872,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample temperature unit (at collection)"
+                      "sample_temperature_unit_at_collection"
                     ],
                     "match": {
                       "exists": true
@@ -7594,7 +6905,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample temperature value (when received)",
+          "name": "sample_temperature_value_when_received",
           "restrictions": [
             {
               "if": {
@@ -7602,7 +6913,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample temperature unit (when received)"
+                      "sample_temperature_unit_when_received"
                     ],
                     "match": {
                       "exists": true
@@ -7635,19 +6946,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample volume measurement unit",
+          "name": "sample_volume_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "liter (L)",
-                "microliter (uL)",
-                "milliliter (mL)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","liter (L)","microliter (uL)","milliliter (mL)"]
             },
             {
               "if": {
@@ -7655,7 +6957,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample volume measurement value"
+                      "sample_volume_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -7688,7 +6990,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sample volume measurement value",
+          "name": "sample_volume_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -7696,7 +6998,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "sample volume measurement unit"
+                      "sample_volume_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -7730,7 +7032,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sampling event ID",
+          "name": "sampling_event_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -7753,7 +7055,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sampling site ID",
+          "name": "sampling_site_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -7775,24 +7077,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sampling weather conditions",
+          "name": "sampling_weather_conditions",
           "restrictions": [
             {
-              "codeList": [
-                "Cloudy/Overcast",
-                "Drizzle",
-                "Fog",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Partially cloudy",
-                "Rain",
-                "Restricted Access",
-                "Snow",
-                "Storm",
-                "Sunny/Clear"
-              ]
+              "codeList": ["Cloudy/Overcast","Drizzle","Fog","Missing","Not Applicable","Not Collected","Not Provided","Partially cloudy","Rain","Restricted Access","Snow","Storm","Sunny/Clear"]
             }
           ],
           "valueType": "string"
@@ -7816,7 +7104,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "scale of sampling",
+          "name": "scale_of_sampling",
           "restrictions": [],
           "valueType": "string"
         },
@@ -7838,7 +7126,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequence assembly length",
+          "name": "sequence_assembly_length",
           "restrictions": [],
           "valueType": "integer"
         },
@@ -7860,7 +7148,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequence assembly software name",
+          "name": "sequence_assembly_software_name",
           "restrictions": [],
           "valueType": "string"
         },
@@ -7882,7 +7170,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequence assembly software version",
+          "name": "sequence_assembly_software_version",
           "restrictions": [],
           "valueType": "string"
         },
@@ -7903,7 +7191,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequence submitted by",
+          "name": "sequence_submitted_by",
           "restrictions": [
             {
               "else": {
@@ -7913,7 +7201,7 @@
                 "conditions": [
                   {
                     "fields": [
-                      "sequence submitted by null reason"
+                      "sequence_submitted_by_null_reason"
                     ],
                     "match": {
                       "exists": true
@@ -7935,24 +7223,18 @@
             "examples": "Restricted Access",
             "notes": "A conditional check where if value is provided then sequence submitted by is not required"
           },
-          "name": "sequence submitted by null reason",
+          "name": "sequence_submitted_by_null_reason",
           "restrictions": [
             {
               "else": {
-                "codeList": [
-                  "Missing",
-                  "Not Applicable",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ],
+                "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"],
                 "required": true
               },
               "if": {
                 "conditions": [
                   {
                     "fields": [
-                      "sequence submitted by"
+                      "sequence_submitted_by"
                     ],
                     "match": {
                       "exists": true
@@ -7986,7 +7268,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequence submitter contact email",
+          "name": "sequence_submitter_contact_email",
           "restrictions": [
             {
               "regex": "^\\S+@\\S+\\.\\S+$"
@@ -8011,7 +7293,7 @@
               "label": "3.0.0"
             }
           },
-          "name": "sequenced by",
+          "name": "sequenced_by",
           "restrictions": [
             {
               "else": {
@@ -8021,7 +7303,7 @@
                 "conditions": [
                   {
                     "fields": [
-                      "sequenced by null reason"
+                      "sequenced_by_null_reason"
                     ],
                     "match": {
                       "exists": true
@@ -8055,7 +7337,7 @@
               "label": "3.0.0"
             }
           },
-          "name": "sequenced by contact email",
+          "name": "sequenced_by_contact_email",
           "restrictions": [
             {
               "regex": "^\\S+@\\S+\\.\\S+$"
@@ -8081,7 +7363,7 @@
               "label": "3.0.0"
             }
           },
-          "name": "sequenced by contact name",
+          "name": "sequenced_by_contact_name",
           "restrictions": [
             {
               "required": true
@@ -8096,24 +7378,18 @@
             "examples": "Restricted Access",
             "notes": "A conditional check where if value is provided then sequenced by is not required"
           },
-          "name": "sequenced by null reason",
+          "name": "sequenced_by_null_reason",
           "restrictions": [
             {
               "else": {
-                "codeList": [
-                  "Missing",
-                  "Not Applicable",
-                  "Not Collected",
-                  "Not Provided",
-                  "Restricted Access"
-                ],
+                "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"],
                 "required": true
               },
               "if": {
                 "conditions": [
                   {
                     "fields": [
-                      "sequenced by"
+                      "sequenced_by"
                     ],
                     "match": {
                       "exists": true
@@ -8146,16 +7422,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequencing assay type",
+          "name": "sequencing_assay_type",
           "restrictions": [
             {
-              "codeList": [
-                "16S ribosomal gene sequencing assay",
-                "amplicon sequencing assay",
-                "whole genome sequencing assay",
-                "whole metagenome sequencing assay",
-                "whole virome sequencing assay"
-              ]
+              "codeList": ["16S ribosomal gene sequencing assay","amplicon sequencing assay","whole genome sequencing assay","whole metagenome sequencing assay","whole virome sequencing assay"]
             }
           ],
           "valueType": "string"
@@ -8178,7 +7448,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequencing date",
+          "name": "sequencing_date",
           "restrictions": [
             {
               "regex": "^(\\d{4}-\\d{2}-\\d{2})$"
@@ -8204,96 +7474,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequencing instrument",
+          "name": "sequencing_instrument",
           "restrictions": [
             {
-              "codeList": [
-                "454 Genome Sequencer",
-                "454 Genome Sequencer 20",
-                "454 Genome Sequencer FLX",
-                "454 Genome Sequencer FLX Titanium",
-                "454 Genome Sequencer FLX+",
-                "454 Genome Sequencer Junior",
-                "AB 310 Genetic Analyzer",
-                "AB 3130 Genetic Analyzer",
-                "AB 3130xL Genetic Analyzer",
-                "AB 3500 Genetic Analyzer",
-                "AB 3500xL Genetic Analyzer",
-                "AB 3730 Genetic Analyzer",
-                "AB 3730xL Genetic Analyzer",
-                "Applied Biosystems sequencing instrument model",
-                "BGISEQ",
-                "BGISEQ-500",
-                "DNBSEQ-G400",
-                "DNBSEQ-G400 FAST",
-                "DNBSEQ-G50",
-                "DNBSEQ-T7",
-                "HeliScope Single Molecule Sequencer",
-                "Illumina",
-                "Illumina Genome Analyzer",
-                "Illumina Genome Analyzer II",
-                "Illumina Genome Analyzer IIx",
-                "Illumina HiScanSQ",
-                "Illumina HiSeq",
-                "Illumina HiSeq 1000",
-                "Illumina HiSeq 1500",
-                "Illumina HiSeq 2000   ",
-                "Illumina HiSeq 2500",
-                "Illumina HiSeq 3000",
-                "Illumina HiSeq 4000",
-                "Illumina HiSeq X",
-                "Illumina HiSeq X Five ",
-                "Illumina HiSeq X Ten",
-                "Illumina MiSeq",
-                "Illumina MiniSeq",
-                "Illumina NextSeq",
-                "Illumina NextSeq 1000",
-                "Illumina NextSeq 2000",
-                "Illumina NextSeq 500",
-                "Illumina NextSeq 550",
-                "Illumina NovaSeq  ",
-                "Illumina NovaSeq 6000",
-                "Illumina iSeq  ",
-                "Illumina iSeq 100",
-                "Ion Torrent",
-                "Ion Torrent PGM",
-                "Ion Torrent Proton",
-                "Ion Torrent S5",
-                "Ion Torrent S5 XL",
-                "MGI DNBSEQ-E25",
-                "MGI DNBSEQ-G400",
-                "MGI DNBSEQ-G400RS FAST",
-                "MGI DNBSEQ-G50",
-                "MGI DNBSEQ-G99",
-                "MGI DNBSEQ-T7",
-                "MGI sequencing instrument",
-                "MGISEQ-2000RS ",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Oxford Nanopore",
-                "Oxford Nanopore Flongle",
-                "Oxford Nanopore GridION",
-                "Oxford Nanopore MinION",
-                "Oxford Nanopore PromethION",
-                "PacBio",
-                "PacBio RS ",
-                "PacBio RS II",
-                "PacBio Sequel",
-                "PacBio Sequel II",
-                "Restricted Access",
-                "SOLiD 3 Plus System",
-                "SOLiD 4 System",
-                "SOLiD 4hq System",
-                "SOLiD 5500",
-                "SOLiD 5500x-Wl Genetic Analyzer",
-                "SOLiD 5500xl Genetic Analyzer",
-                "SOLiD PI System",
-                "SOLiD System",
-                "SOLiD System 2.0",
-                "SOLiD System 3.0"
-              ],
+              "codeList": ["454 Genome Sequencer","454 Genome Sequencer 20","454 Genome Sequencer FLX","454 Genome Sequencer FLX Titanium","454 Genome Sequencer FLX+","454 Genome Sequencer Junior","AB 310 Genetic Analyzer","AB 3130 Genetic Analyzer","AB 3130xL Genetic Analyzer","AB 3500 Genetic Analyzer","AB 3500xL Genetic Analyzer","AB 3730 Genetic Analyzer","AB 3730xL Genetic Analyzer","Applied Biosystems sequencing instrument model","BGISEQ","BGISEQ-500","DNBSEQ-G400","DNBSEQ-G400 FAST","DNBSEQ-G50","DNBSEQ-T7","HeliScope Single Molecule Sequencer","Illumina","Illumina Genome Analyzer","Illumina Genome Analyzer II","Illumina Genome Analyzer IIx","Illumina HiScanSQ","Illumina HiSeq","Illumina HiSeq 1000","Illumina HiSeq 1500","Illumina HiSeq 2000   ","Illumina HiSeq 2500","Illumina HiSeq 3000","Illumina HiSeq 4000","Illumina HiSeq X","Illumina HiSeq X Five ","Illumina HiSeq X Ten","Illumina MiSeq","Illumina MiniSeq","Illumina NextSeq","Illumina NextSeq 1000","Illumina NextSeq 2000","Illumina NextSeq 500","Illumina NextSeq 550","Illumina NovaSeq  ","Illumina NovaSeq 6000","Illumina iSeq  ","Illumina iSeq 100","Ion Torrent","Ion Torrent PGM","Ion Torrent Proton","Ion Torrent S5","Ion Torrent S5 XL","MGI DNBSEQ-E25","MGI DNBSEQ-G400","MGI DNBSEQ-G400RS FAST","MGI DNBSEQ-G50","MGI DNBSEQ-G99","MGI DNBSEQ-T7","MGI sequencing instrument","MGISEQ-2000RS ","Missing","Not Applicable","Not Collected","Not Provided","Oxford Nanopore","Oxford Nanopore Flongle","Oxford Nanopore GridION","Oxford Nanopore MinION","Oxford Nanopore PromethION","PacBio","PacBio RS ","PacBio RS II","PacBio Sequel","PacBio Sequel II","Restricted Access","SOLiD 3 Plus System","SOLiD 4 System","SOLiD 4hq System","SOLiD 5500","SOLiD 5500x-Wl Genetic Analyzer","SOLiD 5500xl Genetic Analyzer","SOLiD PI System","SOLiD System","SOLiD System 2.0","SOLiD System 3.0"],
               "required": true
             }
           ],
@@ -8317,27 +7501,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequencing platform",
+          "name": "sequencing_platform",
           "restrictions": [
             {
-              "codeList": [
-                "Applied Biosystems",
-                "BGI Genomics",
-                "Complete Genomics",
-                "Helicos",
-                "Illumina",
-                "Ion Torrent",
-                "MGI",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Pacific Biosciences",
-                "Restricted Access",
-                "Roche LS454",
-                "SOLiD sequencing",
-                "to mint Oxford Nanopore Technologies"
-              ]
+              "codeList": ["Applied Biosystems","BGI Genomics","Complete Genomics","Helicos","Illumina","Ion Torrent","MGI","Missing","Not Applicable","Not Collected","Not Provided","Pacific Biosciences","Restricted Access","Roche LS454","SOLiD sequencing","to mint Oxford Nanopore Technologies"]
             }
           ],
           "valueType": "string"
@@ -8361,7 +7528,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "sequencing protocol",
+          "name": "sequencing_protocol",
           "restrictions": [],
           "valueType": "string"
         },
@@ -8384,7 +7551,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "serotyping method",
+          "name": "serotyping_method",
           "restrictions": [],
           "valueType": "string"
         },
@@ -8428,7 +7595,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "specimen collector project ID",
+          "name": "specimen_collector_project_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -8451,7 +7618,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "specimen collector sample ID",
+          "name": "specimen_collector_sample_id",
           "restrictions": [
             {
               "required": true
@@ -8478,7 +7645,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "specimen collector subsample ID",
+          "name": "specimen_collector_subsample_id",
           "restrictions": [],
           "valueType": "string"
         },
@@ -8500,28 +7667,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "specimen processing",
+          "name": "specimen_processing",
           "restrictions": [
             {
-              "codeList": [
-                "Biological replicate",
-                "Centrifugation",
-                "Concentration",
-                "Filtration",
-                "Flocculation",
-                "Gravity separation",
-                "Growth in enrichment broth",
-                "Magnetic nanobead binding",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Pasteurization",
-                "Precipitation",
-                "Restricted Access",
-                "Specimens pooled",
-                "Technical replicate"
-              ]
+              "codeList": ["Biological replicate","Centrifugation","Concentration","Filtration","Flocculation","Gravity separation","Growth in enrichment broth","Magnetic nanobead binding","Missing","Not Applicable","Not Collected","Not Provided","Pasteurization","Precipitation","Restricted Access","Specimens pooled","Technical replicate"]
             }
           ],
           "valueType": "string"
@@ -8543,7 +7692,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "specimen processing details",
+          "name": "specimen_processing_details",
           "restrictions": [],
           "valueType": "string"
         },
@@ -8587,7 +7736,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "taxonomic analysis date",
+          "name": "taxonomic_analysis_date",
           "restrictions": [
             {
               "regex": "^(\\d{4}-\\d{2}-\\d{2})$"
@@ -8613,7 +7762,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "taxonomic analysis report filename",
+          "name": "taxonomic_analysis_report_filename",
           "restrictions": [],
           "valueType": "string"
         },
@@ -8636,7 +7785,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "taxonomic reference database name",
+          "name": "taxonomic_reference_database_name",
           "restrictions": [],
           "valueType": "string"
         },
@@ -8659,7 +7808,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "taxonomic reference database version",
+          "name": "taxonomic_reference_database_version",
           "restrictions": [],
           "valueType": "string"
         },
@@ -8681,7 +7830,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total daily flow rate measurement method",
+          "name": "total_daily_flow_rate_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -8689,8 +7838,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total daily flow rate measurement unit",
-                      "total daily flow rate measurement value"
+                      "total_daily_flow_rate_measurement_unit",
+                      "total_daily_flow_rate_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -8723,24 +7872,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "total daily flow rate measurement unit",
+          "name": "total_daily_flow_rate_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "cubic meter per hour (m^3/h)",
-                "cubic meter per minute (m^3/min)",
-                "cubic meter per second (m^3/s)",
-                "liter per day (L/day)",
-                "liter per hour (L/h)",
-                "liter per minute (L/min)",
-                "liter per second (L/s)",
-                "million gallons per day (MGD)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","cubic meter per hour (m^3/h)","cubic meter per minute (m^3/min)","cubic meter per second (m^3/s)","liter per day (L/day)","liter per hour (L/h)","liter per minute (L/min)","liter per second (L/s)","million gallons per day (MGD)"]
             },
             {
               "if": {
@@ -8748,8 +7883,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total daily flow rate measurement method",
-                      "total daily flow rate measurement value"
+                      "total_daily_flow_rate_measurement_method",
+                      "total_daily_flow_rate_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -8782,7 +7917,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total daily flow rate measurement value",
+          "name": "total_daily_flow_rate_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -8790,8 +7925,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total daily flow rate measurement method",
-                      "total daily flow rate measurement unit"
+                      "total_daily_flow_rate_measurement_method",
+                      "total_daily_flow_rate_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -8824,7 +7959,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total dissolved solids (TDS) measurement method",
+          "name": "total_dissolved_solids_tds_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -8832,8 +7967,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total dissolved solids (TDS) measurement unit",
-                      "total dissolved solids (TDS) measurement value"
+                      "total_dissolved_solids_tds_measurement_unit",
+                      "total_dissolved_solids_tds_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -8866,18 +8001,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "total dissolved solids (TDS) measurement unit",
+          "name": "total_dissolved_solids_tds_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "gram per liter (g/L)",
-                "percent (%)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per liter (g/L)","percent (%)"]
             },
             {
               "if": {
@@ -8885,8 +8012,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total dissolved solids (TDS) measurement method",
-                      "total dissolved solids (TDS) measurement value"
+                      "total_dissolved_solids_tds_measurement_method",
+                      "total_dissolved_solids_tds_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -8919,7 +8046,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total dissolved solids (TDS) measurement value",
+          "name": "total_dissolved_solids_tds_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -8927,8 +8054,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total dissolved solids (TDS) measurement unit",
-                      "total dissolved solids (TDS) measurement method"
+                      "total_dissolved_solids_tds_measurement_unit",
+                      "total_dissolved_solids_tds_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -8961,7 +8088,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total nitrogen (TN) measurement method",
+          "name": "total_nitrogen_tn_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -8969,8 +8096,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total nitrogen (TN) measurement unit",
-                      "total nitrogen (TN) measurement value"
+                      "total_nitrogen_tn_measurement_unit",
+                      "total_nitrogen_tn_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9003,19 +8130,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "total nitrogen (TN) measurement unit",
+          "name": "total_nitrogen_tn_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "gram per liter (g/L)",
-                "milligram per liter (mg/L)",
-                "nitrogen per total solids (gN/gTS)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per liter (g/L)","milligram per liter (mg/L)","nitrogen per total solids (gN/gTS)"]
             },
             {
               "if": {
@@ -9023,8 +8141,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total nitrogen (TN) measurement method",
-                      "total nitrogen (TN) measurement value"
+                      "total_nitrogen_tn_measurement_method",
+                      "total_nitrogen_tn_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9057,7 +8175,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total nitrogen (TN) measurement value",
+          "name": "total_nitrogen_tn_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -9065,8 +8183,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total nitrogen (TN) measurement method",
-                      "total nitrogen (TN) measurement unit"
+                      "total_nitrogen_tn_measurement_method",
+                      "total_nitrogen_tn_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -9099,7 +8217,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total phosphorus (TP) measurement method",
+          "name": "total_phosphorus_tp_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -9107,8 +8225,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total phosphorus (TP) measurement unit",
-                      "total phosphorus (TP) measurement value"
+                      "total_phosphorus_tp_measurement_unit",
+                      "total_phosphorus_tp_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9141,21 +8259,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "total phosphorus (TP) measurement unit",
+          "name": "total_phosphorus_tp_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "milligrams orthophosphate as phosphorus per liter (mg PO4-P/L)",
-                "milligrams orthophosphate per liter (mg PO43‚Äì/L)",
-                "orthophosphate as phosphorus per total solids (gPO4-P/gTS)",
-                "orthophosphate per total solids (gPO43‚Äì/gTS)",
-                "total phosphorus per total solids (gTP/gTS)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milligrams orthophosphate as phosphorus per liter (mg PO4-P/L)","milligrams orthophosphate per liter (mg PO43‚Äì/L)","orthophosphate as phosphorus per total solids (gPO4-P/gTS)","orthophosphate per total solids (gPO43‚Äì/gTS)","total phosphorus per total solids (gTP/gTS)"]
             },
             {
               "if": {
@@ -9163,8 +8270,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total phosphorus (TP) measurement method",
-                      "total phosphorus (TP) measurement value"
+                      "total_phosphorus_tp_measurement_method",
+                      "total_phosphorus_tp_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9197,7 +8304,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total phosphorus (TP) measurement value",
+          "name": "total_phosphorus_tp_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -9205,8 +8312,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total phosphorus (TP) measurement method",
-                      "total phosphorus (TP) measurement unit"
+                      "total_phosphorus_tp_measurement_method",
+                      "total_phosphorus_tp_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -9239,7 +8346,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total solids (TS) measurement method",
+          "name": "total_solids_ts_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -9247,8 +8354,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total solids (TS) measurement unit",
-                      "total solids (TS) measurement value"
+                      "total_solids_ts_measurement_unit",
+                      "total_solids_ts_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9281,18 +8388,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "total solids (TS) measurement unit",
+          "name": "total_solids_ts_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "gram per liter (g/L)",
-                "percent (%)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per liter (g/L)","percent (%)"]
             },
             {
               "if": {
@@ -9300,8 +8399,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total solids (TS) measurement method",
-                      "total solids (TS) measurement value"
+                      "total_solids_ts_measurement_method",
+                      "total_solids_ts_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9334,7 +8433,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total solids (TS) measurement value",
+          "name": "total_solids_ts_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -9342,8 +8441,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total solids (TS) measurement method",
-                      "total solids (TS) measurement unit"
+                      "total_solids_ts_measurement_method",
+                      "total_solids_ts_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -9376,7 +8475,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total suspended solids (TSS) measurement method",
+          "name": "total_suspended_solids_tss_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -9384,8 +8483,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total suspended solids (TSS) measurement unit",
-                      "total suspended solids (TSS) measurement value"
+                      "total_suspended_solids_tss_measurement_unit",
+                      "total_suspended_solids_tss_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9418,18 +8517,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "total suspended solids (TSS) measurement unit",
+          "name": "total_suspended_solids_tss_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "gram per liter (g/L)",
-                "percent (%)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per liter (g/L)","percent (%)"]
             },
             {
               "if": {
@@ -9437,8 +8528,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total suspended solids (TSS) measurement method",
-                      "total suspended solids (TSS) measurement value"
+                      "total_suspended_solids_tss_measurement_method",
+                      "total_suspended_solids_tss_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9471,7 +8562,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "total suspended solids (TSS) measurement value",
+          "name": "total_suspended_solids_tss_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -9479,8 +8570,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "total suspended solids (TSS) measurement method",
-                      "total suspended solids (TSS) measurement unit"
+                      "total_suspended_solids_tss_measurement_method",
+                      "total_suspended_solids_tss_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -9513,7 +8604,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "turbidity measurement method",
+          "name": "turbidity_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -9521,8 +8612,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "turbidity measurement unit",
-                      "turbidity measurement value"
+                      "turbidity_measurement_unit",
+                      "turbidity_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9556,18 +8647,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "turbidity measurement unit",
+          "name": "turbidity_measurement_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "formazin nephelometric unit (FNU)",
-                "nephelometric turbidity unit (NTU)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","formazin nephelometric unit (FNU)","nephelometric turbidity unit (NTU)"]
             },
             {
               "if": {
@@ -9575,8 +8658,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "turbidity measurement method",
-                      "turbidity measurement value"
+                      "turbidity_measurement_method",
+                      "turbidity_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -9610,7 +8693,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "turbidity measurement value",
+          "name": "turbidity_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -9618,8 +8701,8 @@
                   {
                     "case": "any",
                     "fields": [
-                      "turbidity measurement method",
-                      "turbidity measurement unit"
+                      "turbidity_measurement_method",
+                      "turbidity_measurement_unit"
                     ],
                     "match": {
                       "exists": true
@@ -9652,17 +8735,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "urinary contamination indicator",
+          "name": "urinary_contamination_indicator",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "urobilin"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","urobilin"]
             },
             {
               "if": {
@@ -9670,9 +8746,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "urinary contamination method",
-                      "urinary contamination unit",
-                      "urinary contamination value"
+                      "urinary_contamination_method",
+                      "urinary_contamination_unit",
+                      "urinary_contamination_value"
                     ],
                     "match": {
                       "exists": true
@@ -9704,7 +8780,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "urinary contamination method",
+          "name": "urinary_contamination_method",
           "restrictions": [
             {
               "if": {
@@ -9712,9 +8788,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "urinary contamination indicator",
-                      "urinary contamination unit",
-                      "urinary contamination value"
+                      "urinary_contamination_indicator",
+                      "urinary_contamination_unit",
+                      "urinary_contamination_value"
                     ],
                     "match": {
                       "exists": true
@@ -9746,17 +8822,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "urinary contamination unit",
+          "name": "urinary_contamination_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "nanograms per liter (ng/L)"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","nanograms per liter (ng/L)"]
             },
             {
               "if": {
@@ -9764,9 +8833,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "urinary contamination method",
-                      "urinary contamination indicator",
-                      "urinary contamination value"
+                      "urinary_contamination_method",
+                      "urinary_contamination_indicator",
+                      "urinary_contamination_value"
                     ],
                     "match": {
                       "exists": true
@@ -9798,7 +8867,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "urinary contamination value",
+          "name": "urinary_contamination_value",
           "restrictions": [
             {
               "if": {
@@ -9806,9 +8875,9 @@
                   {
                     "case": "any",
                     "fields": [
-                      "urinary contamination method",
-                      "urinary contamination unit",
-                      "urinary contamination indicator"
+                      "urinary_contamination_method",
+                      "urinary_contamination_unit",
+                      "urinary_contamination_indicator"
                     ],
                     "match": {
                       "exists": true
@@ -9842,27 +8911,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "wastewater system type",
+          "name": "wastewater_system_type",
           "restrictions": [
             {
-              "codeList": [
-                "Cesspit",
-                "Combined sewer system",
-                "Composting toilet",
-                "Drainage channel",
-                "Latrine",
-                "Missing",
-                "Non-sewered sanitation system",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "Sanitary sewer system",
-                "Septic tank",
-                "Sewered sanitation system",
-                "Waste stabilization lagoon",
-                "Waste tank"
-              ]
+              "codeList": ["Cesspit","Combined sewer system","Composting toilet","Drainage channel","Latrine","Missing","Non-sewered sanitation system","Not Applicable","Not Collected","Not Provided","Restricted Access","Sanitary sewer system","Septic tank","Sewered sanitation system","Waste stabilization lagoon","Waste tank"]
             }
           ],
           "valueType": "string"
@@ -9885,20 +8937,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "water catchment area human population density unit",
+          "name": "water_catchment_area_human_population_density_unit",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "person for square kilometer",
-                "persons per square mile (?? / sq mi)",
-                "resident per square mile",
-                "residential per square kilometer"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","person for square kilometer","persons per square mile (?? / sq mi)","resident per square mile","residential per square kilometer"]
             },
             {
               "if": {
@@ -9906,7 +8948,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "water catchment area human population density value"
+                      "water_catchment_area_human_population_density_value"
                     ],
                     "match": {
                       "exists": true
@@ -9939,7 +8981,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "water catchment area human population density value",
+          "name": "water_catchment_area_human_population_density_value",
           "restrictions": [
             {
               "if": {
@@ -9947,7 +8989,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "water catchment area human population density unit"
+                      "water_catchment_area_human_population_density_unit"
                     ],
                     "match": {
                       "exists": true
@@ -9980,7 +9022,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "water catchment area human population measurement method",
+          "name": "water_catchment_area_human_population_measurement_method",
           "restrictions": [
             {
               "if": {
@@ -9988,7 +9030,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "water catchment area human population measurement value"
+                      "water_catchment_area_human_population_measurement_value"
                     ],
                     "match": {
                       "exists": true
@@ -10022,7 +9064,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "water catchment area human population measurement value",
+          "name": "water_catchment_area_human_population_measurement_value",
           "restrictions": [
             {
               "if": {
@@ -10030,7 +9072,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "water catchment area human population measurement method"
+                      "water_catchment_area_human_population_measurement_method"
                     ],
                     "match": {
                       "exists": true
@@ -10063,23 +9105,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "water catchment area human population range",
+          "name": "water_catchment_area_human_population_range",
           "restrictions": [
             {
-              "codeList": [
-                "1,000 - 10,000 people",
-                "1,000,000+ people",
-                "10 - 100 people",
-                "10,000 - 100,000 people",
-                "100 - 1,000 people",
-                "100,000 -  1,000,000 people",
-                "<10 people",
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access"
-              ]
+              "codeList": ["1,000 - 10,000 people","1,000,000+ people","10 - 100 people","10,000 - 100,000 people","100 - 1,000 people","100,000 -  1,000,000 people","<10 people","Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"]
             }
           ],
           "valueType": "string"
@@ -10102,19 +9131,10 @@
               "label": "1.0.0"
             }
           },
-          "name": "watershed shapefile availability",
+          "name": "watershed_shapefile_availability",
           "restrictions": [
             {
-              "codeList": [
-                "Missing",
-                "Not Applicable",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access",
-                "available",
-                "unavailable",
-                "unknown"
-              ]
+              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","available","unavailable","unknown"]
             },
             {
               "if": {
@@ -10122,7 +9142,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "watershed shapefile filename"
+                      "watershed_shapefile_filename"
                     ],
                     "match": {
                       "exists": true
@@ -10155,7 +9175,7 @@
               "label": "1.0.0"
             }
           },
-          "name": "watershed shapefile filename",
+          "name": "watershed_shapefile_filename",
           "restrictions": [
             {
               "if": {
@@ -10163,7 +9183,7 @@
                   {
                     "case": "any",
                     "fields": [
-                      "watershed shapefile availability"
+                      "watershed_shapefile_availability"
                     ],
                     "match": {
                       "exists": true

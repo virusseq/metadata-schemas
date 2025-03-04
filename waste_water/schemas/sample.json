@@ -978,7 +978,7 @@
       "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
       "restrictions": [
         {
-          "codeList": "#/list/carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit"
+          "codeList": "#/list/carbonaceous_biochemical_oxygen_demand_CBOD_measurement_unit"
         },
         {
           "if": {

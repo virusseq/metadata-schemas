@@ -22,8 +22,8 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 
 import fs from "fs";
-const whitespace = 4;
-const defaultName = "PCGL Data Dictionary";
+const whitespace = 2;
+const defaultName = "waste_water";
 const defaultVersion = "0.0";
 
 import schemas from "./schemas/index.js";

@@ -24,7 +24,7 @@
 import fs from "fs";
 import dict from "./dictionary.json" assert { type: "json" };
 
-const old = JSON.stringify(dict);
+const old = JSON.stringify(dict, null, 2);
 
 // References look like this : /#/scripts/donor/ensuredeceased
 // This regex finds them
