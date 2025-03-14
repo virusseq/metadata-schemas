@@ -1,6 +1,6 @@
 {
   "name": "waste_water",
-  "version": "0.93",
+  "version": "0.94",
   "references": {
     "script": {
       "common": {
@@ -1337,6 +1337,7 @@
       ]
     },
     "regex": {
+      "amplicon_size": "^[0-9]+bp$",
       "BioProject_accession": "^PRJN[A-Z0-9]+$",
       "BioSample_accession": "^SAMN\\d+$",
       "DRA_accession": "^DRA\\d+$",
@@ -2213,11 +2214,12 @@
                 ]
               },
               "then": {
-                "required": true
+                "required": true,
+                "regex": "#/regex/amplicon_size"
               }
             }
           ],
-          "valueType": "integer"
+          "valueType": "string"
         },
         {
           "description": "Names of individuals contributing to the processes of sample collection, sequence generation, analysis, and data submission.",
@@ -4167,7 +4169,8 @@
           "name": "geo_loc_name_country",
           "restrictions": [
             {
-              "required": true
+              "required": true,
+              "codeList": "#/list/geo_loc_name_country"
             }
           ],
           "valueType": "string"
@@ -7219,7 +7222,7 @@
         {
           "description": "Status indicating if sequence submitter was provided.",
           "meta": {
-            "displayName": "sample collected by null reason",
+            "displayName": "sequence submitted by null reason",
             "examples": "Restricted Access",
             "notes": "A conditional check where if value is provided then sequence submitted by is not required"
           },
@@ -7374,7 +7377,7 @@
         {
           "description": "Status indicating if sequencer was provided.",
           "meta": {
-            "displayName": "sample collected by null reason",
+            "displayName": "sequenced by null reason",
             "examples": "Restricted Access",
             "notes": "A conditional check where if value is provided then sequenced by is not required"
           },

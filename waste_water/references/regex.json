@@ -1,4 +1,5 @@
 {
+  "amplicon_size": "^[0-9]+bp$",
   "BioProject_accession": "^PRJN[A-Z0-9]+$",
   "BioSample_accession": "^SAMN\\d+$",
   "DRA_accession": "^DRA\\d+$",
