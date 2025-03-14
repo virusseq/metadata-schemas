@@ -5766,7 +5766,7 @@
     {
       "description": "Status indicating if sequence submitter was provided.",
       "meta": {
-        "displayName": "sequenced submitted by null reason",
+        "displayName": "sequence submitted by null reason",
         "examples": "Restricted Access",
         "notes": "A conditional check where if value is provided then sequence submitted by is not required"
       },
