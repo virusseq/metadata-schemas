@@ -2764,7 +2764,8 @@
       "name": "geo_loc_name_country",
       "restrictions": [
         {
-          "required": true
+          "required": true,
+          "codeList": "#/list/geo_loc_name_country"
         }
       ],
       "valueType": "string"
