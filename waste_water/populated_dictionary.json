@@ -1,6 +1,6 @@
 {
   "name": "waste_water",
-  "version": "0.94",
+  "version": "0.95",
   "references": {
     "script": {
       "common": {
@@ -1898,6 +1898,27 @@
           "valueType": "string"
         },
         {
+          "description": "The URL associated with Sequence Read Archive (SRA) identifier.",
+          "meta": {
+            "displayName": "SRA URL",
+            "external_mapping": {},
+            "notes": "",
+            "ontologyIdentifier": "GENEPIO:0001142",
+            "parent": {
+              "ontologyIdentifier": "GENEPIO:0001122",
+              "ontologyName": "Database identifiers"
+            },
+            "version_tracking": {
+              "guidance": "1.0.0",
+              "id": "1.0.0",
+              "label": "1.0.0"
+            }
+          },
+          "name": "sra_url",
+          "restrictions": [],
+          "valueType": "string"
+        },
+        {
           "description": "The process used to measure alkalinity.",
           "meta": {
             "displayName": "alkalinity measurement method",
@@ -1960,7 +1981,15 @@
           "name": "alkalinity_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milliequivalent per liter (meq/L)","milligram per liter of calcium carbonate (mg/L CaCO3)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "milliequivalent per liter (meq/L)",
+                "milligram per liter of calcium carbonate (mg/L CaCO3)"
+              ]
             },
             {
               "if": {
@@ -2070,7 +2099,15 @@
           "name": "ambient_temperature_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","degree Celsius (C)","degree Fahrenheit (F)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "degree Celsius (C)",
+                "degree Fahrenheit (F)"
+              ]
             },
             {
               "if": {
@@ -2156,7 +2193,35 @@
           "name": "amplicon_pcr_primer_scheme",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","artic-v1","artic-v2","artic-v3","artic-v4","artic-v4.1","artic-v5.0.0_400","artic-v5.1.0_400","artic-v5.2.0_1200","artic-v5.2.0_400","artic-v5.3.2_400","eden-v1","midnight-bccdc-v1","midnight-bccdc-v2","midnight-bccdc-v3","midnight-bccdc-v4","midnight-ont-v3","midnight-v1","midnight-v2","varskip-vsl1a","varskip-vss1a","varskip-vss2a","varskip-vss2b"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "artic-v1",
+                "artic-v2",
+                "artic-v3",
+                "artic-v4",
+                "artic-v4.1",
+                "artic-v5.0.0_400",
+                "artic-v5.1.0_400",
+                "artic-v5.2.0_1200",
+                "artic-v5.2.0_400",
+                "artic-v5.3.2_400",
+                "eden-v1",
+                "midnight-bccdc-v1",
+                "midnight-bccdc-v2",
+                "midnight-bccdc-v3",
+                "midnight-bccdc-v4",
+                "midnight-ont-v3",
+                "midnight-v1",
+                "midnight-v2",
+                "varskip-vsl1a",
+                "varskip-vss1a",
+                "varskip-vss2a",
+                "varskip-vss2b"
+              ]
             },
             {
               "if": {
@@ -2355,7 +2420,14 @@
           "name": "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milligram per liter (mg/L)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "milligram per liter (mg/L)"
+              ]
             },
             {
               "if": {
@@ -2484,7 +2556,14 @@
           "name": "chemical_oxygen_demand_cod_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milligram per liter (mg/L)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "milligram per liter (mg/L)"
+              ]
             },
             {
               "if": {
@@ -2571,7 +2650,25 @@
           "name": "collection_device",
           "restrictions": [
             {
-              "codeList": ["Automatic composite sampler","Automatic flow-proportional sampler","Automatic sequential (time-proportional) sampler","Composite sampler","Cone-shaped sampling device","Core sampling device","Grab sampler","Horizontal grab sampling device","Missing","Moore swab","Not Applicable","Not Collected","Not Provided","Passive (trap) sampler","Restricted Access","Vacuum sludge sampling device","Vertical grab sampling device"]
+              "codeList": [
+                "Automatic composite sampler",
+                "Automatic flow-proportional sampler",
+                "Automatic sequential (time-proportional) sampler",
+                "Composite sampler",
+                "Cone-shaped sampling device",
+                "Core sampling device",
+                "Grab sampler",
+                "Horizontal grab sampling device",
+                "Missing",
+                "Moore swab",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Passive (trap) sampler",
+                "Restricted Access",
+                "Vacuum sludge sampling device",
+                "Vertical grab sampling device"
+              ]
             },
             {
               "if": {
@@ -2616,7 +2713,18 @@
           "name": "collection_method",
           "restrictions": [
             {
-              "codeList": ["Automatic composite sampling","Composite sampling","Grab sampling","Manual composite sampling","Missing","Not Applicable","Not Collected","Not Provided","Passive composite sampling","Restricted Access"]
+              "codeList": [
+                "Automatic composite sampling",
+                "Composite sampling",
+                "Grab sampling",
+                "Manual composite sampling",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Passive composite sampling",
+                "Restricted Access"
+              ]
             },
             {
               "if": {
@@ -2702,7 +2810,18 @@
           "name": "conductivity_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","Siemen per meter (S/m)","microSiemen per centimeter (ŒºS/cm)","micromho per centimeter (Œºmho/cm)","milliSiemen per centimeter (mS/cm)","millimho per centimeter (mmho/cm)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "Siemen per meter (S/m)",
+                "microSiemen per centimeter (ŒºS/cm)",
+                "micromho per centimeter (Œºmho/cm)",
+                "milliSiemen per centimeter (mS/cm)",
+                "millimho per centimeter (mmho/cm)"
+              ]
             },
             {
               "if": {
@@ -3021,7 +3140,20 @@
           "name": "diagnostic_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","colony forming units per 100 milliliter (CFU/100 mL)","colony forming units per grams total solids (CFU/gTS)","colony forming units per milliliter (CFU/mL)","cycle threshold (Ct) / quantification cycle (Cq)","gene copies per liter (GC/L)","most probable number per 100 milliliter (MPN/100 mL)","most probable number per milliliter (MPN/mL)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "colony forming units per 100 milliliter (CFU/100 mL)",
+                "colony forming units per grams total solids (CFU/gTS)",
+                "colony forming units per milliliter (CFU/mL)",
+                "cycle threshold (Ct) / quantification cycle (Cq)",
+                "gene copies per liter (GC/L)",
+                "most probable number per 100 milliliter (MPN/100 mL)",
+                "most probable number per milliliter (MPN/mL)"
+              ]
             },
             {
               "if": {
@@ -3106,7 +3238,15 @@
           "name": "diagnostic_target_presence",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","absent","present"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "absent",
+                "present"
+              ]
             }
           ],
           "valueType": "string"
@@ -3174,7 +3314,16 @@
           "name": "dissolved_oxygen_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","kilogram per cubic meter (kg/m^3)","milligram per liter (mg/L)","part per million (ppm)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "kilogram per cubic meter (kg/m^3)",
+                "milligram per liter (mg/L)",
+                "part per million (ppm)"
+              ]
             },
             {
               "if": {
@@ -3284,7 +3433,23 @@
           "name": "environmental_material",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Primary sludge","Primary wastewater effluent","Restricted Access","Secondary sludge","Secondary wastewater effluent","Sludge","Surface water","Treated wastewater","Waste water","Wastewater effluent","Wastewater sediment"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Primary sludge",
+                "Primary wastewater effluent",
+                "Restricted Access",
+                "Secondary sludge",
+                "Secondary wastewater effluent",
+                "Sludge",
+                "Surface water",
+                "Treated wastewater",
+                "Waste water",
+                "Wastewater effluent",
+                "Wastewater sediment"
+              ]
             },
             {
               "if": {
@@ -3330,7 +3495,26 @@
           "name": "environmental_material_properties",
           "restrictions": [
             {
-              "codeList": ["Contamination","Fast-flowing","Fecal-contaminated","Liquid","Missing","Not Applicable","Not Collected","Not Provided","Pumpable","Restricted Access","Semi-solid","Slow-flowing","Slurry","Solid","Spadeable","Stagnant","Treated","Untreated"]
+              "codeList": [
+                "Contamination",
+                "Fast-flowing",
+                "Fecal-contaminated",
+                "Liquid",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Pumpable",
+                "Restricted Access",
+                "Semi-solid",
+                "Slow-flowing",
+                "Slurry",
+                "Solid",
+                "Spadeable",
+                "Stagnant",
+                "Treated",
+                "Untreated"
+              ]
             },
             {
               "if": {
@@ -3376,7 +3560,47 @@
           "name": "environmental_site",
           "restrictions": [
             {
-              "codeList": ["Airplane","Airport","Boat","Body of water","Canal","Clinic","College or university","Correctional facility","Daycare facility","Educational facility","Farm","Ground water","Healthcare facility","Homeless shelter","Hospital","Industrial plant","Lake","Long-term care facility","Meat processing plant","Missing","Not Applicable","Not Collected","Not Provided","Ocean","Pharmaceutical manufacturing plant","Refugee camp","Reservoir","Residential building","Restricted Access","River","School","Sea","Spring","Stream","Surface water","Transport hub","Transportation vehicle","Wastewater treatment plant","Well"]
+              "codeList": [
+                "Airplane",
+                "Airport",
+                "Boat",
+                "Body of water",
+                "Canal",
+                "Clinic",
+                "College or university",
+                "Correctional facility",
+                "Daycare facility",
+                "Educational facility",
+                "Farm",
+                "Ground water",
+                "Healthcare facility",
+                "Homeless shelter",
+                "Hospital",
+                "Industrial plant",
+                "Lake",
+                "Long-term care facility",
+                "Meat processing plant",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Ocean",
+                "Pharmaceutical manufacturing plant",
+                "Refugee camp",
+                "Reservoir",
+                "Residential building",
+                "Restricted Access",
+                "River",
+                "School",
+                "Sea",
+                "Spring",
+                "Stream",
+                "Surface water",
+                "Transport hub",
+                "Transportation vehicle",
+                "Wastewater treatment plant",
+                "Well"
+              ]
             },
             {
               "if": {
@@ -3460,7 +3684,12 @@
           "name": "experimental_specimen_role_type",
           "restrictions": [
             {
-              "codeList": ["Biological replicate","Negative experimental control","Positive experimental control","Technical replicate"]
+              "codeList": [
+                "Biological replicate",
+                "Negative experimental control",
+                "Positive experimental control",
+                "Technical replicate"
+              ]
             }
           ],
           "valueType": "string"
@@ -3608,7 +3837,18 @@
           "name": "fecal_coliform_count_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","colony forming units per 100 milliliter (CFU/100 mL)","colony forming units per grams total solids (CFU/gTS)","colony forming units per milliliter (CFU/mL)","most probable number per 100 milliliter (MPN/100 mL)","most probable number per milliliter (MPN/mL)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "colony forming units per 100 milliliter (CFU/100 mL)",
+                "colony forming units per grams total solids (CFU/gTS)",
+                "colony forming units per milliliter (CFU/mL)",
+                "most probable number per 100 milliliter (MPN/100 mL)",
+                "most probable number per milliliter (MPN/mL)"
+              ]
             },
             {
               "if": {
@@ -3696,7 +3936,19 @@
           "name": "fecal_contamination_indicator",
           "restrictions": [
             {
-              "codeList": ["Bacteroides HF183","Lachnospiraceae Lachno3","Male-specific (F+) coliphages","Missing","Not Applicable","Not Collected","Not Provided","PMMoV / pepper mild mottle virus","Restricted Access","crAssphage","stercobilin"]
+              "codeList": [
+                "Bacteroides HF183",
+                "Lachnospiraceae Lachno3",
+                "Male-specific (F+) coliphages",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "PMMoV / pepper mild mottle virus",
+                "Restricted Access",
+                "crAssphage",
+                "stercobilin"
+              ]
             },
             {
               "if": {
@@ -3786,7 +4038,17 @@
           "name": "fecal_contamination_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","cycle threshold (Ct) / quantification cycle (Cq)","gene copies per liter (GC/L)","log10 gene copies per 100 milliliter (log10 GC/100 mL)","log10 gene copies per nanogram total DNA"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "cycle threshold (Ct) / quantification cycle (Cq)",
+                "gene copies per liter (GC/L)",
+                "log10 gene copies per 100 milliliter (log10 GC/100 mL)",
+                "log10 gene copies per nanogram total DNA"
+              ]
             },
             {
               "if": {
@@ -3890,7 +4152,20 @@
               },
               "then": {
                 "required": true,
-                "codeList": ["HA","M1","M2","NA","NEP","NP","NS1","PA","PA-X","PB1","PB1-F2","PB2"]
+                "codeList": [
+                  "HA",
+                  "M1",
+                  "M2",
+                  "NA",
+                  "NEP",
+                  "NP",
+                  "NS1",
+                  "PA",
+                  "PA-X",
+                  "PB1",
+                  "PB1-F2",
+                  "PB2"
+                ]
               }
             },
             {
@@ -3908,7 +4183,18 @@
               },
               "then": {
                 "required": true,
-                "codeList": ["HA","M1","NA","NB","NEP","NP","NS1","PA","PB1","PB2"]
+                "codeList": [
+                  "HA",
+                  "M1",
+                  "NA",
+                  "NB",
+                  "NEP",
+                  "NP",
+                  "NS1",
+                  "PA",
+                  "PB1",
+                  "PB2"
+                ]
               }
             },
             {
@@ -3926,7 +4212,17 @@
               },
               "then": {
                 "required": true,
-                "codeList": ["CM2","HEF","M1","NP","NS1","NS2","P3","PB1","PB2"]
+                "codeList": [
+                  "CM2",
+                  "HEF",
+                  "M1",
+                  "NP",
+                  "NS1",
+                  "NS2",
+                  "P3",
+                  "PB1",
+                  "PB2"
+                ]
               }
             },
             {
@@ -3944,7 +4240,16 @@
               },
               "then": {
                 "required": true,
-                "codeList": ["HEF","NP","NS1","NS2","P3","P42","PB1","PB2"]
+                "codeList": [
+                  "HEF",
+                  "NP",
+                  "NS1",
+                  "NS2",
+                  "P3",
+                  "P42",
+                  "PB1",
+                  "PB2"
+                ]
               }
             },
             {
@@ -3962,7 +4267,185 @@
               },
               "then": {
                 "required": true,
-                "codeList": ["OPG001","OPG002","OPG003","OPG005","OPG015","OPG016","OPG019","OPG021","OPG022","OPG023","OPG024","OPG025","OPG027","OPG029","OPG030","OPG031","OPG032","OPG034","OPG035","OPG036","OPG037","OPG038","OPG039","OPG040","OPG042","OPG043","OPG044","OPG045","OPG046","OPG047","OPG048","OPG049","OPG050","OPG051","OPG052","OPG053","OPG054","OPG055","OPG056","OPG057","OPG058","OPG059","OPG060","OPG061","OPG062","OPG063","OPG064","OPG065","OPG066","OPG068","OPG069","OPG070","OPG071","OPG072","OPG073","OPG074","OPG075","OPG076","OPG077","OPG078","OPG079","OPG080","OPG081","OPG082","OPG083","OPG084","OPG085","OPG086","OPG087","OPG088","OPG089","OPG090","OPG091","OPG092","OPG093","OPG094","OPG095","OPG096","OPG097","OPG098","OPG099","OPG100","OPG101","OPG102","OPG103","OPG104","OPG105","OPG106","OPG107","OPG108","OPG109","OPG110","OPG111","OPG112","OPG113","OPG114","OPG115","OPG116","OPG117","OPG118","OPG119","OPG120","OPG121","OPG122","OPG123","OPG124","OPG125","OPG126","OPG127","OPG128","OPG129","OPG130","OPG131","OPG132","OPG133","OPG134","OPG135","OPG136","OPG137","OPG138","OPG139","OPG140","OPG141","OPG142","OPG143","OPG144","OPG145","OPG146","OPG147","OPG148","OPG149","OPG150","OPG151","OPG153","OPG154","OPG155","OPG156","OPG157","OPG158","OPG159","OPG160","OPG161","OPG162","OPG163","OPG164","OPG165","OPG166","OPG167","OPG170","OPG171","OPG172","OPG173","OPG174","OPG175","OPG176","OPG178","OPG180","OPG181","OPG185","OPG187","OPG188","OPG189","OPG190","OPG191","OPG192","OPG193","OPG195","OPG197","OPG198","OPG199","OPG200","OPG201","OPG204","OPG205","OPG208","OPG209","OPG210"]
+                "codeList": [
+                  "OPG001",
+                  "OPG002",
+                  "OPG003",
+                  "OPG005",
+                  "OPG015",
+                  "OPG016",
+                  "OPG019",
+                  "OPG021",
+                  "OPG022",
+                  "OPG023",
+                  "OPG024",
+                  "OPG025",
+                  "OPG027",
+                  "OPG029",
+                  "OPG030",
+                  "OPG031",
+                  "OPG032",
+                  "OPG034",
+                  "OPG035",
+                  "OPG036",
+                  "OPG037",
+                  "OPG038",
+                  "OPG039",
+                  "OPG040",
+                  "OPG042",
+                  "OPG043",
+                  "OPG044",
+                  "OPG045",
+                  "OPG046",
+                  "OPG047",
+                  "OPG048",
+                  "OPG049",
+                  "OPG050",
+                  "OPG051",
+                  "OPG052",
+                  "OPG053",
+                  "OPG054",
+                  "OPG055",
+                  "OPG056",
+                  "OPG057",
+                  "OPG058",
+                  "OPG059",
+                  "OPG060",
+                  "OPG061",
+                  "OPG062",
+                  "OPG063",
+                  "OPG064",
+                  "OPG065",
+                  "OPG066",
+                  "OPG068",
+                  "OPG069",
+                  "OPG070",
+                  "OPG071",
+                  "OPG072",
+                  "OPG073",
+                  "OPG074",
+                  "OPG075",
+                  "OPG076",
+                  "OPG077",
+                  "OPG078",
+                  "OPG079",
+                  "OPG080",
+                  "OPG081",
+                  "OPG082",
+                  "OPG083",
+                  "OPG084",
+                  "OPG085",
+                  "OPG086",
+                  "OPG087",
+                  "OPG088",
+                  "OPG089",
+                  "OPG090",
+                  "OPG091",
+                  "OPG092",
+                  "OPG093",
+                  "OPG094",
+                  "OPG095",
+                  "OPG096",
+                  "OPG097",
+                  "OPG098",
+                  "OPG099",
+                  "OPG100",
+                  "OPG101",
+                  "OPG102",
+                  "OPG103",
+                  "OPG104",
+                  "OPG105",
+                  "OPG106",
+                  "OPG107",
+                  "OPG108",
+                  "OPG109",
+                  "OPG110",
+                  "OPG111",
+                  "OPG112",
+                  "OPG113",
+                  "OPG114",
+                  "OPG115",
+                  "OPG116",
+                  "OPG117",
+                  "OPG118",
+                  "OPG119",
+                  "OPG120",
+                  "OPG121",
+                  "OPG122",
+                  "OPG123",
+                  "OPG124",
+                  "OPG125",
+                  "OPG126",
+                  "OPG127",
+                  "OPG128",
+                  "OPG129",
+                  "OPG130",
+                  "OPG131",
+                  "OPG132",
+                  "OPG133",
+                  "OPG134",
+                  "OPG135",
+                  "OPG136",
+                  "OPG137",
+                  "OPG138",
+                  "OPG139",
+                  "OPG140",
+                  "OPG141",
+                  "OPG142",
+                  "OPG143",
+                  "OPG144",
+                  "OPG145",
+                  "OPG146",
+                  "OPG147",
+                  "OPG148",
+                  "OPG149",
+                  "OPG150",
+                  "OPG151",
+                  "OPG153",
+                  "OPG154",
+                  "OPG155",
+                  "OPG156",
+                  "OPG157",
+                  "OPG158",
+                  "OPG159",
+                  "OPG160",
+                  "OPG161",
+                  "OPG162",
+                  "OPG163",
+                  "OPG164",
+                  "OPG165",
+                  "OPG166",
+                  "OPG167",
+                  "OPG170",
+                  "OPG171",
+                  "OPG172",
+                  "OPG173",
+                  "OPG174",
+                  "OPG175",
+                  "OPG176",
+                  "OPG178",
+                  "OPG180",
+                  "OPG181",
+                  "OPG185",
+                  "OPG187",
+                  "OPG188",
+                  "OPG189",
+                  "OPG190",
+                  "OPG191",
+                  "OPG192",
+                  "OPG193",
+                  "OPG195",
+                  "OPG197",
+                  "OPG198",
+                  "OPG199",
+                  "OPG200",
+                  "OPG201",
+                  "OPG204",
+                  "OPG205",
+                  "OPG208",
+                  "OPG209",
+                  "OPG210"
+                ]
               }
             },
             {
@@ -3997,7 +4480,19 @@
               },
               "then": {
                 "required": true,
-                "codeList": ["E","M","N","ORF10","ORF1ab","ORF3a","ORF6","ORF7a","ORF7b","ORF8","S"]
+                "codeList": [
+                  "E",
+                  "M",
+                  "N",
+                  "ORF10",
+                  "ORF1ab",
+                  "ORF3a",
+                  "ORF6",
+                  "ORF7a",
+                  "ORF7b",
+                  "ORF8",
+                  "S"
+                ]
               }
             }
           ],
@@ -4047,7 +4542,10 @@
           "name": "genomic_target_enrichment_method",
           "restrictions": [
             {
-              "codeList": ["hybrid selection method","rRNA depletion method"]
+              "codeList": [
+                "hybrid selection method",
+                "rRNA depletion method"
+              ]
             }
           ],
           "valueType": "string"
@@ -4170,7 +4668,279 @@
           "restrictions": [
             {
               "required": true,
-              "codeList": ["Afghanistan","Albania","Algeria","American Samoa","Andorra","Angola","Anguilla","Antarctica","Antigua and Barbuda","Argentina","Armenia","Aruba","Ashmore and Cartier Islands","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Baker Island","Bangladesh","Barbados","Bassas da India","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Borneo","Bosnia and Herzegovina","Botswana","Bouvet Island","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central African Republic","Chad","Chile","China","Christmas Island","Clipperton Island","Cocos Islands","Colombia","Comoros","Cook Islands","Coral Sea Islands","Costa Rica","Cote d'Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Democratic Republic of the Congo","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Europa Island","Falkland Islands (Islas Malvinas)","Faroe Islands","Fiji","Finland","France","French Guiana","French Polynesia","French Southern and Antarctic Lands","Gabon","Gambia","Gaza Strip","Georgia","Germany","Ghana","Gibraltar","Glorioso Islands","Greece","Greenland","Grenada","Guadeloupe","Guam","Guatemala","Guernsey","Guinea","Guinea-Bissau","Guyana","Haiti","Heard Island and McDonald Islands","Honduras","Hong Kong","Howland Island","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Jan Mayen","Japan","Jarvis Island","Jersey","Johnston Atoll","Jordan","Juan de Nova Island","Kazakhstan","Kenya","Kerguelen Archipelago","Kingman Reef","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Line Islands","Lithuania","Luxembourg","Macau","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Martinique","Mauritania","Mauritius","Mayotte","Mexico","Micronesia","Midway Islands","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauru","Navassa Island","Nepal","Netherlands","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Niue","Norfolk Island","North Korea","North Macedonia","North Sea","Northern Mariana Islands","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paracel Islands","Paraguay","Peru","Philippines","Pitcairn Islands","Poland","Portugal","Puerto Rico","Qatar","Republic of the Congo","Reunion","Romania","Ross Sea","Russia","Rwanda","Saint Helena","Saint Kitts and Nevis","Saint Lucia","Saint Martin","Saint Pierre and Miquelon","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Sint Maarten","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Georgia and the South Sandwich Islands","South Korea","South Sudan","Spain","Spratly Islands","Sri Lanka","State of Palestine","Sudan","Suriname","Svalbard","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tokelau","Tonga","Trinidad and Tobago","Tromelin Island","Tunisia","Turkey","Turkmenistan","Turks and Caicos Islands","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Venezuela","Viet Nam","Virgin Islands","Wake Island","Wallis and Futuna","West Bank","Western Sahara","Yemen","Zambia","Zimbabwe"]
+              "codeList": [
+                "Afghanistan",
+                "Albania",
+                "Algeria",
+                "American Samoa",
+                "Andorra",
+                "Angola",
+                "Anguilla",
+                "Antarctica",
+                "Antigua and Barbuda",
+                "Argentina",
+                "Armenia",
+                "Aruba",
+                "Ashmore and Cartier Islands",
+                "Australia",
+                "Austria",
+                "Azerbaijan",
+                "Bahamas",
+                "Bahrain",
+                "Baker Island",
+                "Bangladesh",
+                "Barbados",
+                "Bassas da India",
+                "Belarus",
+                "Belgium",
+                "Belize",
+                "Benin",
+                "Bermuda",
+                "Bhutan",
+                "Bolivia",
+                "Borneo",
+                "Bosnia and Herzegovina",
+                "Botswana",
+                "Bouvet Island",
+                "Brazil",
+                "British Virgin Islands",
+                "Brunei",
+                "Bulgaria",
+                "Burkina Faso",
+                "Burundi",
+                "Cambodia",
+                "Cameroon",
+                "Canada",
+                "Cape Verde",
+                "Cayman Islands",
+                "Central African Republic",
+                "Chad",
+                "Chile",
+                "China",
+                "Christmas Island",
+                "Clipperton Island",
+                "Cocos Islands",
+                "Colombia",
+                "Comoros",
+                "Cook Islands",
+                "Coral Sea Islands",
+                "Costa Rica",
+                "Cote d'Ivoire",
+                "Croatia",
+                "Cuba",
+                "Curacao",
+                "Cyprus",
+                "Czech Republic",
+                "Democratic Republic of the Congo",
+                "Denmark",
+                "Djibouti",
+                "Dominica",
+                "Dominican Republic",
+                "Ecuador",
+                "Egypt",
+                "El Salvador",
+                "Equatorial Guinea",
+                "Eritrea",
+                "Estonia",
+                "Eswatini",
+                "Ethiopia",
+                "Europa Island",
+                "Falkland Islands (Islas Malvinas)",
+                "Faroe Islands",
+                "Fiji",
+                "Finland",
+                "France",
+                "French Guiana",
+                "French Polynesia",
+                "French Southern and Antarctic Lands",
+                "Gabon",
+                "Gambia",
+                "Gaza Strip",
+                "Georgia",
+                "Germany",
+                "Ghana",
+                "Gibraltar",
+                "Glorioso Islands",
+                "Greece",
+                "Greenland",
+                "Grenada",
+                "Guadeloupe",
+                "Guam",
+                "Guatemala",
+                "Guernsey",
+                "Guinea",
+                "Guinea-Bissau",
+                "Guyana",
+                "Haiti",
+                "Heard Island and McDonald Islands",
+                "Honduras",
+                "Hong Kong",
+                "Howland Island",
+                "Hungary",
+                "Iceland",
+                "India",
+                "Indonesia",
+                "Iran",
+                "Iraq",
+                "Ireland",
+                "Isle of Man",
+                "Israel",
+                "Italy",
+                "Jamaica",
+                "Jan Mayen",
+                "Japan",
+                "Jarvis Island",
+                "Jersey",
+                "Johnston Atoll",
+                "Jordan",
+                "Juan de Nova Island",
+                "Kazakhstan",
+                "Kenya",
+                "Kerguelen Archipelago",
+                "Kingman Reef",
+                "Kiribati",
+                "Kosovo",
+                "Kuwait",
+                "Kyrgyzstan",
+                "Laos",
+                "Latvia",
+                "Lebanon",
+                "Lesotho",
+                "Liberia",
+                "Libya",
+                "Liechtenstein",
+                "Line Islands",
+                "Lithuania",
+                "Luxembourg",
+                "Macau",
+                "Madagascar",
+                "Malawi",
+                "Malaysia",
+                "Maldives",
+                "Mali",
+                "Malta",
+                "Marshall Islands",
+                "Martinique",
+                "Mauritania",
+                "Mauritius",
+                "Mayotte",
+                "Mexico",
+                "Micronesia",
+                "Midway Islands",
+                "Moldova",
+                "Monaco",
+                "Mongolia",
+                "Montenegro",
+                "Montserrat",
+                "Morocco",
+                "Mozambique",
+                "Myanmar",
+                "Namibia",
+                "Nauru",
+                "Navassa Island",
+                "Nepal",
+                "Netherlands",
+                "New Caledonia",
+                "New Zealand",
+                "Nicaragua",
+                "Niger",
+                "Nigeria",
+                "Niue",
+                "Norfolk Island",
+                "North Korea",
+                "North Macedonia",
+                "North Sea",
+                "Northern Mariana Islands",
+                "Norway",
+                "Oman",
+                "Pakistan",
+                "Palau",
+                "Panama",
+                "Papua New Guinea",
+                "Paracel Islands",
+                "Paraguay",
+                "Peru",
+                "Philippines",
+                "Pitcairn Islands",
+                "Poland",
+                "Portugal",
+                "Puerto Rico",
+                "Qatar",
+                "Republic of the Congo",
+                "Reunion",
+                "Romania",
+                "Ross Sea",
+                "Russia",
+                "Rwanda",
+                "Saint Helena",
+                "Saint Kitts and Nevis",
+                "Saint Lucia",
+                "Saint Martin",
+                "Saint Pierre and Miquelon",
+                "Saint Vincent and the Grenadines",
+                "Samoa",
+                "San Marino",
+                "Sao Tome and Principe",
+                "Saudi Arabia",
+                "Senegal",
+                "Serbia",
+                "Seychelles",
+                "Sierra Leone",
+                "Singapore",
+                "Sint Maarten",
+                "Slovakia",
+                "Slovenia",
+                "Solomon Islands",
+                "Somalia",
+                "South Africa",
+                "South Georgia and the South Sandwich Islands",
+                "South Korea",
+                "South Sudan",
+                "Spain",
+                "Spratly Islands",
+                "Sri Lanka",
+                "State of Palestine",
+                "Sudan",
+                "Suriname",
+                "Svalbard",
+                "Swaziland",
+                "Sweden",
+                "Switzerland",
+                "Syria",
+                "Taiwan",
+                "Tajikistan",
+                "Tanzania",
+                "Thailand",
+                "Timor-Leste",
+                "Togo",
+                "Tokelau",
+                "Tonga",
+                "Trinidad and Tobago",
+                "Tromelin Island",
+                "Tunisia",
+                "Turkey",
+                "Turkmenistan",
+                "Turks and Caicos Islands",
+                "Tuvalu",
+                "Uganda",
+                "Ukraine",
+                "United Arab Emirates",
+                "United Kingdom",
+                "United States of America",
+                "Uruguay",
+                "Uzbekistan",
+                "Vanuatu",
+                "Venezuela",
+                "Viet Nam",
+                "Virgin Islands",
+                "Wake Island",
+                "Wallis and Futuna",
+                "West Bank",
+                "Western Sahara",
+                "Yemen",
+                "Zambia",
+                "Zimbabwe"
+              ]
             }
           ],
           "valueType": "string"
@@ -4308,7 +5078,21 @@
           "name": "instantaneous_flow_rate_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","cubic meter per hour (m^3/h)","cubic meter per minute (m^3/min)","cubic meter per second (m^3/s)","liter per day (L/day)","liter per hour (L/h)","liter per minute (L/min)","liter per second (L/s)","million gallons per day (MGD)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "cubic meter per hour (m^3/h)",
+                "cubic meter per minute (m^3/min)",
+                "cubic meter per second (m^3/s)",
+                "liter per day (L/day)",
+                "liter per hour (L/h)",
+                "liter per minute (L/min)",
+                "liter per second (L/s)",
+                "million gallons per day (MGD)"
+              ]
             },
             {
               "if": {
@@ -5016,7 +5800,20 @@
           "name": "organism",
           "restrictions": [
             {
-              "codeList": ["Influenza A virus","Influenza B virus","Influenza C virus","Influenza D virus","Missing","Monkeypox virus","Not Applicable","Not Collected","Not Provided","Respiratory syncytial virus","Restricted Access","Severe acute respiratory syndrome coronavirus 2"],
+              "codeList": [
+                "Influenza A virus",
+                "Influenza B virus",
+                "Influenza C virus",
+                "Influenza D virus",
+                "Missing",
+                "Monkeypox virus",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Respiratory syncytial virus",
+                "Restricted Access",
+                "Severe acute respiratory syndrome coronavirus 2"
+              ],
               "required": true
             }
           ],
@@ -5085,7 +5882,14 @@
           "name": "oxygen_reduction_potential_orp_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milliVolt (mV)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "milliVolt (mV)"
+              ]
             },
             {
               "if": {
@@ -5342,7 +6146,16 @@
           "name": "populated_area_type",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","rural","suburban","urban"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "rural",
+                "suburban",
+                "urban"
+              ]
             }
           ],
           "valueType": "string"
@@ -5411,7 +6224,17 @@
           "name": "precipitation_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","foot (ft)","inch (in)","meter (m)","millimeter (mm)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "foot (ft)",
+                "inch (in)",
+                "meter (m)",
+                "millimeter (mm)"
+              ]
             },
             {
               "if": {
@@ -5499,7 +6322,23 @@
           "name": "presampling_activity",
           "restrictions": [
             {
-              "codeList": ["Agricultural activity","Animal husbandry","Healthcare activity","Industrial activity","Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","Wastewater filtration","Wastewater grit removal","Wastewater microbial pre-treatment","Wastewater primary sedimentation","Wastewater secondary sedimentation","Wastewater treatment"]
+              "codeList": [
+                "Agricultural activity",
+                "Animal husbandry",
+                "Healthcare activity",
+                "Industrial activity",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "Wastewater filtration",
+                "Wastewater grit removal",
+                "Wastewater microbial pre-treatment",
+                "Wastewater primary sedimentation",
+                "Wastewater secondary sedimentation",
+                "Wastewater treatment"
+              ]
             },
             {
               "if": {
@@ -5586,7 +6425,21 @@
           "name": "presampling_weather_conditions",
           "restrictions": [
             {
-              "codeList": ["Cloudy/Overcast","Drizzle","Fog","Missing","Not Applicable","Not Collected","Not Provided","Partially cloudy","Rain","Restricted Access","Snow","Storm","Sunny/Clear"]
+              "codeList": [
+                "Cloudy/Overcast",
+                "Drizzle",
+                "Fog",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Partially cloudy",
+                "Rain",
+                "Restricted Access",
+                "Snow",
+                "Storm",
+                "Sunny/Clear"
+              ]
             },
             {
               "if": {
@@ -5653,7 +6506,20 @@
           "name": "purpose_of_sampling",
           "restrictions": [
             {
-              "codeList": ["Environmental survey (profiling)","Missing","Not Applicable","Not Collected","Not Provided","Protocol testing","Research","Restricted Access","Wastewater chemical surveillance","Wastewater drug surveillance","Wastewater pathogen surveillance","Wastewater treatment efficiency assessment"],
+              "codeList": [
+                "Environmental survey (profiling)",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Protocol testing",
+                "Research",
+                "Restricted Access",
+                "Wastewater chemical surveillance",
+                "Wastewater drug surveillance",
+                "Wastewater pathogen surveillance",
+                "Wastewater treatment efficiency assessment"
+              ],
               "required": true
             }
           ],
@@ -5680,7 +6546,23 @@
           "name": "purpose_of_sequencing",
           "restrictions": [
             {
-              "codeList": ["Baseline surveillance (random sampling)","Domestic travel surveillance","International travel surveillance","Longitudinal surveillance (repeat sampling)","Missing","Not Applicable","Not Collected","Not Provided","Priority surveillance project","Protocol testing experiment","Research","Restricted Access","Targeted surveillance (non-random sampling)","Travel-associated surveillance","Viral passage experiment"],
+              "codeList": [
+                "Baseline surveillance (random sampling)",
+                "Domestic travel surveillance",
+                "International travel surveillance",
+                "Longitudinal surveillance (repeat sampling)",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Priority surveillance project",
+                "Protocol testing experiment",
+                "Research",
+                "Restricted Access",
+                "Targeted surveillance (non-random sampling)",
+                "Travel-associated surveillance",
+                "Viral passage experiment"
+              ],
               "required": true
             },
             {
@@ -5788,7 +6670,19 @@
           "name": "quality_control_determination",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","minor quality control issues identified","no quality control issues identified","quality control not performed","sequence failed quality control","sequence flagged for potential quality control issues","sequence passed quality control"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "minor quality control issues identified",
+                "no quality control issues identified",
+                "quality control not performed",
+                "sequence failed quality control",
+                "sequence flagged for potential quality control issues",
+                "sequence passed quality control"
+              ]
             }
           ],
           "valueType": "string"
@@ -5814,7 +6708,21 @@
           "name": "quality_control_issues",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","low average genome coverage","low coverage of characteristic mutations","low percent genome captured","low quality sequence","low signal to noise ratio","read lengths shorter than expected","sequence amplification artifacts","sequence contaminated"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "low average genome coverage",
+                "low coverage of characteristic mutations",
+                "low percent genome captured",
+                "low quality sequence",
+                "low signal to noise ratio",
+                "read lengths shorter than expected",
+                "sequence amplification artifacts",
+                "sequence contaminated"
+              ]
             }
           ],
           "valueType": "string"
@@ -6083,7 +6991,17 @@
           "name": "salinity_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per kilogram (g/kg)","gram per liter (g/L)","practical salinity unit (PSU)","weight for weight (% w/w)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "gram per kilogram (g/kg)",
+                "gram per liter (g/L)",
+                "practical salinity unit (PSU)",
+                "weight for weight (% w/w)"
+              ]
             },
             {
               "if": {
@@ -6202,7 +7120,13 @@
           "restrictions": [
             {
               "else": {
-                "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"],
+                "codeList": [
+                  "Missing",
+                  "Not Applicable",
+                  "Not Collected",
+                  "Not Provided",
+                  "Restricted Access"
+                ],
                 "required": true
               },
               "if": {
@@ -6300,7 +7224,13 @@
           "restrictions": [
             {
               "else": {
-                "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"],
+                "codeList": [
+                  "Missing",
+                  "Not Applicable",
+                  "Not Collected",
+                  "Not Provided",
+                  "Restricted Access"
+                ],
                 "required": true
               },
               "if": {
@@ -6425,7 +7355,20 @@
           "name": "sample_collection_time_duration_unit",
           "restrictions": [
             {
-              "codeList": ["Day","Hour","Minute","Missing","Month","Not Applicable","Not Collected","Not Provided","Restricted Access","Second","Week","Year"]
+              "codeList": [
+                "Day",
+                "Hour",
+                "Minute",
+                "Missing",
+                "Month",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "Second",
+                "Week",
+                "Year"
+              ]
             },
             {
               "if": {
@@ -6511,7 +7454,17 @@
           "name": "sample_collection_time_of_day",
           "restrictions": [
             {
-              "codeList": ["Afternoon","Evening","Missing","Morning","Night","Not Applicable","Not Collected","Not Provided","Restricted Access"]
+              "codeList": [
+                "Afternoon",
+                "Evening",
+                "Missing",
+                "Morning",
+                "Night",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
             }
           ],
           "valueType": "string"
@@ -6615,7 +7568,20 @@
           "name": "sample_storage_duration_unit",
           "restrictions": [
             {
-              "codeList": ["Day","Hour","Minute","Missing","Month","Not Applicable","Not Collected","Not Provided","Restricted Access","Second","Week","Year"]
+              "codeList": [
+                "Day",
+                "Hour",
+                "Minute",
+                "Missing",
+                "Month",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "Second",
+                "Week",
+                "Year"
+              ]
             },
             {
               "if": {
@@ -6782,7 +7748,15 @@
           "name": "sample_temperature_unit_at_collection",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","degree Celsius (C)","degree Fahrenheit (F)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "degree Celsius (C)",
+                "degree Fahrenheit (F)"
+              ]
             },
             {
               "if": {
@@ -6826,7 +7800,15 @@
           "name": "sample_temperature_unit_when_received",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","degree Celsius (C)","degree Fahrenheit (F)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "degree Celsius (C)",
+                "degree Fahrenheit (F)"
+              ]
             },
             {
               "if": {
@@ -6952,7 +7934,16 @@
           "name": "sample_volume_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","liter (L)","microliter (uL)","milliliter (mL)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "liter (L)",
+                "microliter (uL)",
+                "milliliter (mL)"
+              ]
             },
             {
               "if": {
@@ -7083,7 +8074,21 @@
           "name": "sampling_weather_conditions",
           "restrictions": [
             {
-              "codeList": ["Cloudy/Overcast","Drizzle","Fog","Missing","Not Applicable","Not Collected","Not Provided","Partially cloudy","Rain","Restricted Access","Snow","Storm","Sunny/Clear"]
+              "codeList": [
+                "Cloudy/Overcast",
+                "Drizzle",
+                "Fog",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Partially cloudy",
+                "Rain",
+                "Restricted Access",
+                "Snow",
+                "Storm",
+                "Sunny/Clear"
+              ]
             }
           ],
           "valueType": "string"
@@ -7230,7 +8235,13 @@
           "restrictions": [
             {
               "else": {
-                "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"],
+                "codeList": [
+                  "Missing",
+                  "Not Applicable",
+                  "Not Collected",
+                  "Not Provided",
+                  "Restricted Access"
+                ],
                 "required": true
               },
               "if": {
@@ -7385,7 +8396,13 @@
           "restrictions": [
             {
               "else": {
-                "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"],
+                "codeList": [
+                  "Missing",
+                  "Not Applicable",
+                  "Not Collected",
+                  "Not Provided",
+                  "Restricted Access"
+                ],
                 "required": true
               },
               "if": {
@@ -7428,7 +8445,13 @@
           "name": "sequencing_assay_type",
           "restrictions": [
             {
-              "codeList": ["16S ribosomal gene sequencing assay","amplicon sequencing assay","whole genome sequencing assay","whole metagenome sequencing assay","whole virome sequencing assay"]
+              "codeList": [
+                "16S ribosomal gene sequencing assay",
+                "amplicon sequencing assay",
+                "whole genome sequencing assay",
+                "whole metagenome sequencing assay",
+                "whole virome sequencing assay"
+              ]
             }
           ],
           "valueType": "string"
@@ -7480,7 +8503,93 @@
           "name": "sequencing_instrument",
           "restrictions": [
             {
-              "codeList": ["454 Genome Sequencer","454 Genome Sequencer 20","454 Genome Sequencer FLX","454 Genome Sequencer FLX Titanium","454 Genome Sequencer FLX+","454 Genome Sequencer Junior","AB 310 Genetic Analyzer","AB 3130 Genetic Analyzer","AB 3130xL Genetic Analyzer","AB 3500 Genetic Analyzer","AB 3500xL Genetic Analyzer","AB 3730 Genetic Analyzer","AB 3730xL Genetic Analyzer","Applied Biosystems sequencing instrument model","BGISEQ","BGISEQ-500","DNBSEQ-G400","DNBSEQ-G400 FAST","DNBSEQ-G50","DNBSEQ-T7","HeliScope Single Molecule Sequencer","Illumina","Illumina Genome Analyzer","Illumina Genome Analyzer II","Illumina Genome Analyzer IIx","Illumina HiScanSQ","Illumina HiSeq","Illumina HiSeq 1000","Illumina HiSeq 1500","Illumina HiSeq 2000   ","Illumina HiSeq 2500","Illumina HiSeq 3000","Illumina HiSeq 4000","Illumina HiSeq X","Illumina HiSeq X Five ","Illumina HiSeq X Ten","Illumina MiSeq","Illumina MiniSeq","Illumina NextSeq","Illumina NextSeq 1000","Illumina NextSeq 2000","Illumina NextSeq 500","Illumina NextSeq 550","Illumina NovaSeq  ","Illumina NovaSeq 6000","Illumina iSeq  ","Illumina iSeq 100","Ion Torrent","Ion Torrent PGM","Ion Torrent Proton","Ion Torrent S5","Ion Torrent S5 XL","MGI DNBSEQ-E25","MGI DNBSEQ-G400","MGI DNBSEQ-G400RS FAST","MGI DNBSEQ-G50","MGI DNBSEQ-G99","MGI DNBSEQ-T7","MGI sequencing instrument","MGISEQ-2000RS ","Missing","Not Applicable","Not Collected","Not Provided","Oxford Nanopore","Oxford Nanopore Flongle","Oxford Nanopore GridION","Oxford Nanopore MinION","Oxford Nanopore PromethION","PacBio","PacBio RS ","PacBio RS II","PacBio Sequel","PacBio Sequel II","Restricted Access","SOLiD 3 Plus System","SOLiD 4 System","SOLiD 4hq System","SOLiD 5500","SOLiD 5500x-Wl Genetic Analyzer","SOLiD 5500xl Genetic Analyzer","SOLiD PI System","SOLiD System","SOLiD System 2.0","SOLiD System 3.0"],
+              "codeList": [
+                "454 Genome Sequencer",
+                "454 Genome Sequencer 20",
+                "454 Genome Sequencer FLX",
+                "454 Genome Sequencer FLX Titanium",
+                "454 Genome Sequencer FLX+",
+                "454 Genome Sequencer Junior",
+                "AB 310 Genetic Analyzer",
+                "AB 3130 Genetic Analyzer",
+                "AB 3130xL Genetic Analyzer",
+                "AB 3500 Genetic Analyzer",
+                "AB 3500xL Genetic Analyzer",
+                "AB 3730 Genetic Analyzer",
+                "AB 3730xL Genetic Analyzer",
+                "Applied Biosystems sequencing instrument model",
+                "BGISEQ",
+                "BGISEQ-500",
+                "DNBSEQ-G400",
+                "DNBSEQ-G400 FAST",
+                "DNBSEQ-G50",
+                "DNBSEQ-T7",
+                "HeliScope Single Molecule Sequencer",
+                "Illumina",
+                "Illumina Genome Analyzer",
+                "Illumina Genome Analyzer II",
+                "Illumina Genome Analyzer IIx",
+                "Illumina HiScanSQ",
+                "Illumina HiSeq",
+                "Illumina HiSeq 1000",
+                "Illumina HiSeq 1500",
+                "Illumina HiSeq 2000   ",
+                "Illumina HiSeq 2500",
+                "Illumina HiSeq 3000",
+                "Illumina HiSeq 4000",
+                "Illumina HiSeq X",
+                "Illumina HiSeq X Five ",
+                "Illumina HiSeq X Ten",
+                "Illumina MiSeq",
+                "Illumina MiniSeq",
+                "Illumina NextSeq",
+                "Illumina NextSeq 1000",
+                "Illumina NextSeq 2000",
+                "Illumina NextSeq 500",
+                "Illumina NextSeq 550",
+                "Illumina NovaSeq  ",
+                "Illumina NovaSeq 6000",
+                "Illumina iSeq  ",
+                "Illumina iSeq 100",
+                "Ion Torrent",
+                "Ion Torrent PGM",
+                "Ion Torrent Proton",
+                "Ion Torrent S5",
+                "Ion Torrent S5 XL",
+                "MGI DNBSEQ-E25",
+                "MGI DNBSEQ-G400",
+                "MGI DNBSEQ-G400RS FAST",
+                "MGI DNBSEQ-G50",
+                "MGI DNBSEQ-G99",
+                "MGI DNBSEQ-T7",
+                "MGI sequencing instrument",
+                "MGISEQ-2000RS ",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Oxford Nanopore",
+                "Oxford Nanopore Flongle",
+                "Oxford Nanopore GridION",
+                "Oxford Nanopore MinION",
+                "Oxford Nanopore PromethION",
+                "PacBio",
+                "PacBio RS ",
+                "PacBio RS II",
+                "PacBio Sequel",
+                "PacBio Sequel II",
+                "Restricted Access",
+                "SOLiD 3 Plus System",
+                "SOLiD 4 System",
+                "SOLiD 4hq System",
+                "SOLiD 5500",
+                "SOLiD 5500x-Wl Genetic Analyzer",
+                "SOLiD 5500xl Genetic Analyzer",
+                "SOLiD PI System",
+                "SOLiD System",
+                "SOLiD System 2.0",
+                "SOLiD System 3.0"
+              ],
               "required": true
             }
           ],
@@ -7507,7 +8616,24 @@
           "name": "sequencing_platform",
           "restrictions": [
             {
-              "codeList": ["Applied Biosystems","BGI Genomics","Complete Genomics","Helicos","Illumina","Ion Torrent","MGI","Missing","Not Applicable","Not Collected","Not Provided","Pacific Biosciences","Restricted Access","Roche LS454","SOLiD sequencing","to mint Oxford Nanopore Technologies"]
+              "codeList": [
+                "Applied Biosystems",
+                "BGI Genomics",
+                "Complete Genomics",
+                "Helicos",
+                "Illumina",
+                "Ion Torrent",
+                "MGI",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Pacific Biosciences",
+                "Restricted Access",
+                "Roche LS454",
+                "SOLiD sequencing",
+                "to mint Oxford Nanopore Technologies"
+              ]
             }
           ],
           "valueType": "string"
@@ -7673,7 +8799,25 @@
           "name": "specimen_processing",
           "restrictions": [
             {
-              "codeList": ["Biological replicate","Centrifugation","Concentration","Filtration","Flocculation","Gravity separation","Growth in enrichment broth","Magnetic nanobead binding","Missing","Not Applicable","Not Collected","Not Provided","Pasteurization","Precipitation","Restricted Access","Specimens pooled","Technical replicate"]
+              "codeList": [
+                "Biological replicate",
+                "Centrifugation",
+                "Concentration",
+                "Filtration",
+                "Flocculation",
+                "Gravity separation",
+                "Growth in enrichment broth",
+                "Magnetic nanobead binding",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Pasteurization",
+                "Precipitation",
+                "Restricted Access",
+                "Specimens pooled",
+                "Technical replicate"
+              ]
             }
           ],
           "valueType": "string"
@@ -7878,7 +9022,21 @@
           "name": "total_daily_flow_rate_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","cubic meter per hour (m^3/h)","cubic meter per minute (m^3/min)","cubic meter per second (m^3/s)","liter per day (L/day)","liter per hour (L/h)","liter per minute (L/min)","liter per second (L/s)","million gallons per day (MGD)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "cubic meter per hour (m^3/h)",
+                "cubic meter per minute (m^3/min)",
+                "cubic meter per second (m^3/s)",
+                "liter per day (L/day)",
+                "liter per hour (L/h)",
+                "liter per minute (L/min)",
+                "liter per second (L/s)",
+                "million gallons per day (MGD)"
+              ]
             },
             {
               "if": {
@@ -8007,7 +9165,15 @@
           "name": "total_dissolved_solids_tds_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per liter (g/L)","percent (%)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "gram per liter (g/L)",
+                "percent (%)"
+              ]
             },
             {
               "if": {
@@ -8136,7 +9302,16 @@
           "name": "total_nitrogen_tn_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per liter (g/L)","milligram per liter (mg/L)","nitrogen per total solids (gN/gTS)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "gram per liter (g/L)",
+                "milligram per liter (mg/L)",
+                "nitrogen per total solids (gN/gTS)"
+              ]
             },
             {
               "if": {
@@ -8265,7 +9440,18 @@
           "name": "total_phosphorus_tp_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","milligrams orthophosphate as phosphorus per liter (mg PO4-P/L)","milligrams orthophosphate per liter (mg PO43‚Äì/L)","orthophosphate as phosphorus per total solids (gPO4-P/gTS)","orthophosphate per total solids (gPO43‚Äì/gTS)","total phosphorus per total solids (gTP/gTS)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "milligrams orthophosphate as phosphorus per liter (mg PO4-P/L)",
+                "milligrams orthophosphate per liter (mg PO43‚Äì/L)",
+                "orthophosphate as phosphorus per total solids (gPO4-P/gTS)",
+                "orthophosphate per total solids (gPO43‚Äì/gTS)",
+                "total phosphorus per total solids (gTP/gTS)"
+              ]
             },
             {
               "if": {
@@ -8394,7 +9580,15 @@
           "name": "total_solids_ts_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per liter (g/L)","percent (%)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "gram per liter (g/L)",
+                "percent (%)"
+              ]
             },
             {
               "if": {
@@ -8523,7 +9717,15 @@
           "name": "total_suspended_solids_tss_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","gram per liter (g/L)","percent (%)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "gram per liter (g/L)",
+                "percent (%)"
+              ]
             },
             {
               "if": {
@@ -8653,7 +9855,15 @@
           "name": "turbidity_measurement_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","formazin nephelometric unit (FNU)","nephelometric turbidity unit (NTU)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "formazin nephelometric unit (FNU)",
+                "nephelometric turbidity unit (NTU)"
+              ]
             },
             {
               "if": {
@@ -8741,7 +9951,14 @@
           "name": "urinary_contamination_indicator",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","urobilin"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "urobilin"
+              ]
             },
             {
               "if": {
@@ -8828,7 +10045,14 @@
           "name": "urinary_contamination_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","nanograms per liter (ng/L)"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "nanograms per liter (ng/L)"
+              ]
             },
             {
               "if": {
@@ -8917,7 +10141,24 @@
           "name": "wastewater_system_type",
           "restrictions": [
             {
-              "codeList": ["Cesspit","Combined sewer system","Composting toilet","Drainage channel","Latrine","Missing","Non-sewered sanitation system","Not Applicable","Not Collected","Not Provided","Restricted Access","Sanitary sewer system","Septic tank","Sewered sanitation system","Waste stabilization lagoon","Waste tank"]
+              "codeList": [
+                "Cesspit",
+                "Combined sewer system",
+                "Composting toilet",
+                "Drainage channel",
+                "Latrine",
+                "Missing",
+                "Non-sewered sanitation system",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "Sanitary sewer system",
+                "Septic tank",
+                "Sewered sanitation system",
+                "Waste stabilization lagoon",
+                "Waste tank"
+              ]
             }
           ],
           "valueType": "string"
@@ -8943,7 +10184,17 @@
           "name": "water_catchment_area_human_population_density_unit",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","person for square kilometer","persons per square mile (?? / sq mi)","resident per square mile","residential per square kilometer"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "person for square kilometer",
+                "persons per square mile (?? / sq mi)",
+                "resident per square mile",
+                "residential per square kilometer"
+              ]
             },
             {
               "if": {
@@ -9111,7 +10362,20 @@
           "name": "water_catchment_area_human_population_range",
           "restrictions": [
             {
-              "codeList": ["1,000 - 10,000 people","1,000,000+ people","10 - 100 people","10,000 - 100,000 people","100 - 1,000 people","100,000 -  1,000,000 people","<10 people","Missing","Not Applicable","Not Collected","Not Provided","Restricted Access"]
+              "codeList": [
+                "1,000 - 10,000 people",
+                "1,000,000+ people",
+                "10 - 100 people",
+                "10,000 - 100,000 people",
+                "100 - 1,000 people",
+                "100,000 -  1,000,000 people",
+                "<10 people",
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
             }
           ],
           "valueType": "string"
@@ -9137,7 +10401,16 @@
           "name": "watershed_shapefile_availability",
           "restrictions": [
             {
-              "codeList": ["Missing","Not Applicable","Not Collected","Not Provided","Restricted Access","available","unavailable","unknown"]
+              "codeList": [
+                "Missing",
+                "Not Applicable",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access",
+                "available",
+                "unavailable",
+                "unknown"
+              ]
             },
             {
               "if": {

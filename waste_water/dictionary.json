@@ -1,6 +1,6 @@
 {
   "name": "waste_water",
-  "version": "0.94",
+  "version": "0.95",
   "references": {
     "script": {
       "common": {
@@ -1895,6 +1895,27 @@
               "regex": "#/regex/SRA_accession"
             }
           ],
+          "valueType": "string"
+        },
+        {
+          "description": "The URL associated with Sequence Read Archive (SRA) identifier.",
+          "meta": {
+            "displayName": "SRA URL",
+            "external_mapping": {},
+            "notes": "",
+            "ontologyIdentifier": "GENEPIO:0001142",
+            "parent": {
+              "ontologyIdentifier": "GENEPIO:0001122",
+              "ontologyName": "Database identifiers"
+            },
+            "version_tracking": {
+              "guidance": "1.0.0",
+              "id": "1.0.0",
+              "label": "1.0.0"
+            }
+          },
+          "name": "sra_url",
+          "restrictions": [],
           "valueType": "string"
         },
         {

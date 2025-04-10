@@ -530,6 +530,27 @@
       "valueType": "string"
     },
     {
+      "description": "The URL associated with Sequence Read Archive (SRA) identifier.",
+      "meta": {
+        "displayName": "SRA URL",
+        "external_mapping": {},
+        "notes": "",
+        "ontologyIdentifier": "GENEPIO:0001142",
+        "parent": {
+          "ontologyIdentifier": "GENEPIO:0001122",
+          "ontologyName": "Database identifiers"
+        },
+        "version_tracking": {
+          "guidance": "1.0.0",
+          "id": "1.0.0",
+          "label": "1.0.0"
+        }
+      },
+      "name": "sra_url",
+      "restrictions": [],
+      "valueType": "string"
+    },
+    {
       "description": "The process used to measure alkalinity.",
       "meta": {
         "displayName": "alkalinity measurement method",
