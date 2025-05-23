@@ -23,17 +23,8 @@
             "bioproject_accession":{"type":"string"},
             "biosample_accession":{"type":"string"},
             "sra_accession":{
-                "properties":{
-                    "run_accession":{"type":"string"},
-                    "experiment_accession":{"type":"string"},
-                    "sample_accession":{"type":"string"},
-                    "study_accession":{"type":"string"}
-                },
-                "required":[
-                    "run_accession",
-                    "sample_accession"
-                ],
-                "type": "object"
+                "type": "string",
+                "pattern":"^SR(R|S)\\d+$"
             },
             "tar_contents":{
                 "items":{
@@ -45,7 +36,6 @@
         },
         "required": [
             "specimen_collector_sample_id",
-            "sra_accession",
             "bioproject_accession",
             "biosample_accession",
             "tar_contents",
