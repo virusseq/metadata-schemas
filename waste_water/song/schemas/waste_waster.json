@@ -13,10 +13,6 @@
     },
     "schema": {
         "properties": {
-            "experiment": {
-                "description": "TBA...",
-                "type": "string"
-            },
             "specimen_collector_sample_id":{
                 "type": "string"
             },
@@ -38,8 +34,7 @@
             "specimen_collector_sample_id",
             "bioproject_accession",
             "biosample_accession",
-            "tar_contents",
-            "experiment"
+            "tar_contents"
         ],
         "type": "object"
     }

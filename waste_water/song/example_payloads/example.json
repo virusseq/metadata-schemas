@@ -1,6 +1,5 @@
 {
     "analysisType": {"name":"waste_water"},
-    "experiment": "null",
     "studyId":"WW_example",
     "specimen_collector_sample_id":"QC-WW-N-3_2-1338618_S70_L002",
     "bioproject_accession":"PRJNA788395",
