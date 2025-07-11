@@ -1,0 +1,37 @@
+{
+  "index": {
+    "routing": {
+      "allocation": {
+        "include": {
+          "_tier_preference": "data_content"
+        }
+      }
+    },
+    "max_result_window": "10000",
+    "analysis": {
+      "filter": {
+        "edge_ngram": {
+          "min_gram": "1",
+          "side": "front",
+          "type": "edge_ngram",
+          "max_gram": "20"
+        }
+      },
+      "analyzer": {
+        "autocomplete_analyzed": {
+          "filter": ["lowercase", "edge_ngram"],
+          "tokenizer": "standard"
+        },
+        "autocomplete_prefix": {
+          "filter": ["lowercase", "edge_ngram"],
+          "tokenizer": "keyword"
+        },
+        "lowercase_keyword": {
+          "filter": ["lowercase"],
+          "tokenizer": "keyword"
+        }
+      }
+    },
+    "max_terms_count": "300000"
+  }
+}

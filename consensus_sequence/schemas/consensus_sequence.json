@@ -1,9 +1,14 @@
 {
   "name": "consensus_sequence",
+  "options": {
+    "fileTypes": [],
+    "externalValidations": []
+  },
   "schema": {
     "type": "object",
     "required": [
-      "sample_collection",  
+      "samples",
+      "sample_collection",
       "host",
       "experiment",
       "sequence_analysis",
@@ -17,7 +22,7 @@
             "type": [
               "string",
               "null"
-            ]            
+            ]
           }
         },
         "propertyNames": {
@@ -29,24 +34,24 @@
       "sample_collection": {
         "type": "object",
         "required": [
-            "sample_collected_by",
-            "sequence_submitted_by",
-            "sample_collection_date",
-            "sample_collection_date_null_reason",
-            "geo_loc_country",
-            "geo_loc_province",
-            "organism",
-            "isolate",
-            "fasta_header_name",  
-            "purpose_of_sampling",
-            "purpose_of_sampling_details",
-            "anatomical_material",
-            "anatomical_part",
-            "body_product",
-            "environmental_material",
-            "environmental_site",
-            "collection_device",
-            "collection_method"
+          "sample_collected_by",
+          "sequence_submitted_by",
+          "sample_collection_date",
+          "sample_collection_date_null_reason",
+          "geo_loc_country",
+          "geo_loc_province",
+          "organism",
+          "isolate",
+          "fasta_header_name",
+          "purpose_of_sampling",
+          "purpose_of_sampling_details",
+          "anatomical_material",
+          "anatomical_part",
+          "body_product",
+          "environmental_material",
+          "environmental_site",
+          "collection_device",
+          "collection_method"
         ],
         "properties": {
           "sample_collected_by": {
@@ -60,6 +65,7 @@
               "Dynacare",
               "Eastern Ontario Regional Laboratory Association",
               "Hamilton Health Sciences",
+              "Kingston Health Sciences Centre",
               "Laboratoire de santé publique du Québec (LSPQ)",
               "Lake of the Woods District Hospital - Ontario",
               "LifeLabs",
@@ -80,6 +86,7 @@
               "Saskatchewan - Roy Romanow Provincial Laboratory (RRPL)",
               "Shared Hospital Laboratory",
               "St. John's Rehab at Sunnybrook Hospital",
+              "St. Joseph's Healthcare Hamilton",
               "Sunnybrook Health Sciences Centre",
               "Switch Health",
               "The Hospital for Sick Children (SickKids)",
@@ -109,6 +116,7 @@
               "Newfoundland and Labrador - Eastern Health",
               "Newfoundland and Labrador - Newfoundland and Labrador Health Services",
               "Nova Scotia Health Authority",
+              "Ontario COVID-19 Genomic Network",
               "Ontario Institute for Cancer Research (OICR)",
               "Prince Edward Island - Health PEI",
               "Public Health Ontario (PHO)",
@@ -251,9 +259,9 @@
             ]
           },
           "anatomical_part": {
-            "type":"array",
-            "items":{
-              "type":"string",
+            "type": "array",
+            "items": {
+              "type": "string",
               "enum": [
                 "Alveolar sac",
                 "Anterior Nares",
@@ -468,7 +476,7 @@
         "else": {
           "properties": {
             "sample_collection_date_null_reason": {
-              "const": null 
+              "const": null
             }
           }
         },
@@ -484,7 +492,7 @@
             "geo_loc_city",
             "organism",
             "isolate",
-            "fasta_header_name",  
+            "fasta_header_name",
             "purpose_of_sampling",
             "purpose_of_sampling_details",
             "anatomical_material",
@@ -501,13 +509,13 @@
       "host": {
         "type": "object",
         "required": [
-            "host_scientific_name",
-            "host_disease",
-            "host_age",
-            "host_age_null_reason",
-            "host_age_bin",
-            "host_age_unit",
-            "host_gender"
+          "host_scientific_name",
+          "host_disease",
+          "host_age",
+          "host_age_null_reason",
+          "host_age_bin",
+          "host_age_unit",
+          "host_gender"
         ],
         "properties": {
           "host_scientific_name": {
@@ -532,17 +540,17 @@
               "Missing",
               "Not Collected",
               "Not Provided",
-              "Restricted Access"              
+              "Restricted Access"
             ]
           },
           "host_disease": {
             "enum": [
-                "COVID-19",
-                "Not Applicable",
-                "Missing",
-                "Not Collected",
-                "Not Provided",
-                "Restricted Access"
+              "COVID-19",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
             ]
           },
           "host_age": {
@@ -639,7 +647,7 @@
             "else": {
               "properties": {
                 "host_age_null_reason": {
-                  "const": null 
+                  "const": null
                 },
                 "host_age_bin": {
                   "enum": [
@@ -661,7 +669,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "0 - 9" 
+                  "const": "0 - 9"
                 }
               }
             },
@@ -686,7 +694,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "10 - 19" 
+                  "const": "10 - 19"
                 }
               }
             },
@@ -711,7 +719,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "20 - 29" 
+                  "const": "20 - 29"
                 }
               }
             },
@@ -736,7 +744,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "30 - 39" 
+                  "const": "30 - 39"
                 }
               }
             },
@@ -761,7 +769,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "40 - 49" 
+                  "const": "40 - 49"
                 }
               }
             },
@@ -786,7 +794,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "50 - 59" 
+                  "const": "50 - 59"
                 }
               }
             },
@@ -811,7 +819,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "60 - 69" 
+                  "const": "60 - 69"
                 }
               }
             },
@@ -836,7 +844,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "70 - 79" 
+                  "const": "70 - 79"
                 }
               }
             },
@@ -861,7 +869,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "80 - 89" 
+                  "const": "80 - 89"
                 }
               }
             },
@@ -886,7 +894,7 @@
             "if": {
               "properties": {
                 "host_age_bin": {
-                  "const": "90+" 
+                  "const": "90+"
                 }
               }
             },
@@ -924,9 +932,9 @@
         ],
         "properties": {
           "purpose_of_sequencing": {
-            "type":"array",
-            "items":{
-              "type":"string",
+            "type": "array",
+            "items": {
+              "type": "string",
               "enum": [
                 "Baseline surveillance (random sampling)",
                 "Chronic (prolonged) infection surveillance",
@@ -1036,7 +1044,7 @@
                 "format": "date"
               },
               {
-                "type": "null" 
+                "type": "null"
               }
             ]
           },
@@ -1071,7 +1079,7 @@
             "type": [
               "string",
               "null"
-            ]       
+            ]
           },
           "consensus_sequence_software_version": {
             "type": [
@@ -1112,7 +1120,7 @@
                       "Not Collected",
                       "Not Provided",
                       "Restricted Access",
-                      null                      
+                      null
                     ]
                   }
                 ]
@@ -1135,35 +1143,35 @@
                       "Not Collected",
                       "Not Provided",
                       "Restricted Access",
-                      null                     
+                      null
                     ]
                   }
                 ]
               },
               "consensus_genome_length": {
                 "type": [
-                    "integer",
-                    "null"
+                  "integer",
+                  "null"
                 ]
               },
               "Ns_per_100kbp": {
                 "type": [
-                    "number",
-                    "null"
+                  "number",
+                  "null"
                 ]
               }
-            }              
+            }
           },
           "reference_genome_accession": {
             "type": [
-                "string",
-                "null"
+              "string",
+              "null"
             ]
           },
           "bioinformatics_protocol": {
             "type": [
-                "string",
-                "null"
+              "string",
+              "null"
             ]
           }
         },
@@ -1183,7 +1191,7 @@
         "type": "object",
         "required": [
           "gene_name",
-          "diagnostic_pcr_ct_value", 
+          "diagnostic_pcr_ct_value",
           "diagnostic_pcr_ct_value_null_reason"
         ],
         "properties": {
@@ -1226,7 +1234,7 @@
               "Missing",
               "Not Collected",
               "Not Provided",
-              "Restricted Access"  
+              "Restricted Access"
             ]
           },
           "diagnostic_pcr_ct_value": {
@@ -1274,7 +1282,7 @@
         "else": {
           "properties": {
             "diagnostic_pcr_ct_value_null_reason": {
-              "const": null 
+              "const": null
             }
           }
         },
@@ -1291,8 +1299,8 @@
         "properties": {
           "lineage_name": {
             "type": [
-                "string",
-                "null"
+              "string",
+              "null"
             ]
           },
           "lineage_analysis_software_name": {
@@ -1335,7 +1343,7 @@
               "Not Provided",
               "Restricted Access",
               null
-          ]
+            ]
           },
           "variant_evidence": {
             "enum": [
@@ -1369,7 +1377,275 @@
             "variant_evidence_details"
           ]
         }
+      },
+      "samples": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/definitions/sample/sampleData"
+            }
+          ],
+          "required": [
+            "specimen",
+            "donor"
+          ],
+          "properties": {
+            "donor": {
+              "$ref": "#/definitions/donor/donorData"
+            },
+            "specimen": {
+              "$ref": "#/definitions/specimen/specimenData"
+            }
+          },
+          "if": {
+            "properties": {
+              "specimen": {
+                "properties": {
+                  "tumourNormalDesignation": {
+                    "const": "Tumour"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "if": {
+              "properties": {
+                "sampleType": {
+                  "pattern": "\\b(RNA)\\b"
+                }
+              }
+            },
+            "else": {
+              "required": [
+                "matchedNormalSubmitterSampleId"
+              ],
+              "properties": {
+                "matchedNormalSubmitterSampleId": {
+                  "$ref": "#/definitions/common/submitterId"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "matchedNormalSubmitterSampleId"
+              ],
+              "properties": {
+                "matchedNormalSubmitterSampleId": {
+                  "oneOf": [
+                    {
+                      "const": null
+                    },
+                    {
+                      "$ref": "#/definitions/common/submitterId"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "else": {
+            "required": [
+              "matchedNormalSubmitterSampleId"
+            ],
+            "properties": {
+              "matchedNormalSubmitterSampleId": {
+                "const": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "analysisType": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "version": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        }
+      },
+      "donor": {
+        "gender": {
+          "type": "string",
+          "enum": [
+            "Male",
+            "Female",
+            "Other"
+          ]
+        },
+        "donorData": {
+          "type": "object",
+          "required": [
+            "submitterDonorId",
+            "gender"
+          ],
+          "properties": {
+            "submitterDonorId": {
+              "$ref": "#/definitions/common/submitterId"
+            },
+            "gender": {
+              "$ref": "#/definitions/donor/gender"
+            },
+            "info": {
+              "$ref": "#/definitions/common/info"
+            }
+          }
+        }
+      },
+      "common": {
+        "md5": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{32}$"
+        },
+        "submitterId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9\\-\\._]{1,64}$"
+        },
+        "info": {
+          "type": "object"
+        }
+      },
+      "sample": {
+        "sampleTypes": {
+          "type": "string",
+          "enum": [
+            "Total DNA",
+            "Amplified DNA",
+            "ctDNA",
+            "Other DNA enrichments",
+            "Total RNA",
+            "Ribo-Zero RNA",
+            "polyA+ RNA",
+            "Other RNA fractions"
+          ]
+        },
+        "sampleData": {
+          "type": "object",
+          "required": [
+            "submitterSampleId",
+            "sampleType"
+          ],
+          "properties": {
+            "submitterSampleId": {
+              "$ref": "#/definitions/common/submitterId"
+            },
+            "sampleType": {
+              "$ref": "#/definitions/sample/sampleTypes"
+            },
+            "info": {
+              "$ref": "#/definitions/common/info"
+            }
+          }
+        }
+      },
+      "specimen": {
+        "specimenTissueSource": {
+          "type": "string",
+          "enum": [
+            "Blood derived",
+            "Blood derived - bone marrow",
+            "Blood derived - peripheral blood",
+            "Bone marrow",
+            "Buccal cell",
+            "Lymph node",
+            "Solid tissue",
+            "Plasma",
+            "Serum",
+            "Urine",
+            "Cerebrospinal fluid",
+            "Sputum",
+            "Other",
+            "Pleural effusion",
+            "Mononuclear cells from bone marrow",
+            "Saliva",
+            "Skin",
+            "Intestine",
+            "Buffy coat",
+            "Stomach",
+            "Esophagus",
+            "Tonsil",
+            "Spleen",
+            "Bone",
+            "Cerebellum",
+            "Endometrium"
+          ]
+        },
+        "specimenType": {
+          "type": "string",
+          "enum": [
+            "Normal",
+            "Normal - tissue adjacent to primary tumour",
+            "Primary tumour",
+            "Primary tumour - adjacent to normal",
+            "Primary tumour - additional new primary",
+            "Recurrent tumour",
+            "Metastatic tumour",
+            "Metastatic tumour - metastasis local to lymph node",
+            "Metastatic tumour - metastasis to distant location",
+            "Metastatic tumour - additional metastatic",
+            "Xenograft - derived from primary tumour",
+            "Xenograft - derived from tumour cell line",
+            "Cell line - derived from xenograft tumour",
+            "Cell line - derived from tumour",
+            "Cell line - derived from normal",
+            "Tumour - unknown if derived from primary or metastatic",
+            "Cell line – derived from metastatic tumour",
+            "Xenograft – derived from metastatic tumour"
+          ]
+        },
+        "tumourNormalDesignation": {
+          "type": "string",
+          "enum": [
+            "Normal",
+            "Tumour"
+          ]
+        },
+        "specimenData": {
+          "type": "object",
+          "required": [
+            "submitterSpecimenId",
+            "specimenTissueSource",
+            "tumourNormalDesignation",
+            "specimenType"
+          ],
+          "properties": {
+            "submitterSpecimenId": {
+              "$ref": "#/definitions/common/submitterId"
+            },
+            "specimenTissueSource": {
+              "$ref": "#/definitions/specimen/specimenTissueSource"
+            },
+            "tumourNormalDesignation": {
+              "$ref": "#/definitions/specimen/tumourNormalDesignation"
+            },
+            "specimenType": {
+              "$ref": "#/definitions/specimen/specimenType"
+            },
+            "specimenClass": {
+              "not": {}
+            },
+            "info": {
+              "$ref": "#/definitions/common/info"
+            }
+          }
+        }
       }
     }
-  }
+  },
+  "fileTypes": [],
+  "externalValidations": []
 }
