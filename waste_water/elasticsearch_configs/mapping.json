@@ -1,0 +1,739 @@
+{
+    "properties": {
+        "data": {
+            "properties": {
+                "alkalinity_measurement_method": {
+                    "type": "keyword"
+                },
+                "alkalinity_measurement_unit": {
+                    "type": "keyword"
+                },
+                "alkalinity_measurement_value": {
+                    "type": "long"
+                },
+                "alternative_isolate_id": {
+                    "type": "keyword"
+                },
+                "ambient_temperature_measurement_unit": {
+                    "type": "keyword"
+                },
+                "ambient_temperature_measurement_value": {
+                    "type": "long"
+                },
+                "amplicon_pcr_primer_scheme": {
+                    "type": "keyword"
+                },
+                "amplicon_size": {
+                    "type": "keyword"
+                },
+                "amr_analysis_report_filename": {
+                    "type": "keyword"
+                },
+                "amr_analysis_software_name": {
+                    "type": "keyword"
+                },
+                "amr_analysis_software_version": {
+                    "type": "keyword"
+                },
+                "amr_reference_database_name": {
+                    "type": "keyword"
+                },
+                "amr_reference_database_version": {
+                    "type": "keyword"
+                },
+                "authors": {
+                    "type": "keyword"
+                },
+                "bioinformatics_protocol": {
+                    "type": "keyword"
+                },
+                "bioproject_accession": {
+                    "type": "keyword"
+                },
+                "biosample_accession": {
+                    "type": "keyword"
+                },
+                "breadth_of_coverage_value": {
+                    "type": "long"
+                },
+                "carbonaceous_biochemical_oxygen_demand_cbod_measurement_method": {
+                    "type": "keyword"
+                },
+                "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit": {
+                    "type": "keyword"
+                },
+                "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value": {
+                    "type": "long"
+                },
+                "chemical_oxygen_demand_cod_measurement_method": {
+                    "type": "keyword"
+                },
+                "chemical_oxygen_demand_cod_measurement_unit": {
+                    "type": "keyword"
+                },
+                "chemical_oxygen_demand_cod_measurement_value": {
+                    "type": "long"
+                },
+                "collection_device": {
+                    "type": "keyword"
+                },
+                "collection_method": {
+                    "type": "keyword"
+                },
+                "conductivity_measurement_method": {
+                    "type": "keyword"
+                },
+                "conductivity_measurement_unit": {
+                    "type": "keyword"
+                },
+                "conductivity_measurement_value": {
+                    "type": "long"
+                },
+                "consensus_genome_length": {
+                    "type": "long"
+                },
+                "consensus_sequence_software_name": {
+                    "type": "keyword"
+                },
+                "consensus_sequence_software_version": {
+                    "type": "keyword"
+                },
+                "dataharmonizer_provenance": {
+                    "type": "keyword"
+                },
+                "deduplication_method": {
+                    "type": "keyword"
+                },
+                "dehosting_method": {
+                    "type": "keyword"
+                },
+                "depth_of_coverage_threshold": {
+                    "type": "keyword"
+                },
+                "depth_of_coverage_value": {
+                    "type": "long"
+                },
+                "diagnostic_measurement_method": {
+                    "type": "keyword"
+                },
+                "diagnostic_measurement_unit": {
+                    "type": "keyword"
+                },
+                "diagnostic_measurement_value": {
+                    "type": "long"
+                },
+                "diagnostic_target_presence": {
+                    "type": "keyword"
+                },
+                "dissolved_oxygen_measurement_method": {
+                    "type": "keyword"
+                },
+                "dissolved_oxygen_measurement_unit": {
+                    "type": "keyword"
+                },
+                "dissolved_oxygen_measurement_value": {
+                    "type": "long"
+                },
+                "dna_fragment_length": {
+                    "type": "long"
+                },
+                "dra_accession": {
+                    "type": "keyword"
+                },
+                "ena_accession": {
+                    "type": "keyword"
+                },
+                "endogenous_control_details": {
+                    "type": "keyword"
+                },
+                "enterobase_accession": {
+                    "type": "keyword"
+                },
+                "environmental_material": {
+                    "type": "keyword"
+                },
+                "environmental_material_properties": {
+                    "type": "keyword"
+                },
+                "environmental_site": {
+                    "type": "keyword"
+                },
+                "experimental_control_details": {
+                    "type": "keyword"
+                },
+                "experimental_protocol_field": {
+                    "type": "keyword"
+                },
+                "experimental_specimen_role_type": {
+                    "type": "keyword"
+                },
+                "extraction_recovery_efficiency_measurement_method": {
+                    "type": "keyword"
+                },
+                "extraction_recovery_efficiency_measurement_value": {
+                    "type": "long"
+                },
+                "fecal_coliform_count_method": {
+                    "type": "keyword"
+                },
+                "fecal_coliform_count_unit": {
+                    "type": "keyword"
+                },
+                "fecal_coliform_count_value": {
+                    "type": "long"
+                },
+                "fecal_contamination_indicator": {
+                    "type": "keyword"
+                },
+                "fecal_contamination_method": {
+                    "type": "keyword"
+                },
+                "fecal_contamination_unit": {
+                    "type": "keyword"
+                },
+                "fecal_contamination_value": {
+                    "type": "long"
+                },
+                "genbank_accession_versioned": {
+                    "type": "keyword"
+                },
+                "gene_name": {
+                    "type": "keyword"
+                },
+                "genome_completeness": {
+                    "type": "keyword"
+                },
+                "genomic_target_enrichment_method": {
+                    "type": "keyword"
+                },
+                "genomic_target_enrichment_method_details": {
+                    "type": "keyword"
+                },
+                "geo_loc_latitude": {
+                    "type": "keyword"
+                },
+                "geo_loc_longitude": {
+                    "type": "keyword"
+                },
+                "geo_loc_name_city": {
+                    "type": "keyword"
+                },
+                "geo_loc_name_country": {
+                    "type": "keyword"
+                },
+                "geo_loc_name_county_region": {
+                    "type": "keyword"
+                },
+                "geo_loc_name_site": {
+                    "type": "keyword"
+                },
+                "geo_loc_name_state_province_territory": {
+                    "type": "keyword"
+                },
+                "gisaid_accession": {
+                    "type": "keyword"
+                },
+                "gisaid_virus_name": {
+                    "type": "keyword"
+                },
+                "gsa_accession": {
+                    "type": "keyword"
+                },
+                "instantaneous_flow_rate_measurement_method": {
+                    "type": "keyword"
+                },
+                "instantaneous_flow_rate_measurement_unit": {
+                    "type": "keyword"
+                },
+                "instantaneous_flow_rate_measurement_value": {
+                    "type": "long"
+                },
+                "isolate_id": {
+                    "type": "keyword"
+                },
+                "isolate_received_date": {
+                    "type": "keyword"
+                },
+                "isolated_by": {
+                    "type": "keyword"
+                },
+                "isolated_by_contact_email": {
+                    "type": "keyword"
+                },
+                "isolated_by_contact_name": {
+                    "type": "keyword"
+                },
+                "isolated_by_laboratory_name": {
+                    "type": "keyword"
+                },
+                "isolation_date": {
+                    "type": "keyword"
+                },
+                "library_id": {
+                    "type": "keyword"
+                },
+                "library_preparation_kit": {
+                    "type": "keyword"
+                },
+                "lineage_clade_analysis_report_filename": {
+                    "type": "keyword"
+                },
+                "lineage_clade_analysis_software_name": {
+                    "type": "keyword"
+                },
+                "lineage_clade_analysis_software_version": {
+                    "type": "keyword"
+                },
+                "lineage_clade_name": {
+                    "type": "keyword"
+                },
+                "metagenome_assembled_genome_mag_id": {
+                    "type": "keyword"
+                },
+                "microbiological_method": {
+                    "type": "keyword"
+                },
+                "minimum_post_trimming_read_length": {
+                    "type": "long"
+                },
+                "n50": {
+                    "type": "long"
+                },
+                "ns_per_100_kbp": {
+                    "type": "long"
+                },
+                "nucleic_acid_extraction_kit": {
+                    "type": "keyword"
+                },
+                "nucleic_acid_extraction_method": {
+                    "type": "keyword"
+                },
+                "number_of_base_pairs_sequenced": {
+                    "type": "long"
+                },
+                "number_of_contigs": {
+                    "type": "long"
+                },
+                "number_of_total_reads": {
+                    "type": "long"
+                },
+                "number_of_unique_reads": {
+                    "type": "long"
+                },
+                "organism": {
+                    "type": "keyword"
+                },
+                "oxygen_reduction_potential_orp_measurement_method": {
+                    "type": "keyword"
+                },
+                "oxygen_reduction_potential_orp_measurement_unit": {
+                    "type": "keyword"
+                },
+                "oxygen_reduction_potential_orp_measurement_value": {
+                    "type": "long"
+                },
+                "percent_ns_across_total_genome_length": {
+                    "type": "long"
+                },
+                "percent_read_contamination": {
+                    "type": "long"
+                },
+                "ph_measurement_method": {
+                    "type": "keyword"
+                },
+                "ph_measurement_value": {
+                    "type": "long"
+                },
+                "phagetype": {
+                    "type": "keyword"
+                },
+                "pooled_sample_id": {
+                    "type": "keyword"
+                },
+                "populated_area_type": {
+                    "type": "keyword"
+                },
+                "precipitation_measurement_method": {
+                    "type": "keyword"
+                },
+                "precipitation_measurement_unit": {
+                    "type": "keyword"
+                },
+                "precipitation_measurement_value": {
+                    "type": "long"
+                },
+                "presampling_activity": {
+                    "type": "keyword"
+                },
+                "presampling_activity_details": {
+                    "type": "keyword"
+                },
+                "presampling_weather_conditions": {
+                    "type": "keyword"
+                },
+                "progeny_isolate_id": {
+                    "type": "keyword"
+                },
+                "purpose_of_sampling": {
+                    "type": "keyword"
+                },
+                "purpose_of_sequencing": {
+                    "type": "keyword"
+                },
+                "purpose_of_sequencing_details": {
+                    "type": "keyword"
+                },
+                "quality_control_details": {
+                    "type": "keyword"
+                },
+                "quality_control_determination": {
+                    "type": "keyword"
+                },
+                "quality_control_issues": {
+                    "type": "keyword"
+                },
+                "quality_control_method_name": {
+                    "type": "keyword"
+                },
+                "quality_control_method_version": {
+                    "type": "keyword"
+                },
+                "raw_sequence_data_processing_method": {
+                    "type": "keyword"
+                },
+                "read_mapping_criteria": {
+                    "type": "keyword"
+                },
+                "read_mapping_software_name": {
+                    "type": "keyword"
+                },
+                "read_mapping_software_version": {
+                    "type": "keyword"
+                },
+                "reference_genome_accession": {
+                    "type": "keyword"
+                },
+                "salinity_measurement_method": {
+                    "type": "keyword"
+                },
+                "salinity_measurement_unit": {
+                    "type": "keyword"
+                },
+                "salinity_measurement_value": {
+                    "type": "long"
+                },
+                "sample_collected_by": {
+                    "type": "keyword"
+                },
+                "sample_collected_by_null_reason": {
+                    "type": "keyword"
+                },
+                "sample_collection_data_steward_name": {
+                    "type": "keyword"
+                },
+                "sample_collection_date": {
+                    "type": "keyword"
+                },
+                "sample_collection_date_null_reason": {
+                    "type": "keyword"
+                },
+                "sample_collection_end_date": {
+                    "type": "keyword"
+                },
+                "sample_collection_end_time": {
+                    "type": "keyword"
+                },
+                "sample_collection_start_time": {
+                    "type": "keyword"
+                },
+                "sample_collection_time_duration_unit": {
+                    "type": "keyword"
+                },
+                "sample_collection_time_duration_value": {
+                    "type": "long"
+                },
+                "sample_collection_time_of_day": {
+                    "type": "keyword"
+                },
+                "sample_collector_contact_email": {
+                    "type": "keyword"
+                },
+                "sample_processing_date": {
+                    "type": "keyword"
+                },
+                "sample_received_date": {
+                    "type": "keyword"
+                },
+                "sample_storage_duration_unit": {
+                    "type": "keyword"
+                },
+                "sample_storage_duration_value": {
+                    "type": "long"
+                },
+                "sample_storage_medium": {
+                    "type": "keyword"
+                },
+                "sample_storage_method": {
+                    "type": "keyword"
+                },
+                "sample_temperature_unit_at_collection": {
+                    "type": "keyword"
+                },
+                "sample_temperature_unit_when_received": {
+                    "type": "keyword"
+                },
+                "sample_temperature_value_at_collection": {
+                    "type": "long"
+                },
+                "sample_temperature_value_when_received": {
+                    "type": "long"
+                },
+                "sample_volume_measurement_unit": {
+                    "type": "keyword"
+                },
+                "sample_volume_measurement_value": {
+                    "type": "long"
+                },
+                "sampling_event_id": {
+                    "type": "keyword"
+                },
+                "sampling_site_id": {
+                    "type": "keyword"
+                },
+                "sampling_weather_conditions": {
+                    "type": "keyword"
+                },
+                "scale_of_sampling": {
+                    "type": "keyword"
+                },
+                "sequence_assembly_length": {
+                    "type": "long"
+                },
+                "sequence_assembly_software_name": {
+                    "type": "keyword"
+                },
+                "sequence_assembly_software_version": {
+                    "type": "keyword"
+                },
+                "sequence_submitted_by": {
+                    "type": "keyword"
+                },
+                "sequence_submitted_by_null_reason": {
+                    "type": "keyword"
+                },
+                "sequence_submitter_contact_email": {
+                    "type": "keyword"
+                },
+                "sequenced_by": {
+                    "type": "keyword"
+                },
+                "sequenced_by_contact_email": {
+                    "type": "keyword"
+                },
+                "sequenced_by_contact_name": {
+                    "type": "keyword"
+                },
+                "sequenced_by_null_reason": {
+                    "type": "keyword"
+                },
+                "sequencing_assay_type": {
+                    "type": "keyword"
+                },
+                "sequencing_date": {
+                    "type": "keyword"
+                },
+                "sequencing_instrument": {
+                    "type": "keyword"
+                },
+                "sequencing_platform": {
+                    "type": "keyword"
+                },
+                "sequencing_protocol": {
+                    "type": "keyword"
+                },
+                "serotyping_method": {
+                    "type": "keyword"
+                },
+                "serovar": {
+                    "type": "keyword"
+                },
+                "specimen_collector_project_id": {
+                    "type": "keyword"
+                },
+                "specimen_collector_sample_id": {
+                    "type": "keyword"
+                },
+                "specimen_collector_subsample_id": {
+                    "type": "keyword"
+                },
+                "specimen_processing": {
+                    "type": "keyword"
+                },
+                "specimen_processing_details": {
+                    "type": "keyword"
+                },
+                "sra_accession": {
+                    "type": "keyword"
+                },
+                "sra_url": {
+                    "type": "keyword"
+                },
+                "strain": {
+                    "type": "keyword"
+                },
+                "taxonomic_analysis_date": {
+                    "type": "keyword"
+                },
+                "taxonomic_analysis_report_filename": {
+                    "type": "keyword"
+                },
+                "taxonomic_reference_database_name": {
+                    "type": "keyword"
+                },
+                "taxonomic_reference_database_version": {
+                    "type": "keyword"
+                },
+                "total_daily_flow_rate_measurement_method": {
+                    "type": "keyword"
+                },
+                "total_daily_flow_rate_measurement_unit": {
+                    "type": "keyword"
+                },
+                "total_daily_flow_rate_measurement_value": {
+                    "type": "long"
+                },
+                "total_dissolved_solids_tds_measurement_method": {
+                    "type": "keyword"
+                },
+                "total_dissolved_solids_tds_measurement_unit": {
+                    "type": "keyword"
+                },
+                "total_dissolved_solids_tds_measurement_value": {
+                    "type": "long"
+                },
+                "total_nitrogen_tn_measurement_method": {
+                    "type": "keyword"
+                },
+                "total_nitrogen_tn_measurement_unit": {
+                    "type": "keyword"
+                },
+                "total_nitrogen_tn_measurement_value": {
+                    "type": "long"
+                },
+                "total_phosphorus_tp_measurement_method": {
+                    "type": "keyword"
+                },
+                "total_phosphorus_tp_measurement_unit": {
+                    "type": "keyword"
+                },
+                "total_phosphorus_tp_measurement_value": {
+                    "type": "long"
+                },
+                "total_solids_ts_measurement_method": {
+                    "type": "keyword"
+                },
+                "total_solids_ts_measurement_unit": {
+                    "type": "keyword"
+                },
+                "total_solids_ts_measurement_value": {
+                    "type": "long"
+                },
+                "total_suspended_solids_tss_measurement_method": {
+                    "type": "keyword"
+                },
+                "total_suspended_solids_tss_measurement_unit": {
+                    "type": "keyword"
+                },
+                "total_suspended_solids_tss_measurement_value": {
+                    "type": "long"
+                },
+                "turbidity_measurement_method": {
+                    "type": "keyword"
+                },
+                "turbidity_measurement_unit": {
+                    "type": "keyword"
+                },
+                "turbidity_measurement_value": {
+                    "type": "long"
+                },
+                "urinary_contamination_indicator": {
+                    "type": "keyword"
+                },
+                "urinary_contamination_method": {
+                    "type": "keyword"
+                },
+                "urinary_contamination_unit": {
+                    "type": "keyword"
+                },
+                "urinary_contamination_value": {
+                    "type": "long"
+                },
+                "wastewater_system_type": {
+                    "type": "keyword"
+                },
+                "water_catchment_area_human_population_density_unit": {
+                    "type": "keyword"
+                },
+                "water_catchment_area_human_population_density_value": {
+                    "type": "long"
+                },
+                "water_catchment_area_human_population_measurement_method": {
+                    "type": "keyword"
+                },
+                "water_catchment_area_human_population_measurement_value": {
+                    "type": "long"
+                },
+                "water_catchment_area_human_population_range": {
+                    "type": "keyword"
+                },
+                "watershed_shapefile_availability": {
+                    "type": "keyword"
+                },
+                "watershed_shapefile_filename": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "entityName": {
+            "type": "keyword"
+        },
+        "files": {
+            "type": "nested",
+            "properties": {
+                "fileName": {
+                    "type": "keyword"
+                },
+                "md5Sum": {
+                    "type": "keyword"
+                },
+                "objectId": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "id": {
+            "type": "text",
+            "fields": {
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "isValid": {
+            "type": "boolean"
+        },
+        "organization": {
+            "type": "keyword"
+        },
+        "systemId": {
+            "type": "text",
+            "fields": {
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        }
+    }
+}
