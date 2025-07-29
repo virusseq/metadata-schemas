@@ -1,0 +1,11 @@
+{
+  "index": {
+    "routing": {
+      "allocation": {
+        "include": {
+          "_tier_preference": "data_content"
+        }
+      }
+    }
+  }
+}
