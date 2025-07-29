@@ -1,41 +1,40 @@
 {
-    "name": "waste_water",
-    "options": {
-      "fileTypes": [
-        "TAR"
-      ],
-      "externalValidations": [
-        {
-          "url": "https://file-manager.submission.dev.pcgl.sd4h.ca/isAlive",
-          "jsonPath": "specimen_collector_sample_id"
-        }
-      ]
-    },
-    "schema": {
-        "properties": {
-            "specimen_collector_sample_id":{
-                "type": "string"
-            },
-            "bioproject_accession":{"type":"string"},
-            "biosample_accession":{"type":"string"},
-            "sra_accession":{
-                "type": "string",
-                "pattern":"^SR(R|S)\\d+$"
-            },
-            "tar_contents":{
-                "items":{
-                    "type":"string"
-                },
-                "type":"array",
-                "minItems": 1
-            }
+  "name": "waste_water",
+  "options": {
+    "fileTypes": [
+      "TAR"
+    ],
+    "externalValidations": []
+  },
+  "schema": {
+    "properties": {
+      "specimen_collector_sample_id": {
+        "type": "string"
+      },
+      "bioproject_accession": {
+        "type": "string"
+      },
+      "biosample_accession": {
+        "type": "string"
+      },
+      "sra_accession": {
+        "type": "string",
+        "pattern": "^SR(R|S)\\d+$"
+      },
+      "tar_contents": {
+        "items": {
+          "type": "string"
         },
-        "required": [
-            "specimen_collector_sample_id",
-            "bioproject_accession",
-            "biosample_accession",
-            "tar_contents"
-        ],
-        "type": "object"
-    }
+        "type": "array",
+        "minItems": 1
+      }
+    },
+    "required": [
+      "specimen_collector_sample_id",
+      "bioproject_accession",
+      "biosample_accession",
+      "tar_contents"
+    ],
+    "type": "object"
+  }
 }
