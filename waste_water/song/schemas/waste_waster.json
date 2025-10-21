@@ -11,10 +11,10 @@
       "specimen_collector_sample_id": {
         "type": "string"
       },
-      "bioproject_accession": {
+      "insdc_project_accession": {
         "type": "string"
       },
-      "biosample_accession": {
+      "insdc_sample_accession": {
         "type": "string"
       },
       "sra_accession": {
@@ -31,8 +31,8 @@
     },
     "required": [
       "specimen_collector_sample_id",
-      "bioproject_accession",
-      "biosample_accession",
+      "insdc_project_accession",
+      "insdc_sample_accession",
       "tar_contents"
     ],
     "type": "object"
