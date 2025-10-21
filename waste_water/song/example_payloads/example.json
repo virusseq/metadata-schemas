@@ -1,21 +1,23 @@
 {
-    "analysisType": {"name":"waste_water"},
-    "studyId":"WW-ABC",
-    "specimen_collector_sample_id":"QC-WW-N-3_2-1338618_S70_L002",
-    "bioproject_accession":"PRJNA788395",
-    "biosample_accession": "SAMN23970287",
-    "sra_accession": "SRS11296762",
-    "tar_contents":[
-        "SRS11296762-SRR17213580_1.fastq",
-        "SRS11296762-SRR17213580_2.fastq"
-    ],
-    "files": [
-        {
-          "fileName": "SRS11296762-SRR17213580.tar.xz",
-          "fileSize": 123456789,
-          "fileMd5sum": "abcdef1234567890abcdef1234567891",
-          "fileType": "TAR",
-          "fileAccess": "open"
-        }
-      ]
+  "analysisType": {
+    "name": "waste_water"
+  },
+  "studyId": "WW-ABC",
+  "specimen_collector_sample_id": "QC-WW-N-3_2-1338618_S70_L002",
+  "insdc_project_accession": "PRJNA788395",
+  "insdc_sample_accession": "SAMN23970287",
+  "sra_accession": "SRS11296762",
+  "tar_contents": [
+    "SRS11296762-SRR17213580_1.fastq",
+    "SRS11296762-SRR17213580_2.fastq"
+  ],
+  "files": [
+    {
+      "fileName": "SRS11296762-SRR17213580.tar.xz",
+      "fileSize": 123456789,
+      "fileMd5sum": "abcdef1234567890abcdef1234567891",
+      "fileType": "TAR",
+      "fileAccess": "open"
+    }
+  ]
 }
