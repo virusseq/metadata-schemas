@@ -1376,7 +1376,7 @@
                                 "Livestock housing washdown",
                                 "Infectious disease outbreak [IDO:0000502]",
                                 "Water-associated infectious disease outbreak",
-                                "Environmental system process",
+                                "Environmental system process [ENVO:02500000]",
                                 "Algal bloom [ENVO:02500018]",
                                 "Deforestation [ENVO:02500012]",
                                 "Ecosystem management [ENVO:01001170]",
@@ -1529,7 +1529,7 @@
                                 "Automatic composite sampler [GENEPIO:0100950]",
                                 "Automatic flow-proportional sampler [GENEPIO:0100951]",
                                 "Automatic sequential (time-proportional) sampler [GENEPIO:0100952]",
-                                "ISCO sampler",
+                                "ISCO sampler [GENEPIO:0102185]",
                                 "Not Applicable [GENEPIO:0001619]",
                                 "Missing [GENEPIO:0001618]",
                                 "Not Collected [GENEPIO:0001620]",
@@ -2655,14 +2655,14 @@
                     "restrictions": [
                         {
                             "codeList": [
-                                "cubic meter per second (m^3/s)",
-                                "cubic meter per minute (m^3/min)",
-                                "cubic meter per hour (m^3/h)",
-                                "liter per second (L/s)",
-                                "liter per minute (L/min)",
-                                "liter per hour (L/h)",
-                                "liter per day (L/day)",
-                                "million gallons per day (MGD)",
+                                "cubic meter per second (m^3/s) [GENEPIO:0102192]",
+                                "cubic meter per minute (m^3/min) [GENEPIO:0102193]",
+                                "cubic meter per hour (m^3/h) [GENEPIO:0102194]",
+                                "liter per second (L/s) [GENEPIO:0102195]",
+                                "liter per minute (L/min) [GENEPIO:0102196]",
+                                "liter per hour (L/h) [GENEPIO:0102197]",
+                                "liter per day (L/day) [GENEPIO:0102198]",
+                                "million gallons per day (MGD) [GENEPIO:0102199]",
                                 "Not Applicable [GENEPIO:0001619]",
                                 "Missing [GENEPIO:0001618]",
                                 "Not Collected [GENEPIO:0001620]",
@@ -2717,14 +2717,14 @@
                     "restrictions": [
                         {
                             "codeList": [
-                                "cubic meter per second (m^3/s)",
-                                "cubic meter per minute (m^3/min)",
-                                "cubic meter per hour (m^3/h)",
-                                "liter per second (L/s)",
-                                "liter per minute (L/min)",
-                                "liter per hour (L/h)",
-                                "liter per day (L/day)",
-                                "million gallons per day (MGD)",
+                                "cubic meter per second (m^3/s) [GENEPIO:0102192]",
+                                "cubic meter per minute (m^3/min) [GENEPIO:0102193]",
+                                "cubic meter per hour (m^3/h) [GENEPIO:0102194]",
+                                "liter per second (L/s) [GENEPIO:0102195]",
+                                "liter per minute (L/min) [GENEPIO:0102196]",
+                                "liter per hour (L/h) [GENEPIO:0102197]",
+                                "liter per day (L/day) [GENEPIO:0102198]",
+                                "million gallons per day (MGD) [GENEPIO:0102199]",
                                 "Not Applicable [GENEPIO:0001619]",
                                 "Missing [GENEPIO:0001618]",
                                 "Not Collected [GENEPIO:0001620]",
@@ -3056,7 +3056,7 @@
                         {
                             "codeList": [
                                 "log10 gene copies per 100 milliliter (log10 GC/100 mL)",
-                                "gene copies per liter (GC/L)",
+                                "gene copies per liter (GC/L) [GENEPIO:0102202]",
                                 "PCR quantification cycle (Ct value) [UO:0010077]",
                                 "log10 gene copies per nanogram total DNA (log10 GC/ ng)",
                                 "Not Applicable [GENEPIO:0001619]",
@@ -3166,6 +3166,7 @@
                                 "Phalacrocorax auritus [NCBITaxon:56069]",
                                 "Salmo salar [NCBITaxon:8030]",
                                 "Somateria mollissima [NCBITaxon:76058]",
+                                "First winter [GENEPIO:0100684]",
                                 "First summer [GENEPIO:0100685]",
                                 "Second winter [GENEPIO:0100686]",
                                 "Second summer [GENEPIO:0100687]",
@@ -3483,6 +3484,15 @@
                             "codeList": [
                                 "Amplicon sequencing assay [OBI:0002767]",
                                 "16S ribosomal gene sequencing assay [OBI:0002763]",
+                                "18S ribosomal gene sequencing assay [GENEPIO:0102187]",
+                                "Viral amplicon sequencing [GENEPIO:0102188]",
+                                "Cytochrome c oxidase I barcoding [GENEPIO:0102189]",
+                                "Polymerase chain reaction assay [OBI:0002692]",
+                                "Real time polymerase chain reaction assay (qPCR) [OBI:0000893]",
+                                "Reverse transcription polymerase chain reaction assay [OBI:0001170]",
+                                "Whole genome sequencing assay [OBI:0002117]",
+                                "Whole metagenome sequencing assay [OBI:0002623]",
+                                "Whole virome sequencing assay [OBI:0002768]",
                                 "Not Applicable [GENEPIO:0001619]",
                                 "Missing [GENEPIO:0001618]",
                                 "Not Collected [GENEPIO:0001620]",
@@ -3881,8 +3891,8 @@
                             "codeList": [
                                 "Cross linking [OBI:0000800]",
                                 "Hybridization capture [GENEPIO:0001950]",
-                                "Magnetic bead capture",
-                                "Poly(A) selection",
+                                "Magnetic bead capture [GENEPIO:0102190]",
+                                "Poly(A) selection [GENEPIO:0102191]",
                                 "rRNA depletion method [GENEPIO:0101020]",
                                 "Not Applicable [GENEPIO:0001619]",
                                 "Missing [GENEPIO:0001618]",
@@ -5128,13 +5138,13 @@
                     "restrictions": [
                         {
                             "codeList": [
-                                "gene copies per liter (GC/L)",
+                                "gene copies per liter (GC/L) [GENEPIO:0102202]",
                                 "PCR quantification cycle (Ct value) [UO:0010077]",
                                 "colony forming units per milliliter (CFU/mL) [UO:0000213]",
-                                "colony forming units per 100 milliliter (CFU/100 mL)",
-                                "colony forming units per grams total solids (CFU/gTS)",
-                                "most probable number per milliliter (MPN/mL)",
-                                "most probable number per 100 milliliter (MPN/100 mL)",
+                                "colony forming units per 100 milliliter (CFU/100 mL) [GENEPIO:0102203]",
+                                "colony forming units per grams total solids (CFU/gTS) [GENEPIO:0102204]",
+                                "most probable number per milliliter (MPN/mL) [GENEPIO:0102205]",
+                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]",
                                 "Not Applicable [GENEPIO:0001619]",
                                 "Missing [GENEPIO:0001618]",
                                 "Not Collected [GENEPIO:0001620]",
@@ -5371,13 +5381,13 @@
                     "restrictions": [
                         {
                             "codeList": [
-                                "gene copies per liter (GC/L)",
+                                "gene copies per liter (GC/L) [GENEPIO:0102202]",
                                 "PCR quantification cycle (Ct value) [UO:0010077]",
                                 "colony forming units per milliliter (CFU/mL) [UO:0000213]",
-                                "colony forming units per 100 milliliter (CFU/100 mL)",
-                                "colony forming units per grams total solids (CFU/gTS)",
-                                "most probable number per milliliter (MPN/mL)",
-                                "most probable number per 100 milliliter (MPN/100 mL)",
+                                "colony forming units per 100 milliliter (CFU/100 mL) [GENEPIO:0102203]",
+                                "colony forming units per grams total solids (CFU/gTS) [GENEPIO:0102204]",
+                                "most probable number per milliliter (MPN/mL) [GENEPIO:0102205]",
+                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]",
                                 "Not Applicable [GENEPIO:0001619]",
                                 "Missing [GENEPIO:0001618]",
                                 "Not Collected [GENEPIO:0001620]",
@@ -5632,13 +5642,13 @@
                     "restrictions": [
                         {
                             "codeList": [
-                                "gene copies per liter (GC/L)",
+                                "gene copies per liter (GC/L) [GENEPIO:0102202]",
                                 "PCR quantification cycle (Ct value) [UO:0010077]",
                                 "colony forming units per milliliter (CFU/mL) [UO:0000213]",
-                                "colony forming units per 100 milliliter (CFU/100 mL)",
-                                "colony forming units per grams total solids (CFU/gTS)",
-                                "most probable number per milliliter (MPN/mL)",
-                                "most probable number per 100 milliliter (MPN/100 mL)",
+                                "colony forming units per 100 milliliter (CFU/100 mL) [GENEPIO:0102203]",
+                                "colony forming units per grams total solids (CFU/gTS) [GENEPIO:0102204]",
+                                "most probable number per milliliter (MPN/mL) [GENEPIO:0102205]",
+                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]",
                                 "Not Applicable [GENEPIO:0001619]",
                                 "Missing [GENEPIO:0001618]",
                                 "Not Collected [GENEPIO:0001620]",
@@ -5716,5 +5726,5 @@
             ]
         }
     ],
-    "version": "1.4"
+    "version": "1.5"
 }
