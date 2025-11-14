@@ -8,6 +8,9 @@
                 "amplicon_pcr_primer_scheme_url": {
                     "type": "keyword"
                 },
+                "amplicon_size": {
+                    "type": "long"
+                },
                 "anatomical_material": {
                     "type": "keyword"
                 },
@@ -42,6 +45,12 @@
                     "type": "keyword"
                 },
                 "breadth_of_coverage_value": {
+                    "type": "keyword"
+                },
+                "carbonaceous_biochemical_oxygen_demand_cbod_measurement_unit": {
+                    "type": "keyword"
+                },
+                "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value": {
                     "type": "keyword"
                 },
                 "citation_url": {
@@ -173,6 +182,9 @@
                 "geo_loc_longitude": {
                     "type": "keyword"
                 },
+                "geo_loc_name_city": {
+                    "type": "keyword"
+                },
                 "geo_loc_name_country": {
                     "type": "keyword"
                 },
@@ -183,7 +195,7 @@
                     "type": "keyword"
                 },
                 "host_age": {
-                    "type": "keyword"
+                    "type": "long"
                 },
                 "host_age_bin": {
                     "type": "keyword"
@@ -218,6 +230,9 @@
                 "isolated_by_organisation_name": {
                     "type": "keyword"
                 },
+                "library_id": {
+                    "type": "keyword"
+                },
                 "library_preparation_kit": {
                     "type": "keyword"
                 },
@@ -230,6 +245,9 @@
                 "microbiological_method": {
                     "type": "keyword"
                 },
+                "nucleic_acid_extraction_kit": {
+                    "type": "keyword"
+                },
                 "nucleic_acid_extraction_method": {
                     "type": "keyword"
                 },
@@ -240,6 +258,12 @@
                     "type": "keyword"
                 },
                 "populated_area_type": {
+                    "type": "keyword"
+                },
+                "precipitation_measurement_unit": {
+                    "type": "keyword"
+                },
+                "precipitation_measurement_value": {
                     "type": "keyword"
                 },
                 "presampling_activity": {
@@ -309,12 +333,15 @@
                     "type": "keyword"
                 },
                 "sample_collection_end_date": {
-                    "type": "keyword"
+                    "type": "date"
                 },
                 "sample_collection_project_name": {
                     "type": "keyword"
                 },
                 "sample_collection_start_date": {
+                    "type": "date"
+                },
+                "sample_collection_start_date_null_reason": {
                     "type": "keyword"
                 },
                 "sample_collection_time_duration_unit": {
@@ -342,6 +369,9 @@
                     "type": "keyword"
                 },
                 "sequence_assembly_software_version": {
+                    "type": "keyword"
+                },
+                "sequence_submitted_by": {
                     "type": "keyword"
                 },
                 "sequenced_by_contact_email": {
@@ -423,7 +453,7 @@
                     "type": "keyword"
                 },
                 "water_catchment_area_human_population_measurement_value": {
-                    "type": "keyword"
+                    "type": "long"
                 },
                 "water_catchment_area_human_population_range": {
                     "type": "keyword"
@@ -450,15 +480,6 @@
                 },
                 "objectId": {
                     "type": "keyword"
-                }
-            }
-        },
-        "id": {
-            "type": "text",
-            "fields": {
-                "keyword": {
-                    "type": "keyword",
-                    "ignore_above": 256
                 }
             }
         },
