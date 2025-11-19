@@ -458,6 +458,7 @@
                     "valueType": "string",
                     "restrictions": [
                         {
+                            "required": true,
                             "codeList": [
                                 "Amplicon sequencing assay [OBI:0002767]",
                                 "16S ribosomal gene sequencing assay [OBI:0002763]",
@@ -5808,5 +5809,5 @@
             ]
         }
     ],
-    "version": "1.10"
+    "version": "1.11"
 }
