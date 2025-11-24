@@ -1,5 +1,5 @@
 {
-  "name": "waste_water",
+  "name": "imicroseq_wastewater",
   "options": {
     "fileTypes": [
       "TAR"
@@ -20,20 +20,12 @@
       "sra_accession": {
         "type": "string",
         "pattern": "^SR(R|S)\\d+$"
-      },
-      "tar_contents": {
-        "items": {
-          "type": "string"
-        },
-        "type": "array",
-        "minItems": 1
       }
     },
     "required": [
       "specimen_collector_sample_id",
       "insdc_project_accession",
-      "insdc_sample_accession",
-      "tar_contents"
+      "insdc_sample_accession"
     ],
     "type": "object"
   }
