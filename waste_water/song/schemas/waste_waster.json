@@ -16,10 +16,6 @@
       },
       "insdc_sample_accession": {
         "type": "string"
-      },
-      "sra_accession": {
-        "type": "string",
-        "pattern": "^SR(R|S)\\d+$"
       }
     },
     "required": [
