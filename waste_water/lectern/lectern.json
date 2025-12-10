@@ -28,7 +28,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^PRJN[A-Z0-9]+$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "insdc_project_accession"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "insdc_project_accession"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -108,7 +141,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^ERR[0-9]+$|^DRR[0-9]+$|^CRR[0-9]+$|^SRR[0-9]+$|^SRS[0-9]+$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "insdc_sequence_read_accession"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "insdc_sequence_read_accession"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -191,7 +257,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "amplicon_pcr_primer_scheme_url"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "amplicon_pcr_primer_scheme_url"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -389,7 +488,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "assay_target_name_1"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "assay_target_name_1"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -410,7 +542,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "assay_target_name_2"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "assay_target_name_2"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -431,7 +596,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "assay_target_name_3"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "assay_target_name_3"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -458,7 +656,6 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "required": true,
                             "codeList": [
                                 "Amplicon sequencing assay [OBI:0002767]",
                                 "16S ribosomal gene sequencing assay [OBI:0002763]",
@@ -555,7 +752,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "available_data_type_details"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "available_data_type_details"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -614,7 +844,12 @@
                                 "Matter compostion [GENEPIO:0100746]",
                                 "Dry matter composition [GENEPIO:0100747]",
                                 "Organic matter composition [GENEPIO:0100748]",
-                                "Watershed shapefile datum [GENEPIO:0102207]"
+                                "Watershed shapefile datum [GENEPIO:0102207]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -639,7 +874,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "bioinformatics_protocol_url"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "bioinformatics_protocol_url"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -711,7 +979,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "breadth_of_coverage_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "breadth_of_coverage_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -733,7 +1034,12 @@
                     "restrictions": [
                         {
                             "codeList": [
-                                "milligram per liter (mg/L) [UO:0000273]"
+                                "milligram per liter (mg/L) [UO:0000273]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -755,7 +1061,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "carbonaceous_biochemical_oxygen_demand_cbod_measurement_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -900,7 +1239,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "conductivity_measurement_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "conductivity_measurement_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -925,7 +1297,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "consensus_sequence_software_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "consensus_sequence_software_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -949,7 +1354,142 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "consensus_sequence_software_version"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "consensus_sequence_software_version"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "data_steward_contact_email",
+                    "meta": {
+                        "ontologyIdentifier": "GENEPIO:0102222",
+                        "comments": "The email address can represent a specific individual or lab e.g. johnnyblogs@lab.ca, or RespLab@lab.ca",
+                        "examples": [
+                            "WaterTester@facility.ca"
+                        ]
+                    },
+                    "displayName": "data steward contact email",
+                    "description": "The email address of the individual responsible for the data governance, (meta)data usage and distribution of the data.",
+                    "valueType": "string",
+                    "restrictions": [
+                        {
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "data_steward_contact_email"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "data_steward_contact_email"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "required": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "data_steward_contact_name",
+                    "meta": {
+                        "ontologyIdentifier": "GENEPIO:0102221",
+                        "comments": "Provide the name of the data steward.",
+                        "examples": [
+                            "Joe Bloggs"
+                        ]
+                    },
+                    "displayName": "data steward contact name",
+                    "description": "The name of the individual responsible for the data governance, (meta)data usage and distribution of the data.",
+                    "valueType": "string",
+                    "restrictions": [
+                        {
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "data_steward_contact_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "data_steward_contact_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "required": true
+                            }
                         }
                     ]
                 },
@@ -1033,7 +1573,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "depth_of_coverage_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "depth_of_coverage_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1061,7 +1634,12 @@
                             "codeList": [
                                 "Quantitative real time polymerase chain reaction (qPCR) [OBI:0000893]",
                                 "Digital real time polymerase chain reaction (dPCR) [GENEPIO:0102209]",
-                                "Cell culture [OBI:0001876]"
+                                "Cell culture [OBI:0001876]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1086,7 +1664,12 @@
                             "codeList": [
                                 "Quantitative real time polymerase chain reaction (qPCR) [OBI:0000893]",
                                 "Digital real time polymerase chain reaction (dPCR) [GENEPIO:0102209]",
-                                "Cell culture [OBI:0001876]"
+                                "Cell culture [OBI:0001876]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1111,7 +1694,12 @@
                             "codeList": [
                                 "Quantitative real time polymerase chain reaction (qPCR) [OBI:0000893]",
                                 "Digital real time polymerase chain reaction (dPCR) [GENEPIO:0102209]",
-                                "Cell culture [OBI:0001876]"
+                                "Cell culture [OBI:0001876]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1145,7 +1733,12 @@
                                 "colony forming units per 100 milliliter (CFU/100 mL) [GENEPIO:0102203]",
                                 "colony forming units per grams total solids (CFU/gTS) [GENEPIO:0102204]",
                                 "most probable number per milliliter (MPN/mL) [GENEPIO:0102205]",
-                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]"
+                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1179,7 +1772,12 @@
                                 "colony forming units per 100 milliliter (CFU/100 mL) [GENEPIO:0102203]",
                                 "colony forming units per grams total solids (CFU/gTS) [GENEPIO:0102204]",
                                 "most probable number per milliliter (MPN/mL) [GENEPIO:0102205]",
-                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]"
+                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1209,7 +1807,12 @@
                                 "colony forming units per 100 milliliter (CFU/100 mL) [GENEPIO:0102203]",
                                 "colony forming units per grams total solids (CFU/gTS) [GENEPIO:0102204]",
                                 "most probable number per milliliter (MPN/mL) [GENEPIO:0102205]",
-                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]"
+                                "most probable number per 100 milliliter (MPN/100 mL) [GENEPIO:0102206]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1235,7 +1838,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "diagnostic_measurement_value_1"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "diagnostic_measurement_value_1"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1260,7 +1896,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "diagnostic_measurement_value_2"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "diagnostic_measurement_value_2"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1281,7 +1950,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "diagnostic_measurement_value_3"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "diagnostic_measurement_value_3"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1308,7 +2010,12 @@
                         {
                             "codeList": [
                                 "diagnostic target present [GENEPIO:0100987]",
-                                "diagnostic target absent [GENEPIO:0100988]"
+                                "diagnostic target absent [GENEPIO:0100988]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1336,7 +2043,12 @@
                         {
                             "codeList": [
                                 "diagnostic target present [GENEPIO:0100987]",
-                                "diagnostic target absent [GENEPIO:0100988]"
+                                "diagnostic target absent [GENEPIO:0100988]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1360,7 +2072,12 @@
                         {
                             "codeList": [
                                 "diagnostic target present [GENEPIO:0100987]",
-                                "diagnostic target absent [GENEPIO:0100988]"
+                                "diagnostic target absent [GENEPIO:0100988]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1385,7 +2102,12 @@
                             "codeList": [
                                 "milligram per liter (mg/L) [UO:0000273]",
                                 "kilogram per cubic meter (kg/m^3) [UO:0000083]",
-                                "part per million (ppm) [UO:0000169]"
+                                "part per million (ppm) [UO:0000169]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1407,7 +2129,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "dissolved_oxygen_measurement_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "dissolved_oxygen_measurement_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1685,7 +2440,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "experimental_control_details"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "experimental_control_details"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1703,7 +2491,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "experimental_protocol_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "experimental_protocol_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1728,7 +2549,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "experimental_protocol_url"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "experimental_protocol_url"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1758,7 +2612,12 @@
                                 "Negative experimental control [GENEPIO:0101019]",
                                 "Synthetic lab construct [GENEPIO:0101039]",
                                 "Technical replicate [EFO:0002090]",
-                                "Biological replicate [EFO:0002091]"
+                                "Biological replicate [EFO:0002091]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -1905,7 +2764,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "gene_symbol_1"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "gene_symbol_1"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1930,7 +2822,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "gene_symbol_2"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "gene_symbol_2"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1951,7 +2876,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "gene_symbol_3"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "gene_symbol_3"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1972,7 +2930,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "genome_completeness"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "genome_completeness"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -1996,7 +2987,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "genome_sequence_file_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "genome_sequence_file_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2061,7 +3085,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "genomic_target_enrichment_method_details"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "genomic_target_enrichment_method_details"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2086,7 +3143,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^[0-9]+\\.[0-9]+ N|S$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "geo_loc_latitude"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "geo_loc_latitude"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2111,7 +3201,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^[0-9]+\\.[0-9]+ E|W$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "geo_loc_longitude"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "geo_loc_longitude"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2136,7 +3259,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "geo_loc_name_city"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "geo_loc_name_city"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2466,7 +3622,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "geo_loc_name_site"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "geo_loc_name_site"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2494,40 +3683,26 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "if": {
-                                "conditions": [
-                                    {
-                                        "case": "any",
-                                        "fields": [
-                                            "geo_loc_name_state_province_territory"
-                                        ],
-                                        "match": {
-                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
-                                        }
-                                    },
-                                    {
-                                        "fields": [
-                                            "geo_loc_name_state_province_territory"
-                                        ],
-                                        "match": {
-                                            "codeList": [
-                                                "Not Applicable [GENEPIO:0001619]",
-                                                "Missing [GENEPIO:0001618]",
-                                                "Not Collected [GENEPIO:0001620]",
-                                                "Not Provided [GENEPIO:0001668]",
-                                                "Restricted Access [GENEPIO:0001810]"
-                                            ]
-                                        }
-                                    }
-                                ],
-                                "case": "any"
-                            },
-                            "then": {
-                                "required": true
-                            },
-                            "else": {
-                                "required": true
-                            }
+                            "codeList": [
+                                "Alberta [GAZ:00002566]",
+                                "British Columbia [GAZ:00002562]",
+                                "Manitoba [GAZ:00002571]",
+                                "New Brunswick [GAZ:00002570]",
+                                "Newfoundland and Labrador [GAZ:00002567]",
+                                "Northwest Territories [GAZ:00002575]",
+                                "Nova Scotia [GAZ:00002565]",
+                                "Nunavut [GAZ:00002574]",
+                                "Ontario [GAZ:00002563]",
+                                "Prince Edward Island [GAZ:00002572]",
+                                "Quebec [GAZ:00002569]",
+                                "Saskatchewan [GAZ:00002564]",
+                                "Yukon [GAZ:00002576]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
+                            ]
                         }
                     ]
                 },
@@ -2776,7 +3951,12 @@
                                 "liter per minute (L/min) [GENEPIO:0102196]",
                                 "liter per hour (L/h) [GENEPIO:0102197]",
                                 "liter per day (L/day) [GENEPIO:0102198]",
-                                "million gallons per day (MGD) [GENEPIO:0102199]"
+                                "million gallons per day (MGD) [GENEPIO:0102199]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -2801,7 +3981,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "instantaneous_flow_rate_measurement_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "instantaneous_flow_rate_measurement_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2877,7 +4090,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "isolated_by_organisation_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "isolated_by_organisation_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2898,7 +4144,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "library_id"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "library_id"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2923,7 +4202,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "library_preparation_kit"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "library_preparation_kit"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2944,7 +4256,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "lineage_clade_analysis_software_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "lineage_clade_analysis_software_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -2965,7 +4310,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "lineage_clade_analysis_software_version"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "lineage_clade_analysis_software_version"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3045,7 +4423,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "nucleic_acid_extraction_kit"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "nucleic_acid_extraction_kit"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3071,7 +4482,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "nucleic_acid_extraction_method"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "nucleic_acid_extraction_method"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3157,7 +4601,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "ph_measurement_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "ph_measurement_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3181,7 +4658,12 @@
                             "codeList": [
                                 "Suburban [GSSO:011077]",
                                 "Rural [GSSO:011078]",
-                                "Urban [GSSO:011080]"
+                                "Urban [GSSO:011080]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -3341,7 +4823,12 @@
                                 "Wastewater secondary sedimentation [ENVO:03501449]",
                                 "Wastewater sludge removal [GENEPIO:0101201]",
                                 "Wastewater sludge dewatering [GENEPIO:0101202]",
-                                "Wastewater sludge drying [GENEPIO:0101718]"
+                                "Wastewater sludge drying [GENEPIO:0101718]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -3363,7 +4850,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "presampling_activity_id"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "presampling_activity_id"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3410,7 +4930,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "presampling_activity_details"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "presampling_activity_details"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3537,7 +5090,12 @@
                                 "Aeration tank [ENVO:03501469]",
                                 "Secondary clarifer [ENVO:03501471]",
                                 "Sludge dryer [ENVO:03501473]",
-                                "Wastewater waste tank [GENEPIO:0102057]"
+                                "Wastewater waste tank [GENEPIO:0102057]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -3657,7 +5215,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "quality_control_details"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "quality_control_details"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3689,7 +5280,12 @@
                                 "Sequence failed quality control [GENEPIO:0100564]",
                                 "Minor quality control issues identified [GENEPIO:0100565]",
                                 "Sequence flagged for potential quality control issues [GENEPIO:0100566]",
-                                "Quality control not performed [GENEPIO:0100567]"
+                                "Quality control not performed [GENEPIO:0100567]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -3724,7 +5320,12 @@
                                 "Read lengths shorter than expected [GENEPIO:0100572]",
                                 "Sequence amplification artifacts [GENEPIO:0100573]",
                                 "Low signal to noise ratio [GENEPIO:0100574]",
-                                "Low coverage of characteristic mutations [GENEPIO:0100575]"
+                                "Low coverage of characteristic mutations [GENEPIO:0100575]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -3749,7 +5350,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "quality_control_method_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "quality_control_method_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3773,7 +5407,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "quality_control_method_version"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "quality_control_method_version"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3974,7 +5641,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "reference_genome_accession"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "reference_genome_accession"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -3999,7 +5699,12 @@
                                 "practical salinity unit (PSU) [GENEPIO:0102200]",
                                 "weight for weight (% w/w) [GENEPIO:0102201]",
                                 "parts per thousand [UO:0000168]",
-                                "gram per liter (g/L) [UO:0000175]"
+                                "gram per liter (g/L) [UO:0000175]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -4021,7 +5726,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "salinity_measurement_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "salinity_measurement_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -4042,7 +5780,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "sample_collected_by_contact_email"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "sample_collected_by_contact_email"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -4123,7 +5894,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "sample_collection_data_steward_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "sample_collection_data_steward_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -4169,7 +5973,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "sample_collection_project_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "sample_collection_project_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -4533,7 +6370,12 @@
                                 "meter (m) [UO:0000008]",
                                 "kilometer (km) [UO:0010066]",
                                 "inch (in) [UO:0010011]",
-                                "foot (ft) [UO:0010013]"
+                                "foot (ft) [UO:0010013]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -4555,7 +6397,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "sediment_depth_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "sediment_depth_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -4576,7 +6451,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "sequence_assembly_software_name"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "sequence_assembly_software_name"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -4597,7 +6505,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "sequence_assembly_software_version"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "sequence_assembly_software_version"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5092,7 +7033,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "specimen_processing_details"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "specimen_processing_details"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5116,7 +7090,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "strain_id"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "strain_id"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5142,7 +7149,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "target_taxonomic_name_1"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "target_taxonomic_name_1"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5167,7 +7207,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "target_taxonomic_name_2"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "target_taxonomic_name_2"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5188,7 +7261,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "target_taxonomic_name_3"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "target_taxonomic_name_3"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5214,7 +7320,12 @@
                                 "Whole metagenome sequencing assay [OBI:0002623]",
                                 "16S ribosomal gene sequencing assay [OBI:0002763]",
                                 "PCR assay [OBI:0002740]",
-                                "Comparative phenotypic assessment [OBI:0001546]"
+                                "Comparative phenotypic assessment [OBI:0001546]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -5364,7 +7475,12 @@
                                 "liter per minute (L/min) [GENEPIO:0102196]",
                                 "liter per hour (L/h) [GENEPIO:0102197]",
                                 "liter per day (L/day) [GENEPIO:0102198]",
-                                "million gallons per day (MGD) [GENEPIO:0102199]"
+                                "million gallons per day (MGD) [GENEPIO:0102199]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -5390,7 +7506,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "total_daily_flow_rate_measurement_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "total_daily_flow_rate_measurement_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5418,7 +7567,12 @@
                         {
                             "codeList": [
                                 "percent (%) [UO:0000187]",
-                                "gram per liter (g/L) [UO:0000175]"
+                                "gram per liter (g/L) [UO:0000175]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -5445,7 +7599,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "total_suspended_solids_tss_measurement_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "total_suspended_solids_tss_measurement_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5551,7 +7738,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "viral_clade_"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "viral_clade_"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5572,7 +7792,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "viral_classification_scheme"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "viral_classification_scheme"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5593,7 +7846,40 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "viral_lineage"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "viral_lineage"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 },
@@ -5753,7 +8039,12 @@
                                 "1,000 - 10,000 people",
                                 "10,000 - 100,000 people",
                                 "100,000 - 1,000,000 people",
-                                "1,000,000+ people"
+                                "1,000,000+ people",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -5780,7 +8071,12 @@
                                 "meter (m) [UO:0000008]",
                                 "kilometer (km) [UO:0010066]",
                                 "inch (in) [UO:0010011]",
-                                "foot (ft) [UO:0010013]"
+                                "foot (ft) [UO:0010013]",
+                                "Not Applicable [GENEPIO:0001619]",
+                                "Missing [GENEPIO:0001618]",
+                                "Not Collected [GENEPIO:0001620]",
+                                "Not Provided [GENEPIO:0001668]",
+                                "Restricted Access [GENEPIO:0001810]"
                             ]
                         }
                     ]
@@ -5802,12 +8098,45 @@
                     "valueType": "string",
                     "restrictions": [
                         {
-                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                            "if": {
+                                "conditions": [
+                                    {
+                                        "case": "any",
+                                        "fields": [
+                                            "water_depth_value"
+                                        ],
+                                        "match": {
+                                            "regex": "^(?!.*[\\x09\\x0A\\x0D])(?:\\S+(?: \\S+)*)?$"
+                                        }
+                                    },
+                                    {
+                                        "fields": [
+                                            "water_depth_value"
+                                        ],
+                                        "match": {
+                                            "codeList": [
+                                                "Not Applicable [GENEPIO:0001619]",
+                                                "Missing [GENEPIO:0001618]",
+                                                "Not Collected [GENEPIO:0001620]",
+                                                "Not Provided [GENEPIO:0001668]",
+                                                "Restricted Access [GENEPIO:0001810]"
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "case": "any"
+                            },
+                            "then": {
+                                "required": true
+                            },
+                            "else": {
+                                "empty": true
+                            }
                         }
                     ]
                 }
             ]
         }
     ],
-    "version": "1.11"
+    "version": "1.13"
 }
