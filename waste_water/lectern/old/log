@@ -1,0 +1,18 @@
+
+> data-dictionary@1.0.0 compile
+> jest && node compile.js && npm run references
+
+PASS tests/sample_registration/example.test.js
+  Tests
+    ✓ adds 1 + 2 to equal 3 (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.161 s, estimated 1 s
+Ran all test suites.
+(node:96581) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+? Dictionary Name [PCGL Data Dictionary]: [42D[42C

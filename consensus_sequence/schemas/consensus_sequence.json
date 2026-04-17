@@ -1,0 +1,1651 @@
+{
+  "name": "consensus_sequence",
+  "options": {
+    "fileTypes": [],
+    "externalValidations": []
+  },
+  "schema": {
+    "type": "object",
+    "required": [
+      "samples",
+      "sample_collection",
+      "host",
+      "experiment",
+      "sequence_analysis",
+      "pathogen_diagnostic_testing"
+    ],
+    "properties": {
+      "database_identifiers": {
+        "type": "object",
+        "properties": {
+          "gisaid_accession": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "gisaid_accession"
+          ]
+        }
+      },
+      "sample_collection": {
+        "type": "object",
+        "required": [
+          "sample_collected_by",
+          "sequence_submitted_by",
+          "sample_collection_date",
+          "sample_collection_date_null_reason",
+          "geo_loc_country",
+          "geo_loc_province",
+          "organism",
+          "isolate",
+          "fasta_header_name",
+          "purpose_of_sampling",
+          "purpose_of_sampling_details",
+          "anatomical_material",
+          "anatomical_part",
+          "body_product",
+          "environmental_material",
+          "environmental_site",
+          "collection_device",
+          "collection_method"
+        ],
+        "properties": {
+          "sample_collected_by": {
+            "enum": [
+              "Alberta Precision Labs (APL)",
+              "Alberta ProvLab North (APLN)",
+              "Alberta ProvLab South (APLS)",
+              "BCCDC Public Health Laboratory",
+              "Dynacare (Brampton)",
+              "Dynacare (Manitoba)",
+              "Dynacare",
+              "Eastern Ontario Regional Laboratory Association",
+              "Hamilton Health Sciences",
+              "Kingston Health Sciences Centre",
+              "Laboratoire de santé publique du Québec (LSPQ)",
+              "Lake of the Woods District Hospital - Ontario",
+              "LifeLabs",
+              "LifeLabs (Ontario)",
+              "Manitoba Cadham Provincial Laboratory",
+              "McMaster University",
+              "Mount Sinai Hospital",
+              "National Microbiology Laboratory (NML)",
+              "New Brunswick - Vitalité Health Network",
+              "Newfoundland and Labrador - Eastern Health",
+              "Newfoundland and Labrador - Newfoundland and Labrador Health Services",
+              "Nova Scotia Health Authority",
+              "Nunuvut",
+              "Ontario Institute for Cancer Research (OICR)",
+              "Prince Edward Island - Health PEI",
+              "Public Health Ontario (PHO)",
+              "Queen's University / Kingston Health Sciences Centre",
+              "Saskatchewan - Roy Romanow Provincial Laboratory (RRPL)",
+              "Shared Hospital Laboratory",
+              "St. John's Rehab at Sunnybrook Hospital",
+              "St. Joseph's Healthcare Hamilton",
+              "Sunnybrook Health Sciences Centre",
+              "Switch Health",
+              "The Hospital for Sick Children (SickKids)",
+              "Unity Health Toronto",
+              "William Osler Health System",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "sequence_submitted_by": {
+            "enum": [
+              "Alberta Precision Labs (APL)",
+              "Alberta ProvLab North (APLN)",
+              "Alberta ProvLab South (APLS)",
+              "BCCDC Public Health Laboratory",
+              "Canadore College",
+              "Dynacare (Manitoba)",
+              "Laboratoire de santé publique du Québec (LSPQ)",
+              "Manitoba Cadham Provincial Laboratory",
+              "McGill University",
+              "McMaster University",
+              "National Microbiology Laboratory (NML)",
+              "New Brunswick - Vitalité Health Network",
+              "Newfoundland and Labrador - Eastern Health",
+              "Newfoundland and Labrador - Newfoundland and Labrador Health Services",
+              "Nova Scotia Health Authority",
+              "Ontario COVID-19 Genomic Network",
+              "Ontario Institute for Cancer Research (OICR)",
+              "Prince Edward Island - Health PEI",
+              "Public Health Ontario (PHO)",
+              "Queen's University / Kingston Health Sciences Centre",
+              "Saskatchewan - Roy Romanow Provincial Laboratory (RRPL)",
+              "Sunnybrook Health Sciences Centre",
+              "The Centre for Applied Genomics (TCAG)",
+              "The Hospital for Sick Children (SickKids)",
+              "Thunder Bay Regional Health Sciences Centre",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "sample_collection_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sample_collection_date_precision": {
+            "enum": [
+              "year",
+              "month",
+              "day"
+            ]
+          },
+          "sample_collection_date_null_reason": {
+            "enum": [
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access",
+              null
+            ]
+          },
+          "geo_loc_country": {
+            "enum": [
+              "Canada",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "geo_loc_province": {
+            "enum": [
+              "Alberta",
+              "British Columbia",
+              "Manitoba",
+              "New Brunswick",
+              "Newfoundland and Labrador",
+              "Northwest Territories",
+              "Nova Scotia",
+              "Nunavut",
+              "Ontario",
+              "Prince Edward Island",
+              "Quebec",
+              "Saskatchewan",
+              "Yukon",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "geo_loc_city": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "organism": {
+            "enum": [
+              "Severe acute respiratory syndrome coronavirus 2",
+              "RaTG13",
+              "RmYN02",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "isolate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fasta_header_name": {
+            "type": "string",
+            "pattern": "^hCoV-19/(?i)(canada)/[a-zA-Z0-9\\-_\\.:/]{1,99}/20[1-2][0-9]$"
+          },
+          "purpose_of_sampling": {
+            "enum": [
+              "Cluster/Outbreak investigation",
+              "Diagnostic testing",
+              "Research",
+              "Surveillance",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "purpose_of_sampling_details": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "anatomical_material": {
+            "enum": [
+              "Blood",
+              "Fluid",
+              "Fluid (cerebrospinal (CSF))",
+              "Fluid (pericardial)",
+              "Fluid (pleural)",
+              "Fluid (vaginal)",
+              "Fluid (amniotic)",
+              "Saliva",
+              "Tissue",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "anatomical_part": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Alveolar sac",
+                "Anterior Nares",
+                "Anus",
+                "Bronchiole",
+                "Bronchus",
+                "Buccal mucosa",
+                "Duodenum",
+                "Esophagus",
+                "Ethmoid sinus",
+                "Eye",
+                "Inferior Nasal Turbinate",
+                "Intestine",
+                "Lower respiratory tract",
+                "Lung",
+                "Middle Nasal Turbinate",
+                "Nasal Cavity",
+                "Nasopharynx (NP)",
+                "Oropharynx (OP)",
+                "Pharynx (throat)",
+                "Pleural cavity",
+                "Pleural sac",
+                "Rectum",
+                "Skin",
+                "Stomach",
+                "Trachea",
+                "Upper respiratory tract",
+                "Not Applicable",
+                "Missing",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
+            }
+          },
+          "body_product": {
+            "enum": [
+              "Breast Milk",
+              "Feces",
+              "Fluid (seminal)",
+              "Mucus",
+              "Sputum",
+              "Sweat",
+              "Tear",
+              "Urine",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "environmental_material": {
+            "enum": [
+              "Air vent",
+              "Banknote",
+              "Bed rail",
+              "Building floor",
+              "Cloth",
+              "Control panel",
+              "Door handle",
+              "Door",
+              "Face mask",
+              "Face shield",
+              "Food packaging",
+              "Food",
+              "Glass",
+              "Handrail",
+              "Hospital gown",
+              "Light switch",
+              "Locker",
+              "N95 mask",
+              "Nurse call button",
+              "PPE gown",
+              "Paper",
+              "Particulate matter",
+              "Plastic",
+              "Sewage",
+              "Sink",
+              "Soil",
+              "Stainless steel",
+              "Tissue paper",
+              "Toilet bowl",
+              "Wastewater",
+              "Water",
+              "Window",
+              "Wood",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "environmental_site": {
+            "enum": [
+              "Acute care facility",
+              "Animal house",
+              "Bathroom",
+              "Clinical assessment centre",
+              "Conference venue",
+              "Corridor",
+              "Daycare",
+              "Emergency room (ER)",
+              "Family practice clinic",
+              "Group home",
+              "Homeless shelter",
+              "Hospital",
+              "Intensive Care Unit (ICU)",
+              "Long Term Care Facility",
+              "Patient room",
+              "Prison",
+              "Production Facility",
+              "School",
+              "Sewage Plant",
+              "Subway train",
+              "Wet market",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "collection_device": {
+            "enum": [
+              "Air filter",
+              "Blood Collection Tube",
+              "Bronchoscope",
+              "Collection Container",
+              "Collection Cup",
+              "Fibrobronchoscope Brush",
+              "Filter",
+              "Fine Needle",
+              "Microcapillary tube",
+              "Micropipette",
+              "Needle",
+              "Serum Collection Tube",
+              "Sputum Collection Tube",
+              "Suction Catheter",
+              "Swab",
+              "Urine Collection Tube",
+              "Virus Transport Medium",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "collection_method": {
+            "enum": [
+              "Air filtration",
+              "Amniocentesis",
+              "Aspiration",
+              "Biopsy",
+              "Bronchoalveolar lavage (BAL)",
+              "Filtration",
+              "Finger Prick",
+              "Gastric Lavage",
+              "Lavage",
+              "Lumbar Puncture",
+              "Necropsy",
+              "Needle Biopsy",
+              "Phlebotomy",
+              "Rinsing",
+              "Saline gargle (mouth rinse and gargle)",
+              "Scraping",
+              "Suprapubic Aspiration",
+              "Swabbing",
+              "Tracheal aspiration",
+              "Vacuum Aspiration",
+              "Wash",
+              "Washout Tear Collection",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "nml_submitted_specimen_type": {
+            "enum": [
+              "Swab",
+              "RNA",
+              "mRNA (cDNA)",
+              "Nucleic acid",
+              "Not Applicable"
+            ]
+          }
+        },
+        "if": {
+          "properties": {
+            "sample_collection_date": {
+              "const": null
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "sample_collection_date_null_reason": {
+              "enum": [
+                "Not Applicable",
+                "Missing",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
+            }
+          }
+        },
+        "else": {
+          "properties": {
+            "sample_collection_date_null_reason": {
+              "const": null
+            }
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "sample_collected_by",
+            "sequence_submitted_by",
+            "sample_collection_date",
+            "sample_collection_date_precision",
+            "sample_collection_date_null_reason",
+            "geo_loc_country",
+            "geo_loc_province",
+            "geo_loc_city",
+            "organism",
+            "isolate",
+            "fasta_header_name",
+            "purpose_of_sampling",
+            "purpose_of_sampling_details",
+            "anatomical_material",
+            "anatomical_part",
+            "body_product",
+            "environmental_material",
+            "environmental_site",
+            "collection_device",
+            "collection_method",
+            "nml_submitted_specimen_type"
+          ]
+        }
+      },
+      "host": {
+        "type": "object",
+        "required": [
+          "host_scientific_name",
+          "host_disease",
+          "host_age",
+          "host_age_null_reason",
+          "host_age_bin",
+          "host_age_unit",
+          "host_gender"
+        ],
+        "properties": {
+          "host_scientific_name": {
+            "enum": [
+              "Homo sapiens",
+              "Bos taurus",
+              "Canis lupus familiaris",
+              "Chiroptera",
+              "Columbidae",
+              "Felis catus",
+              "Gallus gallus",
+              "Manis",
+              "Manis javanica",
+              "Neovison vison",
+              "Panthera leo",
+              "Panthera tigris",
+              "Rhinolophidae",
+              "Rhinolophus affinis",
+              "Sus scrofa domesticus",
+              "Viverridae",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "host_disease": {
+            "enum": [
+              "COVID-19",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "host_age": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 89
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "host_age_null_reason": {
+            "enum": [
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access",
+              null
+            ]
+          },
+          "host_age_bin": {
+            "enum": [
+              "0 - 9",
+              "10 - 19",
+              "20 - 29",
+              "30 - 39",
+              "40 - 49",
+              "50 - 59",
+              "60 - 69",
+              "70 - 79",
+              "80 - 89",
+              "90+",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "host_gender": {
+            "enum": [
+              "Female",
+              "Male",
+              "Non-binary gender",
+              "Transgender (Male to Female)",
+              "Transgender (Female to Male)",
+              "Undeclared",
+              "Unknown",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "host_age_unit": {
+            "enum": [
+              "year",
+              "month",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "host_age": {
+                  "const": null
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age_null_reason": {
+                  "enum": [
+                    "Not Applicable",
+                    "Missing",
+                    "Not Collected",
+                    "Not Provided",
+                    "Restricted Access"
+                  ]
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "host_age_null_reason": {
+                  "const": null
+                },
+                "host_age_bin": {
+                  "enum": [
+                    "0 - 9",
+                    "10 - 19",
+                    "20 - 29",
+                    "30 - 39",
+                    "40 - 49",
+                    "50 - 59",
+                    "60 - 69",
+                    "70 - 79",
+                    "80 - 89"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "0 - 9"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 9
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "10 - 19"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 10,
+                      "maximum": 19
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "20 - 29"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 20,
+                      "maximum": 29
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "30 - 39"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 30,
+                      "maximum": 39
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "40 - 49"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 40,
+                      "maximum": 49
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "50 - 59"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 50,
+                      "maximum": 59
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "60 - 69"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 60,
+                      "maximum": 69
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "70 - 79"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 70,
+                      "maximum": 79
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "80 - 89"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 80,
+                      "maximum": 89
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "host_age_bin": {
+                  "const": "90+"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "host_age": {
+                  "const": null
+                },
+                "host_age_null_reason": {
+                  "const": "Restricted Access"
+                }
+              }
+            }
+          }
+        ],
+        "propertyNames": {
+          "enum": [
+            "host_scientific_name",
+            "host_disease",
+            "host_age",
+            "host_age_null_reason",
+            "host_age_bin",
+            "host_age_unit",
+            "host_gender"
+          ]
+        }
+      },
+      "experiment": {
+        "type": "object",
+        "required": [
+          "purpose_of_sequencing",
+          "purpose_of_sequencing_details",
+          "sequencing_instrument",
+          "sequencing_protocol"
+        ],
+        "properties": {
+          "purpose_of_sequencing": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Baseline surveillance (random sampling)",
+                "Chronic (prolonged) infection surveillance",
+                "Cluster/Outbreak investigation",
+                "Domestic travel surveillance",
+                "International travel surveillance",
+                "Interstate/ interprovincial travel surveillance",
+                "Intra-jurisdictional outbreak investigation",
+                "Intra-state/ intra-provincial travel surveillance",
+                "Longitudinal surveillance (repeat sampling of individuals)",
+                "Multi-jurisdictional outbreak investigation",
+                "Priority surveillance project",
+                "Protocol testing experiment",
+                "Re-infection surveillance",
+                "Research",
+                "Retrospective sequencing",
+                "Sample has epidemiological link to Omicron Variant",
+                "Sample has epidemiological link to Variant of Concern (VoC)",
+                "Screening for Variants of Concern (VoC)",
+                "Surveillance from international worker testing",
+                "Surveillance of international border crossing by air travel or ground transport",
+                "Surveillance of international border crossing by air travel",
+                "Surveillance of international border crossing by ground transport",
+                "Targeted surveillance (non-random sampling)",
+                "Travel-associated surveillance",
+                "Vaccine escape surveillance",
+                "Viral passage experiment",
+                "Not Applicable",
+                "Missing",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
+            }
+          },
+          "purpose_of_sequencing_details": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sequencing_instrument": {
+            "enum": [
+              "BGI Genomics BGISEQ-500",
+              "BGI Genomics",
+              "Illumina Genome Analyzer II",
+              "Illumina Genome Analyzer IIx",
+              "Illumina Genome Analyzer",
+              "Illumina HiScanSQ",
+              "Illumina HiSeq 1000",
+              "Illumina HiSeq 1500",
+              "Illumina HiSeq 2000",
+              "Illumina HiSeq 2500",
+              "Illumina HiSeq 3000",
+              "Illumina HiSeq 4000",
+              "Illumina HiSeq X Five",
+              "Illumina HiSeq X Ten",
+              "Illumina HiSeq X",
+              "Illumina HiSeq",
+              "Illumina MiSeq",
+              "Illumina MiniSeq",
+              "Illumina NextSeq 2000",
+              "Illumina NextSeq 500",
+              "Illumina NextSeq 550",
+              "Illumina NextSeq",
+              "Illumina NovaSeq 6000",
+              "Illumina NovaSeq",
+              "Illumina iSeq 100",
+              "Illumina iSeq",
+              "Illumina",
+              "Ion Torrent PGM",
+              "Ion Torrent Proton",
+              "Ion Torrent S5 XL",
+              "Ion Torrent S5",
+              "Ion Torrent",
+              "MGI DNBSEQ-G400 FAST",
+              "MGI DNBSEQ-G400",
+              "MGI DNBSEQ-G50",
+              "MGI DNBSEQ-T7",
+              "MGI",
+              "Oxford Nanopore GridION",
+              "Oxford Nanopore MinION",
+              "Oxford Nanopore PromethION",
+              "Oxford Nanopore",
+              "PacBio RS II",
+              "PacBio RS",
+              "PacBio Sequel II",
+              "PacBio Sequel",
+              "Pacific Biosciences",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "sequencing_protocol": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sequencing_date": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "library_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "sequencing_instrument",
+            "sequencing_date",
+            "library_id",
+            "purpose_of_sequencing",
+            "purpose_of_sequencing_details",
+            "sequencing_protocol"
+          ]
+        }
+      },
+      "sequence_analysis": {
+        "type": "object",
+        "required": [
+          "consensus_sequence_software_name",
+          "consensus_sequence_software_version",
+          "raw_sequence_data_processing_method",
+          "dehosting_method"
+        ],
+        "properties": {
+          "consensus_sequence_software_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "consensus_sequence_software_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "raw_sequence_data_processing_method": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dehosting_method": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metrics": {
+            "type": "object",
+            "properties": {
+              "breadth_of_coverage": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^(100|\\d{1,2}(\\.\\d+)?)%$",
+                    "minLength": 2,
+                    "description": "The percentage of the reference genome covered by the sequenced data, to a prescribed depth.",
+                    "examples": [
+                      "95%"
+                    ]
+                  },
+                  {
+                    "enum": [
+                      "Not Applicable",
+                      "Missing",
+                      "Not Collected",
+                      "Not Provided",
+                      "Restricted Access",
+                      null
+                    ]
+                  }
+                ]
+              },
+              "depth_of_coverage": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^\\d+(\\.\\d+)?[xX]$",
+                    "minLength": 2,
+                    "description": "The average number of reads representing a given nucleotide in the reconstructed sequence.Provide value as a fold of coverage.",
+                    "examples": [
+                      "400X"
+                    ]
+                  },
+                  {
+                    "enum": [
+                      "Not Applicable",
+                      "Missing",
+                      "Not Collected",
+                      "Not Provided",
+                      "Restricted Access",
+                      null
+                    ]
+                  }
+                ]
+              },
+              "consensus_genome_length": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "Ns_per_100kbp": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            }
+          },
+          "reference_genome_accession": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "bioinformatics_protocol": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "consensus_sequence_software_name",
+            "consensus_sequence_software_version",
+            "raw_sequence_data_processing_method",
+            "dehosting_method",
+            "metrics",
+            "reference_genome_accession",
+            "bioinformatics_protocol"
+          ]
+        }
+      },
+      "pathogen_diagnostic_testing": {
+        "type": "object",
+        "required": [
+          "gene_name",
+          "diagnostic_pcr_ct_value",
+          "diagnostic_pcr_ct_value_null_reason"
+        ],
+        "properties": {
+          "gene_name": {
+            "enum": [
+              "E gene (orf4)",
+              "M gene (orf5)",
+              "N gene (orf9)",
+              "RdRp gene (nsp12)",
+              "SARS-COV-2 5' UTR",
+              "Spike gene (orf2)",
+              "exoN gene (nsp14)",
+              "hel gene (nsp13)",
+              "nsp1 ",
+              "nsp10 ",
+              "nsp11",
+              "nsp15",
+              "nsp16",
+              "nsp2 ",
+              "nsp3 ",
+              "nsp4 ",
+              "nsp5 ",
+              "nsp6 ",
+              "nsp7 ",
+              "nsp8 ",
+              "nsp9 ",
+              "orf10",
+              "orf14",
+              "orf1a (pp1a)",
+              "orf1ab (rep)",
+              "orf3a",
+              "orf3b",
+              "orf6 (ns6)",
+              "orf7a",
+              "orf7b (ns7b)",
+              "orf8 (ns8)",
+              "orf9b",
+              "orf9c",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access"
+            ]
+          },
+          "diagnostic_pcr_ct_value": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "diagnostic_pcr_ct_value_null_reason": {
+            "enum": [
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access",
+              null
+            ]
+          }
+        },
+        "if": {
+          "properties": {
+            "diagnostic_pcr_ct_value": {
+              "const": null
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "diagnostic_pcr_ct_value_null_reason": {
+              "enum": [
+                "Not Applicable",
+                "Missing",
+                "Not Collected",
+                "Not Provided",
+                "Restricted Access"
+              ]
+            }
+          }
+        },
+        "else": {
+          "properties": {
+            "diagnostic_pcr_ct_value_null_reason": {
+              "const": null
+            }
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "gene_name",
+            "diagnostic_pcr_ct_value",
+            "diagnostic_pcr_ct_value_null_reason"
+          ]
+        }
+      },
+      "lineage_analysis": {
+        "type": "object",
+        "properties": {
+          "lineage_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lineage_analysis_software_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lineage_analysis_software_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lineage_analysis_software_data_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scorpio_call": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "scorpio_version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "variant_designation": {
+            "enum": [
+              "Variant of Concern (VOC)",
+              "Variant of Interest (VOI)",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access",
+              null
+            ]
+          },
+          "variant_evidence": {
+            "enum": [
+              "RT-qPCR",
+              "Sequencing",
+              "Not Applicable",
+              "Missing",
+              "Not Collected",
+              "Not Provided",
+              "Restricted Access",
+              null
+            ]
+          },
+          "variant_evidence_details": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "propertyNames": {
+          "enum": [
+            "lineage_name",
+            "lineage_analysis_software_name",
+            "lineage_analysis_software_version",
+            "lineage_analysis_software_data_version",
+            "scorpio_call",
+            "scorpio_version",
+            "variant_designation",
+            "variant_evidence",
+            "variant_evidence_details"
+          ]
+        }
+      },
+      "samples": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "#/definitions/sample/sampleData"
+            }
+          ],
+          "required": [
+            "specimen",
+            "donor"
+          ],
+          "properties": {
+            "donor": {
+              "$ref": "#/definitions/donor/donorData"
+            },
+            "specimen": {
+              "$ref": "#/definitions/specimen/specimenData"
+            }
+          },
+          "if": {
+            "properties": {
+              "specimen": {
+                "properties": {
+                  "tumourNormalDesignation": {
+                    "const": "Tumour"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "if": {
+              "properties": {
+                "sampleType": {
+                  "pattern": "\\b(RNA)\\b"
+                }
+              }
+            },
+            "else": {
+              "required": [
+                "matchedNormalSubmitterSampleId"
+              ],
+              "properties": {
+                "matchedNormalSubmitterSampleId": {
+                  "$ref": "#/definitions/common/submitterId"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "matchedNormalSubmitterSampleId"
+              ],
+              "properties": {
+                "matchedNormalSubmitterSampleId": {
+                  "oneOf": [
+                    {
+                      "const": null
+                    },
+                    {
+                      "$ref": "#/definitions/common/submitterId"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "else": {
+            "required": [
+              "matchedNormalSubmitterSampleId"
+            ],
+            "properties": {
+              "matchedNormalSubmitterSampleId": {
+                "const": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "analysisType": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "version": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          }
+        }
+      },
+      "donor": {
+        "gender": {
+          "type": "string",
+          "enum": [
+            "Male",
+            "Female",
+            "Other"
+          ]
+        },
+        "donorData": {
+          "type": "object",
+          "required": [
+            "submitterDonorId",
+            "gender"
+          ],
+          "properties": {
+            "submitterDonorId": {
+              "$ref": "#/definitions/common/submitterId"
+            },
+            "gender": {
+              "$ref": "#/definitions/donor/gender"
+            },
+            "info": {
+              "$ref": "#/definitions/common/info"
+            }
+          }
+        }
+      },
+      "common": {
+        "md5": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{32}$"
+        },
+        "submitterId": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9\\-\\._]{1,64}$"
+        },
+        "info": {
+          "type": "object"
+        }
+      },
+      "sample": {
+        "sampleTypes": {
+          "type": "string",
+          "enum": [
+            "Total DNA",
+            "Amplified DNA",
+            "ctDNA",
+            "Other DNA enrichments",
+            "Total RNA",
+            "Ribo-Zero RNA",
+            "polyA+ RNA",
+            "Other RNA fractions"
+          ]
+        },
+        "sampleData": {
+          "type": "object",
+          "required": [
+            "submitterSampleId",
+            "sampleType"
+          ],
+          "properties": {
+            "submitterSampleId": {
+              "$ref": "#/definitions/common/submitterId"
+            },
+            "sampleType": {
+              "$ref": "#/definitions/sample/sampleTypes"
+            },
+            "info": {
+              "$ref": "#/definitions/common/info"
+            }
+          }
+        }
+      },
+      "specimen": {
+        "specimenTissueSource": {
+          "type": "string",
+          "enum": [
+            "Blood derived",
+            "Blood derived - bone marrow",
+            "Blood derived - peripheral blood",
+            "Bone marrow",
+            "Buccal cell",
+            "Lymph node",
+            "Solid tissue",
+            "Plasma",
+            "Serum",
+            "Urine",
+            "Cerebrospinal fluid",
+            "Sputum",
+            "Other",
+            "Pleural effusion",
+            "Mononuclear cells from bone marrow",
+            "Saliva",
+            "Skin",
+            "Intestine",
+            "Buffy coat",
+            "Stomach",
+            "Esophagus",
+            "Tonsil",
+            "Spleen",
+            "Bone",
+            "Cerebellum",
+            "Endometrium"
+          ]
+        },
+        "specimenType": {
+          "type": "string",
+          "enum": [
+            "Normal",
+            "Normal - tissue adjacent to primary tumour",
+            "Primary tumour",
+            "Primary tumour - adjacent to normal",
+            "Primary tumour - additional new primary",
+            "Recurrent tumour",
+            "Metastatic tumour",
+            "Metastatic tumour - metastasis local to lymph node",
+            "Metastatic tumour - metastasis to distant location",
+            "Metastatic tumour - additional metastatic",
+            "Xenograft - derived from primary tumour",
+            "Xenograft - derived from tumour cell line",
+            "Cell line - derived from xenograft tumour",
+            "Cell line - derived from tumour",
+            "Cell line - derived from normal",
+            "Tumour - unknown if derived from primary or metastatic",
+            "Cell line – derived from metastatic tumour",
+            "Xenograft – derived from metastatic tumour"
+          ]
+        },
+        "tumourNormalDesignation": {
+          "type": "string",
+          "enum": [
+            "Normal",
+            "Tumour"
+          ]
+        },
+        "specimenData": {
+          "type": "object",
+          "required": [
+            "submitterSpecimenId",
+            "specimenTissueSource",
+            "tumourNormalDesignation",
+            "specimenType"
+          ],
+          "properties": {
+            "submitterSpecimenId": {
+              "$ref": "#/definitions/common/submitterId"
+            },
+            "specimenTissueSource": {
+              "$ref": "#/definitions/specimen/specimenTissueSource"
+            },
+            "tumourNormalDesignation": {
+              "$ref": "#/definitions/specimen/tumourNormalDesignation"
+            },
+            "specimenType": {
+              "$ref": "#/definitions/specimen/specimenType"
+            },
+            "specimenClass": {
+              "not": {}
+            },
+            "info": {
+              "$ref": "#/definitions/common/info"
+            }
+          }
+        }
+      }
+    }
+  },
+  "fileTypes": [],
+  "externalValidations": []
+}

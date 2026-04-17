@@ -1,0 +1,415 @@
+{
+  "id": 74,
+  "data": {
+    "sample": {
+      "creator": "",
+      "records": [
+        {
+          "N50": "",
+          "authors": "OntarioWastewaterSurveillanceConsortium",
+          "organism": "",
+          "gene name": "covN1",
+          "isolate ID": "example1",
+          "library ID": "",
+          "sequenced by": "",
+          "DRA accession": "",
+          "ENA accession": "",
+          "GSA accession": "",
+          "SRA accession": "",
+          "amplicon size": "",
+          "Ns per 100 kbp": "",
+          "sequencing date": "",
+          "GISAID accession": "",
+          "dehosting method": "",
+          "geo loc latitude": "45.45376N",
+          "pooled sample ID": "",
+          "sampling site ID": "Site O700",
+          "GISAID virus name": "",
+          "collection device": "Composite Sampler",
+          "collection method": "Composite Sampling",
+          "geo loc longitude": "75.6704E",
+          "number of contigs": "",
+          "sampling event ID": "2_Sample S2C_Feb17_covN1_1_2021-02-17",
+          "scale of sampling": "",
+          "environmental site": "City of Ottawa WWTP",
+          "lineage/clade name": "",
+          "BioSample accession": "",
+          "genome completeness": "",
+          "geo loc name (city)": "",
+          "geo loc name (site)": "City of Ottawa WWTP",
+          "populated area type": "",
+          "purpose of sampling": "",
+          "sample collected by": "Carleton University",
+          "sequencing platform": "",
+          "sequencing protocol": "",
+          "specimen processing": "",
+          "BioProject accession": "",
+          "Enterobase accession": "",
+          "deduplication method": "",
+          "pH measurement value": "",
+          "presampling activity": "",
+          "sample received date": "",
+          "number of total reads": "",
+          "pH measurement method": "",
+          "purpose of sequencing": "",
+          "sample storage medium": "",
+          "sample storage method": "",
+          "sequence submitted by": "",
+          "sequencing assay type": "",
+          "sequencing instrument": "",
+          "environmental material": "Waste water",
+          "geo loc name (country)": "",
+          "number of unique reads": "",
+          "quality control issues": "",
+          "sample collection date": "2021-02-16",
+          "sample processing date": "2021-02-17",
+          "wastewater system type": "Sewer (drain)",
+          "bioinformatics protocol": "",
+          "consensus genome length": "",
+          "depth of coverage value": "",
+          "library preparation kit": "",
+          "quality control details": "",
+          "fecal contamination unit": "",
+          "DataHarmonizer provenance": "",
+          "breadth of coverage value": "",
+          "fecal coliform count unit": "",
+          "fecal contamination value": "",
+          "salinity measurement unit": "",
+          "sequenced by contact name": "",
+          "amplicon pcr primer scheme": "",
+          "diagnostic target presence": "",
+          "endogenous control details": "",
+          "fecal coliform count value": "",
+          "fecal contamination method": "",
+          "percent read contamination": "",
+          "read mapping software name": "bwa",
+          "reference genome accession": "",
+          "salinity measurement value": "",
+          "sample collection end date": "2021-02-17",
+          "sample collection end time": "11:45:00",
+          "sequenced by contact email": "",
+          "turbidity measurement unit": "",
+          "urinary contamination unit": "",
+          "alkalinity measurement unit": "",
+          "depth of coverage threshold": "",
+          "diagnostic measurement unit": "gcMl",
+          "experimental protocol field": "",
+          "fecal coliform count method": "",
+          "nucleic acid extraction kit": "",
+          "quality control method name": "",
+          "salinity measurement method": "",
+          "sampling weather conditions": "",
+          "specimen processing details": "",
+          "turbidity measurement value": "",
+          "urinary contamination value": "",
+          "alkalinity measurement value": "",
+          "diagnostic measurement value": "0.810528266",
+          "experimental control details": "",
+          "geo loc name (county/region)": "",
+          "presampling activity details": "",
+          "sample collection start time": "11:45:00",
+          "sample storage duration unit": "",
+          "specimen collector sample ID": "Sample S2C_Feb17",
+          "turbidity measurement method": "",
+          "urinary contamination method": "",
+          "watershed shapefile filename": "",
+          "GenBank accession (versioned)": "",
+          "alkalinity measurement method": "",
+          "conductivity measurement unit": "",
+          "diagnostic measurement method": "Quantitative real time polymerase chain reaction (qPCR)",
+          "fecal contamination indicator": "",
+          "purpose of sequencing details": "",
+          "quality control determination": "",
+          "read mapping software version": "1",
+          "sample collection time of day": "",
+          "sample storage duration value": "",
+          "specimen collector project ID": "",
+          "conductivity measurement value": "",
+          "nucleic acid extraction method": "",
+          "number of base pairs sequenced": "",
+          "precipitation measurement unit": "",
+          "presampling weather conditions": "",
+          "quality control method version": "",
+          "sample collector contact email": "BanuOrmeci@cunet.carleton.ca",
+          "sample volume measurement unit": "liter (L)",
+          "conductivity measurement method": "",
+          "experimental specimen role type": "",
+          "precipitation measurement value": "",
+          "sample volume measurement value": "1",
+          "specimen collector subsample ID": "2_Sample S2C_Feb17_covN1_1_2021-02-17",
+          "urinary contamination indicator": "",
+          "consensus sequence software name": "",
+          "precipitation measurement method": "",
+          "sequence submitter contact email": "",
+          "watershed shapefile availability": "",
+          "dissolved oxygen measurement unit": "",
+          "environmental material properties": "",
+          "minimum post-trimming read length": "",
+          "dissolved oxygen measurement value": "",
+          "total solids (TS) measurement unit": "",
+          "consensus sequence software version": "",
+          "dissolved oxygen measurement method": "",
+          "raw sequence data processing method": "",
+          "sample collection data steward name": "Banu Ormeci",
+          "total solids (TS) measurement value": "",
+          "ambient temperature measurement unit": "",
+          "lineage/clade analysis software name": "",
+          "sample collection time duration unit": "Hour",
+          "total nitrogen (TN) measurement unit": "",
+          "total solids (TS) measurement method": "",
+          "ambient temperature measurement value": "",
+          "percent Ns across total genome length": "",
+          "sample collection time duration value": "24",
+          "total nitrogen (TN) measurement value": "",
+          "lineage/clade analysis report filename": "",
+          "total daily flow rate measurement unit": "",
+          "total nitrogen (TN) measurement method": "",
+          "total phosphorus (TP) measurement unit": "",
+          "geo loc name (state/province/territory)": "",
+          "lineage/clade analysis software version": "",
+          "sample temperature unit (at collection)": "",
+          "sample temperature unit (when received)": "",
+          "total daily flow rate measurement value": "",
+          "total phosphorus (TP) measurement value": "",
+          "instantaneous flow rate measurement unit": "",
+          "sample temperature value (at collection)": "",
+          "sample temperature value (when received)": "",
+          "total daily flow rate measurement method": "",
+          "total phosphorus (TP) measurement method": "",
+          "instantaneous flow rate measurement value": "",
+          "instantaneous flow rate measurement method": "",
+          "water catchment area human population range": "",
+          "chemical oxygen demand (COD) measurement unit": "",
+          "total dissolved solids (TDS) measurement unit": "",
+          "total suspended solids (TSS) measurement unit": "",
+          "chemical oxygen demand (COD) measurement value": "",
+          "total dissolved solids (TDS) measurement value": "",
+          "total suspended solids (TSS) measurement value": "",
+          "chemical oxygen demand (COD) measurement method": "",
+          "total dissolved solids (TDS) measurement method": "",
+          "total suspended solids (TSS) measurement method": "",
+          "extraction recovery efficiency measurement value": "",
+          "extraction recovery efficiency measurement method": "",
+          "oxygen reduction potential (ORP) measurement unit": "",
+          "oxygen reduction potential (ORP) measurement value": "",
+          "water catchment area human population density unit": "",
+          "oxygen reduction potential (ORP) measurement method": "",
+          "water catchment area human population density value": "",
+          "water catchment area human population measurement value": "",
+          "water catchment area human population measurement method": "",
+          "carbonaceous biochemical oxygen demand (CBOD) measurement unit": "",
+          "carbonaceous biochemical oxygen demand (CBOD) measurement value": "",
+          "carbonaceous biochemical oxygen demand (CBOD) measurement method": ""
+        }
+      ],
+      "batchName": "sample.tsv"
+    }
+  },
+  "dictionary": {
+    "name": "waste water",
+    "version": "0.1"
+  },
+  "dictionaryCategory": {
+    "id": 14,
+    "name": "waste water"
+  },
+  "errors": {
+    "sample": [
+      {
+        "info": {},
+        "index": 0,
+        "message": "geo loc name (country) is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "geo loc name (country)"
+      },
+      {
+        "info": {},
+        "index": 0,
+        "message": "geo loc name (state/province/territory) is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "geo loc name (state/province/territory)"
+      },
+      {
+        "info": {},
+        "index": 0,
+        "message": "organism is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "organism"
+      },
+      {
+        "info": {},
+        "index": 0,
+        "message": "purpose of sampling is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "purpose of sampling"
+      },
+      {
+        "info": {},
+        "index": 0,
+        "message": "purpose of sequencing is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "purpose of sequencing"
+      },
+      {
+        "info": {},
+        "index": 0,
+        "message": "sequenced by contact name is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "sequenced by contact name"
+      },
+      {
+        "info": {},
+        "index": 0,
+        "message": "sequencing instrument is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "sequencing instrument"
+      },
+      {
+        "info": {
+          "regex": "^(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2})$",
+          "value": [
+            "2021-02-17"
+          ],
+          "examples": "2020-03-18 00:00:00"
+        },
+        "index": 0,
+        "message": "The value is not a permissible for this field, it must meet the regular expression: \"^(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2})$\". Examples: 2020-03-18 00:00:00",
+        "errorType": "INVALID_BY_REGEX",
+        "fieldName": "sample collection end date"
+      },
+      {
+        "info": {
+          "regex": "^(\\d{2}:\\d{2} [A-Z]{3,5})$",
+          "value": [
+            "11:45:00"
+          ],
+          "examples": "19:15 PST"
+        },
+        "index": 0,
+        "message": "The value is not a permissible for this field, it must meet the regular expression: \"^(\\d{2}:\\d{2} [A-Z]{3,5})$\". Examples: 19:15 PST",
+        "errorType": "INVALID_BY_REGEX",
+        "fieldName": "sample collection end time"
+      },
+      {
+        "info": {
+          "regex": "^(\\d{2}:\\d{2} [A-Z]{3,5})$",
+          "value": [
+            "11:45:00"
+          ],
+          "examples": "17:15 PST"
+        },
+        "index": 0,
+        "message": "The value is not a permissible for this field, it must meet the regular expression: \"^(\\d{2}:\\d{2} [A-Z]{3,5})$\". Examples: 17:15 PST",
+        "errorType": "INVALID_BY_REGEX",
+        "fieldName": "sample collection start time"
+      },
+      {
+        "info": {
+          "regex": "^(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2})$",
+          "value": [
+            "2021-02-17"
+          ],
+          "examples": "2020-03-16 00:00:00"
+        },
+        "index": 0,
+        "message": "The value is not a permissible for this field, it must meet the regular expression: \"^(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2})$\". Examples: 2020-03-16 00:00:00",
+        "errorType": "INVALID_BY_REGEX",
+        "fieldName": "sample processing date"
+      },
+      {
+        "info": {
+          "value": [
+            "Composite Sampler"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "collection device"
+      },
+      {
+        "info": {
+          "value": [
+            "Composite Sampling"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "collection method"
+      },
+      {
+        "info": {
+          "value": [
+            "gcMl"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "diagnostic measurement unit"
+      },
+      {
+        "info": {
+          "value": [
+            "Waste water"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "environmental material"
+      },
+      {
+        "info": {
+          "value": [
+            "City of Ottawa WWTP"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "environmental site"
+      },
+      {
+        "info": {
+          "value": [
+            "Hour"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "sample collection time duration unit"
+      },
+      {
+        "info": {
+          "value": [
+            "liter (L)"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "sample volume measurement unit"
+      },
+      {
+        "info": {
+          "value": [
+            "Sewer (drain)"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "wastewater system type"
+      }
+    ]
+  },
+  "organization": "ontario",
+  "status": "INVALID",
+  "createdAt": "2024-08-12T19:16:37.343Z",
+  "createdBy": "",
+  "updatedAt": "2024-08-12T19:23:11.506Z",
+  "updatedBy": ""
+}

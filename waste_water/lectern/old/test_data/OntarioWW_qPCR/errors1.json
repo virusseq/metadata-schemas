@@ -1,0 +1,12 @@
+{
+  "status": "INVALID_SUBMISSION",
+  "description": "No valid entities in submission",
+  "batchErrors": [
+    {
+      "type": "MISSING_REQUIRED_HEADER",
+      "message": "Missing required fields '[\"isolate ID\",\"read mapping software name\",\"read mapping software version\"]'",
+      "batchName": "sample.tsv"
+    }
+  ],
+  "inProcessEntities": []
+}

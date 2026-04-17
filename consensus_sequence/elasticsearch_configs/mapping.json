@@ -1,0 +1,364 @@
+{
+    "dynamic": "false",
+    "date_detection": false,
+    "properties": {
+        "analysis": {
+            "properties": {
+                "analysisId": {
+                    "type": "keyword",
+                    "copy_to": [
+                        "file_autocomplete"
+                    ]
+                },
+                "analysisState": {
+                    "type": "keyword"
+                },
+                "analysisType": {
+                    "properties": {
+                        "name": {
+                            "type": "keyword"
+                        },
+                        "version": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "createdAt": {
+                    "type": "date"
+                },
+                "database_identifiers": {
+                    "properties": {
+                        "gisaid_accession": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "experiment": {
+                    "properties": {
+                        "purpose_of_sequencing": {
+                            "type": "keyword"
+                        },
+                        "purpose_of_sequencing_details": {
+                            "type": "keyword"
+                        },
+                        "sequencing_instrument": {
+                            "type": "keyword"
+                        },
+                        "sequencing_protocol": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "firstPublishedAt": {
+                    "type": "date"
+                },
+                "host": {
+                    "properties": {
+                        "host_age": {
+                            "type": "long"
+                        },
+                        "host_age_bin": {
+                            "type": "keyword"
+                        },
+                        "host_age_null_reason": {
+                            "type": "keyword"
+                        },
+                        "host_age_unit": {
+                            "type": "keyword"
+                        },
+                        "host_disease": {
+                            "type": "keyword"
+                        },
+                        "host_gender": {
+                            "type": "keyword"
+                        },
+                        "host_scientific_name": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "lineage_analysis": {
+                    "properties": {
+                        "lineage_analysis_software_data_version": {
+                            "type": "keyword"
+                        },
+                        "lineage_analysis_software_name": {
+                            "type": "keyword"
+                        },
+                        "lineage_analysis_software_version": {
+                            "type": "keyword"
+                        },
+                        "lineage_name": {
+                            "type": "keyword"
+                        },
+                        "scorpio_call": {
+                            "type": "keyword"
+                        },
+                        "scorpio_version": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "pathogen_diagnostic_testing": {
+                    "properties": {
+                        "diagnostic_pcr_ct_value": {
+                            "type": "float"
+                        },
+                        "diagnostic_pcr_ct_value_null_reason": {
+                            "type": "keyword"
+                        },
+                        "gene_name": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "publishedAt": {
+                    "type": "date"
+                },
+                "sample_collection": {
+                    "properties": {
+                        "anatomical_material": {
+                            "type": "keyword"
+                        },
+                        "anatomical_part": {
+                            "type": "keyword"
+                        },
+                        "body_product": {
+                            "type": "keyword"
+                        },
+                        "collection_device": {
+                            "type": "keyword"
+                        },
+                        "collection_method": {
+                            "type": "keyword"
+                        },
+                        "environmental_material": {
+                            "type": "keyword"
+                        },
+                        "environmental_site": {
+                            "type": "keyword"
+                        },
+                        "fasta_header_name": {
+                            "type": "keyword"
+                        },
+                        "geo_loc_country": {
+                            "type": "keyword"
+                        },
+                        "geo_loc_province": {
+                            "type": "keyword"
+                        },
+                        "isolate": {
+                            "type": "keyword"
+                        },
+                        "organism": {
+                            "type": "keyword"
+                        },
+                        "purpose_of_sampling": {
+                            "type": "keyword"
+                        },
+                        "purpose_of_sampling_details": {
+                            "type": "keyword"
+                        },
+                        "sample_collected_by": {
+                            "type": "keyword"
+                        },
+                        "sample_collection_date": {
+                            "type": "date"
+                        },
+                        "sample_collection_date_null_reason": {
+                            "type": "keyword"
+                        },
+                        "sequence_submitted_by": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "sequence_analysis": {
+                    "properties": {
+                        "bioinformatics_protocol": {
+                            "type": "keyword"
+                        },
+                        "consensus_sequence_software_name": {
+                            "type": "keyword"
+                        },
+                        "consensus_sequence_software_version": {
+                            "type": "keyword"
+                        },
+                        "dehosting_method": {
+                            "type": "keyword"
+                        },
+                        "metrics": {
+                            "properties": {
+                                "breadth_of_coverage": {
+                                    "type": "keyword"
+                                },
+                                "depth_of_coverage": {
+                                    "type": "keyword"
+                                }
+                            }
+                        },
+                        "raw_sequence_data_processing_method": {
+                            "type": "keyword"
+                        },
+                        "reference_genome_accession": {
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "updatedAt": {
+                    "type": "date"
+                },
+                "samples": {
+                    "type": "nested",
+                    "properties": {
+                        "matchedNormalSubmitterSampleId": {
+                            "type": "keyword",
+                            "copy_to": [
+                                "file_autocomplete"
+                            ]
+                        },
+                        "sampleType": {
+                            "type": "keyword"
+                        },
+                        "submitterSampleId": {
+                            "type": "keyword",
+                            "copy_to": [
+                                "file_autocomplete"
+                            ]
+                        },
+                        "specimen": {
+                            "properties": {
+                                "specimenTissueSource": {
+                                    "type": "keyword"
+                                },
+                                "specimenType": {
+                                    "type": "keyword"
+                                },
+                                "submitterSpecimenId": {
+                                    "type": "keyword",
+                                    "copy_to": [
+                                        "file_autocomplete"
+                                    ]
+                                },
+                                "tumourNormalDesignation": {
+                                    "type": "keyword"
+                                }
+                            }
+                        },
+                        "donor": {
+                            "properties": {
+                                "gender": {
+                                    "type": "keyword"
+                                },
+                                "submitterDonorId": {
+                                    "type": "keyword",
+                                    "copy_to": [
+                                        "file_autocomplete"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "data_type": {
+            "type": "keyword",
+            "copy_to": [
+                "file_autocomplete"
+            ]
+        },
+        "file": {
+            "properties": {
+                "index_file": {
+                    "properties": {
+                        "file_type": {
+                            "type": "keyword"
+                        },
+                        "md5sum": {
+                            "type": "keyword"
+                        },
+                        "name": {
+                            "type": "keyword"
+                        },
+                        "object_id": {
+                            "type": "keyword"
+                        },
+                        "size": {
+                            "type": "long"
+                        }
+                    }
+                },
+                "md5sum": {
+                    "type": "keyword"
+                },
+                "name": {
+                    "type": "keyword",
+                    "copy_to": [
+                        "file_autocomplete"
+                    ]
+                },
+                "size": {
+                    "type": "long"
+                }
+            }
+        },
+        "file_access": {
+            "type": "keyword"
+        },
+        "file_autocomplete": {
+            "type": "keyword",
+            "fields": {
+                "analyzed": {
+                    "type": "text",
+                    "analyzer": "autocomplete_analyzed",
+                    "search_analyzer": "lowercase_keyword"
+                },
+                "lowercase": {
+                    "type": "text",
+                    "analyzer": "lowercase_keyword"
+                },
+                "prefix": {
+                    "type": "text",
+                    "analyzer": "autocomplete_prefix",
+                    "search_analyzer": "lowercase_keyword"
+                }
+            }
+        },
+        "file_type": {
+            "type": "keyword"
+        },
+        "object_id": {
+            "type": "keyword",
+            "copy_to": [
+                "file_autocomplete"
+            ]
+        },
+        "repositories": {
+            "type": "nested",
+            "properties": {
+                "code": {
+                    "type": "keyword"
+                },
+                "country": {
+                    "type": "keyword"
+                },
+                "name": {
+                    "type": "keyword"
+                },
+                "organization": {
+                    "type": "keyword"
+                },
+                "url": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "study_id": {
+            "type": "keyword",
+            "copy_to": [
+                "file_autocomplete"
+            ]
+        }
+    }
+}

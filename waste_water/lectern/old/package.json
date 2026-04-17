@@ -1,0 +1,30 @@
+{
+  "name": "data-dictionary",
+  "version": "1.0.0",
+  "description": "## Folder Structure",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "compile": "jest && node compile.js && npm run references",
+    "test": "jest",
+    "references": "node populateReferences.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pan-Canadian-Genome-Library/data-dictionary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pan-Canadian-Genome-Library/data-dictionary/issues"
+  },
+  "homepage": "https://github.com/Pan-Canadian-Genome-Library/data-dictionary#readme",
+  "devDependencies": {
+    "inquirer": "^9.2.16",
+    "jest": "^29.7.0",
+    "json-beautify": "^1.1.1",
+    "prettier": "^3.2.5",
+    "querystring": "^0.2.1",
+    "yargs": "^17.7.2"
+  }
+}

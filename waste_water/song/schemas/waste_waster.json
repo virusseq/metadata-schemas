@@ -1,0 +1,28 @@
+{
+  "name": "imicroseq_wastewater",
+  "options": {
+    "fileTypes": [
+      "TAR"
+    ],
+    "externalValidations": []
+  },
+  "schema": {
+    "properties": {
+      "specimen_collector_sample_id": {
+        "type": "string"
+      },
+      "insdc_project_accession": {
+        "type": "string"
+      },
+      "insdc_sample_accession": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "specimen_collector_sample_id",
+      "insdc_project_accession",
+      "insdc_sample_accession"
+    ],
+    "type": "object"
+  }
+}

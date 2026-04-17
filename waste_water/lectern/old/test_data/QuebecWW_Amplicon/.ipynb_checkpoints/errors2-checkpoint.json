@@ -1,0 +1,374 @@
+{
+  "id": 75,
+  "data": {
+    "sample": {
+      "creator": "",
+      "records": [
+        {
+          "N50": "",
+          "authors": "Arnaud N’Guessan, Alexandra Tsitouras, Fernando Sanchez-Quete, Eyerusalem Goitom, Sarah J. Reiling, Jose Hector Galvez, Thanh Luan Nguyen, Ha Thanh Loan Nguyen, Flavia Visentin, Mounia Hachad, Kateryna Krylova, Sara Matthews, Susanne A. Kraemer, Paul Stretenowich, Mathieu Bourgey, Haig Djambazian, Shu-Huang Chen, Anne-Marie Roy, Brent Brookes, Sally Lee, Marie-Michelle Simon, Thomas Maere, Peter A. Vanrolleghem, Marc-Andre Labelle, Sandrine Moreira, Inès Levade, Guillaume Bourque, Jiannis Ragoussis, Sarah Dorner, Dominic Frigon, B. Jesse Shapiro",
+          "organism": "SARS-CoV-2",
+          "gene name": "",
+          "isolate ID": "5",
+          "library ID": "",
+          "sequenced by": "McGill Genome Centre",
+          "DRA accession": "",
+          "ENA accession": "",
+          "GSA accession": "",
+          "SRA accession": "SRS11296769",
+          "amplicon size": "",
+          "Ns per 100 kbp": "",
+          "sequencing date": "",
+          "GISAID accession": "",
+          "dehosting method": "",
+          "geo loc latitude": "",
+          "pooled sample ID": "",
+          "sampling site ID": "",
+          "GISAID virus name": "",
+          "collection device": "",
+          "collection method": "missing",
+          "geo loc longitude": "",
+          "number of contigs": "",
+          "sampling event ID": "",
+          "scale of sampling": "Community-level surveillance",
+          "environmental site": "",
+          "lineage/clade name": "",
+          "BioSample accession": "SAMN23970293",
+          "genome completeness": "",
+          "geo loc name (city)": "Quebec",
+          "geo loc name (site)": "",
+          "populated area type": "",
+          "purpose of sampling": "research",
+          "sample collected by": "McGill",
+          "sequencing platform": "Illumina",
+          "sequencing protocol": "dx.doi.org/10.17504/protocols.io.by6xpzfn",
+          "specimen processing": "",
+          "BioProject accession": "PRJNA788395",
+          "Enterobase accession": "",
+          "deduplication method": "",
+          "pH measurement value": "",
+          "presampling activity": "",
+          "sample received date": "",
+          "number of total reads": "",
+          "pH measurement method": "",
+          "purpose of sequencing": "research",
+          "sample storage medium": "",
+          "sample storage method": "",
+          "sequence submitted by": "Jose Hector Galvez",
+          "sequencing assay type": "Amplicon sequencing assay",
+          "sequencing instrument": "",
+          "environmental material": "raw wastewater",
+          "geo loc name (country)": "Canada",
+          "number of unique reads": "",
+          "quality control issues": "",
+          "sample collection date": "",
+          "sample processing date": "",
+          "wastewater system type": "",
+          "bioinformatics protocol": "",
+          "consensus genome length": "",
+          "depth of coverage value": "",
+          "library preparation kit": "",
+          "quality control details": "",
+          "fecal contamination unit": "",
+          "DataHarmonizer provenance": "DataHarmonizer v1.6.5, WastewaterSARS-CoV-2 v2.0.0",
+          "breadth of coverage value": "",
+          "fecal coliform count unit": "",
+          "fecal contamination value": "",
+          "salinity measurement unit": "",
+          "sequenced by contact name": "",
+          "amplicon pcr primer scheme": "artic-v3",
+          "diagnostic target presence": "diagnostic target present",
+          "endogenous control details": "pepper mild mottle virus (copies/ml wastewater)",
+          "fecal coliform count value": "",
+          "fecal contamination method": "",
+          "percent read contamination": "",
+          "read mapping software name": "bwa",
+          "reference genome accession": "",
+          "salinity measurement value": "",
+          "sample collection end date": "",
+          "sample collection end time": "",
+          "sequenced by contact email": "",
+          "turbidity measurement unit": "",
+          "urinary contamination unit": "",
+          "alkalinity measurement unit": "",
+          "depth of coverage threshold": "",
+          "diagnostic measurement unit": "",
+          "experimental protocol field": "",
+          "fecal coliform count method": "",
+          "nucleic acid extraction kit": "Qiagen Microbiome Kit and 10% BME",
+          "quality control method name": "fastp",
+          "salinity measurement method": "",
+          "sampling weather conditions": "",
+          "specimen processing details": "",
+          "turbidity measurement value": "",
+          "urinary contamination value": "",
+          "alkalinity measurement value": "",
+          "diagnostic measurement value": "",
+          "experimental control details": "",
+          "geo loc name (county/region)": "",
+          "presampling activity details": "",
+          "sample collection start time": "",
+          "sample storage duration unit": "",
+          "specimen collector sample ID": "QC-WW-N-9_2-1338624_S76_L002",
+          "turbidity measurement method": "",
+          "urinary contamination method": "",
+          "watershed shapefile filename": "",
+          "GenBank accession (versioned)": "",
+          "alkalinity measurement method": "",
+          "conductivity measurement unit": "",
+          "diagnostic measurement method": "",
+          "fecal contamination indicator": "",
+          "purpose of sequencing details": "",
+          "quality control determination": "",
+          "read mapping software version": "1",
+          "sample collection time of day": "",
+          "sample storage duration value": "",
+          "specimen collector project ID": "",
+          "conductivity measurement value": "",
+          "nucleic acid extraction method": "Viral concentration with pH adjustment, MgCl2 addition, and filtration with 0.45 ¬µm negatively charged membranes; RNA extraction with Qiagen Microbiome kit and 10% BME",
+          "number of base pairs sequenced": "",
+          "precipitation measurement unit": "",
+          "presampling weather conditions": "",
+          "quality control method version": "0.020.0",
+          "sample collector contact email": "",
+          "sample volume measurement unit": "milliliter (mL)",
+          "conductivity measurement method": "",
+          "experimental specimen role type": "",
+          "precipitation measurement value": "",
+          "sample volume measurement value": "50",
+          "specimen collector subsample ID": "",
+          "urinary contamination indicator": "",
+          "consensus sequence software name": "",
+          "precipitation measurement method": "",
+          "sequence submitter contact email": "",
+          "watershed shapefile availability": "",
+          "dissolved oxygen measurement unit": "",
+          "environmental material properties": "",
+          "minimum post-trimming read length": "",
+          "dissolved oxygen measurement value": "",
+          "total solids (TS) measurement unit": "",
+          "consensus sequence software version": "",
+          "dissolved oxygen measurement method": "",
+          "raw sequence data processing method": "bwa 0.7.17;samtools 1.10;mpileup 2.4.1;varscan 2.4.1;pileup2snp",
+          "sample collection data steward name": "",
+          "total solids (TS) measurement value": "",
+          "ambient temperature measurement unit": "",
+          "lineage/clade analysis software name": "",
+          "sample collection time duration unit": "Hour",
+          "total nitrogen (TN) measurement unit": "",
+          "total solids (TS) measurement method": "",
+          "ambient temperature measurement value": "",
+          "percent Ns across total genome length": "",
+          "sample collection time duration value": "24",
+          "total nitrogen (TN) measurement value": "",
+          "lineage/clade analysis report filename": "",
+          "total daily flow rate measurement unit": "",
+          "total nitrogen (TN) measurement method": "",
+          "total phosphorus (TP) measurement unit": "",
+          "geo loc name (state/province/territory)": "Quebec",
+          "lineage/clade analysis software version": "",
+          "sample temperature unit (at collection)": "",
+          "sample temperature unit (when received)": "",
+          "total daily flow rate measurement value": "",
+          "total phosphorus (TP) measurement value": "",
+          "instantaneous flow rate measurement unit": "",
+          "sample temperature value (at collection)": "",
+          "sample temperature value (when received)": "",
+          "total daily flow rate measurement method": "",
+          "total phosphorus (TP) measurement method": "",
+          "instantaneous flow rate measurement value": "",
+          "instantaneous flow rate measurement method": "",
+          "water catchment area human population range": "",
+          "chemical oxygen demand (COD) measurement unit": "",
+          "total dissolved solids (TDS) measurement unit": "",
+          "total suspended solids (TSS) measurement unit": "",
+          "chemical oxygen demand (COD) measurement value": "",
+          "total dissolved solids (TDS) measurement value": "",
+          "total suspended solids (TSS) measurement value": "",
+          "chemical oxygen demand (COD) measurement method": "",
+          "total dissolved solids (TDS) measurement method": "",
+          "total suspended solids (TSS) measurement method": "",
+          "extraction recovery efficiency measurement value": "",
+          "extraction recovery efficiency measurement method": "",
+          "oxygen reduction potential (ORP) measurement unit": "",
+          "oxygen reduction potential (ORP) measurement value": "",
+          "water catchment area human population density unit": "",
+          "oxygen reduction potential (ORP) measurement method": "",
+          "water catchment area human population density value": "",
+          "water catchment area human population measurement value": "530000",
+          "water catchment area human population measurement method": "",
+          "carbonaceous biochemical oxygen demand (CBOD) measurement unit": "",
+          "carbonaceous biochemical oxygen demand (CBOD) measurement value": "",
+          "carbonaceous biochemical oxygen demand (CBOD) measurement method": ""
+        }
+      ],
+      "batchName": "sample.tsv"
+    }
+  },
+  "dictionary": {
+    "name": "waste water",
+    "version": "0.3"
+  },
+  "dictionaryCategory": {
+    "id": 14,
+    "name": "waste water"
+  },
+  "errors": {
+    "sample": [
+      {
+        "info": {},
+        "index": 0,
+        "message": "sequenced by contact name is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "sequenced by contact name"
+      },
+      {
+        "info": {},
+        "index": 0,
+        "message": "sequencing instrument is a required field.",
+        "errorType": "MISSING_REQUIRED_FIELD",
+        "fieldName": "sequencing instrument"
+      },
+      {
+        "info": {
+          "regex": "^SRR\\d+$",
+          "value": [
+            "SRS11296769"
+          ],
+          "examples": "SRR11177792"
+        },
+        "index": 0,
+        "message": "The value is not a permissible for this field, it must meet the regular expression: \"^SRR\\d+$\". Examples: SRR11177792",
+        "errorType": "INVALID_BY_REGEX",
+        "fieldName": "SRA accession"
+      },
+      {
+        "info": {
+          "value": [
+            "artic-v3"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "amplicon pcr primer scheme"
+      },
+      {
+        "info": {
+          "value": [
+            "missing"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "collection method"
+      },
+      {
+        "info": {
+          "value": [
+            "diagnostic target present"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "diagnostic target presence"
+      },
+      {
+        "info": {
+          "value": [
+            "raw wastewater"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "environmental material"
+      },
+      {
+        "info": {
+          "value": [
+            "SARS-CoV-2"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "organism"
+      },
+      {
+        "info": {
+          "value": [
+            "research"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "purpose of sampling"
+      },
+      {
+        "info": {
+          "value": [
+            "research"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "purpose of sequencing"
+      },
+      {
+        "info": {
+          "value": [
+            "Hour"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "sample collection time duration unit"
+      },
+      {
+        "info": {
+          "value": [
+            "milliliter (mL)"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "sample volume measurement unit"
+      },
+      {
+        "info": {
+          "value": [
+            "Amplicon sequencing assay"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "sequencing assay type"
+      },
+      {
+        "info": {
+          "value": [
+            "Illumina"
+          ]
+        },
+        "index": 0,
+        "message": "The value is not permissible for this field.",
+        "errorType": "INVALID_ENUM_VALUE",
+        "fieldName": "sequencing platform"
+      }
+    ]
+  },
+  "organization": "quebec",
+  "status": "INVALID",
+  "createdAt": "2024-08-12T20:25:04.857Z",
+  "createdBy": "",
+  "updatedAt": "2024-08-12T20:25:04.885Z",
+  "updatedBy": ""
+}
