@@ -329,7 +329,10 @@
                 "sample_collected_by_organisation_name": {
                     "type": "keyword"
                 },
-                "sample_collection_data_steward_name": {
+                "data_steward_contact_name": {
+                    "type": "keyword"
+                },
+                "data_steward_contact_email": {
                     "type": "keyword"
                 },
                 "sample_collection_end_date": {
@@ -437,7 +440,7 @@
                 "turbidity_measurement_value": {
                     "type": "keyword"
                 },
-                "viral_clade_": {
+                "viral_clade": {
                     "type": "keyword"
                 },
                 "viral_classification_scheme": {
