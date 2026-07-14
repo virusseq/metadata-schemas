@@ -11,6 +11,9 @@
                 "amplicon_size": {
                     "type": "long"
                 },
+                "amplicon_size_null_reason": {
+                    "type": "keyword"
+                },
                 "anatomical_material": {
                     "type": "keyword"
                 },
@@ -200,6 +203,9 @@
                 "host_age_bin": {
                     "type": "keyword"
                 },
+                "host_age_null_reason": {
+                    "type": "keyword"
+                },
                 "host_age_unit": {
                     "type": "keyword"
                 },
@@ -272,6 +278,9 @@
                 "presampling_activity_date": {
                     "type": "date"
                 },
+                "presampling_activity_date_null_reason": {
+                    "type": "keyword"
+                },
                 "presampling_activity_details": {
                     "type": "keyword"
                 },
@@ -335,8 +344,14 @@
                 "data_steward_contact_email": {
                     "type": "keyword"
                 },
+                "sample_collection_data_steward_name": {
+                    "type": "keyword"
+                },
                 "sample_collection_end_date": {
                     "type": "date"
+                },
+                "sample_collection_end_date_null_reason": {
+                    "type": "keyword"
                 },
                 "sample_collection_project_name": {
                     "type": "keyword"
@@ -345,6 +360,9 @@
                     "type": "date"
                 },
                 "sample_collection_start_date_null_reason": {
+                    "type": "keyword"
+                },
+                "sample_collection_time_duration_null_reason": {
                     "type": "keyword"
                 },
                 "sample_collection_time_duration_unit": {
@@ -385,6 +403,9 @@
                 },
                 "sequencing_date": {
                     "type": "date"
+                },
+                "sequencing_date_null_reason": {
+                    "type": "keyword"
                 },
                 "sequencing_instrument": {
                     "type": "keyword"
@@ -457,6 +478,9 @@
                 },
                 "water_catchment_area_human_population_measurement_value": {
                     "type": "long"
+                },
+                "water_catchment_area_human_population_measurement_value_null_reason": {
+                    "type": "keyword"
                 },
                 "water_catchment_area_human_population_range": {
                     "type": "keyword"
